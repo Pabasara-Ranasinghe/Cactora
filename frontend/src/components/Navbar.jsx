@@ -1,4 +1,4 @@
-import { Sun, Moon } from 'lucide-react'
+import { Moon, Sun } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { useTheme } from '../context/ThemeContext.jsx'
 
@@ -8,16 +8,14 @@ function Navbar() {
   return (
     <header className="navbar">
       <div className="navbar-container">
+
         {/* Brand */}
         <Link to="/" className="navbar-brand">
           <span className="navbar-logo">🌵</span>
-
-          <span className="navbar-name">
-            Cactora
-          </span>
+          <span className="navbar-name">Cactora</span>
         </Link>
 
-        {/* Navigation Links */}
+        {/* Navigation */}
         <nav className="navbar-links">
           <Link to="/explore">Explore</Link>
           <Link to="/about">About</Link>
@@ -26,19 +24,22 @@ function Navbar() {
 
         {/* Actions */}
         <div className="navbar-actions">
+
           {/* Theme Toggle */}
           <button
             type="button"
             className="theme-toggle"
             onClick={toggleTheme}
-            aria-label={`Switch to ${
-              theme === 'light' ? 'dark' : 'light'
-            } mode`}
+            aria-label={
+              theme === 'light'
+                ? 'Switch to dark mode'
+                : 'Switch to light mode'
+            }
           >
             {theme === 'light' ? (
-              <Moon size={19} />
+              <Moon size={19} strokeWidth={2} />
             ) : (
-              <Sun size={19} />
+              <Sun size={19} strokeWidth={2} />
             )}
           </button>
 
@@ -46,6 +47,7 @@ function Navbar() {
           <Link to="/login" className="navbar-login">
             Login
           </Link>
+
         </div>
       </div>
     </header>
