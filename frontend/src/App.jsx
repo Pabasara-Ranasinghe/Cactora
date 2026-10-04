@@ -1,27 +1,26 @@
-import { useTheme } from './context/ThemeContext.jsx'
-import Button from './components/ui/Button.jsx'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar.jsx'
+import Home from './pages/Home.jsx'
+import Explore from './pages/Explore.jsx'
+import About from './pages/About.jsx'
+import AI from './pages/AI.jsx'
+import Login from './pages/Login.jsx'
 
 function App() {
-  const { theme, toggleTheme } = useTheme()
-
   return (
-    <div style={{ padding: '2rem' }}>
-      <h1>Cactora</h1>
+    <BrowserRouter>
+      <Navbar />
 
-      <p>Discover. Learn. Grow.</p>
-
-      <Button onClick={toggleTheme} variant="primary">
-        {theme === 'light' ? '🌙 Dark Mode' : '☀️ Light Mode'}
-      </Button>
-
-      <Button variant="secondary">
-        Secondary Button
-      </Button>
-
-      <Button variant="outline">
-        Outline Button
-      </Button>
-    </div>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/explore" element={<Explore />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/ai" element={<AI />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </main>
+    </BrowserRouter>
   )
 }
 
