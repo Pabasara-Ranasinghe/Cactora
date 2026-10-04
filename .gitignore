@@ -1,0 +1,22 @@
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Java / Maven
+backend/target/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Environment variables
+.env
+.env.*
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
