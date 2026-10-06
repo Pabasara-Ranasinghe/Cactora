@@ -802,3 +802,310 @@
     width: min(100% - 1.5rem, 650px);
   }
 }
+
+/* =========================
+   EXPLORE PAGE
+========================= */
+
+.explore-page {
+  width: 100%;
+  min-height: calc(100vh - 72px);
+  padding: 5rem 0;
+  background: var(--background);
+}
+
+.explore-container {
+  width: min(1180px, calc(100% - 3rem));
+  margin: 0 auto;
+}
+
+/* Header */
+
+.explore-header {
+  max-width: 720px;
+}
+
+.explore-title {
+  margin: 0.5rem 0 0;
+  color: var(--text-primary);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  font-weight: 850;
+}
+
+.explore-description {
+  max-width: 600px;
+  margin: 1.5rem 0 0;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Toolbar */
+
+.explore-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.explore-search {
+  flex: 1;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  padding: 0 1rem;
+
+  border: 1px solid var(--border);
+  border-radius: 0.85rem;
+
+  background: var(--surface);
+  color: var(--text-secondary);
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.explore-search:focus-within {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(46, 157, 116, 0.12);
+}
+
+.explore-search input {
+  width: 100%;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+  color: var(--text-primary);
+
+  font-size: 0.92rem;
+}
+
+.explore-search input::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+.explore-filter-button {
+  height: 52px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  padding: 0 1.2rem;
+
+  border: 1px solid var(--border);
+  border-radius: 0.85rem;
+
+  background: var(--surface);
+  color: var(--text-primary);
+
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.explore-filter-button:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: var(--color-pale-mint);
+}
+
+/* Results Header */
+
+.explore-results-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 3rem 0 1.25rem;
+
+  color: var(--text-secondary);
+
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.explore-results-header span:first-child {
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 750;
+}
+
+/* Cactus Grid */
+
+.cactus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+/* Cactus Card */
+
+.cactus-card {
+  overflow: hidden;
+
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+
+  background: var(--surface);
+
+  box-shadow: 0 10px 35px rgba(11, 61, 46, 0.06);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.cactus-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary);
+  box-shadow: 0 18px 45px rgba(11, 61, 46, 0.12);
+}
+
+/* Card Visual */
+
+.cactus-card-image {
+  height: 230px;
+
+  display: grid;
+  place-items: center;
+
+  background:
+    radial-gradient(
+      circle at 50% 40%,
+      var(--color-sage) 0%,
+      var(--color-pale-mint) 70%
+    );
+}
+
+.cactus-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+
+  transition: transform 0.4s ease;
+}
+
+.cactus-card:hover .cactus-card-image img {
+  transform: scale(1.04);
+}
+
+/* Card Content */
+
+.cactus-card-content {
+  padding: 1.25rem;
+}
+
+.cactus-card-category {
+  display: inline-flex;
+
+  padding: 0.3rem 0.6rem;
+
+  border-radius: 999px;
+
+  background: var(--color-pale-mint);
+  color: var(--primary);
+
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.cactus-card h2 {
+  margin: 0.85rem 0 0;
+
+  color: var(--text-primary);
+
+  font-size: 1.15rem;
+  line-height: 1.3;
+}
+
+.cactus-card-scientific {
+  margin: 0.35rem 0 0;
+
+  color: var(--text-secondary);
+
+  font-size: 0.78rem;
+  font-style: italic;
+}
+
+.cactus-card-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+
+  border-top: 1px solid var(--border);
+}
+
+.cactus-card-details span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+
+  color: var(--text-secondary);
+
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.cactus-card-details svg {
+  color: var(--primary);
+}
+
+/* =========================
+   EXPLORE RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .cactus-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .explore-page {
+    padding: 3.5rem 0;
+  }
+
+  .explore-container {
+    width: min(100% - 2rem, 650px);
+  }
+
+  .explore-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .explore-filter-button {
+    width: 100%;
+  }
+
+  .cactus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .explore-title {
+    font-size: clamp(2.5rem, 12vw, 3.5rem);
+  }
+}
