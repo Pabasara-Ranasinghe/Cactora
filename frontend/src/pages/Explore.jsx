@@ -1,67 +1,12 @@
+import { useEffect, useState } from 'react'
 import { Search, SlidersHorizontal, Sun, Droplets } from 'lucide-react'
-
-const cactusData = [
-  {
-    id: 1,
-    name: 'Golden Barrel Cactus',
-    scientificName: 'Echinocactus grusonii',
-    category: 'Barrel',
-    sunlight: 'Full Sun',
-    watering: 'Low',
-    emoji: '🌵',
-  },
-  {
-    id: 2,
-    name: 'Bunny Ears Cactus',
-    scientificName: 'Opuntia microdasys',
-    category: 'Opuntia',
-    sunlight: 'Full Sun',
-    watering: 'Low',
-    emoji: '🌵',
-  },
-  {
-    id: 3,
-    name: 'Christmas Cactus',
-    scientificName: 'Schlumbergera truncata',
-    category: 'Forest',
-    sunlight: 'Bright Indirect',
-    watering: 'Moderate',
-    emoji: '🌵',
-  },
-  {
-    id: 4,
-    name: 'Fairy Castle Cactus',
-    scientificName: 'Acanthocereus tetragonus',
-    category: 'Columnar',
-    sunlight: 'Full Sun',
-    watering: 'Low',
-    emoji: '🌵',
-  },
-  {
-    id: 5,
-    name: 'Moon Cactus',
-    scientificName: 'Gymnocalycium mihanovichii',
-    category: 'Grafted',
-    sunlight: 'Bright Light',
-    watering: 'Low',
-    emoji: '🌵',
-  },
-  {
-    id: 6,
-    name: 'Old Man Cactus',
-    scientificName: 'Cephalocereus senilis',
-    category: 'Columnar',
-    sunlight: 'Full Sun',
-    watering: 'Low',
-    emoji: '🌵',
-  },
-]
+import { getAllCacti } from '../services/cactusService.js'
 
 function CactusCard({ cactus }) {
   return (
     <article className="cactus-card">
       <div className="cactus-card-image">
-        <span>{cactus.emoji}</span>
+        <span>🌵</span>
       </div>
 
       <div className="cactus-card-content">
@@ -69,7 +14,7 @@ function CactusCard({ cactus }) {
           {cactus.category}
         </span>
 
-        <h2>{cactus.name}</h2>
+        <h2>{cactus.commonName}</h2>
 
         <p className="cactus-card-scientific">
           {cactus.scientificName}
@@ -92,11 +37,30 @@ function CactusCard({ cactus }) {
 }
 
 function Explore() {
+  const [cacti, setCacti] = useState([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState('')
+
+  useEffect(() => {
+    async function loadCacti() {
+      try {
+        const data = await getAllCacti()
+        setCacti(data)
+      } catch (err) {
+        console.error('Failed to load cacti:', err)
+        setError('Unable to load cactus data.')
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    loadCacti()
+  }, [])
+
   return (
     <section className="explore-page">
       <div className="explore-container">
 
-        {/* Page Header */}
         <div className="explore-header">
           <div>
             <p className="page-label">Cactus Explorer</p>
@@ -112,9 +76,7 @@ function Explore() {
           </div>
         </div>
 
-        {/* Search & Filters */}
         <div className="explore-toolbar">
-
           <div className="explore-search">
             <Search size={19} />
 
@@ -131,25 +93,35 @@ function Explore() {
             <SlidersHorizontal size={18} />
             Filters
           </button>
-
         </div>
 
-        {/* Results */}
         <div className="explore-results-header">
           <span>Popular species</span>
-          <span>{cactusData.length} species</span>
+          <span>{cacti.length} species</span>
         </div>
 
-        {/* Cactus Grid */}
-        <div className="cactus-grid">
-          {cactusData.map((cactus) => (
-            <CactusCard
-              key={cactus.id}
-              cactus={cactus}
-            />
-          ))}
-        </div>
+        {loading && (
+          <p className="explore-status">
+            Loading cactus species...
+          </p>
+        )}
 
+        {error && (
+          <p className="explore-status explore-error">
+            {error}
+          </p>
+        )}
+
+        {!loading && !error && (
+          <div className="cactus-grid">
+            {cacti.map((cactus) => (
+              <CactusCard
+                key={cactus.id}
+                cactus={cactus}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </section>
   )
