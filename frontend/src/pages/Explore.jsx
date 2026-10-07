@@ -1,10 +1,15 @@
 import { useEffect, useState } from 'react'
 import { Search, SlidersHorizontal, Sun, Droplets } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import { getAllCacti } from '../services/cactusService.js'
 
 function CactusCard({ cactus }) {
   return (
-    <article className="cactus-card">
+    <Link
+      to={`/explore/${cactus.id}`}
+      className="cactus-card-link"
+    >
+      <article className="cactus-card">
       <div className="cactus-card-image">
         <span>🌵</span>
       </div>
@@ -33,6 +38,7 @@ function CactusCard({ cactus }) {
         </div>
       </div>
     </article>
+    </Link>
   )
 }
 

@@ -1144,3 +1144,252 @@
   font-size: 0.9rem;
   line-height: 1.6;
 }
+
+/* ================================
+   Cactus Details Page
+================================ */
+
+.cactus-details-page {
+  width: 100%;
+  min-height: calc(100vh - 72px);
+  padding: 4rem 0 5rem;
+  background: var(--background);
+}
+
+.cactus-details-container {
+  width: min(1180px, calc(100% - 3rem));
+  margin: 0 auto;
+}
+
+.cactus-details-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 2rem;
+
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  font-weight: 650;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.cactus-details-back:hover {
+  color: var(--primary);
+  transform: translateX(-3px);
+}
+
+.cactus-details-layout {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.8fr) minmax(0, 1.2fr);
+  gap: 4rem;
+  align-items: start;
+}
+
+.cactus-details-visual {
+  position: sticky;
+  top: 2rem;
+}
+
+.cactus-details-image {
+  width: 100%;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+
+  border: 1px solid var(--border);
+  border-radius: 1.5rem;
+
+  background:
+    radial-gradient(
+      circle at 50% 40%,
+      var(--color-sage) 0%,
+      var(--color-pale-mint) 70%
+    );
+
+  box-shadow:
+    0 20px 60px rgba(11, 61, 46, 0.08);
+}
+
+.cactus-details-image span {
+  font-size: clamp(9rem, 15vw, 13rem);
+  line-height: 1;
+
+  filter: drop-shadow(
+    0 20px 20px rgba(11, 61, 46, 0.16)
+  );
+}
+
+.cactus-details-content {
+  padding-top: 0.5rem;
+}
+
+.cactus-details-content h1 {
+  margin: 0.85rem 0 0;
+
+  color: var(--text-primary);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  font-weight: 850;
+}
+
+.cactus-details-scientific {
+  margin: 0.65rem 0 0;
+
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+.cactus-details-description {
+  max-width: 650px;
+  margin: 1.5rem 0 0;
+
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.cactus-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+
+  margin-top: 2rem;
+}
+
+.cactus-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+
+  min-height: 76px;
+  padding: 1rem;
+
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+
+  background: var(--surface);
+
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.cactus-detail-item:hover {
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.cactus-detail-item > svg {
+  flex-shrink: 0;
+  color: var(--primary);
+}
+
+.cactus-detail-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.cactus-detail-item span {
+  color: var(--text-secondary);
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.cactus-detail-item strong {
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  line-height: 1.35;
+}
+
+.cactus-care-section {
+  display: grid;
+  grid-template-columns: minmax(250px, 0.7fr) minmax(0, 1.3fr);
+  gap: 4rem;
+
+  margin-top: 4rem;
+  padding: 2.5rem;
+
+  border: 1px solid var(--border);
+  border-radius: 1.5rem;
+
+  background: var(--surface);
+}
+
+.cactus-care-section h2 {
+  margin: 0.5rem 0 0;
+
+  color: var(--text-primary);
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.cactus-care-section > p {
+  margin: 0;
+
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .cactus-details-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .cactus-details-visual {
+    position: static;
+  }
+
+  .cactus-details-image {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .cactus-details-content {
+    max-width: 700px;
+  }
+
+  .cactus-care-section {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .cactus-details-page {
+    padding: 3rem 0 4rem;
+  }
+
+  .cactus-details-container {
+    width: min(100% - 2rem, 650px);
+  }
+
+  .cactus-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cactus-details-content h1 {
+    font-size: clamp(2.5rem, 13vw, 3.5rem);
+  }
+
+  .cactus-care-section {
+    padding: 1.5rem;
+  }
+}
+
+.cactus-card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}

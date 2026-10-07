@@ -6,3 +6,8 @@ export async function getAllCacti() {
   const response = await axios.get(API_URL)
   return response.data
 }
+
+export async function getCactusById(id) {
+  const response = await axios.get(`${API_URL}/${id}`)
+  return response.data
+}
