@@ -1109,3 +1109,38 @@
     font-size: clamp(2.5rem, 12vw, 3.5rem);
   }
 }
+
+.explore-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 280px;
+  padding: 3rem;
+
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  background: var(--surface);
+
+  text-align: center;
+}
+
+.explore-empty > span {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.explore-empty h2 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1.25rem;
+}
+
+.explore-empty p {
+  max-width: 420px;
+  margin: 0.6rem 0 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}

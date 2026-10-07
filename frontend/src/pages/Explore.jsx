@@ -38,6 +38,7 @@ function CactusCard({ cactus }) {
 
 function Explore() {
   const [cacti, setCacti] = useState([])
+  const [searchTerm, setSearchTerm] = useState('')
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
 
@@ -56,6 +57,16 @@ function Explore() {
 
     loadCacti()
   }, [])
+
+  const filteredCacti = cacti.filter((cactus) => {
+  const search = searchTerm.toLowerCase().trim()
+
+  return (
+    cactus.commonName.toLowerCase().includes(search) ||
+    cactus.scientificName.toLowerCase().includes(search) ||
+    cactus.category.toLowerCase().includes(search)
+  )
+})
 
   return (
     <section className="explore-page">
@@ -83,6 +94,8 @@ function Explore() {
             <input
               type="text"
               placeholder="Search cactus species..."
+              value={searchTerm}
+              onChange={(event) => setSearchTerm(event.target.value)}
             />
           </div>
 
@@ -97,7 +110,9 @@ function Explore() {
 
         <div className="explore-results-header">
           <span>Popular species</span>
-          <span>{cacti.length} species</span>
+          <span>
+            {filteredCacti.length} species
+          </span>
         </div>
 
         {loading && (
@@ -112,14 +127,27 @@ function Explore() {
           </p>
         )}
 
-        {!loading && !error && (
+        {!loading && !error && filteredCacti.length > 0 && (
           <div className="cactus-grid">
-            {cacti.map((cactus) => (
+            {filteredCacti.map((cactus) => (
               <CactusCard
                 key={cactus.id}
                 cactus={cactus}
               />
             ))}
+          </div>
+        )}
+
+        {!loading && !error && filteredCacti.length === 0 && (
+          <div className="explore-empty">
+            <span>🌵</span>
+
+            <h2>No cactus species found</h2>
+
+            <p>
+              Try searching with a different name, scientific name,
+              or category.
+            </p>
           </div>
         )}
       </div>
