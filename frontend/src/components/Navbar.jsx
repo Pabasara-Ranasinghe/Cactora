@@ -1,3 +1,4 @@
+
 import { Moon, Sun } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { useTheme } from '../context/ThemeContext.jsx'
@@ -46,6 +47,11 @@ function Navbar() {
           {/* Login */}
           <Link to="/login" className="navbar-login">
             Login
+          </Link>
+
+          {/* Register */}
+          <Link to="/register" className="navbar-register">
+            Register
           </Link>
 
         </div>

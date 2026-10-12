@@ -1528,3 +1528,21 @@
   color: #256b38;
   font-size: 0.9rem;
 }
+
+.navbar-register {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border-radius: 10px;
+  background: #34784d;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.navbar-register:hover {
+  background: #28633d;
+  transform: translateY(-1px);
+}
