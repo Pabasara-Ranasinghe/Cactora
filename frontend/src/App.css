@@ -1546,3 +1546,49 @@
   background: #28633d;
   transform: translateY(-1px);
 }
+
+.navbar-user {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: inherit;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.navbar-logout {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid var(--border-color, #dce5dc);
+  border-radius: 10px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.navbar-logout:hover {
+  background: var(--card-background, #f0f5f0);
+}
+
+@media (max-width: 600px) {
+  .navbar-user {
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .navbar-user span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .navbar-logout {
+    padding: 9px 10px;
+  }
+}
