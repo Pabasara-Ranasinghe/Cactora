@@ -75,6 +75,9 @@ public class SecurityConfig {
                                 "/api/auth/login",
                                 "/api/cacti/**"
                         ).permitAll()
+                        .requestMatchers(
+                                "/api/submissions/**"
+                        ).hasAnyRole("USER", "ADMIN")
                         .anyRequest().authenticated()
                 )
                 .addFilterBefore(
