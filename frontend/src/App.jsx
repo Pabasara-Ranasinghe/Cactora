@@ -1,3 +1,4 @@
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 
@@ -8,6 +9,7 @@ import CactusDetails from './pages/CactusDetails.jsx'
 import About from './pages/About.jsx'
 import AI from './pages/AI.jsx'
 import Login from './pages/Login.jsx'
+import Register from './pages/Register.jsx'
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/ai" element={<AI />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </main>
     </BrowserRouter>
