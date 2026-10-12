@@ -2,10 +2,12 @@
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import authService from "../services/authService";
+import { useAuth } from "../context/AuthContext.jsx";
 
 function Login() {
   const navigate = useNavigate();
   const location = useLocation();
+  const { login } = useAuth();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -26,18 +28,14 @@ function Login() {
         password,
       });
 
-      // Store the authentication token for future API requests.
-      localStorage.setItem("cactoraToken", response.token);
-
-      // Store basic user information for the current session.
-      localStorage.setItem(
-        "cactoraUser",
-        JSON.stringify({
+      login(
+        {
           userId: response.userId,
           fullName: response.fullName,
           email: response.email,
           role: response.role,
-        })
+        },
+        response.token
       );
 
       navigate("/", { replace: true });
