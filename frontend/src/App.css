@@ -1519,3 +1519,12 @@
     font-size: 1.5rem;
   }
 }
+
+.auth-success {
+  margin: 0 0 18px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #e8f5e9;
+  color: #256b38;
+  font-size: 0.9rem;
+}
