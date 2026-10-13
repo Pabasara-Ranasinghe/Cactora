@@ -139,8 +139,16 @@ return ( <main className="auth-page"> <section className="auth-card"> <div class
         type="submit"
         className="auth-submit"
         disabled={loading}
+        aria-busy={loading}
       >
-        {loading ? "Logging in..." : "Log in"}
+        {loading ? (
+          <span className="login-loading">
+            <span className="login-spinner" aria-hidden="true" />
+            Logging in...
+          </span>
+        ) : (
+          "Log in"
+        )}
       </button>
     </form>
 
