@@ -16,15 +16,33 @@ function Login() {
 
   const successMessage = location.state?.message;
 
+  
   const handleSubmit = async (event) => {
     event.preventDefault();
     setError("");
+
+    const trimmedEmail = email.trim();
+
+    if (!trimmedEmail) {
+      setError("Please enter your email address.");
+      return;
+    }
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmedEmail)) {
+      setError("Please enter a valid email address.");
+      return;
+    }
+
+    if (!password) {
+      setError("Please enter your password.");
+      return;
+    }
 
     try {
       setLoading(true);
 
       const response = await authService.login({
-        email: email.trim(),
+        email: trimmedEmail,
         password,
       });
 
