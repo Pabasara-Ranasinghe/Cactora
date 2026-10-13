@@ -125,7 +125,7 @@ return ( <main className="auth-page"> <section className="auth-card"> <div class
           aria-label={showPassword ? "Hide password" : "Show password"}
           title={showPassword ? "Hide password" : "Show password"}
         >
-          {showPassword ? "🙈" : "👁️"}
+          {showPassword ? "Hide" : "Show"}
         </button>
       </div>
 
