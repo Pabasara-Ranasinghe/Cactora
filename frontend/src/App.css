@@ -1592,3 +1592,40 @@
     padding: 9px 10px;
   }
 }
+
+.password-input-wrapper {
+position: relative;
+width: 100%;
+}
+
+.password-input-wrapper input {
+width: 100%;
+box-sizing: border-box;
+padding-right: 48px;
+}
+
+.password-toggle {
+position: absolute;
+top: 50%;
+right: 12px;
+transform: translateY(-50%);
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 6px;
+border: none;
+background: transparent;
+cursor: pointer;
+font-size: 18px;
+line-height: 1;
+}
+
+.password-toggle:hover {
+background: transparent;
+}
+
+.password-toggle:focus-visible {
+outline: 2px solid #0DCEDA;
+outline-offset: 2px;
+border-radius: 4px;
+}
