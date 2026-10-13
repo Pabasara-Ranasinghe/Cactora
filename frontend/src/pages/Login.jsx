@@ -20,7 +20,6 @@ const handleSubmit = async (event) => {
 event.preventDefault();
 setError("");
 
-```
 const trimmedEmail = email.trim();
 
 if (!trimmedEmail) {
@@ -68,13 +67,11 @@ try {
 } finally {
   setLoading(false);
 }
-```
 
 };
 
 return ( <main className="auth-page"> <section className="auth-card"> <div className="auth-heading"> <span className="auth-icon">🌵</span>
 
-```
       <h1>Welcome back!</h1>
 
       <p>
