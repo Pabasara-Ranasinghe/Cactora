@@ -236,20 +236,24 @@ function Home() {
                   '--reveal-delay': `${(index % 3) * 100}ms`,
                 }}
               >
-                <div className="home-category-image-wrap">
-                  <img
-                    src={family.image}
-                    alt={`${family.name} cactus category`}
-                    className="home-category-image"
-                    loading="lazy"
-                  />
-                  <span className="home-category-number">
-                    {family.number}
-                  </span>
-                  <span className="home-category-arrow">
-                    <ArrowRight size={19} />
-                  </span>
-                </div>
+                
+          <div
+            className="home-category-image-wrap home-category-emoji-wrap"
+            style={{ '--family-accent': family.accent }}
+          >
+            <span className="home-category-emoji" aria-hidden="true">
+              {family.icon}
+            </span>
+
+            <span className="home-category-number">
+              {family.number}
+            </span>
+
+            <span className="home-category-arrow">
+              <ArrowRight size={19} />
+            </span>
+          </div>
+
 
                 <div className="home-category-content">
                   <span className="home-category-kicker">
