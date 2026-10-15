@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from 'react'
 import {
   ArrowDown,
@@ -12,57 +13,7 @@ import {
   Trees,
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
-
-const subfamilies = [
-  {
-    number: '01',
-    name: 'Cactoideae',
-    description:
-      'Discover an extraordinary variety of globular, barrel, columnar, and epiphytic cacti.',
-    image:
-      'https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=900&q=85',
-  },
-  {
-    number: '02',
-    name: 'Opuntioideae',
-    description:
-      'Explore distinctive prickly pears, segmented stems, and fascinating cholla cacti.',
-    image:
-      'https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?auto=format&fit=crop&w=900&q=85',
-  },
-  {
-    number: '03',
-    name: 'Maihuenioideae',
-    description:
-      'Meet unusual, low-growing cushion cacti adapted to challenging environments.',
-    image:
-      'https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=900&q=85',
-  },
-  {
-    number: '04',
-    name: 'Pereskioideae',
-    description:
-      'Discover leafy, woody cacti that offer a glimpse into cactus diversity.',
-    image:
-      'https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=900&q=85',
-  },
-  {
-    number: '05',
-    name: 'Leuenbergerioideae',
-    description:
-      'Learn about leafy tropical cacti and their place in cactus classification.',
-    image:
-      'https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=900&q=85',
-  },
-  {
-    number: '06',
-    name: 'Blossfeldioideae',
-    description:
-      'Explore the remarkable world of tiny, mostly spineless Blossfeldia cacti.',
-    image:
-      'https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=900&q=85',
-  },
-]
+import cactusSubfamilies from '../data/cactusSubfamilies.js'
 
 const facts = [
   {
@@ -138,6 +89,7 @@ function Home() {
 
   return (
     <main className="home-page" ref={revealRef}>
+      {/* Hero */}
       <section className="hero">
         <div className="hero-glow hero-glow-one" />
         <div className="hero-glow hero-glow-two" />
@@ -226,6 +178,7 @@ function Home() {
         </a>
       </section>
 
+      {/* Introduction */}
       <section className="home-intro-section">
         <div className="home-section-container home-intro-grid">
           <div className="home-intro-heading reveal">
@@ -252,11 +205,14 @@ function Home() {
         </div>
       </section>
 
+      {/* Explore Cacti */}
       <section className="home-explore-section" id="explore-cacti">
         <div className="home-section-container">
           <div className="home-section-heading reveal">
             <div>
-              <span className="home-eyebrow">FIND YOUR NEXT FASCINATION</span>
+              <span className="home-eyebrow">
+                FIND YOUR NEXT FASCINATION
+              </span>
               <h2>
                 Explore the world
                 <br />
@@ -271,12 +227,14 @@ function Home() {
           </div>
 
           <div className="home-category-grid">
-            {subfamilies.map((family, index) => (
+            {cactusSubfamilies.map((family, index) => (
               <Link
-                to="/explore"
+                to={`/explore?family=${family.id}`}
                 className={`home-category-card reveal home-category-card-${index + 1}`}
-                key={family.name}
-                style={{ '--reveal-delay': `${(index % 3) * 100}ms` }}
+                key={family.id}
+                style={{
+                  '--reveal-delay': `${(index % 3) * 100}ms`,
+                }}
               >
                 <div className="home-category-image-wrap">
                   <img
@@ -285,14 +243,18 @@ function Home() {
                     className="home-category-image"
                     loading="lazy"
                   />
-                  <span className="home-category-number">{family.number}</span>
+                  <span className="home-category-number">
+                    {family.number}
+                  </span>
                   <span className="home-category-arrow">
                     <ArrowRight size={19} />
                   </span>
                 </div>
 
                 <div className="home-category-content">
-                  <span className="home-category-kicker">SUBFAMILY</span>
+                  <span className="home-category-kicker">
+                    SUBFAMILY
+                  </span>
                   <h3>{family.name}</h3>
                   <p>{family.description}</p>
                   <span className="home-category-link">
@@ -316,6 +278,7 @@ function Home() {
         </div>
       </section>
 
+      {/* Cactus History */}
       <section className="home-story-section">
         <div className="home-section-container home-story-grid">
           <div className="home-story-visual reveal">
@@ -358,11 +321,14 @@ function Home() {
         </div>
       </section>
 
+      {/* Interesting Facts */}
       <section className="home-facts-section">
         <div className="home-section-container">
           <div className="home-section-heading home-facts-heading reveal">
             <div>
-              <span className="home-eyebrow">NATURE IS FULL OF SURPRISES</span>
+              <span className="home-eyebrow">
+                NATURE IS FULL OF SURPRISES
+              </span>
               <h2>
                 Did you <span>know?</span>
               </h2>
@@ -381,7 +347,9 @@ function Home() {
                 <article
                   className="home-fact-card reveal"
                   key={fact.title}
-                  style={{ '--reveal-delay': `${index * 120}ms` }}
+                  style={{
+                    '--reveal-delay': `${index * 120}ms`,
+                  }}
                 >
                   <span className="home-fact-icon">
                     <Icon size={25} />
@@ -398,10 +366,13 @@ function Home() {
         </div>
       </section>
 
+      {/* Cactus Care */}
       <section className="home-care-section">
         <div className="home-section-container home-care-grid">
           <div className="home-care-content reveal">
-            <span className="home-eyebrow">HELP YOUR CACTUS THRIVE</span>
+            <span className="home-eyebrow">
+              HELP YOUR CACTUS THRIVE
+            </span>
             <h2>
               A little care.
               <br />
@@ -450,6 +421,7 @@ function Home() {
         </div>
       </section>
 
+      {/* Cactora AI */}
       <section className="home-ai-section">
         <div className="home-section-container">
           <div className="home-ai-panel reveal">
@@ -492,12 +464,15 @@ function Home() {
         </div>
       </section>
 
+      {/* Community */}
       <section className="home-community-section">
         <div className="home-section-container home-community-inner reveal">
           <div className="home-community-icon">
             <BookOpen size={27} />
           </div>
-          <span className="home-eyebrow">KNOWLEDGE GROWS WHEN SHARED</span>
+          <span className="home-eyebrow">
+            KNOWLEDGE GROWS WHEN SHARED
+          </span>
           <h2>
             Every cactus has
             <br />
