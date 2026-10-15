@@ -3863,3 +3863,38 @@ border-radius: 4px;
   }
 }
 
+
+.home-category-emoji-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 190px;
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      color-mix(in srgb, var(--family-accent) 17%, white),
+      transparent 65%
+    ),
+    linear-gradient(135deg, #f3fff7, #e5f6eb);
+  overflow: hidden;
+}
+
+.home-category-emoji {
+  display: inline-block;
+  font-size: 5.5rem;
+  line-height: 1;
+  transition: transform 0.35s ease;
+  filter: drop-shadow(0 8px 10px rgb(20 70 40 / 12%));
+}
+
+.home-category-card:hover .home-category-emoji {
+  transform: translateY(-5px) scale(1.12) rotate(-4deg);
+}
+
+.home-category-emoji-wrap .home-category-number {
+  z-index: 1;
+}
+
+.home-category-emoji-wrap .home-category-arrow {
+  z-index: 1;
+}
