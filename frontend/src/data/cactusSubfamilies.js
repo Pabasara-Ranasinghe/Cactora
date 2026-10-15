@@ -4,155 +4,79 @@ const cactusSubfamilies = [
     id: 'cactoideae',
     number: '01',
     name: 'Cactoideae',
-    subtitle: 'The diverse cacti',
+    subtitle: 'The diverse desert cacti',
     description:
-      'Discover globular, barrel, columnar, and epiphytic cacti with an extraordinary variety of shapes and flowers.',
-    image:
-      'https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=900&q=85',
+      'The largest and most diverse cactus subfamily, containing many familiar globular, columnar, and flowering cacti.',
+    icon: '🌵',
+    accent: '#23865B',
     genera: [
-      {
-        name: 'Mammillaria',
-        description:
-          'Compact cacti known for their distinctive tubercles and rings of flowers.',
-      },
-      {
-        name: 'Echinopsis',
-        description:
-          'Rounded or elongated cacti that can produce spectacular flowers.',
-      },
-      {
-        name: 'Gymnocalycium',
-        description:
-          'Small, ribbed cacti with attractive flowers.',
-      },
-      {
-        name: 'Cereus',
-        description:
-          'Often tall, columnar cacti with architectural growth forms.',
-      },
-      {
-        name: 'Astrophytum',
-        description:
-          'Distinctive ribbed cacti, sometimes marked with tiny white flecks.',
-      },
-      {
-        name: 'Schlumbergera',
-        description:
-          'Segmented forest cacti known for their colorful flowers.',
-      },
+      { name: 'Mammillaria', detail: 'Small, rounded cacti with distinctive tubercles and often beautiful rings of flowers.' },
+      { name: 'Echinopsis', detail: 'Known for rounded or elongated stems and large, spectacular flowers.' },
+      { name: 'Gymnocalycium', detail: 'Compact cacti with ribbed bodies and attractive blooms.' },
+      { name: 'Cereus', detail: 'Often tall, columnar cacti that grow into striking architectural shapes.' },
+      { name: 'Astrophytum', detail: 'Distinctive star-shaped or ribbed cacti, sometimes covered in tiny white flecks.' },
+      { name: 'Schlumbergera', detail: 'Forest cacti with segmented stems and colorful seasonal flowers.' },
     ],
   },
   {
     id: 'opuntioideae',
     number: '02',
     name: 'Opuntioideae',
-    subtitle: 'The prickly pear group',
+    subtitle: 'The prickly pear family',
     description:
-      'Explore segmented stems, prickly pears, and fascinating cholla cacti adapted to a variety of environments.',
-    image:
-      'https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?auto=format&fit=crop&w=900&q=85',
+      'Recognized for segmented stems, glochids in many species, and remarkable adaptations to dry environments.',
+    icon: '🌱',
+    accent: '#579447',
     genera: [
-      {
-        name: 'Opuntia',
-        description:
-          'Prickly pear cacti with flattened pads and, in some species, edible fruits.',
-      },
-      {
-        name: 'Cylindropuntia',
-        description:
-          'Cholla cacti with cylindrical stem segments and prominent spines.',
-      },
-      {
-        name: 'Tephrocactus',
-        description:
-          'Often compact plants with rounded, jointed stem segments.',
-      },
-      {
-        name: 'Consolea',
-        description:
-          'Branching or tree-like cacti found mainly in the Caribbean.',
-      },
-      {
-        name: 'Maihueniopsis',
-        description:
-          'Low-growing segmented cacti adapted to challenging habitats.',
-      },
+      { name: 'Opuntia', detail: 'Prickly pear cacti with flattened pads and, in some species, edible fruits.' },
+      { name: 'Cylindropuntia', detail: 'Chollas with cylindrical stem segments and conspicuous spines.' },
+      { name: 'Tephrocactus', detail: 'Often compact cacti with rounded, jointed stem segments.' },
+      { name: 'Consolea', detail: 'Tree-like or branching cacti native mainly to the Caribbean region.' },
+      { name: 'Maihueniopsis', detail: 'Low-growing, segmented cacti adapted to challenging habitats.' },
     ],
   },
   {
     id: 'maihuenioideae',
     number: '03',
     name: 'Maihuenioideae',
-    subtitle: 'Mountain cactus wonders',
+    subtitle: 'Rare mountain cacti',
     description:
-      'Meet unusual, low-growing cacti associated with the cool, exposed landscapes of southern South America.',
-    image:
-      'https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=900&q=85',
+      'A small and distinctive group of South American cacti, including plants adapted to cool, exposed mountain habitats.',
+    icon: '🏔️',
+    accent: '#478C87',
     genera: [
-      {
-        name: 'Maihuenia',
-        description:
-          'Low-growing plants with small leaves and compact, spiny stems.',
-      },
-      {
-        name: 'Maihuenia poeppigii',
-        description:
-          'A cushion-forming cactus associated with the Andes and Patagonia.',
-      },
+      { name: 'Maihuenia', detail: 'Low-growing plants with small rounded leaves and compact, spiny stems.' },
+      { name: 'Maihuenia poeppigii', detail: 'A cushion-forming cactus associated with the southern Andes and Patagonia.' },
     ],
   },
   {
     id: 'pereskioideae',
     number: '04',
     name: 'Pereskioideae',
-    subtitle: 'Leafy cactus relatives',
+    subtitle: 'The leafy cacti',
     description:
-      'Discover leafy, woody plants that demonstrate how diverse members of the cactus family can look.',
-    image:
-      'https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=900&q=85',
+      'Leafy, woody cactus relatives that look quite different from familiar spiny desert cacti.',
+    icon: '🍃',
+    accent: '#70A85B',
     genera: [
-      {
-        name: 'Pereskia',
-        description:
-          'Leafy, often woody cacti with broad leaves and showy flowers.',
-      },
-      {
-        name: 'Pereskia aculeata',
-        description:
-          'A climbing, leafy cactus with delicate flowers.',
-      },
-      {
-        name: 'Pereskia grandifolia',
-        description:
-          'A shrub-like leafy cactus known for its pink flowers.',
-      },
+      { name: 'Pereskia', detail: 'Leafy, often woody cacti with broad leaves and showy flowers.' },
+      { name: 'Pereskia aculeata', detail: 'A climbing cactus with green leaves and delicate flowers.' },
+      { name: 'Pereskia grandifolia', detail: 'A leafy cactus known for its pink flowers and shrub-like growth.' },
     ],
   },
   {
     id: 'leuenbergerioideae',
     number: '05',
     name: 'Leuenbergerioideae',
-    subtitle: 'Woody tropical cacti',
+    subtitle: 'Woody, leafy relatives',
     description:
-      'Learn about leafy, woody cactus relatives native to tropical regions of the Americas.',
-    image:
-      'https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=900&q=85',
+      'Leafy, woody cactus relatives from tropical America that differ in appearance from familiar desert cacti.',
+    icon: '🌿',
+    accent: '#3B9272',
     genera: [
-      {
-        name: 'Leuenbergeria',
-        description:
-          'Woody plants with persistent leaves and branching stems.',
-      },
-      {
-        name: 'Leuenbergeria bleo',
-        description:
-          'A tropical, leafy cactus known for its orange-red flowers.',
-      },
-      {
-        name: 'Leuenbergeria lychnidiflora',
-        description:
-          'A woody, leafy cactus native to parts of Central America.',
-      },
+      { name: 'Leuenbergeria', detail: 'Woody plants with persistent leaves, branching stems, and cactus-family characteristics.' },
+      { name: 'Leuenbergeria bleo', detail: 'A tropical, leafy cactus known for its bright orange-red flowers.' },
+      { name: 'Leuenbergeria lychnidiflora', detail: 'A woody, leafy cactus native to parts of Central America.' },
     ],
   },
   {
@@ -161,20 +85,12 @@ const cactusSubfamilies = [
     name: 'Blossfeldioideae',
     subtitle: 'Tiny botanical wonders',
     description:
-      'Explore the remarkable miniature cacti of the genus Blossfeldia, some of which grow in rocky crevices.',
-    image:
-      'https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=900&q=85',
+      'A remarkable group of miniature cacti, some exceptionally small and difficult to spot among rocks.',
+    icon: '✨',
+    accent: '#8B79B8',
     genera: [
-      {
-        name: 'Blossfeldia',
-        description:
-          'A genus of tiny cacti native to parts of South America.',
-      },
-      {
-        name: 'Blossfeldia liliputana',
-        description:
-          'A miniature cactus known for its exceptionally small size.',
-      },
+      { name: 'Blossfeldia', detail: 'A genus of tiny cacti that grow in rocky crevices.' },
+      { name: 'Blossfeldia liliputana', detail: 'A miniature cactus native to South America.' },
     ],
   },
 ]
