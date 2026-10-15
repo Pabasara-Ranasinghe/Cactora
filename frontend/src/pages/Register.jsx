@@ -169,9 +169,9 @@ function Register() {
               className="password-toggle"
               onClick={() => setShowPassword((previous) => !previous)}
               aria-label={showPassword ? "Hide password" : "Show password"}
-              aria-pressed={showPassword}
+              title={showPassword ? "Hide password" : "Show password"}
             >
-              {showPassword ? "🙈" : "👁️"}
+              {showPassword ? "Hide" : "Show"}
             </button>
           </div>
 
@@ -202,13 +202,11 @@ function Register() {
                 setShowConfirmPassword((previous) => !previous)
               }
               aria-label={
-                showConfirmPassword
-                  ? "Hide confirm password"
-                  : "Show confirm password"
+                showConfirmPassword ? "Hide password" : "Show password"
               }
-              aria-pressed={showConfirmPassword}
+              title={showConfirmPassword ? "Hide password" : "Show password"}
             >
-              {showConfirmPassword ? "🙈" : "👁️"}
+              {showConfirmPassword ? "Hide" : "Show"}
             </button>
           </div>
 
