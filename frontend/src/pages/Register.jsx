@@ -12,6 +12,8 @@ function Register() {
   });
 
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -36,7 +38,6 @@ function Register() {
     const email = formData.email.trim();
     const password = formData.password;
 
-    // Validate full name.
     if (!fullName) {
       setError("Please enter your full name.");
       return;
@@ -47,7 +48,6 @@ function Register() {
       return;
     }
 
-    // Validate email.
     if (!email) {
       setError("Please enter your email address.");
       return;
@@ -58,7 +58,6 @@ function Register() {
       return;
     }
 
-    // Validate password.
     if (password.length < 8) {
       setError("Password must contain at least 8 characters.");
       return;
@@ -151,37 +150,67 @@ function Register() {
 
           <label htmlFor="password">Password</label>
 
-          <input
-            id="password"
-            name="password"
-            type="password"
-            placeholder="At least 8 characters"
-            value={formData.password}
-            onChange={handleChange}
-            minLength={8}
-            maxLength={72}
-            autoComplete="new-password"
-            required
-          />
+          <div className="password-input-wrapper">
+            <input
+              id="password"
+              name="password"
+              type={showPassword ? "text" : "password"}
+              placeholder="At least 8 characters"
+              value={formData.password}
+              onChange={handleChange}
+              minLength={8}
+              maxLength={72}
+              autoComplete="new-password"
+              required
+            />
+
+            <button
+              type="button"
+              className="password-toggle"
+              onClick={() => setShowPassword((previous) => !previous)}
+              aria-label={showPassword ? "Hide password" : "Show password"}
+              aria-pressed={showPassword}
+            >
+              {showPassword ? "🙈" : "👁️"}
+            </button>
+          </div>
 
           <label htmlFor="confirmPassword">Confirm password</label>
 
-          <input
-            id="confirmPassword"
-            type="password"
-            placeholder="Enter your password again"
-            value={confirmPassword}
-            onChange={(event) => {
-              setConfirmPassword(event.target.value);
+          <div className="password-input-wrapper">
+            <input
+              id="confirmPassword"
+              type={showConfirmPassword ? "text" : "password"}
+              placeholder="Enter your password again"
+              value={confirmPassword}
+              onChange={(event) => {
+                setConfirmPassword(event.target.value);
 
-              if (error) {
-                setError("");
+                if (error) {
+                  setError("");
+                }
+              }}
+              maxLength={72}
+              autoComplete="new-password"
+              required
+            />
+
+            <button
+              type="button"
+              className="password-toggle"
+              onClick={() =>
+                setShowConfirmPassword((previous) => !previous)
               }
-            }}
-            maxLength={72}
-            autoComplete="new-password"
-            required
-          />
+              aria-label={
+                showConfirmPassword
+                  ? "Hide confirm password"
+                  : "Show confirm password"
+              }
+              aria-pressed={showConfirmPassword}
+            >
+              {showConfirmPassword ? "🙈" : "👁️"}
+            </button>
+          </div>
 
           {error && (
             <p className="auth-error" role="alert">
@@ -200,8 +229,7 @@ function Register() {
         </form>
 
         <p className="auth-footer">
-          Already have an account?{" "}
-          <Link to="/login">Log in</Link>
+          Already have an account? <Link to="/login">Log in</Link>
         </p>
       </section>
     </main>
