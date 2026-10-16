@@ -8,7 +8,9 @@ import {
   Sparkles,
   Sprout,
 } from 'lucide-react'
+
 import cactusSubfamilies from '../data/cactusSubfamilies.js'
+import CactoideaeGuide from './Cactoideae/CactoideaeGuide.jsx'
 import './CactusDetails.css'
 
 function CactusDetails() {
@@ -18,6 +20,7 @@ function CactusDetails() {
     (item) => item.id === id
   )
 
+  // Handle invalid subfamily IDs.
   if (!family) {
     return (
       <section className="cactus-details-page">
@@ -31,11 +34,14 @@ function CactusDetails() {
             <span className="cactus-details-status-emoji">
               🌵
             </span>
+
             <h2>Subfamily not found</h2>
+
             <p>
               We couldn't find that cactus group. Explore our
               collection to discover the available subfamilies.
             </p>
+
             <Link
               to="/explore"
               className="cactus-details-primary-button"
@@ -49,6 +55,12 @@ function CactusDetails() {
     )
   }
 
+  // Display the custom Cactoideae botanical guide.
+  if (id === 'cactoideae') {
+    return <CactoideaeGuide />
+  }
+
+  // Display the standard details page for the other subfamilies.
   return (
     <section className="cactus-details-page">
       <div className="cactus-details-container">
@@ -123,6 +135,7 @@ function CactusDetails() {
             <div className="cactus-details-highlights">
               <div className="cactus-details-highlight">
                 <span>🌱</span>
+
                 <div>
                   <small>Genera and examples</small>
                   <strong>
@@ -133,6 +146,7 @@ function CactusDetails() {
 
               <div className="cactus-details-highlight">
                 <span>{family.icon}</span>
+
                 <div>
                   <small>Featured group</small>
                   <strong>{family.name}</strong>
@@ -183,7 +197,9 @@ function CactusDetails() {
                 <strong>{family.name}</strong>
               </div>
 
-              <span className="cactus-detail-emoji">📚</span>
+              <span className="cactus-detail-emoji">
+                📚
+              </span>
             </article>
 
             <article className="cactus-detail-item">
@@ -196,7 +212,9 @@ function CactusDetails() {
                 <strong>{family.genera.length}</strong>
               </div>
 
-              <span className="cactus-detail-emoji">🌱</span>
+              <span className="cactus-detail-emoji">
+                🌱
+              </span>
             </article>
 
             <article className="cactus-detail-item">
@@ -229,6 +247,7 @@ function CactusDetails() {
             <div className="cactus-care-title-row">
               <div>
                 <h2>Discover the genera</h2>
+
                 <p>
                   Explore the examples and learn what makes each
                   one interesting.
@@ -279,6 +298,7 @@ function CactusDetails() {
 
             <div className="cactus-care-reminder">
               <BookOpen size={19} />
+
               <p>
                 <strong>Botanical note:</strong> these are
                 educational examples within the selected group.
@@ -296,7 +316,11 @@ function CactusDetails() {
 
           <div className="cactus-details-cta-copy">
             <span>KEEP DISCOVERING</span>
-            <h2>There's a whole world of cacti to explore.</h2>
+
+            <h2>
+              There's a whole world of cacti to explore.
+            </h2>
+
             <p>
               Visit the other groups and continue your Cactora
               journey.
