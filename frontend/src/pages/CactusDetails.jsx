@@ -11,6 +11,8 @@ import {
 
 import cactusSubfamilies from '../data/cactusSubfamilies.js'
 import CactoideaeGuide from './Cactoideae/CactoideaeGuide.jsx'
+import OpuntioideaeGuide from './Opuntioideae/OpuntioideaeGuide.jsx'
+import PereskioideaeGuide from './Pereskioideae/PereskioideaeGuide.jsx'
 import './CactusDetails.css'
 
 function CactusDetails() {
@@ -58,6 +60,14 @@ function CactusDetails() {
   // Display the custom Cactoideae botanical guide.
   if (id === 'cactoideae') {
     return <CactoideaeGuide />
+  }
+
+  if (id === 'opuntioideae') {
+    return <OpuntioideaeGuide />
+  }
+
+  if (id === 'pereskioideae') {
+    return <PereskioideaeGuide />
   }
 
   // Display the standard details page for the other subfamilies.
