@@ -1,0 +1,989 @@
+/* =========================================
+   PERESKIOIDEAE BOTANICAL GUIDE
+   ========================================= */
+
+.pereskioideae-page {
+  --pereskioideae-green: #356b4b;
+  --pereskioideae-dark: #234a34;
+  --pereskioideae-mint: #eaf4e9;
+  --pereskioideae-light: #f7faf5;
+  --pereskioideae-border: #dfe9dc;
+  --pereskioideae-text: #34463a;
+  --pereskioideae-muted: #748174;
+  --pereskioideae-pink: #b86f87;
+
+  min-height: 100vh;
+  padding: 30px 24px 70px;
+  color: var(--pereskioideae-text);
+  background:
+    radial-gradient(circle at 8% 4%, #eaf4e8 0, transparent 26%),
+    radial-gradient(circle at 95% 25%, #f9edf1 0, transparent 24%),
+    #fbfcf9;
+}
+
+.pereskioideae-page *,
+.pereskioideae-page *::before,
+.pereskioideae-page *::after {
+  box-sizing: border-box;
+}
+
+.pereskioideae-container {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+}
+
+.pereskioideae-page a {
+  text-decoration: none;
+}
+
+.pereskioideae-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 30px;
+  color: var(--pereskioideae-green);
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: gap 0.25s ease, color 0.25s ease;
+}
+
+.pereskioideae-back:hover {
+  gap: 13px;
+  color: var(--pereskioideae-dark);
+}
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.pereskioideae-hero {
+  display: grid;
+  grid-template-columns: 0.88fr 1.12fr;
+  align-items: center;
+  gap: clamp(35px, 6vw, 78px);
+  padding: clamp(30px, 5vw, 65px);
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #e1e9dc;
+  border-radius: 32px;
+  background: linear-gradient(135deg, #f0f7ec, #fff 62%, #f9edf0);
+  box-shadow: 0 18px 55px rgb(35 74 52 / 7%);
+}
+
+.pereskioideae-hero-visual {
+  min-height: 390px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  isolation: isolate;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 50% 42%, #fff 0, #e7f1e1 48%, #d2e7cf 100%);
+}
+
+.pereskioideae-hero-visual::before,
+.pereskioideae-hero-visual::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border: 1px solid rgb(53 107 75 / 13%);
+  border-radius: 50%;
+}
+
+.pereskioideae-hero-visual::before {
+  width: 250px;
+  height: 250px;
+}
+
+.pereskioideae-hero-visual::after {
+  width: 320px;
+  height: 320px;
+}
+
+.pereskioideae-hero-emoji {
+  font-size: clamp(115px, 17vw, 190px);
+  line-height: 1;
+  filter: drop-shadow(0 16px 12px rgb(35 74 52 / 12%));
+  animation: pereskioideae-float 4s ease-in-out infinite;
+}
+
+.pereskioideae-hero-orbit {
+  position: absolute;
+  color: var(--pereskioideae-pink);
+  font-size: 2rem;
+}
+
+.pereskioideae-hero-orbit.orbit-one {
+  top: 17%;
+  right: 20%;
+  animation: pereskioideae-twinkle 3s ease-in-out infinite;
+}
+
+.pereskioideae-hero-orbit.orbit-two {
+  left: 17%;
+  top: 32%;
+  font-size: 1.5rem;
+  animation: pereskioideae-twinkle 3s ease-in-out infinite 1s;
+}
+
+.pereskioideae-hero-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: max-content;
+  max-width: calc(100% - 24px);
+  padding: 11px 16px;
+  border: 1px solid rgb(255 255 255 / 85%);
+  border-radius: 30px;
+  color: var(--pereskioideae-green);
+  background: rgb(255 255 255 / 90%);
+  box-shadow: 0 5px 18px rgb(35 74 52 / 8%);
+  font-size: 0.8rem;
+  font-weight: 700;
+  transform: translateX(-50%);
+  backdrop-filter: blur(8px);
+}
+
+.pereskioideae-floating-note {
+  position: absolute;
+  right: -12px;
+  bottom: 85px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  max-width: 230px;
+  padding: 13px 17px;
+  border: 1px solid #e7e9df;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgb(35 74 52 / 10%);
+  animation: pereskioideae-float 4s ease-in-out infinite 0.5s;
+}
+
+.pereskioideae-floating-note > span {
+  font-size: 1.65rem;
+}
+
+.pereskioideae-floating-note strong,
+.pereskioideae-floating-note small {
+  display: block;
+}
+
+.pereskioideae-floating-note strong {
+  color: var(--pereskioideae-dark);
+  font-size: 0.8rem;
+}
+
+.pereskioideae-floating-note small {
+  margin-top: 4px;
+  color: var(--pereskioideae-muted);
+  font-size: 0.68rem;
+  line-height: 1.4;
+}
+
+.pereskioideae-hero-copy {
+  min-width: 0;
+}
+
+.pereskioideae-eyebrow,
+.pereskioideae-section-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #62856a;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  line-height: 1.7;
+}
+
+.pereskioideae-pill {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  width: fit-content;
+  margin-top: 22px;
+  padding: 8px 13px;
+  border: 1px solid #d5e5d1;
+  border-radius: 25px;
+  color: var(--pereskioideae-green);
+  background: #eaf4e7;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.pereskioideae-hero-copy h1 {
+  margin: 19px 0 16px;
+  color: var(--pereskioideae-dark);
+  font-size: clamp(2.1rem, 4vw, 3.4rem);
+  font-weight: 800;
+  letter-spacing: -1.8px;
+  line-height: 1.13;
+}
+
+.pereskioideae-hero-subtitle {
+  margin: 0 0 15px;
+  color: #55795a;
+  font-size: clamp(1.02rem, 1.5vw, 1.2rem);
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.pereskioideae-hero-description {
+  margin: 0;
+  color: var(--pereskioideae-muted);
+  font-size: 0.96rem;
+  line-height: 1.9;
+}
+
+.pereskioideae-hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 28px 0;
+}
+
+.pereskioideae-hero-stats > div {
+  min-width: 0;
+  padding: 15px 12px;
+  border: 1px solid #e2e9dd;
+  border-radius: 15px;
+  background: rgb(255 255 255 / 78%);
+}
+
+.pereskioideae-hero-stats strong,
+.pereskioideae-hero-stats span {
+  display: block;
+}
+
+.pereskioideae-hero-stats strong {
+  color: var(--pereskioideae-green);
+  font-size: 0.92rem;
+  overflow-wrap: anywhere;
+}
+
+.pereskioideae-hero-stats span {
+  margin-top: 6px;
+  color: var(--pereskioideae-muted);
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+
+.pereskioideae-primary-button,
+.pereskioideae-cta-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 13px 20px;
+  border: 1px solid var(--pereskioideae-green);
+  border-radius: 12px;
+  color: #fff !important;
+  background: var(--pereskioideae-green);
+  font-size: 0.88rem;
+  font-weight: 700;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.pereskioideae-primary-button:hover,
+.pereskioideae-cta-link:hover {
+  transform: translateY(-3px);
+  background: var(--pereskioideae-dark);
+  box-shadow: 0 8px 22px rgb(35 74 52 / 18%);
+}
+
+/* =========================================
+   SHARED SECTIONS
+   ========================================= */
+
+.pereskioideae-section {
+  margin-top: 82px;
+  scroll-margin-top: 30px;
+}
+
+.pereskioideae-section-heading {
+  max-width: 760px;
+  margin: 0 auto 34px;
+  text-align: center;
+}
+
+.pereskioideae-section-kicker {
+  justify-content: center;
+}
+
+.pereskioideae-section-heading h2,
+.pereskioideae-habitat h2,
+.pereskioideae-bottom-cta h2 {
+  margin: 12px 0;
+  color: var(--pereskioideae-dark);
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  line-height: 1.25;
+}
+
+.pereskioideae-section-heading > p {
+  margin: 0 auto;
+  color: var(--pereskioideae-muted);
+  font-size: 0.96rem;
+  line-height: 1.85;
+}
+
+/* =========================================
+   REFERENCE AND COMPARISON TABLES
+   ========================================= */
+
+.pereskioideae-reference-table {
+  width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+  border: 1px solid var(--pereskioideae-border);
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 12px 35px rgb(35 74 52 / 5%);
+  scrollbar-width: thin;
+  scrollbar-color: #b8d1b6 #f1f6ef;
+}
+
+.pereskioideae-reference-table table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.pereskioideae-reference-table th,
+.pereskioideae-reference-table td {
+  padding: 17px 21px;
+  border-bottom: 1px solid #edf1eb;
+  font-size: 0.9rem;
+  line-height: 1.75;
+  vertical-align: top;
+}
+
+.pereskioideae-reference-table thead th {
+  color: #fff;
+  background: var(--pereskioideae-green);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.pereskioideae-reference-table tbody th {
+  width: 28%;
+  min-width: 145px;
+  color: var(--pereskioideae-dark);
+  background: #f5f9f3;
+  font-weight: 750;
+}
+
+.pereskioideae-reference-table tbody td {
+  color: #58675b;
+}
+
+.pereskioideae-reference-table tbody tr:last-child th,
+.pereskioideae-reference-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.pereskioideae-reference-table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.pereskioideae-reference-table tbody tr:hover {
+  background: #f6faf4;
+}
+
+/* =========================================
+   FACT CARDS
+   ========================================= */
+
+.pereskioideae-facts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.pereskioideae-fact-card {
+  min-width: 0;
+  padding: 25px;
+  border: 1px solid var(--pereskioideae-border);
+  border-radius: 21px;
+  background: #fff;
+  box-shadow: 0 7px 25px rgb(35 74 52 / 3%);
+  transition:
+    transform 0.28s ease,
+    border-color 0.28s ease,
+    box-shadow 0.28s ease;
+}
+
+.pereskioideae-fact-card:hover {
+  transform: translateY(-5px);
+  border-color: #c4d9bf;
+  box-shadow: 0 15px 34px rgb(35 74 52 / 9%);
+}
+
+.pereskioideae-fact-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.pereskioideae-fact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 49px;
+  height: 49px;
+  border-radius: 15px;
+  color: var(--pereskioideae-green);
+  background: var(--pereskioideae-mint);
+}
+
+.pereskioideae-index {
+  color: #a0b6a0;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.pereskioideae-fact-card h3,
+.pereskioideae-genus-card h3,
+.pereskioideae-care-card h3 {
+  margin: 0 0 12px;
+  color: var(--pereskioideae-dark);
+  font-size: 1.08rem;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.pereskioideae-fact-card p,
+.pereskioideae-genus-card p,
+.pereskioideae-care-card p {
+  margin: 0;
+  color: var(--pereskioideae-muted);
+  font-size: 0.88rem;
+  line-height: 1.85;
+  overflow-wrap: anywhere;
+}
+
+/* =========================================
+   HABITAT / EVOLUTION BANNER
+   ========================================= */
+
+.pereskioideae-habitat {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  align-items: center;
+  gap: 38px;
+  margin-top: 76px;
+  padding: clamp(27px, 5vw, 48px);
+  border: 1px solid #e5e5d8;
+  border-radius: 26px;
+  background: linear-gradient(125deg, #eaf4e6, #fbf0f3);
+}
+
+.pereskioideae-habitat-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 180px;
+  padding: 20px;
+  border-radius: 22px;
+  background: rgb(255 255 255 / 70%);
+}
+
+.pereskioideae-habitat-art span {
+  font-size: clamp(2.3rem, 5vw, 4rem);
+}
+
+.pereskioideae-habitat-art span:nth-child(2) {
+  transform: translateY(10px);
+}
+
+.pereskioideae-habitat h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+}
+
+.pereskioideae-habitat p {
+  margin: 0;
+  color: var(--pereskioideae-muted);
+  font-size: 0.92rem;
+  line-height: 1.9;
+}
+
+/* =========================================
+   PLANT / GENUS CARDS
+   ========================================= */
+
+.pereskioideae-genera-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.pereskioideae-genus-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 23px;
+  border: 1px solid var(--pereskioideae-border);
+  border-radius: 21px;
+  background: #fff;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.pereskioideae-genus-card:hover {
+  transform: translateY(-5px);
+  border-color: #c4d9bf;
+  box-shadow: 0 13px 30px rgb(35 74 52 / 8%);
+}
+
+.pereskioideae-genus-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  color: #a0b6a0;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.pereskioideae-genus-emoji {
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 18px;
+  background: var(--pereskioideae-mint);
+  font-size: 2rem;
+}
+
+.pereskioideae-genus-subtitle {
+  margin-bottom: 7px;
+  color: #62856a;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.pereskioideae-genus-card h3 {
+  font-size: 1.15rem;
+  font-style: italic;
+  overflow-wrap: anywhere;
+}
+
+.pereskioideae-genus-card p {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.pereskioideae-genus-highlight {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding-top: 14px;
+  border-top: 1px solid #edf2ea;
+  color: var(--pereskioideae-green);
+  font-size: 0.76rem;
+  font-weight: 750;
+  line-height: 1.6;
+}
+
+.pereskioideae-genus-highlight svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* =========================================
+   CARE GUIDE
+   ========================================= */
+
+.pereskioideae-care {
+  margin-top: 82px;
+  padding: clamp(24px, 4vw, 48px);
+  border: 1px solid #e2eadd;
+  border-radius: 28px;
+  background: linear-gradient(145deg, #f2f7ef, #fbfcf9);
+}
+
+.pereskioideae-care .pereskioideae-section-heading {
+  margin-bottom: 30px;
+}
+
+.pereskioideae-care-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.pereskioideae-care-card {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid #e0eadd;
+  border-radius: 17px;
+  background: #fff;
+}
+
+.pereskioideae-care-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 37px;
+  height: 37px;
+  margin-bottom: 17px;
+  border-radius: 12px;
+  color: var(--pereskioideae-green);
+  background: var(--pereskioideae-mint);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.pereskioideae-safety-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  margin-top: 22px;
+  padding: 19px 21px;
+  border: 1px solid #ecdcb8;
+  border-radius: 15px;
+  color: #725a2b;
+  background: #fff9eb;
+}
+
+.pereskioideae-safety-note > svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.pereskioideae-safety-note p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.8;
+}
+
+.pereskioideae-safety-note strong {
+  color: #62491d;
+}
+
+/* =========================================
+   BOTTOM CALL TO ACTION
+   ========================================= */
+
+.pereskioideae-bottom-cta {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  margin-top: 78px;
+  padding: clamp(24px, 4vw, 42px);
+  border: 1px solid #e1e8d9;
+  border-radius: 25px;
+  background: linear-gradient(120deg, #eaf4e6, #fbf0f3);
+}
+
+.pereskioideae-cta-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 78px;
+  height: 78px;
+  border-radius: 22px;
+  background: #fff;
+  font-size: 2.7rem;
+}
+
+.pereskioideae-bottom-cta > div:nth-child(2) {
+  flex: 1;
+  min-width: 0;
+}
+
+.pereskioideae-bottom-cta > div:nth-child(2) > span {
+  color: #62856a;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.pereskioideae-bottom-cta h2 {
+  margin: 7px 0;
+  font-size: clamp(1.3rem, 2.4vw, 1.9rem);
+}
+
+.pereskioideae-bottom-cta p {
+  margin: 0;
+  color: var(--pereskioideae-muted);
+  font-size: 0.87rem;
+  line-height: 1.7;
+}
+
+.pereskioideae-cta-link {
+  flex-shrink: 0;
+}
+
+.pereskioideae-botanical-note {
+  max-width: 900px;
+  margin: 25px auto 0;
+  color: #879387;
+  font-size: 0.78rem;
+  line-height: 1.85;
+  text-align: center;
+}
+
+/* =========================================
+   ANIMATIONS
+   ========================================= */
+
+@keyframes pereskioideae-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+@keyframes pereskioideae-twinkle {
+  0%,
+  100% {
+    opacity: 0.65;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 1000px) {
+  .pereskioideae-hero {
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 30px;
+    padding: 32px;
+  }
+
+  .pereskioideae-hero-visual {
+    min-height: 330px;
+  }
+
+  .pereskioideae-floating-note {
+    right: -5px;
+  }
+
+  .pereskioideae-facts-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pereskioideae-genera-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .pereskioideae-page {
+    padding: 20px 15px 45px;
+  }
+
+  .pereskioideae-back {
+    margin-bottom: 20px;
+  }
+
+  .pereskioideae-hero {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 20px;
+    border-radius: 24px;
+  }
+
+  .pereskioideae-hero-visual {
+    min-height: 290px;
+    border-radius: 21px;
+  }
+
+  .pereskioideae-hero-visual::before {
+    width: 205px;
+    height: 205px;
+  }
+
+  .pereskioideae-hero-visual::after {
+    width: 260px;
+    height: 260px;
+  }
+
+  .pereskioideae-hero-emoji {
+    font-size: 130px;
+  }
+
+  .pereskioideae-floating-note {
+    right: 5px;
+    bottom: 75px;
+    max-width: 205px;
+    padding: 10px 12px;
+  }
+
+  .pereskioideae-hero-copy h1 {
+    font-size: clamp(2rem, 8vw, 2.7rem);
+    letter-spacing: -1.1px;
+  }
+
+  .pereskioideae-hero-stats {
+    gap: 8px;
+  }
+
+  .pereskioideae-hero-stats > div {
+    padding: 12px 9px;
+  }
+
+  .pereskioideae-hero-stats strong {
+    font-size: 0.82rem;
+  }
+
+  .pereskioideae-hero-stats span {
+    font-size: 0.67rem;
+  }
+
+  .pereskioideae-section,
+  .pereskioideae-care {
+    margin-top: 58px;
+  }
+
+  .pereskioideae-section-heading {
+    margin-bottom: 25px;
+  }
+
+  .pereskioideae-section-heading h2 {
+    font-size: 1.8rem;
+  }
+
+  .pereskioideae-facts-grid,
+  .pereskioideae-genera-grid,
+  .pereskioideae-care-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pereskioideae-fact-card {
+    padding: 22px;
+  }
+
+  .pereskioideae-habitat {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    margin-top: 58px;
+    padding: 23px;
+    border-radius: 22px;
+  }
+
+  .pereskioideae-habitat-art {
+    min-height: 140px;
+  }
+
+  .pereskioideae-care {
+    padding: 22px 16px;
+    border-radius: 22px;
+  }
+
+  .pereskioideae-care-card {
+    padding: 20px;
+  }
+
+  .pereskioideae-bottom-cta {
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 58px;
+    padding: 23px;
+  }
+
+  .pereskioideae-cta-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 17px;
+    font-size: 2rem;
+  }
+
+  .pereskioideae-bottom-cta > div:nth-child(2) {
+    flex: 1 1 calc(100% - 80px);
+  }
+
+  .pereskioideae-cta-link {
+    width: 100%;
+  }
+
+  .pereskioideae-reference-table {
+    border-radius: 15px;
+  }
+
+  .pereskioideae-reference-table table {
+    min-width: 520px;
+  }
+
+  .pereskioideae-reference-table th,
+  .pereskioideae-reference-table td {
+    padding: 13px 14px;
+    font-size: 0.82rem;
+  }
+
+  .pereskioideae-reference-table tbody th {
+    min-width: 130px;
+  }
+}
+
+@media (max-width: 380px) {
+  .pereskioideae-page {
+    padding-right: 11px;
+    padding-left: 11px;
+  }
+
+  .pereskioideae-hero {
+    padding: 15px;
+  }
+
+  .pereskioideae-hero-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .pereskioideae-hero-stats > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .pereskioideae-hero-stats span {
+    margin-top: 0;
+    text-align: right;
+  }
+}
+
+/* =========================================
+   ACCESSIBILITY
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .pereskioideae-page *,
+  .pereskioideae-page *::before,
+  .pereskioideae-page *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
