@@ -3898,3 +3898,38 @@ border-radius: 4px;
 .home-category-emoji-wrap .home-category-arrow {
   z-index: 1;
 }
+
+
+/* Open the full cactus subfamily details page */
+.family-details-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  width: 100%;
+  margin-top: 0.65rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid #cfe7d5;
+  border-radius: 12px;
+  background: #edf8ef;
+  color: #21865a;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 750;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.family-details-button:hover {
+  transform: translateY(-2px);
+  background: #21865a;
+  color: #ffffff;
+}
+
+.family-details-button:focus-visible {
+  outline: 3px solid #8bd6a3;
+  outline-offset: 3px;
+}

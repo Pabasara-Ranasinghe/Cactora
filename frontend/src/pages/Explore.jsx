@@ -11,15 +11,16 @@ import {
   X,
   ArrowRight,
 } from 'lucide-react'
-import { Link, useSearchParams } from 'react-router-dom'
+import { Link, useNavigate, useSearchParams } from 'react-router-dom'
 import cactusSubfamilies from '../data/cactusSubfamilies.js'
 
 function Explore() {
   const [searchTerm, setSearchTerm] = useState('')
   const [expandedFamily, setExpandedFamily] = useState(null)
   const [searchParams, setSearchParams] = useSearchParams()
+  const navigate = useNavigate()
 
-  // Open a family when the page is reached from a Home page card.
+  // Expand a family when arriving from a Home page link.
   useEffect(() => {
     const familyId = searchParams.get('family')
 
@@ -31,10 +32,13 @@ function Explore() {
     }
   }, [searchParams])
 
+  // Search subfamilies and their representative genera.
   const filteredFamilies = useMemo(() => {
     const search = searchTerm.trim().toLowerCase()
 
-    if (!search) return cactusSubfamilies
+    if (!search) {
+      return cactusSubfamilies
+    }
 
     return cactusSubfamilies.filter((family) => {
       const familyMatches = [
@@ -45,45 +49,54 @@ function Explore() {
       ].some((value) => value.toLowerCase().includes(search))
 
       const genusMatches = family.genera.some((genus) =>
-        `${genus.name} ${genus.detail}`.toLowerCase().includes(search),
+        `${genus.name} ${genus.detail}`
+          .toLowerCase()
+          .includes(search),
       )
 
       return familyMatches || genusMatches
     })
   }, [searchTerm])
 
+  // Expand or collapse a family card.
   function toggleFamily(familyId) {
-    setExpandedFamily((current) => {
-      const nextFamily = current === familyId ? null : familyId
+    const nextFamily =
+      expandedFamily === familyId ? null : familyId
 
-      // Keep the URL in sync with the selected family.
-      const nextParams = new URLSearchParams(searchParams)
+    setExpandedFamily(nextFamily)
 
-      if (nextFamily) {
-        nextParams.set('family', nextFamily)
-      } else {
-        nextParams.delete('family')
-      }
+    const nextParams = new URLSearchParams(searchParams)
 
-      setSearchParams(nextParams, { replace: true })
+    if (nextFamily) {
+      nextParams.set('family', nextFamily)
+    } else {
+      nextParams.delete('family')
+    }
 
-      return nextFamily
-    })
+    setSearchParams(nextParams, { replace: true })
   }
 
+  // Clear the search input.
   function clearSearch() {
     setSearchTerm('')
   }
 
+  // Reset the Explore page.
   function resetExplore() {
     setSearchTerm('')
     setExpandedFamily(null)
     setSearchParams({}, { replace: true })
   }
 
+  // Navigate to the selected subfamily details page.
+  function openFamilyDetails(familyId) {
+    navigate(`/explore/${familyId}`)
+  }
+
   return (
     <main className="explore-page">
       <div className="explore-container">
+
         {/* Page heading */}
         <header className="explore-header family-explore-header">
           <div>
@@ -102,7 +115,10 @@ function Explore() {
             </p>
           </div>
 
-          <div className="family-header-decoration" aria-hidden="true">
+          <div
+            className="family-header-decoration"
+            aria-hidden="true"
+          >
             {cactusSubfamilies.slice(0, 3).map((family) => (
               <span key={family.id}>{family.icon}</span>
             ))}
@@ -134,7 +150,9 @@ function Explore() {
               type="search"
               placeholder="Search subfamilies or cactus genera..."
               value={searchTerm}
-              onChange={(event) => setSearchTerm(event.target.value)}
+              onChange={(event) =>
+                setSearchTerm(event.target.value)
+              }
               aria-label="Search cactus subfamilies and genera"
             />
 
@@ -157,7 +175,7 @@ function Explore() {
           <span>{filteredFamilies.length} of 6 groups</span>
         </div>
 
-        {/* Family cards */}
+        {/* Subfamily cards */}
         {filteredFamilies.length > 0 ? (
           <div className="family-grid">
             {filteredFamilies.map((family) => {
@@ -183,10 +201,16 @@ function Explore() {
                     isExpanded ? 'family-card-expanded' : ''
                   }`}
                   key={family.id}
-                  style={{ '--family-accent': family.accent }}
+                  style={{
+                    '--family-accent': family.accent,
+                  }}
                 >
+                  {/* Card icon and number */}
                   <div className="family-card-top">
-                    <div className="family-card-icon" aria-hidden="true">
+                    <div
+                      className="family-card-icon"
+                      aria-hidden="true"
+                    >
                       {family.icon}
                     </div>
 
@@ -195,6 +219,7 @@ function Explore() {
                     </span>
                   </div>
 
+                  {/* Card information */}
                   <p className="family-card-subtitle">
                     {family.subtitle}
                   </p>
@@ -212,6 +237,7 @@ function Explore() {
                     </span>
                   </div>
 
+                  {/* Button 1: Expand or collapse the card */}
                   <button
                     type="button"
                     className="family-expand-button"
@@ -231,6 +257,17 @@ function Explore() {
                     />
                   </button>
 
+                  {/* Button 2: Navigate to the full details page */}
+                  <button
+                    type="button"
+                    className="family-details-button"
+                    onClick={() => openFamilyDetails(family.id)}
+                  >
+                    Discover full details
+                    <ArrowRight size={17} />
+                  </button>
+
+                  {/* Expanded genera */}
                   {isExpanded && (
                     <div
                       className="family-subcategories"
@@ -259,6 +296,7 @@ function Explore() {
             })}
           </div>
         ) : (
+          /* No search results */
           <div className="explore-empty">
             <span>🌵</span>
             <h2>No matching cactus groups found</h2>
@@ -297,7 +335,9 @@ function Explore() {
         <section className="family-bottom-cta">
           <div>
             <p className="page-label">KEEP EXPLORING</p>
+
             <h2>Every cactus has a story.</h2>
+
             <p>
               Learn about their unique adaptations, habitats, and
               fascinating characteristics.
@@ -308,10 +348,14 @@ function Explore() {
             </Link>
           </div>
 
-          <div className="family-cta-icon" aria-hidden="true">
+          <div
+            className="family-cta-icon"
+            aria-hidden="true"
+          >
             <Sun size={34} />
           </div>
         </section>
+
       </div>
     </main>
   )
