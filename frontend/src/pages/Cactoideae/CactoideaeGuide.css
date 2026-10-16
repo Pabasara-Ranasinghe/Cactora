@@ -1,0 +1,926 @@
+
+/* ========================================
+   CACTORA — CACTOIDEAE BOTANICAL GUIDE
+   ======================================== */
+
+.cactoideae-guide {
+  --cacto-green: #21865a;
+  --cacto-dark: #183d32;
+  --cacto-muted: #6c8175;
+  --cacto-light: #edf8ef;
+  --cacto-border: #e0ebe2;
+  --cacto-white: #ffffff;
+
+  min-height: 100vh;
+  padding: 2rem 1.5rem 4rem;
+  color: var(--cacto-dark);
+  background:
+    radial-gradient(
+      circle at 5% 5%,
+      rgba(190, 232, 198, 0.18),
+      transparent 25rem
+    ),
+    #f8fbf8;
+  animation: cacto-guide-appear 0.55s ease both;
+}
+
+.cactoideae-guide *,
+.cactoideae-guide *::before,
+.cactoideae-guide *::after {
+  box-sizing: border-box;
+}
+
+.cactoideae-container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* Back navigation */
+
+.cactoideae-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 1.5rem;
+  color: var(--cacto-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 650;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.cactoideae-back:hover {
+  color: var(--cacto-green);
+  transform: translateX(-3px);
+}
+
+/* Hero */
+
+.cactoideae-hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  align-items: center;
+  gap: 2.5rem;
+  min-height: 420px;
+  padding: clamp(2rem, 5vw, 4rem);
+  overflow: hidden;
+  border: 1px solid rgba(207, 231, 213, 0.9);
+  border-radius: 30px;
+  background:
+    radial-gradient(
+      circle at 90% 15%,
+      rgba(175, 222, 181, 0.38),
+      transparent 17rem
+    ),
+    linear-gradient(135deg, #ffffff 5%, #eff9f0 100%);
+  box-shadow: 0 18px 55px rgba(35, 88, 56, 0.07);
+}
+
+.cactoideae-hero-content {
+  position: relative;
+  z-index: 2;
+  min-width: 0;
+}
+
+.cactoideae-eyebrow,
+.cactoideae-section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--cacto-green);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1.6;
+}
+
+.cactoideae-pill {
+  display: table;
+  margin-top: 1.35rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #d7ead9;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #3e7753;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.cactoideae-hero h1 {
+  max-width: 650px;
+  margin: 1.1rem 0;
+  color: var(--cacto-dark);
+  font-size: clamp(2.1rem, 4vw, 3.65rem);
+  font-weight: 850;
+  line-height: 1.12;
+  letter-spacing: -0.055em;
+}
+
+.cactoideae-hero h1 span {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--cacto-green);
+}
+
+.cactoideae-hero-description {
+  max-width: 530px;
+  margin: 0;
+  color: var(--cacto-muted);
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+.cactoideae-primary,
+.cactoideae-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  min-height: 48px;
+  padding: 0.8rem 1.15rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 750;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.cactoideae-primary {
+  margin-top: 1.5rem;
+  background: var(--cacto-green);
+  color: white;
+  box-shadow: 0 7px 18px rgba(33, 134, 90, 0.17);
+}
+
+.cactoideae-primary:hover {
+  transform: translateY(-3px);
+  background: #176c46;
+  box-shadow: 0 12px 24px rgba(33, 134, 90, 0.23);
+}
+
+.cactoideae-hero-note {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: 1.5rem;
+  color: #66816e;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.cactoideae-hero-note svg {
+  flex-shrink: 0;
+  color: var(--cacto-green);
+}
+
+/* Hero artwork */
+
+.cactoideae-hero-art {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 310px;
+  border: 1px solid rgba(203, 228, 207, 0.7);
+  border-radius: 26px;
+  background:
+    radial-gradient(
+      ellipse at 50% 85%,
+      rgba(119, 184, 124, 0.25),
+      transparent 55%
+    ),
+    rgba(255, 255, 255, 0.55);
+}
+
+.cactoideae-art-cactus {
+  z-index: 1;
+  font-size: clamp(8rem, 15vw, 12.5rem);
+  line-height: 1;
+  filter: drop-shadow(0 16px 13px rgba(38, 91, 54, 0.13));
+  animation: cacto-float 4s ease-in-out infinite;
+}
+
+.cactoideae-art-flower,
+.cactoideae-art-leaf {
+  position: absolute;
+  font-size: 3.2rem;
+}
+
+.cactoideae-art-flower {
+  top: 16%;
+  right: 14%;
+  transform: rotate(12deg);
+}
+
+.cactoideae-art-leaf {
+  bottom: 23%;
+  left: 12%;
+  transform: rotate(-22deg);
+}
+
+.cactoideae-star {
+  position: absolute;
+  color: #a5d6a7;
+  font-size: 2rem;
+}
+
+.cactoideae-star.star-one {
+  top: 15%;
+  left: 15%;
+}
+
+.cactoideae-star.star-two {
+  right: 17%;
+  bottom: 29%;
+  font-size: 1.5rem;
+}
+
+.cactoideae-art-caption {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(220, 234, 221, 0.9);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 6px 20px rgba(31, 79, 46, 0.06);
+}
+
+.cactoideae-art-caption > span {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 12px;
+  background: #fff4d8;
+  font-size: 1.3rem;
+}
+
+.cactoideae-art-caption strong,
+.cactoideae-art-caption small {
+  display: block;
+}
+
+.cactoideae-art-caption strong {
+  font-size: 0.87rem;
+}
+
+.cactoideae-art-caption small {
+  margin-top: 0.25rem;
+  color: var(--cacto-muted);
+  font-size: 0.73rem;
+  line-height: 1.5;
+}
+
+/* General sections */
+
+.cactoideae-section {
+  margin-top: 5rem;
+  scroll-margin-top: 2rem;
+}
+
+.cactoideae-section-heading {
+  max-width: 720px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.cactoideae-section-heading .cactoideae-section-label {
+  justify-content: center;
+}
+
+.cactoideae-section-heading h2,
+.cactoideae-habitat-banner h2,
+.cactoideae-summary h2 {
+  margin: 0.7rem 0;
+  color: var(--cacto-dark);
+  font-size: clamp(1.7rem, 3vw, 2.45rem);
+  font-weight: 820;
+  line-height: 1.22;
+  letter-spacing: -0.035em;
+}
+
+.cactoideae-section-heading > p {
+  margin: 0;
+  color: var(--cacto-muted);
+  font-size: 0.96rem;
+  line-height: 1.8;
+}
+
+/* Overview cards */
+
+.cactoideae-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.cactoideae-overview-card {
+  min-width: 0;
+  padding: 1.5rem;
+  border: 1px solid var(--cacto-border);
+  border-radius: 20px;
+  background: var(--cacto-white);
+  box-shadow: 0 5px 20px rgba(35, 88, 56, 0.025);
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.cactoideae-overview-card:hover {
+  transform: translateY(-4px);
+  border-color: #c4e1c9;
+  box-shadow: 0 12px 28px rgba(35, 88, 56, 0.07);
+}
+
+.cactoideae-overview-icon {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1.1rem;
+  place-items: center;
+  border-radius: 14px;
+  background: var(--cacto-light);
+  font-size: 1.55rem;
+}
+
+.cactoideae-overview-label {
+  color: var(--cacto-muted);
+  font-size: 0.8rem;
+  font-weight: 650;
+}
+
+.cactoideae-overview-card h3 {
+  margin: 0.45rem 0;
+  color: var(--cacto-dark);
+  font-size: 1.18rem;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.cactoideae-overview-card p {
+  margin: 0;
+  color: var(--cacto-muted);
+  font-size: 0.84rem;
+  line-height: 1.75;
+}
+
+/* Fascinating facts */
+
+.cactoideae-facts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.1rem;
+}
+
+.cactoideae-fact-card {
+  min-width: 0;
+  padding: 1.6rem;
+  border: 1px solid var(--cacto-border);
+  border-radius: 22px;
+  background: white;
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.cactoideae-fact-card:hover {
+  transform: translateY(-4px);
+  border-color: #c5e3cb;
+  box-shadow: 0 12px 28px rgba(35, 88, 56, 0.06);
+}
+
+.cactoideae-fact-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.1rem;
+}
+
+.cactoideae-fact-icon {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border-radius: 15px;
+  background: var(--cacto-light);
+  color: var(--cacto-green);
+}
+
+.cactoideae-fact-number {
+  color: #d8e8da;
+  font-size: 2rem;
+  font-weight: 850;
+  letter-spacing: -0.05em;
+}
+
+.cactoideae-fact-highlight {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 8px;
+  background: #f0f8f0;
+  color: #3e7753;
+  font-size: 0.72rem;
+  font-weight: 750;
+}
+
+.cactoideae-fact-card h3 {
+  margin: 0.2rem 0 0.65rem;
+  color: var(--cacto-dark);
+  font-size: 1.17rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.cactoideae-fact-card > p {
+  margin: 0;
+  color: var(--cacto-muted);
+  font-size: 0.88rem;
+  line-height: 1.9;
+}
+
+/* Habitat banner */
+
+.cactoideae-habitat-banner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.85fr);
+  align-items: center;
+  gap: 2rem;
+  margin-top: 5rem;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border: 1px solid #d6ead9;
+  border-radius: 26px;
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(185, 226, 189, 0.35),
+      transparent 18rem
+    ),
+    linear-gradient(135deg, #f0f9f1, #ffffff);
+}
+
+.cactoideae-habitat-banner h2 {
+  max-width: 520px;
+}
+
+.cactoideae-habitat-banner > div:first-child > p {
+  margin: 0;
+  color: var(--cacto-muted);
+  font-size: 0.92rem;
+  line-height: 1.9;
+}
+
+.cactoideae-habitat-emojis {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.cactoideae-habitat-emojis > div {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  align-items: center;
+  column-gap: 0.8rem;
+  padding: 1rem;
+  border: 1px solid #e0ece1;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.cactoideae-habitat-emojis > div > span {
+  grid-row: span 2;
+  display: grid;
+  width: 52px;
+  height: 52px;
+  place-items: center;
+  border-radius: 13px;
+  background: #edf8ef;
+  font-size: 1.8rem;
+}
+
+.cactoideae-habitat-emojis strong {
+  font-size: 0.91rem;
+}
+
+.cactoideae-habitat-emojis small {
+  margin-top: 0.25rem;
+  color: var(--cacto-muted);
+  font-size: 0.76rem;
+  line-height: 1.6;
+}
+
+/* Genus cards */
+
+.cactoideae-genera-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.1rem;
+}
+
+.cactoideae-genus-group {
+  min-width: 0;
+  padding: 1.5rem;
+  border: 1px solid var(--cacto-border);
+  border-radius: 22px;
+  background: white;
+}
+
+.cactoideae-genus-group-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding-bottom: 1.15rem;
+  border-bottom: 1px solid #edf2ed;
+}
+
+.cactoideae-genus-group-heading > span {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 14px;
+  background: var(--cacto-light);
+  font-size: 1.5rem;
+}
+
+.cactoideae-genus-group-heading h3 {
+  margin: 0.1rem 0 0.3rem;
+  font-size: 1.12rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.cactoideae-genus-group-heading p {
+  margin: 0;
+  color: var(--cacto-muted);
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+.cactoideae-genus-group ul {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cactoideae-genus-group li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  padding: 0.95rem 0;
+}
+
+.cactoideae-genus-group li + li {
+  border-top: 1px solid #f0f4f0;
+}
+
+.cactoideae-genus-dot {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 9px;
+  background: #f0f8f0;
+  color: var(--cacto-green);
+}
+
+.cactoideae-genus-group li > div {
+  min-width: 0;
+}
+
+.cactoideae-genus-group li strong {
+  display: block;
+  color: var(--cacto-dark);
+  font-size: 0.87rem;
+  font-weight: 750;
+}
+
+.cactoideae-genus-group li p {
+  margin: 0.25rem 0 0;
+  color: var(--cacto-muted);
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+/* Comparison table */
+
+.cactoideae-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--cacto-border);
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 6px 24px rgba(35, 88, 56, 0.035);
+}
+
+.cactoideae-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.cactoideae-table th,
+.cactoideae-table td {
+  padding: 1.1rem 1.25rem;
+  border-bottom: 1px solid #eaf0ea;
+  font-size: 0.85rem;
+  line-height: 1.75;
+  vertical-align: top;
+}
+
+.cactoideae-table thead th {
+  background: #edf8ef;
+  color: #285f40;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.cactoideae-table tbody th {
+  min-width: 155px;
+  color: var(--cacto-dark);
+  font-weight: 750;
+}
+
+.cactoideae-table td {
+  min-width: 190px;
+  color: var(--cacto-muted);
+}
+
+.cactoideae-table tbody tr:last-child th,
+.cactoideae-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.cactoideae-table tbody tr:hover {
+  background: #fbfdfb;
+}
+
+.cactoideae-table-note {
+  margin: 1rem 0 0;
+  color: var(--cacto-muted);
+  font-size: 0.79rem;
+  line-height: 1.8;
+}
+
+/* Summary */
+
+.cactoideae-summary {
+  display: grid;
+  grid-template-columns: 100px minmax(0, 1fr);
+  align-items: start;
+  gap: 1.5rem;
+  margin-top: 5rem;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border: 1px solid #cfe6d3;
+  border-radius: 26px;
+  background:
+    radial-gradient(
+      circle at 0% 100%,
+      rgba(189, 229, 193, 0.35),
+      transparent 20rem
+    ),
+    white;
+}
+
+.cactoideae-summary-icon {
+  display: grid;
+  width: 100px;
+  height: 100px;
+  place-items: center;
+  border-radius: 24px;
+  background: #edf8ef;
+  font-size: 4rem;
+}
+
+.cactoideae-summary h2 {
+  margin-top: 0.65rem;
+}
+
+.cactoideae-summary p {
+  max-width: 780px;
+  margin: 0;
+  color: var(--cacto-muted);
+  font-size: 0.92rem;
+  line-height: 1.95;
+}
+
+.cactoideae-secondary {
+  margin-top: 1.35rem;
+  border: 1px solid #cfe6d3;
+  background: #f0f8f0;
+  color: var(--cacto-green);
+}
+
+.cactoideae-secondary:hover {
+  transform: translateY(-2px);
+  background: var(--cacto-green);
+  color: white;
+}
+
+/* Footer note */
+
+.cactoideae-footer-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  max-width: 900px;
+  margin: 2rem auto 0;
+  padding: 1rem 1.2rem;
+  border: 1px solid #e4ede4;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.7);
+  color: var(--cacto-muted);
+}
+
+.cactoideae-footer-note svg {
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+  color: var(--cacto-green);
+}
+
+.cactoideae-footer-note p {
+  margin: 0;
+  font-size: 0.79rem;
+  line-height: 1.8;
+}
+
+/* Accessibility */
+
+.cactoideae-guide a:focus-visible {
+  outline: 3px solid #8bd6a3;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cactoideae-guide *,
+  .cactoideae-guide *::before,
+  .cactoideae-guide *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Responsive layouts */
+
+@media (max-width: 900px) {
+  .cactoideae-hero {
+    grid-template-columns: minmax(0, 1fr) minmax(230px, 0.75fr);
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+
+  .cactoideae-hero-art {
+    min-height: 270px;
+  }
+
+  .cactoideae-overview-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cactoideae-habitat-banner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .cactoideae-habitat-emojis {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .cactoideae-guide {
+    padding: 1.2rem 1rem 3rem;
+  }
+
+  .cactoideae-hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.75rem;
+    padding: 1.5rem;
+    border-radius: 22px;
+  }
+
+  .cactoideae-hero h1 {
+    font-size: clamp(2rem, 9vw, 2.8rem);
+  }
+
+  .cactoideae-hero-description {
+    font-size: 0.93rem;
+  }
+
+  .cactoideae-hero-art {
+    min-height: 250px;
+  }
+
+  .cactoideae-art-cactus {
+    font-size: 9rem;
+  }
+
+  .cactoideae-section,
+  .cactoideae-habitat-banner,
+  .cactoideae-summary {
+    margin-top: 3.5rem;
+  }
+
+  .cactoideae-section-heading {
+    margin-bottom: 1.5rem;
+  }
+
+  .cactoideae-overview-grid,
+  .cactoideae-facts-grid,
+  .cactoideae-genera-grid,
+  .cactoideae-habitat-emojis {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .cactoideae-overview-card,
+  .cactoideae-fact-card,
+  .cactoideae-genus-group {
+    padding: 1.25rem;
+  }
+
+  .cactoideae-summary {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    border-radius: 22px;
+  }
+
+  .cactoideae-summary-icon {
+    width: 76px;
+    height: 76px;
+    border-radius: 20px;
+    font-size: 3rem;
+  }
+
+  .cactoideae-table th,
+  .cactoideae-table td {
+    padding: 0.9rem;
+    font-size: 0.79rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .cactoideae-guide {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+
+  .cactoideae-hero {
+    padding: 1.2rem;
+  }
+
+  .cactoideae-hero-note {
+    align-items: flex-start;
+  }
+
+  .cactoideae-art-caption {
+    right: 0.6rem;
+    left: 0.6rem;
+  }
+
+  .cactoideae-habitat-banner {
+    padding: 1.2rem;
+  }
+}
+
+/* Animations */
+
+@keyframes cacto-guide-appear {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cacto-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
