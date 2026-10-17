@@ -2,7 +2,41 @@
 import { Link, useParams } from 'react-router-dom'
 import { ArrowLeft, Leaf, Sun, Droplets, Sprout, Thermometer, Flower2 } from 'lucide-react'
 import cactusSpecies from '../data/cactusSpecies'
+import useCactusImage from '../hooks/useCactusImage'
 import './CactusSpeciesDetails.css'
+
+
+function CactusDetailImage({ cactus }) {
+  const { imageUrl, loading } = useCactusImage(
+    cactus.scientificName,
+    cactus.imageUrl
+  )
+
+  return (
+    <>
+      {imageUrl ? (
+        <img
+          src={imageUrl}
+          alt={cactus.imageAlt || cactus.commonName}
+          onError={(event) => {
+            event.currentTarget.style.display = 'none'
+            event.currentTarget.nextElementSibling.style.display = 'flex'
+          }}
+        />
+      ) : null}
+
+      <div
+        className="cactus-detail-photo-fallback"
+        style={{ display: imageUrl ? 'none' : 'flex' }}
+      >
+        <Leaf size={64} />
+        <span>
+          {loading ? 'Finding a cactus photo...' : 'Photo unavailable'}
+        </span>
+      </div>
+    </>
+  )
+}
 
 function CactusSpeciesDetails() {
   const { id } = useParams()
@@ -34,24 +68,7 @@ function CactusSpeciesDetails() {
 
         <section className="cactus-detail-hero">
           <div className="cactus-detail-photo">
-            {cactus.imageUrl ? (
-              <img
-                src={cactus.imageUrl}
-                alt={cactus.imageAlt || cactus.commonName}
-                onError={(event) => {
-                  event.currentTarget.style.display = 'none'
-                  event.currentTarget.nextElementSibling.style.display = 'flex'
-                }}
-              />
-            ) : null}
-
-            <div
-              className="cactus-detail-photo-fallback"
-              style={{ display: cactus.imageUrl ? 'none' : 'flex' }}
-            >
-              <Leaf size={64} />
-              <span>Image coming soon</span>
-            </div>
+            <CactusDetailImage cactus={cactus} />
           </div>
 
           <div className="cactus-detail-intro">
