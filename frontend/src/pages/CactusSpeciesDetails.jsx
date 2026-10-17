@@ -1,6 +1,6 @@
 
 import { Link, useParams } from 'react-router-dom'
-import { ArrowLeft, Leaf, Sun, Droplets, Sprout, Thermometer, Flower2 } from 'lucide-react'
+import { ArrowLeft, Leaf, Sun, Droplets, Sprout, Thermometer, Flower2, Volume2 } from 'lucide-react'
 import cactusSpecies from '../data/cactusSpecies'
 import useCactusImage from '../hooks/useCactusImage'
 import './CactusSpeciesDetails.css'
@@ -41,6 +41,22 @@ function CactusDetailImage({ cactus }) {
 function CactusSpeciesDetails() {
   const { id } = useParams()
 
+  function speakScientificName(name) {
+    if (!('speechSynthesis' in window)) {
+        alert('Speech playback is not supported in this browser.')
+        return
+    }
+
+    window.speechSynthesis.cancel()
+
+    const utterance = new SpeechSynthesisUtterance(name)
+    utterance.lang = 'en-US'
+    utterance.rate = 0.8
+    utterance.pitch = 1
+
+    window.speechSynthesis.speak(utterance)
+    }
+
   const cactus = cactusSpecies.find((species) => species.id === id)
 
   if (!cactus) {
@@ -77,9 +93,23 @@ function CactusSpeciesDetails() {
             </span>
 
             <h1>{cactus.commonName}</h1>
-            <p className="cactus-detail-scientific">
-              {cactus.scientificName}
-            </p>
+            <div className="cactus-scientific-pronunciation">
+                <p className="cactus-detail-scientific">
+                    {cactus.scientificName}
+                </p>
+
+                <button
+                    type="button"
+                    className="cactus-pronunciation-button"
+                    onClick={() => speakScientificName(cactus.scientificName)}
+                    aria-label={`Hear the pronunciation of ${cactus.scientificName}`}
+                    title="Listen to pronunciation"
+                >
+                    <Volume2 size={20} />
+                    <span>Listen</span>
+                </button>
+                </div>
+
 
             <p className="cactus-detail-description">
               {cactus.growthHabitAndSize}
@@ -95,7 +125,7 @@ function CactusSpeciesDetails() {
         <section className="cactus-detail-section">
           <h2>Discover This Cactus</h2>
           <div className="cactus-detail-info-card">
-            <Flower2 size={24} />
+            <Flower2 size={24} color="#D94F83" />
             <div>
               <h3>Special Characteristics</h3>
               <p>{cactus.specialTraits}</p>
@@ -108,31 +138,31 @@ function CactusSpeciesDetails() {
 
           <div className="cactus-detail-care-grid">
             <article className="cactus-detail-care-card">
-              <Sun size={25} />
+              <Sun size={25} color="#E9A11B" />
               <h3>Sunlight</h3>
               <p>{cactus.care.sunlight}</p>
             </article>
 
             <article className="cactus-detail-care-card">
-              <Droplets size={25} />
+              <Droplets size={25} color="#2996DC" />
               <h3>Watering</h3>
               <p>{cactus.care.watering}</p>
             </article>
 
             <article className="cactus-detail-care-card">
-              <Sprout size={25} />
+              <Sprout size={25} color="#E99673" />
               <h3>Soil & Potting</h3>
               <p>{cactus.care.soilAndPotting}</p>
             </article>
 
             <article className="cactus-detail-care-card">
-              <Thermometer size={25} />
+              <Thermometer size={25} color="#8864D8" />
               <h3>Temperature</h3>
               <p>{cactus.care.temperature}</p>
             </article>
 
             <article className="cactus-detail-care-card">
-              <Leaf size={25} />
+              <Leaf size={25} color="#D94F83" />
               <h3>Fertilizer</h3>
               <p>{cactus.care.fertilizer}</p>
             </article>

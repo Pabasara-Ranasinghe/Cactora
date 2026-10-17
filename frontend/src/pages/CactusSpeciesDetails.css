@@ -239,3 +239,31 @@
     padding: 20px;
   }
 }
+
+
+.cactus-pronunciation-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 8px 13px;
+  border: 1px solid #79C9A5;
+  border-radius: 24px;
+  background: #E0F5E9;
+  color: #237A52;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.cactus-pronunciation-button:hover {
+  background: #C5EBD5;
+  color: #185C3D;
+  transform: translateY(-2px);
+}
+
+.cactus-pronunciation-button:focus-visible {
+  outline: 3px solid #79C9A5;
+  outline-offset: 3px;
+}
