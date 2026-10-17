@@ -13,6 +13,8 @@ import {
   Sparkles,
   Sun,
 } from 'lucide-react'
+
+import CactusSpeciesGrid from './CactusSpeciesGrid'
 import './CactoideaeGuide.css'
 
 const overviewFacts = [
@@ -375,6 +377,8 @@ function CactoideaeGuide() {
             ))}
           </div>
         </section>
+
+        <CactusSpeciesGrid />
 
         <section className="cactoideae-section">
           <div className="cactoideae-section-heading">
