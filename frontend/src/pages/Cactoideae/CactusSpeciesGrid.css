@@ -1,0 +1,233 @@
+
+.cactus-species-section {
+  width: 100%;
+  padding: 48px 0;
+  color: #24352d;
+}
+
+.cactus-species-heading {
+  max-width: 760px;
+  margin: 0 auto 36px;
+  text-align: center;
+}
+
+.cactus-species-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  color: #39845a;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.cactus-species-heading h2 {
+  margin: 0 0 16px;
+  color: #244a36;
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+  line-height: 1.2;
+}
+
+.cactus-species-heading > p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #66766b;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.cactus-species-count {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 15px;
+  border: 1px solid #d8e9dc;
+  border-radius: 30px;
+  background: #f0f8f1;
+  color: #36744b;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.cactus-species-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.cactus-species-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #e4ebe4;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 5px 20px rgb(35 65 43 / 6%);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.cactus-species-card:hover {
+  transform: translateY(-6px);
+  border-color: #b7d9bd;
+  box-shadow: 0 14px 32px rgb(35 65 43 / 12%);
+}
+
+.cactus-species-image-link {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background: #edf4eb;
+  text-decoration: none;
+}
+
+.cactus-species-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.cactus-species-card:hover .cactus-species-image {
+  transform: scale(1.06);
+}
+
+.cactus-species-image-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 6px 10px;
+  border: 1px solid rgb(255 255 255 / 55%);
+  border-radius: 30px;
+  background: rgb(255 255 255 / 90%);
+  color: #356747;
+  font-size: 0.7rem;
+  font-weight: 800;
+  backdrop-filter: blur(8px);
+}
+
+.cactus-species-image-fallback {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  color: #4d805c;
+  text-align: center;
+}
+
+.cactus-species-image-fallback span {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.cactus-species-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.cactus-species-card-content h3 {
+  margin: 0 0 7px;
+  color: #294d37;
+  font-size: 1.08rem;
+  line-height: 1.4;
+}
+
+.cactus-species-scientific {
+  margin: 0 0 14px;
+  color: #7b8a7e;
+  font-size: 0.82rem;
+  font-style: italic;
+  overflow-wrap: anywhere;
+}
+
+.cactus-species-description {
+  display: -webkit-box;
+  overflow: hidden;
+  min-height: 4.5em;
+  margin: 0 0 20px;
+  color: #647168;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.cactus-species-explore {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: auto;
+  color: #378052;
+  font-size: 0.88rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: gap 0.2s ease;
+}
+
+.cactus-species-explore:hover {
+  gap: 13px;
+  color: #225e37;
+}
+
+.cactus-species-explore:focus-visible,
+.cactus-species-image-link:focus-visible {
+  outline: 3px solid #65b982;
+  outline-offset: 4px;
+}
+
+@media (max-width: 1100px) {
+  .cactus-species-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 760px) {
+  .cactus-species-section {
+    padding: 32px 0;
+  }
+
+  .cactus-species-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .cactus-species-card-content {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 440px) {
+  .cactus-species-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cactus-species-card-content {
+    padding: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cactus-species-card,
+  .cactus-species-image,
+  .cactus-species-explore {
+    transition: none;
+  }
+
+  .cactus-species-card:hover {
+    transform: none;
+  }
+
+  .cactus-species-card:hover .cactus-species-image {
+    transform: none;
+  }
+}
