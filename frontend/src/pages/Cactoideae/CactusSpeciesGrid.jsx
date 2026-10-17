@@ -1,0 +1,93 @@
+
+import { Link } from 'react-router-dom'
+import { ArrowRight, Leaf } from 'lucide-react'
+import cactusSpecies from '../../data/cactusSpecies'
+import './CactusSpeciesGrid.css'
+
+function CactusSpeciesGrid() {
+  const speciesList = cactusSpecies.filter(
+    (species) => species.subfamily === 'Cactoideae'
+  )
+
+  return (
+    <section className="cactus-species-section">
+      <div className="cactus-species-heading">
+        <span className="cactus-species-eyebrow">
+          <Leaf size={16} />
+          EXPLORE THE COLLECTION
+        </span>
+
+        <h2>Cacti Belonging to This Subfamily</h2>
+
+        <p>
+          Discover the fascinating diversity of Cactoideae, from towering
+          desert giants to small flowering and trailing cacti.
+        </p>
+
+        <div className="cactus-species-count">
+          {speciesList.length} species in the collection
+        </div>
+      </div>
+
+      <div className="cactus-species-grid">
+        {speciesList.map((species) => (
+          <article className="cactus-species-card" key={species.id}>
+            <Link
+              to={`/cacti/${species.id}`}
+              className="cactus-species-image-link"
+              aria-label={`Explore ${species.commonName}`}
+            >
+              {species.imageUrl ? (
+                <img
+                  className="cactus-species-image"
+                  src={species.imageUrl}
+                  alt={species.imageAlt || species.commonName}
+                  loading="lazy"
+                  onError={(event) => {
+                    event.currentTarget.style.display = 'none'
+                    event.currentTarget.nextElementSibling.style.display = 'flex'
+                  }}
+                />
+              ) : null}
+
+              <div
+                className="cactus-species-image-fallback"
+                style={{ display: species.imageUrl ? 'none' : 'flex' }}
+                aria-label="Image unavailable"
+              >
+                <Leaf size={42} />
+                <span>Cactus image coming soon</span>
+              </div>
+
+              <span className="cactus-species-image-badge">
+                Cactoideae
+              </span>
+            </Link>
+
+            <div className="cactus-species-card-content">
+              <h3>{species.commonName}</h3>
+
+              <p className="cactus-species-scientific">
+                {species.scientificName}
+              </p>
+
+              <p className="cactus-species-description">
+                {species.growthHabitAndSize}
+              </p>
+
+              <Link
+                to={`/cacti/${species.id}`}
+                className="cactus-species-explore"
+              >
+                Explore species
+                <ArrowRight size={17} />
+              </Link>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+export default CactusSpeciesGrid
