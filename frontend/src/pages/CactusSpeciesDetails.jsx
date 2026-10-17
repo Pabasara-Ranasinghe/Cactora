@@ -169,11 +169,22 @@ function CactusSpeciesDetails() {
           </div>
         </section>
 
-        <div className="cactus-detail-bottom">
-          <Leaf size={20} />
-          <p>Keep growing your cactus knowledge with Cactora.</p>
-          <Link to="/explore">Explore more cacti <ArrowLeft size={16} /></Link>
-        </div>
+        <div className="cactus-detail-cta">
+            <h2>Keep growing your cactus knowledge with Cactora.</h2>
+
+            <div className="cactus-detail-cta-buttons">
+                <Link to="/explore" className="cactus-cta-button cactus-cta-secondary">
+                Explore more cacti
+                </Link>
+
+                <Link
+                to="/cactoideae"
+                className="cactus-cta-button cactus-cta-primary"
+                >
+                Explore the 50 Cactoideae cacti
+                </Link>
+            </div>
+            </div>
       </div>
     </main>
   )
