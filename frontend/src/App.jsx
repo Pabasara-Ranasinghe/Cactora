@@ -10,6 +10,7 @@ import About from './pages/About.jsx'
 import AI from './pages/AI.jsx'
 import Login from './pages/Login.jsx'
 import Register from './pages/Register.jsx'
+import CactusSpeciesDetails from './pages/CactusSpeciesDetails.jsx'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/explore" element={<Explore />} />
           <Route path="/explore/:id" element={<CactusDetails />} />
+          <Route path="/cacti/:id" element={<CactusSpeciesDetails />} />
           <Route path="/about" element={<About />} />
           <Route path="/ai" element={<AI />} />
           <Route path="/login" element={<Login />} />
