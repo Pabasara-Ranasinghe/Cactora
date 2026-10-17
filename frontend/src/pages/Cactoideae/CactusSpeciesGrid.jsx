@@ -3,6 +3,42 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, Leaf } from 'lucide-react'
 import cactusSpecies from '../../data/cactusSpecies'
 import './CactusSpeciesGrid.css'
+import useCactusImage from '../../hooks/useCactusImage'
+
+
+function CactusSpeciesImage({ species }) {
+  const { imageUrl, loading } = useCactusImage(
+    species.scientificName,
+    species.imageUrl
+  )
+
+  return (
+    <>
+      {imageUrl ? (
+        <img
+          className="cactus-species-image"
+          src={imageUrl}
+          alt={species.imageAlt || species.commonName}
+          loading="lazy"
+          onError={(event) => {
+            event.currentTarget.style.display = 'none'
+            event.currentTarget.nextElementSibling.style.display = 'flex'
+          }}
+        />
+      ) : null}
+
+      <div
+        className="cactus-species-image-fallback"
+        style={{
+          display: imageUrl ? 'none' : 'flex',
+        }}
+      >
+        <Leaf size={42} />
+        <span>{loading ? 'Finding a cactus photo...' : 'Photo unavailable'}</span>
+      </div>
+    </>
+  )
+}
 
 function CactusSpeciesGrid() {
   const speciesList = cactusSpecies.filter(
@@ -37,27 +73,7 @@ function CactusSpeciesGrid() {
               className="cactus-species-image-link"
               aria-label={`Explore ${species.commonName}`}
             >
-              {species.imageUrl ? (
-                <img
-                  className="cactus-species-image"
-                  src={species.imageUrl}
-                  alt={species.imageAlt || species.commonName}
-                  loading="lazy"
-                  onError={(event) => {
-                    event.currentTarget.style.display = 'none'
-                    event.currentTarget.nextElementSibling.style.display = 'flex'
-                  }}
-                />
-              ) : null}
-
-              <div
-                className="cactus-species-image-fallback"
-                style={{ display: species.imageUrl ? 'none' : 'flex' }}
-                aria-label="Image unavailable"
-              >
-                <Leaf size={42} />
-                <span>Cactus image coming soon</span>
-              </div>
+              <CactusSpeciesImage species={species} />
 
               <span className="cactus-species-image-badge">
                 Cactoideae
