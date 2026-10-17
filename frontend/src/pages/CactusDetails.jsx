@@ -14,6 +14,7 @@ import CactoideaeGuide from './Cactoideae/CactoideaeGuide.jsx'
 import OpuntioideaeGuide from './Opuntioideae/OpuntioideaeGuide.jsx'
 import PereskioideaeGuide from './Pereskioideae/PereskioideaeGuide.jsx'
 import LeuenbergerioideaeGuide from './Leuenbergerioideae/LeuenbergerioideaeGuide.jsx'
+import MaihuenioideaeGuide from './Maihuenioideae/MaihuenioideaeGuide.jsx'
 import './CactusDetails.css'
 
 function CactusDetails() {
@@ -73,6 +74,10 @@ function CactusDetails() {
 
   if (id === 'leuenbergerioideae') {
     return <LeuenbergerioideaeGuide />
+  }
+
+  if (id === 'maihu enioideae'.replace(' ', '')) {
+    return <MaihuenioideaeGuide />
   }
 
   // Display the standard details page for the other subfamilies.
