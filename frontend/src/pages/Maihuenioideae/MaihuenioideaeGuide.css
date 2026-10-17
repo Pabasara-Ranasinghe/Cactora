@@ -1,0 +1,1350 @@
+
+/* =========================================
+   MAIHUENIOIDEAE BOTANICAL GUIDE
+   ========================================= */
+
+.maihu-guide {
+  --maihu-green-950: #12382b;
+  --maihu-green-900: #174735;
+  --maihu-green-800: #205b42;
+  --maihu-green-700: #2d7653;
+  --maihu-green-600: #419568;
+  --maihu-green-500: #65ad7d;
+  --maihu-green-200: #cce7d2;
+  --maihu-green-100: #e5f3e8;
+  --maihu-green-50: #f3f9f3;
+  --maihu-cream: #fbfaf5;
+  --maihu-white: #ffffff;
+  --maihu-text: #263b31;
+  --maihu-muted: #6b7d72;
+  --maihu-border: #e1eae0;
+  --maihu-blue-50: #eff6f8;
+  --maihu-blue-100: #dcebf0;
+
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background: var(--maihu-white);
+  color: var(--maihu-text);
+  font-family: inherit;
+}
+
+.maihu-guide *,
+.maihu-guide *::before,
+.maihu-guide *::after {
+  box-sizing: border-box;
+}
+
+.maihu-guide a {
+  text-decoration: none;
+}
+
+.maihu-guide p {
+  line-height: 1.8;
+}
+
+.maihu-guide h1,
+.maihu-guide h2,
+.maihu-guide h3,
+.maihu-guide p {
+  margin-top: 0;
+}
+
+.maihu-guide h1,
+.maihu-guide h2,
+.maihu-guide h3 {
+  color: var(--maihu-green-950);
+  letter-spacing: -0.035em;
+}
+
+.maihu-guide section {
+  position: relative;
+}
+
+/* =========================================
+   SHARED ELEMENTS
+   ========================================= */
+
+.maihu-eyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--maihu-green-700);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  line-height: 1.6;
+}
+
+.maihu-section-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 17px;
+  max-width: 800px;
+  margin: 0 auto 38px;
+}
+
+.maihu-section-icon {
+  display: grid;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border: 1px solid var(--maihu-green-200);
+  border-radius: 16px;
+  background: var(--maihu-green-50);
+  color: var(--maihu-green-700);
+}
+
+.maihu-section-heading h2 {
+  margin-bottom: 10px;
+  font-size: clamp(1.65rem, 3vw, 2.45rem);
+  line-height: 1.2;
+}
+
+.maihu-section-heading p {
+  max-width: 620px;
+  margin-bottom: 0;
+  color: var(--maihu-muted);
+  font-size: 0.98rem;
+}
+
+.maihu-guide a:focus-visible {
+  outline: 3px solid var(--maihu-green-500);
+  outline-offset: 5px;
+}
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.maihu-hero {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 30px;
+  min-height: 590px;
+  padding: 64px clamp(24px, 7vw, 100px);
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 83% 17%,
+      rgba(208, 235, 216, 0.75),
+      transparent 31%
+    ),
+    linear-gradient(130deg, #f7fbf5 0%, #eff7ef 48%, #e4f0e7 100%);
+}
+
+.maihu-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 620px;
+  animation: maihuFadeUp 0.7s ease both;
+}
+
+.maihu-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 42px;
+  color: var(--maihu-green-800);
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition:
+    gap 0.2s ease,
+    color 0.2s ease;
+}
+
+.maihu-back-link:hover {
+  gap: 13px;
+  color: var(--maihu-green-600);
+}
+
+.maihu-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  padding: 9px 13px;
+  border: 1px solid #d3e7d5;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--maihu-green-800);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.maihu-hero h1 {
+  max-width: 610px;
+  margin-bottom: 15px;
+  font-size: clamp(2.8rem, 5.5vw, 5.1rem);
+  font-weight: 800;
+  line-height: 1.04;
+}
+
+.maihu-hero h1 span,
+.maihu-intro-copy h2 span,
+.maihu-growth-heading h2 span,
+.maihu-summary-content h2 span {
+  display: block;
+  color: var(--maihu-green-700);
+}
+
+.maihu-hero-subtitle {
+  margin-bottom: 20px;
+  color: #5d7868;
+  font-size: clamp(1rem, 2vw, 1.28rem);
+  font-weight: 600;
+}
+
+.maihu-hero-description {
+  max-width: 560px;
+  margin-bottom: 25px;
+  color: #5d7064;
+  font-size: 0.98rem;
+}
+
+.maihu-hero-tags,
+.maihu-summary-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.maihu-hero-tags span,
+.maihu-summary-tags span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 12px;
+  border: 1px solid #d7e8d9;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--maihu-green-800);
+  font-size: 0.79rem;
+  font-weight: 650;
+}
+
+.maihu-primary-link,
+.maihu-summary-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 13px 19px;
+  border: 1px solid var(--maihu-green-800);
+  border-radius: 13px;
+  background: var(--maihu-green-800);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.maihu-primary-link:hover,
+.maihu-summary-link:hover {
+  transform: translateY(-3px);
+  background: var(--maihu-green-700);
+  box-shadow: 0 9px 24px rgba(23, 71, 53, 0.16);
+}
+
+/* CSS-created alpine cactus illustration */
+
+.maihu-hero-illustration {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  height: 420px;
+  margin: 0 auto;
+  overflow: hidden;
+  isolation: isolate;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 48% 48% 25px 25px;
+  background:
+    radial-gradient(
+      ellipse at 55% 65%,
+      rgba(255, 255, 255, 0.85),
+      transparent 53%
+    ),
+    linear-gradient(165deg, #e7f3e9, #d3e7d7);
+  animation: maihuFadeUp 0.9s 0.12s ease both;
+}
+
+.maihu-hero-orb {
+  position: absolute;
+  z-index: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.42);
+}
+
+.maihu-hero-orb-one {
+  top: -100px;
+  right: 5%;
+  width: 230px;
+  height: 230px;
+}
+
+.maihu-hero-orb-two {
+  bottom: 15%;
+  left: -75px;
+  width: 180px;
+  height: 180px;
+}
+
+.maihu-snowflake {
+  position: absolute;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 2rem;
+  animation: maihuSnowDrift 5s ease-in-out infinite;
+}
+
+.maihu-snowflake-one {
+  top: 55px;
+  left: 18%;
+}
+
+.maihu-snowflake-two {
+  top: 100px;
+  right: 18%;
+  font-size: 1.4rem;
+  animation-delay: -2s;
+}
+
+.maihu-mountain-shape {
+  position: absolute;
+  bottom: 95px;
+  width: 0;
+  height: 0;
+  border-right: 150px solid transparent;
+  border-bottom: 185px solid #b9d3c0;
+  border-left: 150px solid transparent;
+}
+
+.maihu-mountain-back {
+  right: -15px;
+  bottom: 115px;
+  transform: scale(1.05);
+  border-bottom-color: #c4dccc;
+}
+
+.maihu-mountain-front {
+  left: -60px;
+  border-right-width: 190px;
+  border-bottom-color: #d2e4d5;
+  border-left-width: 190px;
+}
+
+.maihu-ground {
+  position: absolute;
+  z-index: 1;
+  right: -10%;
+  bottom: -30px;
+  left: -10%;
+  height: 150px;
+  border-radius: 50% 50% 0 0;
+  background: linear-gradient(180deg, #a9cba9, #7fae88);
+}
+
+.maihu-cushion {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 3px solid #397b4d;
+  border-radius: 48% 48% 40% 40%;
+  background:
+    radial-gradient(ellipse at 40% 25%, #86c17f, transparent 45%),
+    linear-gradient(145deg, #4e985b, #2e6c40);
+  box-shadow:
+    inset -8px -12px 20px rgba(16, 57, 32, 0.2),
+    0 12px 20px rgba(35, 87, 48, 0.16);
+}
+
+.maihu-cushion span {
+  display: block;
+  width: 30%;
+  height: 65%;
+  border: 1px solid rgba(26, 83, 42, 0.5);
+  border-radius: 45% 45% 38% 38%;
+  background: linear-gradient(90deg, #43884e, #72b46c 48%, #3c8148);
+  box-shadow: inset 2px 0 3px rgba(255, 255, 255, 0.12);
+}
+
+.maihu-cushion-back {
+  top: 165px;
+  left: 28%;
+  width: 175px;
+  height: 105px;
+  transform: rotate(-8deg);
+}
+
+.maihu-cushion-front {
+  top: 218px;
+  left: 22%;
+  width: 235px;
+  height: 115px;
+  border-color: #2e7042;
+  background: linear-gradient(145deg, #5ba366, #347343);
+  transform: rotate(3deg);
+}
+
+.maihu-cushion-front span {
+  width: 22%;
+  height: 72%;
+}
+
+.maihu-flower {
+  position: absolute;
+  z-index: 4;
+  display: grid;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  border-radius: 50%;
+  background: #fffdf1;
+  box-shadow:
+    0 -7px 0 -2px #fffdf1,
+    0 7px 0 -2px #fffdf1,
+    7px 0 0 -2px #fffdf1,
+    -7px 0 0 -2px #fffdf1,
+    5px 5px 0 -2px #fffdf1,
+    -5px 5px 0 -2px #fffdf1,
+    5px -5px 0 -2px #fffdf1,
+    -5px -5px 0 -2px #fffdf1;
+}
+
+.maihu-flower span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #edc96d;
+}
+
+.maihu-flower-one {
+  top: 222px;
+  left: 39%;
+}
+
+.maihu-flower-two {
+  top: 270px;
+  left: 65%;
+  transform: scale(0.8);
+}
+
+.maihu-illustration-label {
+  position: absolute;
+  z-index: 5;
+  right: 16px;
+  bottom: 15px;
+  left: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 13px;
+  background: rgba(255, 255, 255, 0.86);
+  color: var(--maihu-green-800);
+  font-size: 0.8rem;
+  font-weight: 750;
+  backdrop-filter: blur(8px);
+}
+
+/* =========================================
+   INTRODUCTION
+   ========================================= */
+
+.maihu-intro {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: clamp(35px, 7vw, 90px);
+  padding: 100px clamp(24px, 9vw, 130px);
+}
+
+.maihu-intro-copy h2,
+.maihu-growth-heading h2,
+.maihu-summary-content h2 {
+  margin-bottom: 22px;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.14;
+}
+
+.maihu-intro-copy > p {
+  margin-bottom: 18px;
+  color: var(--maihu-muted);
+  font-size: 0.97rem;
+}
+
+.maihu-intro-note {
+  position: relative;
+  padding: 34px;
+  overflow: hidden;
+  border: 1px solid var(--maihu-border);
+  border-radius: 24px;
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(204, 231, 210, 0.7),
+      transparent 42%
+    ),
+    var(--maihu-green-50);
+}
+
+.maihu-note-icon {
+  display: grid;
+  width: 49px;
+  height: 49px;
+  margin-bottom: 25px;
+  place-items: center;
+  border-radius: 16px;
+  background: var(--maihu-green-800);
+  color: white;
+}
+
+.maihu-intro-note h3 {
+  margin-bottom: 12px;
+  font-size: 1.45rem;
+}
+
+.maihu-intro-note > p {
+  margin-bottom: 25px;
+  color: var(--maihu-muted);
+  font-size: 0.92rem;
+}
+
+.maihu-note-footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 18px;
+  border-top: 1px solid var(--maihu-border);
+  color: var(--maihu-green-700);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+/* =========================================
+   AT A GLANCE
+   ========================================= */
+
+.maihu-facts-section {
+  padding: 95px clamp(24px, 8vw, 110px);
+  background: var(--maihu-cream);
+}
+
+.maihu-facts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+}
+
+.maihu-fact-card {
+  min-width: 0;
+  padding: 25px 22px;
+  border: 1px solid var(--maihu-border);
+  border-radius: 20px;
+  background: var(--maihu-white);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.maihu-fact-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--maihu-green-200);
+  box-shadow: 0 12px 30px rgba(30, 77, 48, 0.07);
+}
+
+.maihu-fact-icon {
+  display: grid;
+  width: 47px;
+  height: 47px;
+  margin-bottom: 23px;
+  place-items: center;
+  border-radius: 15px;
+  background: var(--maihu-green-100);
+  color: var(--maihu-green-700);
+}
+
+.maihu-fact-label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--maihu-muted);
+  font-size: 0.79rem;
+  font-weight: 650;
+}
+
+.maihu-fact-card h3 {
+  margin-bottom: 9px;
+  font-size: 1.07rem;
+  line-height: 1.4;
+}
+
+.maihu-fact-card p {
+  margin-bottom: 0;
+  color: var(--maihu-muted);
+  font-size: 0.84rem;
+  line-height: 1.65;
+}
+
+.maihu-info-table-wrap,
+.maihu-comparison-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--maihu-border);
+  border-radius: 18px;
+  background: white;
+}
+
+.maihu-info-table,
+.maihu-comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.maihu-info-table th,
+.maihu-comparison-table th {
+  padding: 18px 22px;
+  background: var(--maihu-green-900);
+  color: white;
+  font-size: 0.84rem;
+  font-weight: 750;
+}
+
+.maihu-info-table td,
+.maihu-comparison-table td {
+  padding: 17px 22px;
+  border-bottom: 1px solid #edf1eb;
+  color: var(--maihu-muted);
+  font-size: 0.88rem;
+  line-height: 1.7;
+  vertical-align: top;
+}
+
+.maihu-info-table td:first-child,
+.maihu-comparison-table td:first-child {
+  width: 28%;
+  color: var(--maihu-green-950);
+  font-weight: 750;
+}
+
+.maihu-info-table tbody tr:last-child td,
+.maihu-comparison-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.maihu-info-table tbody tr:nth-child(even),
+.maihu-comparison-table tbody tr:nth-child(even) {
+  background: #f8fbf7;
+}
+
+.maihu-info-table tbody tr:hover,
+.maihu-comparison-table tbody tr:hover {
+  background: var(--maihu-green-50);
+}
+
+.maihu-table-note {
+  margin: 14px 0 0;
+  color: var(--maihu-muted);
+  font-size: 0.79rem;
+  line-height: 1.7;
+}
+
+/* =========================================
+   FASCINATING FACTS
+   ========================================= */
+
+.maihu-highlights-section {
+  padding: 100px clamp(24px, 8vw, 110px);
+}
+
+.maihu-highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.maihu-highlight-card {
+  padding: 30px;
+  border: 1px solid var(--maihu-border);
+  border-radius: 22px;
+  background: white;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.maihu-highlight-card:hover {
+  transform: translateY(-5px);
+  border-color: #c9e3ce;
+  box-shadow: 0 15px 35px rgba(23, 71, 53, 0.07);
+}
+
+.maihu-highlight-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 23px;
+}
+
+.maihu-highlight-number {
+  color: #a9cdb0;
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: -0.06em;
+}
+
+.maihu-highlight-icon {
+  display: grid;
+  width: 49px;
+  height: 49px;
+  place-items: center;
+  border-radius: 16px;
+  background: var(--maihu-green-50);
+  color: var(--maihu-green-700);
+}
+
+.maihu-highlight-tag {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 6px 10px;
+  border-radius: 7px;
+  background: var(--maihu-green-100);
+  color: var(--maihu-green-800);
+  font-size: 0.7rem;
+  font-weight: 750;
+}
+
+.maihu-highlight-card h3 {
+  margin-bottom: 12px;
+  font-size: 1.35rem;
+  line-height: 1.35;
+}
+
+.maihu-highlight-card p {
+  margin-bottom: 0;
+  color: var(--maihu-muted);
+  font-size: 0.91rem;
+}
+
+/* =========================================
+   GROWTH FEATURES
+   ========================================= */
+
+.maihu-growth-section {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  align-items: center;
+  gap: clamp(40px, 8vw, 110px);
+  padding: 100px clamp(24px, 9vw, 130px);
+  background:
+    radial-gradient(
+      circle at 4% 100%,
+      rgba(209, 232, 211, 0.55),
+      transparent 35%
+    ),
+    #f3f8f2;
+}
+
+.maihu-growth-heading > p {
+  max-width: 500px;
+  margin-bottom: 0;
+  color: var(--maihu-muted);
+  font-size: 0.97rem;
+}
+
+.maihu-growth-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.maihu-growth-item {
+  display: grid;
+  grid-template-columns: 50px minmax(0, 1fr);
+  gap: 20px;
+  padding: 25px 0;
+  border-bottom: 1px solid #dce8dc;
+}
+
+.maihu-growth-item:first-child {
+  padding-top: 0;
+}
+
+.maihu-growth-item:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.maihu-growth-number {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border: 1px solid var(--maihu-green-200);
+  border-radius: 15px;
+  background: white;
+  color: var(--maihu-green-700);
+  font-size: 0.91rem;
+  font-weight: 800;
+}
+
+.maihu-growth-item h3 {
+  margin-bottom: 8px;
+  font-size: 1.12rem;
+}
+
+.maihu-growth-item p {
+  margin-bottom: 0;
+  color: var(--maihu-muted);
+  font-size: 0.89rem;
+}
+
+/* =========================================
+   COMPARISON TABLE
+   ========================================= */
+
+.maihu-comparison-section {
+  padding: 100px clamp(24px, 8vw, 110px);
+}
+
+.maihu-comparison-table th:first-child {
+  width: 21%;
+}
+
+.maihu-comparison-table td:first-child {
+  width: 21%;
+}
+
+.maihu-comparison-table td:nth-child(2) {
+  color: var(--maihu-green-800);
+  font-weight: 650;
+}
+
+.maihu-comparison-check {
+  display: inline-flex;
+  margin-right: 8px;
+  color: var(--maihu-green-600);
+  vertical-align: -3px;
+}
+
+/* =========================================
+   CARE GUIDE
+   ========================================= */
+
+.maihu-care-section {
+  padding: 100px clamp(24px, 8vw, 110px);
+  background: var(--maihu-cream);
+}
+
+.maihu-care-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.maihu-care-card {
+  padding: 28px;
+  border: 1px solid var(--maihu-border);
+  border-radius: 20px;
+  background: white;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.maihu-care-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(23, 71, 53, 0.06);
+}
+
+.maihu-care-icon {
+  display: grid;
+  width: 47px;
+  height: 47px;
+  margin-bottom: 20px;
+  place-items: center;
+  border-radius: 15px;
+  background: var(--maihu-green-100);
+  color: var(--maihu-green-700);
+}
+
+.maihu-care-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.18rem;
+}
+
+.maihu-care-card p {
+  margin-bottom: 0;
+  color: var(--maihu-muted);
+  font-size: 0.91rem;
+}
+
+.maihu-care-warning {
+  display: flex;
+  align-items: flex-start;
+  gap: 17px;
+  max-width: 1200px;
+  margin: 28px auto 0;
+  padding: 24px;
+  border: 1px solid #d8e6db;
+  border-radius: 18px;
+  background: #edf6ee;
+}
+
+.maihu-warning-icon {
+  display: grid;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border-radius: 14px;
+  background: white;
+  color: var(--maihu-green-700);
+}
+
+.maihu-care-warning h3 {
+  margin-bottom: 7px;
+  font-size: 1rem;
+}
+
+.maihu-care-warning p {
+  margin-bottom: 0;
+  color: #5f7565;
+  font-size: 0.88rem;
+}
+
+/* =========================================
+   SUMMARY / CTA
+   ========================================= */
+
+.maihu-summary-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 420px;
+  padding: 90px 24px;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(104, 160, 116, 0.25),
+      transparent 35%
+    ),
+    linear-gradient(135deg, #143c2d, #205c40);
+}
+
+.maihu-summary-decoration {
+  position: absolute;
+  right: 8%;
+  bottom: -20px;
+  color: rgba(255, 255, 255, 0.08);
+  transform: rotate(-8deg);
+}
+
+.maihu-summary-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 760px;
+  text-align: center;
+}
+
+.maihu-summary-content .maihu-eyebrow {
+  color: #b9dfc0;
+}
+
+.maihu-summary-content h2 {
+  color: white;
+}
+
+.maihu-summary-content h2 span {
+  color: #a9d9b2;
+}
+
+.maihu-summary-content > p {
+  max-width: 680px;
+  margin: 0 auto 25px;
+  color: #d0e4d5;
+  font-size: 0.96rem;
+}
+
+.maihu-summary-tags {
+  justify-content: center;
+}
+
+.maihu-summary-tags span {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.08);
+  color: #e3f3e6;
+}
+
+.maihu-summary-link {
+  border-color: #e3f2e5;
+  background: #f4faf4;
+  color: var(--maihu-green-900);
+}
+
+.maihu-summary-link:hover {
+  border-color: white;
+  background: white;
+  color: var(--maihu-green-800);
+}
+
+/* =========================================
+   ANIMATIONS
+   ========================================= */
+
+@keyframes maihuFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes maihuSnowDrift {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+
+  50% {
+    transform: translateY(10px) rotate(15deg);
+  }
+}
+
+/* =========================================
+   RESPONSIVE: TABLETS
+   ========================================= */
+
+@media (max-width: 1050px) {
+  .maihu-hero {
+    grid-template-columns: 1fr 0.8fr;
+    gap: 20px;
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+
+  .maihu-hero-illustration {
+    height: 370px;
+  }
+
+  .maihu-facts-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .maihu-intro,
+  .maihu-growth-section {
+    gap: 45px;
+    padding-right: 6vw;
+    padding-left: 6vw;
+  }
+}
+
+/* =========================================
+   RESPONSIVE: MOBILE
+   ========================================= */
+
+@media (max-width: 760px) {
+  .maihu-hero {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 35px 22px 45px;
+  }
+
+  .maihu-back-link {
+    margin-bottom: 30px;
+  }
+
+  .maihu-hero h1 {
+    font-size: clamp(2.65rem, 10vw, 4rem);
+  }
+
+  .maihu-hero-description {
+    font-size: 0.93rem;
+  }
+
+  .maihu-hero-illustration {
+    width: 100%;
+    max-width: 430px;
+    height: 340px;
+  }
+
+  .maihu-mountain-shape {
+    bottom: 90px;
+    transform: scale(0.85);
+  }
+
+  .maihu-mountain-back {
+    right: -35px;
+  }
+
+  .maihu-mountain-front {
+    left: -90px;
+  }
+
+  .maihu-cushion-back {
+    top: 135px;
+    left: 29%;
+    transform: scale(0.88) rotate(-8deg);
+  }
+
+  .maihu-cushion-front {
+    top: 185px;
+    left: 19%;
+    transform: scale(0.88) rotate(3deg);
+  }
+
+  .maihu-flower-one {
+    top: 188px;
+    left: 38%;
+  }
+
+  .maihu-flower-two {
+    top: 230px;
+    left: 64%;
+  }
+
+  .maihu-intro,
+  .maihu-growth-section {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 70px 24px;
+  }
+
+  .maihu-intro-note {
+    padding: 28px;
+  }
+
+  .maihu-facts-section,
+  .maihu-highlights-section,
+  .maihu-comparison-section,
+  .maihu-care-section {
+    padding: 72px 22px;
+  }
+
+  .maihu-section-heading {
+    gap: 13px;
+    margin-bottom: 30px;
+  }
+
+  .maihu-section-icon {
+    flex-basis: 43px;
+    width: 43px;
+    height: 43px;
+    border-radius: 13px;
+  }
+
+  .maihu-section-heading h2 {
+    font-size: 1.8rem;
+  }
+
+  .maihu-section-heading p {
+    font-size: 0.91rem;
+  }
+
+  .maihu-facts-grid {
+    gap: 13px;
+    margin-bottom: 30px;
+  }
+
+  .maihu-fact-card {
+    padding: 20px 16px;
+    border-radius: 17px;
+  }
+
+  .maihu-fact-icon {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 17px;
+  }
+
+  .maihu-fact-card h3 {
+    font-size: 0.98rem;
+  }
+
+  .maihu-fact-card p {
+    font-size: 0.79rem;
+  }
+
+  .maihu-info-table,
+  .maihu-comparison-table {
+    min-width: 600px;
+  }
+
+  .maihu-info-table th,
+  .maihu-comparison-table th,
+  .maihu-info-table td,
+  .maihu-comparison-table td {
+    padding: 14px 16px;
+  }
+
+  .maihu-highlights-grid,
+  .maihu-care-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .maihu-highlight-card,
+  .maihu-care-card {
+    padding: 25px;
+  }
+
+  .maihu-growth-item {
+    grid-template-columns: 44px minmax(0, 1fr);
+    gap: 15px;
+  }
+
+  .maihu-growth-number {
+    width: 43px;
+    height: 43px;
+  }
+
+  .maihu-care-warning {
+    gap: 13px;
+    padding: 19px;
+  }
+
+  .maihu-summary-section {
+    min-height: 390px;
+    padding: 75px 22px;
+  }
+
+  .maihu-summary-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .maihu-summary-content > p {
+    font-size: 0.9rem;
+  }
+
+  .maihu-summary-decoration {
+    right: -15px;
+  }
+}
+
+@media (max-width: 420px) {
+  .maihu-hero {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .maihu-hero h1 {
+    font-size: 2.55rem;
+  }
+
+  .maihu-hero-tags {
+    gap: 7px;
+  }
+
+  .maihu-hero-tags span {
+    padding: 8px 9px;
+    font-size: 0.72rem;
+  }
+
+  .maihu-hero-illustration {
+    height: 290px;
+  }
+
+  .maihu-cushion-back {
+    top: 115px;
+    left: 24%;
+    transform: scale(0.76) rotate(-8deg);
+  }
+
+  .maihu-cushion-front {
+    top: 158px;
+    left: 14%;
+    transform: scale(0.76) rotate(3deg);
+  }
+
+  .maihu-flower-one {
+    top: 164px;
+    left: 35%;
+  }
+
+  .maihu-flower-two {
+    top: 200px;
+    left: 62%;
+  }
+
+  .maihu-facts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .maihu-fact-card {
+    display: grid;
+    grid-template-columns: 43px minmax(0, 1fr);
+    column-gap: 14px;
+    align-items: center;
+  }
+
+  .maihu-fact-icon {
+    grid-row: span 3;
+    margin-bottom: 0;
+  }
+
+  .maihu-fact-label {
+    margin-bottom: 3px;
+  }
+
+  .maihu-fact-card h3 {
+    margin-bottom: 3px;
+  }
+
+  .maihu-fact-card p {
+    margin-bottom: 0;
+  }
+
+  .maihu-section-heading h2 {
+    font-size: 1.55rem;
+  }
+
+  .maihu-highlight-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .maihu-summary-content h2 {
+    font-size: 1.95rem;
+  }
+}
+
+/* =========================================
+   REDUCED MOTION ACCESSIBILITY
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .maihu-guide *,
+  .maihu-guide *::before,
+  .maihu-guide *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
