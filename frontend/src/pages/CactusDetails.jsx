@@ -16,7 +16,41 @@ import PereskioideaeGuide from './Pereskioideae/PereskioideaeGuide.jsx'
 import LeuenbergerioideaeGuide from './Leuenbergerioideae/LeuenbergerioideaeGuide.jsx'
 import MaihuenioideaeGuide from './Maihuenioideae/MaihuenioideaeGuide.jsx'
 import BlossfeldioideaeGuide from './Blossfeldioideae/BlossfeldioideaeGuide.jsx'
+import useCactusImage from '../hooks/useCactusImage'
 import './CactusDetails.css'
+
+
+function CactusDetailImage({ cactus }) {
+  const { imageUrl, loading } = useCactusImage(
+    cactus.scientificName,
+    cactus.imageUrl
+  )
+
+  return (
+    <>
+      {imageUrl ? (
+        <img
+          src={imageUrl}
+          alt={cactus.imageAlt || cactus.commonName}
+          onError={(event) => {
+            event.currentTarget.style.display = 'none'
+            event.currentTarget.nextElementSibling.style.display = 'flex'
+          }}
+        />
+      ) : null}
+
+      <div
+        className="cactus-detail-photo-fallback"
+        style={{ display: imageUrl ? 'none' : 'flex' }}
+      >
+        <Leaf size={64} />
+        <span>
+          {loading ? 'Finding a cactus photo...' : 'Photo unavailable'}
+        </span>
+      </div>
+    </>
+  )
+}
 
 function CactusDetails() {
   const { id } = useParams()
