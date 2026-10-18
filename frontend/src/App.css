@@ -3933,3 +3933,304 @@ border-radius: 4px;
   outline: 3px solid #8bd6a3;
   outline-offset: 3px;
 }
+
+
+/* Search by Genus promotional card */
+.genus-search-promo {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  margin: 28px 0 34px;
+  padding: 30px;
+  overflow: hidden;
+  border: 1px solid #d5e9d9;
+  border-radius: 22px;
+  background: linear-gradient(120deg, #f0f8f0, #fbfdf8);
+}
+
+.genus-search-promo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  border-radius: 17px;
+  background: #dcefe0;
+  color: #2e7048;
+}
+
+.genus-search-promo-content {
+  position: relative;
+  z-index: 1;
+  max-width: 650px;
+}
+
+.genus-search-promo-label {
+  margin: 0 0 8px;
+  color: #397b50;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.genus-search-promo-content h2 {
+  margin: 0 0 10px;
+  color: #254b35;
+  font-size: clamp(1.25rem, 2.5vw, 1.7rem);
+  line-height: 1.35;
+}
+
+.genus-search-promo-content > p:not(.genus-search-promo-label) {
+  margin: 0 0 20px;
+  color: #617468;
+  font-size: 0.96rem;
+  line-height: 1.75;
+}
+
+.genus-search-promo-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 19px;
+  border: 1px solid #2e7048;
+  border-radius: 10px;
+  background: #2e7048;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.genus-search-promo-button:hover {
+  transform: translateY(-2px);
+  background: #245a39;
+  box-shadow: 0 6px 16px rgb(46 112 72 / 18%);
+}
+
+.genus-search-promo-button:focus-visible {
+  outline: 3px solid #9ac9a5;
+  outline-offset: 3px;
+}
+
+.genus-search-promo-decoration {
+  position: absolute;
+  right: 30px;
+  bottom: -20px;
+  font-size: 100px;
+  opacity: 0.12;
+  transform: rotate(-12deg);
+  pointer-events: none;
+}
+
+@media (max-width: 600px) {
+  .genus-search-promo {
+    gap: 14px;
+    margin: 22px 0 28px;
+    padding: 21px;
+    border-radius: 17px;
+  }
+
+  .genus-search-promo-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 13px;
+  }
+
+  .genus-search-promo-icon svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .genus-search-promo-decoration {
+    right: 12px;
+    bottom: -12px;
+    font-size: 70px;
+  }
+
+  .genus-search-promo-button {
+    padding: 11px 14px;
+    font-size: 0.9rem;
+  }
+}
+
+
+/* Explore landing page options */
+
+.explore-options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.explore-option-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  min-height: 350px;
+  padding: 30px;
+  overflow: hidden;
+  border: 1px solid #e1ece4;
+  border-radius: 23px;
+  background: #ffffff;
+  box-shadow: 0 5px 22px #183f2d06;
+  transition:
+    transform 220ms ease,
+    border-color 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.explore-option-card:hover {
+  transform: translateY(-5px);
+  border-color: #a8d4b4;
+  box-shadow: 0 15px 35px #183f2d12;
+}
+
+.explore-option-icon {
+  display: grid;
+  place-items: center;
+  width: 66px;
+  height: 66px;
+  margin-bottom: 25px;
+  border-radius: 21px;
+  background: #eaf5ec;
+  color: #278251;
+}
+
+.explore-option-label {
+  margin-bottom: 9px;
+  color: #278251;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+}
+
+.explore-option-card h2 {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 13px;
+  color: #183f2d;
+  font-size: clamp(1.35rem, 2vw, 1.7rem);
+  letter-spacing: -0.035em;
+}
+
+.explore-option-card > p {
+  position: relative;
+  z-index: 1;
+  max-width: 440px;
+  margin: 0 0 25px;
+  color: #69796e;
+  font-size: 0.92rem;
+  line-height: 1.85;
+}
+
+.explore-option-button {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 46px;
+  padding: 12px 17px;
+  margin-top: auto;
+  border: 1px solid #278251;
+  border-radius: 12px;
+  background: #278251;
+  color: #ffffff;
+  font-size: 0.88rem;
+  font-weight: 750;
+  text-decoration: none;
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+.explore-option-button:hover {
+  transform: translateY(-2px);
+  background: #176b40;
+}
+
+.explore-option-button:focus-visible {
+  outline: 3px solid #9bcbaa;
+  outline-offset: 3px;
+}
+
+.explore-option-decoration {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  color: #278251;
+  opacity: 0.07;
+  pointer-events: none;
+}
+
+.explore-option-decoration svg {
+  stroke-width: 1.2;
+}
+
+.subfamily-option-card .explore-option-icon {
+  background: #f0f5e7;
+  color: #648343;
+}
+
+.subfamily-option-card .explore-option-label {
+  color: #648343;
+}
+
+.subfamily-option-card .explore-option-button {
+  border-color: #648343;
+  background: #648343;
+}
+
+.subfamily-option-card .explore-option-button:hover {
+  background: #4f6c32;
+}
+
+.subfamily-option-card .explore-option-decoration {
+  color: #648343;
+}
+
+.explore-options-grid + .family-learning-note {
+  margin-top: 32px;
+}
+
+@media (max-width: 700px) {
+  .explore-options-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .explore-option-card {
+    min-height: 320px;
+    padding: 24px;
+    border-radius: 19px;
+  }
+
+  .explore-option-icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 20px;
+    border-radius: 17px;
+  }
+
+  .explore-option-decoration {
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .explore-option-decoration svg {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+
