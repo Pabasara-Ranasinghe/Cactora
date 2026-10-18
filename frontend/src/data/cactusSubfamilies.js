@@ -8,7 +8,7 @@ const cactusSubfamilies = [
     description:
       'The largest and most diverse cactus subfamily, containing many familiar globular, columnar, and flowering cacti.',
     icon: '🌵',
-    accent: '#23865B',
+    accent: '#70A85B',
     genera: [
       { name: 'Mammillaria', detail: 'Small, rounded cacti with distinctive tubercles and often beautiful rings of flowers.' },
       { name: 'Echinopsis', detail: 'Known for rounded or elongated stems and large, spectacular flowers.' },
@@ -25,8 +25,8 @@ const cactusSubfamilies = [
     subtitle: 'The prickly pear family',
     description:
       'Recognized for segmented stems, glochids in many species, and remarkable adaptations to dry environments.',
-    icon: '🌱',
-    accent: '#579447',
+    icon: '🌵',
+    accent: '#70A85B',
     genera: [
       { name: 'Opuntia', detail: 'Prickly pear cacti with flattened pads and, in some species, edible fruits.' },
       { name: 'Cylindropuntia', detail: 'Chollas with cylindrical stem segments and conspicuous spines.' },
@@ -42,8 +42,8 @@ const cactusSubfamilies = [
     subtitle: 'Rare mountain cacti',
     description:
       'A small and distinctive group of South American cacti, including plants adapted to cool, exposed mountain habitats.',
-    icon: '🏔️',
-    accent: '#478C87',
+    icon: '🌵',
+    accent: '#70A85B',
     genera: [
       { name: 'Maihuenia', detail: 'Low-growing plants with small rounded leaves and compact, spiny stems.' },
       { name: 'Maihuenia poeppigii', detail: 'A cushion-forming cactus associated with the southern Andes and Patagonia.' },
@@ -56,7 +56,7 @@ const cactusSubfamilies = [
     subtitle: 'The leafy cacti',
     description:
       'Leafy, woody cactus relatives that look quite different from familiar spiny desert cacti.',
-    icon: '🍃',
+    icon: '🌵',
     accent: '#70A85B',
     genera: [
       { name: 'Pereskia', detail: 'Leafy, often woody cacti with broad leaves and showy flowers.' },
@@ -71,8 +71,8 @@ const cactusSubfamilies = [
     subtitle: 'Woody, leafy relatives',
     description:
       'Leafy, woody cactus relatives from tropical America that differ in appearance from familiar desert cacti.',
-    icon: '🌿',
-    accent: '#3B9272',
+    icon: '🌵',
+    accent: '#70A85B',
     genera: [
       { name: 'Leuenbergeria', detail: 'Woody plants with persistent leaves, branching stems, and cactus-family characteristics.' },
       { name: 'Leuenbergeria bleo', detail: 'A tropical, leafy cactus known for its bright orange-red flowers.' },
@@ -86,8 +86,8 @@ const cactusSubfamilies = [
     subtitle: 'Tiny botanical wonders',
     description:
       'A remarkable group of miniature cacti, some exceptionally small and difficult to spot among rocks.',
-    icon: '✨',
-    accent: '#8B79B8',
+    icon: '🌵',
+    accent: '#70A85B',
     genera: [
       { name: 'Blossfeldia', detail: 'A genus of tiny cacti that grow in rocky crevices.' },
       { name: 'Blossfeldia liliputana', detail: 'A miniature cactus native to South America.' },
