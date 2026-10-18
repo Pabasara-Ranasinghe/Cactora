@@ -1825,6 +1825,175 @@ const cactusGenera = [
     description: 'A cactus genus name that needs verification against an accepted taxonomic source.',
     imageSearchTerm: 'Yungasocereus cactus',
   },
+  
+  {
+    id: 'cactaceae-hybrid-borzicana',
+    name: '× Borzicana',
+    scientificName: '× Borzicana',
+    subfamily: 'Cactoideae',
+    description: 'A proposed hybrid cactus genus name awaiting taxonomic verification.',
+    imageSearchTerm: 'Borzicana cactus',
+  },
+  {
+    id: 'cactaceae-hybrid-cleipaticereus',
+    name: '× Cleipaticereus',
+    scientificName: '× Cleipaticereus',
+    subfamily: 'Cactoideae',
+    description: 'A proposed hybrid cactus genus name awaiting taxonomic verification.',
+    imageSearchTerm: 'Cleipaticereus cactus',
+  },
+  {
+    id: 'cactaceae-hybrid-coleocereus',
+    name: '× Coleocereus',
+    scientificName: '× Coleocereus',
+    subfamily: 'Cactoideae',
+    description: 'A proposed hybrid cactus genus name awaiting taxonomic verification.',
+    imageSearchTerm: 'Coleocereus cactus',
+  },
+  {
+    id: 'cactaceae-hybrid-colosocereus',
+    name: '× Colosocereus',
+    scientificName: '× Colosocereus',
+    subfamily: 'Cactoideae',
+    description: 'A proposed hybrid cactus genus name awaiting taxonomic verification.',
+    imageSearchTerm: 'Colosocereus cactus',
+  },
+  {
+    id: 'cactaceae-hybrid-cylindronia',
+    name: '× Cylindronia',
+    scientificName: '× Cylindronia',
+    subfamily: 'Cactoideae',
+    description: 'A proposed hybrid cactus genus name awaiting taxonomic verification.',
+    imageSearchTerm: 'Cylindronia cactus',
+  },
+  {
+    id: 'cactaceae-hybrid-haageocactus',
+    name: '× Haageocactus',
+    scientificName: '× Haageocactus',
+    subfamily: 'Cactoideae',
+    description: 'A proposed hybrid cactus genus name awaiting taxonomic verification.',
+    imageSearchTerm: 'Haageocactus cactus',
+  },
+  {
+    id: 'cactaceae-hybrid-isillocactus',
+    name: '× Isillocactus',
+    scientificName: '× Isillocactus',
+    subfamily: 'Cactoideae',
+    description: 'A proposed hybrid cactus genus name awaiting taxonomic verification.',
+    imageSearchTerm: 'Isillocactus cactus',
+  },
+  {
+    id: 'cactaceae-hybrid-leia',
+    name: '× Leia',
+    scientificName: '× Leia',
+    subfamily: 'Cactoideae',
+    description: 'A proposed hybrid cactus genus name awaiting taxonomic verification.',
+    imageSearchTerm: 'Leia cactus hybrid',
+  },
+  {
+    id: 'cactaceae-hybrid-leucomoza',
+    name: '× Leucomoza',
+    scientificName: '× Leucomoza',
+    subfamily: 'Cactoideae',
+    description: 'A proposed hybrid cactus genus name awaiting taxonomic verification.',
+    imageSearchTerm: 'Leucomoza cactus',
+  },
+  {
+    id: 'cactaceae-hybrid-microsocereus',
+    name: '× Microsocereus',
+    scientificName: '× Microsocereus',
+    subfamily: 'Cactoideae',
+    description: 'A proposed hybrid cactus genus name awaiting taxonomic verification.',
+    imageSearchTerm: 'Microsocereus cactus',
+  },
+  {
+    id: 'cactaceae-hybrid-opulea',
+    name: '× Opulea',
+    scientificName: '× Opulea',
+    subfamily: 'Opuntioideae',
+    description: 'A proposed hybrid cactus genus name awaiting taxonomic verification.',
+    imageSearchTerm: 'Opulea cactus',
+  },
+  {
+    id: 'cactaceae-hybrid-oreonopsis',
+    name: '× Oreonopsis',
+    scientificName: '× Oreonopsis',
+    subfamily: 'Cactoideae',
+    description: 'A proposed hybrid cactus genus name awaiting taxonomic verification.',
+    imageSearchTerm: 'Oreonopsis cactus',
+  },
+  {
+    id: 'cactaceae-hybrid-pacherocactus',
+    name: '× Pacherocactus',
+    scientificName: '× Pacherocactus',
+    subfamily: 'Cactoideae',
+    description: 'A proposed hybrid cactus genus name awaiting taxonomic verification.',
+    imageSearchTerm: 'Pacherocactus cactus',
+  },
+  {
+    id: 'cactaceae-hybrid-patrocereus',
+    name: '× Patrocereus',
+    scientificName: '× Patrocereus',
+    subfamily: 'Cactoideae',
+    description: 'A proposed hybrid cactus genus name awaiting taxonomic verification.',
+    imageSearchTerm: 'Patrocereus cactus',
+  },
+  {
+    id: 'cactaceae-hybrid-polascontria',
+    name: '× Polascontria',
+    scientificName: '× Polascontria',
+    subfamily: 'Cactoideae',
+    description: 'A proposed hybrid cactus genus name awaiting taxonomic verification.',
+    imageSearchTerm: 'Polascontria cactus',
+  },
+  {
+    id: 'cactaceae-hybrid-raustoa',
+    name: '× Raustoa',
+    scientificName: '× Raustoa',
+    subfamily: 'Cactoideae',
+    description: 'A proposed hybrid cactus genus name awaiting taxonomic verification.',
+    imageSearchTerm: 'Raustoa cactus',
+  },
+  {
+    id: 'cactaceae-hybrid-weinganopsis',
+    name: '× Weinganopsis',
+    scientificName: '× Weinganopsis',
+    subfamily: 'Cactoideae',
+    description: 'A proposed hybrid cactus genus name awaiting taxonomic verification.',
+    imageSearchTerm: 'Weinganopsis cactus',
+  },
+  {
+    id: 'cactaceae-hybrid-yungastocactus',
+    name: '× Yungastocactus',
+    scientificName: '× Yungastocactus',
+    subfamily: 'Cactoideae',
+    description: 'A proposed hybrid cactus genus name awaiting taxonomic verification.',
+    imageSearchTerm: 'Yungastocactus cactus',
+  },
 ]
 
-export default cactusGenera
+const nonCactusGenera = new Set([
+  'faucaria',
+  'graptopetalum',
+])
+
+const seenGenera = new Set()
+
+const uniqueCactusGenera = cactusGenera.filter((genus) => {
+  const normalizedName = genus.name.trim().toLowerCase()
+
+  // Exclude entries that are not cactus genera.
+  if (nonCactusGenera.has(normalizedName)) {
+    return false
+  }
+
+  // Keep only the first occurrence of each genus name.
+  if (seenGenera.has(normalizedName)) {
+    return false
+  }
+
+  seenGenera.add(normalizedName)
+  return true
+})
+
+export default uniqueCactusGenera
