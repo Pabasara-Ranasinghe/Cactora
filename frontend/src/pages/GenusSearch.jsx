@@ -1,7 +1,7 @@
 
 import { useMemo, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { Search, Leaf, ArrowRight } from 'lucide-react'
+import { Link, useNavigate } from 'react-router-dom'
+import { Search, Leaf, ArrowRight, Telescope } from 'lucide-react'
 import cactusGenera from '../data/cactusGenera'
 import useCactusImage from '../hooks/useCactusImage'
 import ScientificNameVoice from '../components/ScientificNameVoice'
@@ -90,6 +90,43 @@ function GenusSearch() {
           />
         </div>
       </section>
+
+      
+        {/* Search by subfamilies shortcut */}
+        <section className="genus-search-promo subfamily-search-promo">
+          <div className="genus-search-promo-icon">
+            <Telescope size={28} />
+          </div>
+
+          <div className="genus-search-promo-content">
+            <p className="genus-search-promo-label">
+              DISCOVER CACTUS CLASSIFICATION
+            </p>
+
+            <h2>Want to explore cactus subfamilies?</h2>
+
+            <p>
+              Discover the six cactus subfamilies, learn about their
+              unique characteristics, and explore how different cactus
+              genera are classified within the cactus family.
+            </p>
+
+            <Link
+              to="/subfamilies"
+              className="genus-search-promo-button"
+            >
+              Explore Subfamilies
+              <ArrowRight size={18} />
+            </Link>
+          </div>
+
+          <div
+            className="genus-search-promo-decoration"
+            aria-hidden="true"
+          >
+            🌵
+          </div>
+        </section>
 
       <section className="genus-search-content">
         <div className="genus-search-heading">
