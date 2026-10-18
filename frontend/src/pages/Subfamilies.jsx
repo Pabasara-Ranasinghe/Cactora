@@ -126,22 +126,6 @@ function Subfamilies() {
           </div>
         </header>
 
-        {/* Introduction */}
-        <section className="family-intro">
-          <div className="family-intro-icon">
-            <Leaf size={23} />
-          </div>
-
-          <div>
-            <h2>Explore six cactus subfamilies</h2>
-            <p>
-              Choose a group to discover its representative genera,
-              learn about their characteristics, and find your next
-              botanical favourite.
-            </p>
-          </div>
-        </section>
-
         {/* Search by genus shortcut */}
         <section className="genus-search-promo">
           <div className="genus-search-promo-icon">
@@ -175,6 +159,22 @@ function Subfamilies() {
             aria-hidden="true"
           >
             🌵
+          </div>
+        </section>
+
+        {/* Introduction */}
+        <section className="family-intro">
+          <div className="family-intro-icon">
+            <Leaf size={23} />
+          </div>
+
+          <div>
+            <h2>Explore six cactus subfamilies</h2>
+            <p>
+              Choose a group to discover its representative genera,
+              learn about their characteristics, and find your next
+              botanical favourite.
+            </p>
           </div>
         </section>
 
@@ -268,33 +268,6 @@ function Subfamilies() {
                   <p className="family-card-description">
                     {family.description}
                   </p>
-
-                  <div className="family-card-meta">
-                    <span>
-                      <Flower2 size={16} />
-                      {family.genera.length} examples
-                    </span>
-                  </div>
-
-                  {/* Expand or collapse the card */}
-                  <button
-                    type="button"
-                    className="family-expand-button"
-                    aria-expanded={isExpanded}
-                    aria-controls={`family-details-${family.id}`}
-                    onClick={() => toggleFamily(family.id)}
-                  >
-                    {isExpanded
-                      ? 'Show less'
-                      : 'Explore subcategories'}
-
-                    <ChevronDown
-                      size={18}
-                      className={
-                        isExpanded ? 'family-chevron-open' : ''
-                      }
-                    />
-                  </button>
 
                   {/* Navigate to full details */}
                   <button
