@@ -1,98 +1,15 @@
 
-import { useEffect, useMemo, useState } from 'react'
+import { Link } from 'react-router-dom'
 import {
-  Search,
-  ChevronDown,
-  Leaf,
-  Sprout,
-  Flower2,
-  Sun,
-  Info,
-  X,
   ArrowRight,
+  Leaf,
+  Search,
+  Sprout,
+  Telescope,
+  Flower2,
 } from 'lucide-react'
-import { Link, useNavigate, useSearchParams } from 'react-router-dom'
-import cactusSubfamilies from '../data/cactusSubfamilies.js'
 
 function Explore() {
-  const [searchTerm, setSearchTerm] = useState('')
-  const [expandedFamily, setExpandedFamily] = useState(null)
-  const [searchParams, setSearchParams] = useSearchParams()
-  const navigate = useNavigate()
-
-  // Expand a family when arriving from a Home page link.
-  useEffect(() => {
-    const familyId = searchParams.get('family')
-
-    if (
-      familyId &&
-      cactusSubfamilies.some((family) => family.id === familyId)
-    ) {
-      setExpandedFamily(familyId)
-    }
-  }, [searchParams])
-
-  // Search subfamilies and their representative genera.
-  const filteredFamilies = useMemo(() => {
-    const search = searchTerm.trim().toLowerCase()
-
-    if (!search) {
-      return cactusSubfamilies
-    }
-
-    return cactusSubfamilies.filter((family) => {
-      const familyMatches = [
-        family.name,
-        family.subtitle,
-        family.description,
-        family.id,
-      ].some((value) => value.toLowerCase().includes(search))
-
-      const genusMatches = family.genera.some((genus) =>
-        `${genus.name} ${genus.detail}`
-          .toLowerCase()
-          .includes(search),
-      )
-
-      return familyMatches || genusMatches
-    })
-  }, [searchTerm])
-
-  // Expand or collapse a family card.
-  function toggleFamily(familyId) {
-    const nextFamily =
-      expandedFamily === familyId ? null : familyId
-
-    setExpandedFamily(nextFamily)
-
-    const nextParams = new URLSearchParams(searchParams)
-
-    if (nextFamily) {
-      nextParams.set('family', nextFamily)
-    } else {
-      nextParams.delete('family')
-    }
-
-    setSearchParams(nextParams, { replace: true })
-  }
-
-  // Clear the search input.
-  function clearSearch() {
-    setSearchTerm('')
-  }
-
-  // Reset the Explore page.
-  function resetExplore() {
-    setSearchTerm('')
-    setExpandedFamily(null)
-    setSearchParams({}, { replace: true })
-  }
-
-  // Navigate to the selected subfamily details page.
-  function openFamilyDetails(familyId) {
-    navigate(`/explore/${familyId}`)
-  }
-
   return (
     <main className="explore-page">
       <div className="explore-container">
@@ -110,8 +27,9 @@ function Explore() {
             </h1>
 
             <p className="explore-description">
-              From tiny mountain cacti to leafy tropical relatives,
-              explore the fascinating diversity of the cactus family.
+              Explore the incredible diversity of cacti.
+              Search by genus or discover the fascinating
+              subfamilies that make up the cactus family.
             </p>
           </div>
 
@@ -119,9 +37,9 @@ function Explore() {
             className="family-header-decoration"
             aria-hidden="true"
           >
-            {cactusSubfamilies.slice(0, 3).map((family) => (
-              <span key={family.id}>{family.icon}</span>
-            ))}
+            <span>🌵</span>
+            <span>🌱</span>
+            <span>🌵</span>
           </div>
         </header>
 
@@ -132,227 +50,102 @@ function Explore() {
           </div>
 
           <div>
-            <h2>Explore six cactus subfamilies</h2>
+            <h2>Where would you like to begin?</h2>
             <p>
-              Choose a group to discover its representative genera,
-              learn about their characteristics, and find your next
-              botanical favourite.
+              Choose your preferred way to explore Cactora's
+              botanical collection.
             </p>
           </div>
         </section>
 
-        {/* Search */}
-        <div className="explore-toolbar">
-          <label className="explore-search family-search">
-            <Search size={19} />
+        {/* Explore options */}
+        <section className="explore-options-grid">
 
-            <input
-              type="search"
-              placeholder="Search subfamilies or cactus genera..."
-              value={searchTerm}
-              onChange={(event) =>
-                setSearchTerm(event.target.value)
-              }
-              aria-label="Search cactus subfamilies and genera"
-            />
+          {/* Search by Genus */}
+          <article className="explore-option-card genus-option-card">
+            <div className="explore-option-icon">
+              <Search size={29} />
+            </div>
 
-            {searchTerm && (
-              <button
-                type="button"
-                className="family-search-clear"
-                aria-label="Clear search"
-                onClick={clearSearch}
-              >
-                <X size={17} />
-              </button>
-            )}
-          </label>
-        </div>
+            <span className="explore-option-label">
+              FIND A CACTUS
+            </span>
 
-        {/* Results count */}
-        <div className="explore-results-header">
-          <span>Explore the subfamilies</span>
-          <span>{filteredFamilies.length} of 6 groups</span>
-        </div>
+            <h2>Search by Genus</h2>
 
-        {/* Subfamily cards */}
-        {filteredFamilies.length > 0 ? (
-          <div className="family-grid">
-            {filteredFamilies.map((family) => {
-              const isExpanded = expandedFamily === family.id
-              const search = searchTerm.trim().toLowerCase()
-
-              const matchingGenera = search
-                ? family.genera.filter((genus) =>
-                    `${genus.name} ${genus.detail}`
-                      .toLowerCase()
-                      .includes(search),
-                  )
-                : family.genera
-
-              const visibleGenera =
-                search && matchingGenera.length > 0
-                  ? matchingGenera
-                  : family.genera
-
-              return (
-                <article
-                  className={`family-card ${
-                    isExpanded ? 'family-card-expanded' : ''
-                  }`}
-                  key={family.id}
-                  style={{
-                    '--family-accent': family.accent,
-                  }}
-                >
-                  {/* Card icon and number */}
-                  <div className="family-card-top">
-                    <div
-                      className="family-card-icon"
-                      aria-hidden="true"
-                    >
-                      {family.icon}
-                    </div>
-
-                    <span className="family-card-number">
-                      {family.number}
-                    </span>
-                  </div>
-
-                  {/* Card information */}
-                  <p className="family-card-subtitle">
-                    {family.subtitle}
-                  </p>
-
-                  <h2>{family.name}</h2>
-
-                  <p className="family-card-description">
-                    {family.description}
-                  </p>
-
-                  <div className="family-card-meta">
-                    <span>
-                      <Flower2 size={16} />
-                      {family.genera.length} examples
-                    </span>
-                  </div>
-
-                  {/* Button 1: Expand or collapse the card */}
-                  <button
-                    type="button"
-                    className="family-expand-button"
-                    aria-expanded={isExpanded}
-                    aria-controls={`family-details-${family.id}`}
-                    onClick={() => toggleFamily(family.id)}
-                  >
-                    {isExpanded
-                      ? 'Show less'
-                      : 'Explore subcategories'}
-
-                    <ChevronDown
-                      size={18}
-                      className={
-                        isExpanded ? 'family-chevron-open' : ''
-                      }
-                    />
-                  </button>
-
-                  {/* Button 2: Navigate to the full details page */}
-                  <button
-                    type="button"
-                    className="family-details-button"
-                    onClick={() => openFamilyDetails(family.id)}
-                  >
-                    Discover full details
-                    <ArrowRight size={17} />
-                  </button>
-
-                  {/* Expanded genera */}
-                  {isExpanded && (
-                    <div
-                      className="family-subcategories"
-                      id={`family-details-${family.id}`}
-                    >
-                      <h3>Genera and examples</h3>
-
-                      <ul>
-                        {visibleGenera.map((genus) => (
-                          <li key={genus.name}>
-                            <div className="family-genus-icon">
-                              <Leaf size={15} />
-                            </div>
-
-                            <div>
-                              <h4>{genus.name}</h4>
-                              <p>{genus.detail}</p>
-                            </div>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                </article>
-              )
-            })}
-          </div>
-        ) : (
-          /* No search results */
-          <div className="explore-empty">
-            <span>🌵</span>
-            <h2>No matching cactus groups found</h2>
             <p>
-              Try a different subfamily or genus name.
+              Looking for a particular cactus genus? Search
+              the collection, discover scientific names,
+              learn about characteristics, and explore
+              the species within each genus.
             </p>
 
-            <button
-              type="button"
-              className="family-reset-button"
-              onClick={resetExplore}
+            <Link
+              to="/genera"
+              className="explore-option-button"
             >
-              Show all subfamilies
-            </button>
-          </div>
-        )}
+              Search by Genus
+              <ArrowRight size={18} />
+            </Link>
 
-        {/* Botanical note */}
+            <div
+              className="explore-option-decoration"
+              aria-hidden="true"
+            >
+              <Telescope size={100} />
+            </div>
+          </article>
+
+          {/* Explore by Subfamilies */}
+          <article className="explore-option-card subfamily-option-card">
+            <div className="explore-option-icon">
+              <Flower2 size={29} />
+            </div>
+
+            <span className="explore-option-label">
+              EXPLORE THE CLASSIFICATION
+            </span>
+
+            <h2>Explore by Subfamilies</h2>
+
+            <p>
+              Discover the six cactus subfamilies, learn
+              about their unique characteristics, and
+              explore representative genera in each group.
+            </p>
+
+            <Link
+              to="/subfamilies"
+              className="explore-option-button"
+            >
+              Explore Subfamilies
+              <ArrowRight size={18} />
+            </Link>
+
+            <div
+              className="explore-option-decoration"
+              aria-hidden="true"
+            >
+              <Leaf size={100} />
+            </div>
+          </article>
+
+        </section>
+
+        {/* Bottom note */}
         <section className="family-learning-note">
           <div className="family-learning-icon">
-            <Info size={22} />
+            <Leaf size={22} />
           </div>
 
           <div>
-            <h2>A little botanical note</h2>
+            <h2>Discover something new</h2>
             <p>
-              Cactus classification continues to evolve, and some
-              taxonomic systems group these plants differently.
-              Cactora presents these six groups as a learning guide.
-              The examples are representative, not an exhaustive list.
+              Whether you're learning botanical names or
+              exploring plant classifications, Cactora
+              helps you discover the fascinating world of
+              cacti one step at a time.
             </p>
-          </div>
-        </section>
-
-        {/* Bottom call to action */}
-        <section className="family-bottom-cta">
-          <div>
-            <p className="page-label">KEEP EXPLORING</p>
-
-            <h2>Every cactus has a story.</h2>
-
-            <p>
-              Learn about their unique adaptations, habitats, and
-              fascinating characteristics.
-            </p>
-
-            <Link to="/about" className="home-text-link">
-              Discover Cactora <ArrowRight size={17} />
-            </Link>
-          </div>
-
-          <div
-            className="family-cta-icon"
-            aria-hidden="true"
-          >
-            <Sun size={34} />
           </div>
         </section>
 
