@@ -125,7 +125,7 @@ function CactusSpeciesDetails() {
         <section className="cactus-detail-section">
           <h2>Discover This Cactus</h2>
           <div className="cactus-detail-info-card">
-            <Flower2 size={24} color="#D94F83" />
+            <span className="cactus-care-emoji">🌵</span>
             <div>
               <h3>Special Characteristics</h3>
               <p>{cactus.specialTraits}</p>
@@ -138,31 +138,31 @@ function CactusSpeciesDetails() {
 
           <div className="cactus-detail-care-grid">
             <article className="cactus-detail-care-card">
-              <Sun size={25} color="#E9A11B" />
+              <span className="cactus-care-emoji">☀️</span>
               <h3>Sunlight</h3>
               <p>{cactus.care.sunlight}</p>
             </article>
 
             <article className="cactus-detail-care-card">
-              <Droplets size={25} color="#2996DC" />
+              <span className="cactus-care-emoji">💧</span>
               <h3>Watering</h3>
               <p>{cactus.care.watering}</p>
             </article>
 
             <article className="cactus-detail-care-card">
-              <Sprout size={25} color="#E99673" />
+              <span className="cactus-care-emoji">🪨</span>
               <h3>Soil & Potting</h3>
               <p>{cactus.care.soilAndPotting}</p>
             </article>
 
             <article className="cactus-detail-care-card">
-              <Thermometer size={25} color="#8864D8" />
+              <span className="cactus-care-emoji">🌡️</span>
               <h3>Temperature</h3>
               <p>{cactus.care.temperature}</p>
             </article>
 
             <article className="cactus-detail-care-card">
-              <Leaf size={25} color="#D94F83" />
+              <span className="cactus-care-emoji">🧪</span>
               <h3>Fertilizer</h3>
               <p>{cactus.care.fertilizer}</p>
             </article>
