@@ -306,3 +306,35 @@
     padding: 9px 13px;
   }
 }
+
+.genus-card-name-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.genus-card-name-row h3 {
+  margin: 0;
+  min-width: 0;
+}
+
+
+.scientific-name-voice {
+  background: #e8f5e9;
+  border-color: #2e8b57;
+  color: #2e8b57;
+}
+
+.scientific-name-voice:hover {
+  background: #2e8b57;
+  border-color: #2e8b57;
+  color: #fff;
+}
+
+.scientific-name-voice.speaking {
+  background: #1b5e20;
+  border-color: #1b5e20;
+  color: #fff;
+}
+
