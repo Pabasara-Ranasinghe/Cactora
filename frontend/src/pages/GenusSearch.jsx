@@ -1,10 +1,46 @@
 
 import { useMemo, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Search, Leaf, ArrowRight } from 'lucide-react'
 import cactusGenera from '../data/cactusGenera'
+import useCactusImage from '../hooks/useCactusImage'
+import ScientificNameVoice from '../components/ScientificNameVoice'
 import './GenusSearch.css'
 
+function GenusImage({ genus }) {
+  const { imageUrl, loading } = useCactusImage(
+    genus.imageSearchTerm || genus.scientificName || genus.name
+  )
+
+  const [imageFailed, setImageFailed] = useState(false)
+
+  return (
+    <div className="genus-image-placeholder">
+      {loading ? (
+        <>
+          <Leaf size={38} />
+          <span>Finding a cactus photo...</span>
+        </>
+      ) : imageUrl && !imageFailed ? (
+        <img
+          src={imageUrl}
+          alt={`${genus.name} cactus`}
+          loading="lazy"
+          onError={() => setImageFailed(true)}
+        />
+      ) : (
+        <>
+          <Leaf size={38} />
+          <span>No image available</span>
+        </>
+      )}
+    </div>
+  )
+}
+
 function GenusSearch() {
+  const navigate = useNavigate()
+
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedSubfamily, setSelectedSubfamily] = useState('All')
 
@@ -65,7 +101,8 @@ function GenusSearch() {
           </div>
 
           <span className="genus-search-count">
-            {filteredGenera.length} {filteredGenera.length === 1 ? 'genus' : 'genera'}
+            {filteredGenera.length}{' '}
+            {filteredGenera.length === 1 ? 'genus' : 'genera'}
           </span>
         </div>
 
@@ -89,10 +126,7 @@ function GenusSearch() {
             {filteredGenera.map((genus) => (
               <article className="genus-card" key={genus.id}>
                 <div className="genus-card-image">
-                  <div className="genus-image-placeholder">
-                    <Leaf size={38} />
-                    <span>Finding a cactus photo...</span>
-                  </div>
+                  <GenusImage genus={genus} />
                 </div>
 
                 <div className="genus-card-content">
@@ -100,16 +134,17 @@ function GenusSearch() {
                     {genus.subfamily}
                   </span>
 
-                  <h3>{genus.name}</h3>
+                <div className="genus-card-name-row">
+                    <h3>{genus.name}</h3>
+                    <ScientificNameVoice name={genus.scientificName || genus.name} />
+                </div>
 
                   <p>{genus.description}</p>
 
                   <button
                     type="button"
                     className="genus-card-link"
-                    onClick={() => {
-                      window.location.href = `/genera/${genus.id}`
-                    }}
+                    onClick={() => navigate(`/genera/${genus.id}`)}
                   >
                     Explore genus <ArrowRight size={17} />
                   </button>
@@ -121,7 +156,9 @@ function GenusSearch() {
           <div className="genus-search-empty">
             <Leaf size={40} />
             <h3>No genera found</h3>
-            <p>Try another search term or select a different subfamily.</p>
+            <p>
+              Try another search term or select a different subfamily.
+            </p>
           </div>
         )}
       </section>
