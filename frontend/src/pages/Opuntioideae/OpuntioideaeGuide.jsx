@@ -13,6 +13,7 @@ import {
   Sprout,
   Sun,
 } from 'lucide-react'
+import OpuntioideaeSpeciesGrid from './OpuntioideaeSpeciesGrid'
 import './OpuntioideaeGuide.css'
 
 const facts = [
@@ -484,6 +485,8 @@ function OpuntioideaeGuide() {
             </p>
           </div>
         </section>
+
+        <OpuntioideaeSpeciesGrid />
 
         <section className="opuntioideae-section">
           <div className="opuntioideae-section-heading">
