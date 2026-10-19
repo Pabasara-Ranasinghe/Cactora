@@ -1,0 +1,819 @@
+[
+  {
+    "id": "cactoideae-trichocereusgrandiflorus",
+    "commonName": "Trichocereus grandiflorus",
+    "scientificName": "Trichocereus grandiflorus",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Trichocereus grandiflorus is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Trichocereus grandiflorus should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Trichocereus grandiflorus should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 11
+  },
+  {
+    "id": "cactoideae-trichocereushuascha",
+    "commonName": "Trichocereus huascha",
+    "scientificName": "Trichocereus huascha",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Trichocereus huascha is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Trichocereus huascha should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Trichocereus huascha should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 12
+  },
+  {
+    "id": "cactoideae-trichocereusschickendantzii",
+    "commonName": "Trichocereus schickendantzii",
+    "scientificName": "Trichocereus schickendantzii",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Trichocereus schickendantzii is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Trichocereus schickendantzii should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Trichocereus schickendantzii should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 13
+  },
+  {
+    "id": "cactoideae-echinopsisaurea",
+    "commonName": "Echinopsis aurea",
+    "scientificName": "Echinopsis aurea",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinopsis aurea is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinopsis aurea should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinopsis aurea should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 14
+  },
+  {
+    "id": "cactoideae-echinopsiscalochlora",
+    "commonName": "Echinopsis calochlora",
+    "scientificName": "Echinopsis calochlora",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinopsis calochlora is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinopsis calochlora should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinopsis calochlora should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 15
+  },
+  {
+    "id": "cactoideae-echinopsissubdenudata",
+    "commonName": "Echinopsis subdenudata",
+    "scientificName": "Echinopsis subdenudata",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinopsis subdenudata is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinopsis subdenudata should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinopsis subdenudata should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 16
+  },
+  {
+    "id": "cactoideae-echinopsisbruchii",
+    "commonName": "Echinopsis bruchii",
+    "scientificName": "Echinopsis bruchii",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinopsis bruchii is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinopsis bruchii should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinopsis bruchii should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 17
+  },
+  {
+    "id": "cactoideae-echinopsisformosa",
+    "commonName": "Echinopsis formosa",
+    "scientificName": "Echinopsis formosa",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinopsis formosa is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinopsis formosa should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinopsis formosa should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 18
+  },
+  {
+    "id": "cactoideae-armatocereuslaetus",
+    "commonName": "Armatocereus laetus",
+    "scientificName": "Armatocereus laetus",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Armatocereus laetus is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Armatocereus laetus should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Armatocereus laetus should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 19
+  },
+  {
+    "id": "cactoideae-armatocereusmatucanensis",
+    "commonName": "Armatocereus matucanensis",
+    "scientificName": "Armatocereus matucanensis",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Armatocereus matucanensis is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Armatocereus matucanensis should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Armatocereus matucanensis should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 20
+  },
+  {
+    "id": "cactoideae-armatocereusrauhii",
+    "commonName": "Armatocereus rauhii",
+    "scientificName": "Armatocereus rauhii",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Armatocereus rauhii is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Armatocereus rauhii should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Armatocereus rauhii should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 21
+  },
+  {
+    "id": "cactoideae-pilosocereusleucocephalus",
+    "commonName": "Pilosocereus leucocephalus",
+    "scientificName": "Pilosocereus leucocephalus",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Pilosocereus leucocephalus is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Pilosocereus leucocephalus should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Pilosocereus leucocephalus should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 22
+  },
+  {
+    "id": "cactoideae-stenocereusgummosus",
+    "commonName": "Stenocereus gummosus",
+    "scientificName": "Stenocereus gummosus",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Stenocereus gummosus is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Stenocereus gummosus should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Stenocereus gummosus should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 23
+  },
+  {
+    "id": "cactoideae-stenocereusqueretaroensis",
+    "commonName": "Stenocereus queretaroensis",
+    "scientificName": "Stenocereus queretaroensis",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Stenocereus queretaroensis is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Stenocereus queretaroensis should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Stenocereus queretaroensis should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 24
+  },
+  {
+    "id": "cactoideae-lemaireocereusmarginatus",
+    "commonName": "Lemaireocereus marginatus",
+    "scientificName": "Lemaireocereus marginatus",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Lemaireocereus marginatus is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Lemaireocereus marginatus should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Lemaireocereus marginatus should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 25
+  },
+  {
+    "id": "cactoideae-echinocereusviridiflorus",
+    "commonName": "Echinocereus viridiflorus",
+    "scientificName": "Echinocereus viridiflorus",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinocereus viridiflorus is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinocereus viridiflorus should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinocereus viridiflorus should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 26
+  },
+  {
+    "id": "cactoideae-echinocereusreichenbachii",
+    "commonName": "Echinocereus reichenbachii",
+    "scientificName": "Echinocereus reichenbachii",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinocereus reichenbachii is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinocereus reichenbachii should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinocereus reichenbachii should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 27
+  },
+  {
+    "id": "cactoideae-echinocereuspectinatus",
+    "commonName": "Echinocereus pectinatus",
+    "scientificName": "Echinocereus pectinatus",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinocereus pectinatus is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinocereus pectinatus should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinocereus pectinatus should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 28
+  },
+  {
+    "id": "cactoideae-echinocereustriglochidiatus",
+    "commonName": "Echinocereus triglochidiatus",
+    "scientificName": "Echinocereus triglochidiatus",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinocereus triglochidiatus is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinocereus triglochidiatus should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinocereus triglochidiatus should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 29
+  },
+  {
+    "id": "cactoideae-echinocereuscoccineus",
+    "commonName": "Echinocereus coccineus",
+    "scientificName": "Echinocereus coccineus",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinocereus coccineus is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinocereus coccineus should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinocereus coccineus should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 30
+  },
+  {
+    "id": "cactoideae-echinocereussubinermis",
+    "commonName": "Echinocereus subinermis",
+    "scientificName": "Echinocereus subinermis",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinocereus subinermis is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinocereus subinermis should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinocereus subinermis should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 31
+  },
+  {
+    "id": "cactoideae-echinocereusbrandegeei",
+    "commonName": "Echinocereus brandegeei",
+    "scientificName": "Echinocereus brandegeei",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinocereus brandegeei is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinocereus brandegeei should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinocereus brandegeei should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 32
+  },
+  {
+    "id": "cactoideae-echinocereusfendleri",
+    "commonName": "Echinocereus fendleri",
+    "scientificName": "Echinocereus fendleri",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinocereus fendleri is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinocereus fendleri should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinocereus fendleri should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 33
+  },
+  {
+    "id": "cactoideae-echinocereuslaui",
+    "commonName": "Echinocereus laui",
+    "scientificName": "Echinocereus laui",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinocereus laui is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinocereus laui should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinocereus laui should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 34
+  },
+  {
+    "id": "cactoideae-echinocereusschmollii",
+    "commonName": "Echinocereus schmollii",
+    "scientificName": "Echinocereus schmollii",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinocereus schmollii is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinocereus schmollii should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinocereus schmollii should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 35
+  },
+  {
+    "id": "cactoideae-echinocereuspentalophus",
+    "commonName": "Echinocereus pentalophus",
+    "scientificName": "Echinocereus pentalophus",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinocereus pentalophus is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinocereus pentalophus should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinocereus pentalophus should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 36
+  },
+  {
+    "id": "cactoideae-echinocereusstolonifer",
+    "commonName": "Echinocereus stolonifer",
+    "scientificName": "Echinocereus stolonifer",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinocereus stolonifer is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinocereus stolonifer should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinocereus stolonifer should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 37
+  },
+  {
+    "id": "cactoideae-wilcoxiaposelgeri",
+    "commonName": "Wilcoxia poselgeri",
+    "scientificName": "Wilcoxia poselgeri",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Wilcoxia poselgeri is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Wilcoxia poselgeri should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Wilcoxia poselgeri should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 38
+  },
+  {
+    "id": "cactoideae-echinocereusenneacanthus",
+    "commonName": "Echinocereus enneacanthus",
+    "scientificName": "Echinocereus enneacanthus",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinocereus enneacanthus is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinocereus enneacanthus should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinocereus enneacanthus should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 39
+  },
+  {
+    "id": "cactoideae-echinocereusdasyphyllus",
+    "commonName": "Echinocereus dasyphyllus",
+    "scientificName": "Echinocereus dasyphyllus",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinocereus dasyphyllus is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinocereus dasyphyllus should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinocereus dasyphyllus should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 40
+  },
+  {
+    "id": "cactoideae-echinocereuschloranthus",
+    "commonName": "Echinocereus chloranthus",
+    "scientificName": "Echinocereus chloranthus",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinocereus chloranthus is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinocereus chloranthus should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinocereus chloranthus should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 41
+  },
+  {
+    "id": "cactoideae-echinocereusknippelianus",
+    "commonName": "Echinocereus knippelianus",
+    "scientificName": "Echinocereus knippelianus",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinocereus knippelianus is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinocereus knippelianus should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinocereus knippelianus should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 42
+  },
+  {
+    "id": "cactoideae-echinocereuspulchellus",
+    "commonName": "Echinocereus pulchellus",
+    "scientificName": "Echinocereus pulchellus",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinocereus pulchellus is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinocereus pulchellus should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinocereus pulchellus should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 43
+  },
+  {
+    "id": "cactoideae-echinocereusgentryi",
+    "commonName": "Echinocereus gentryi",
+    "scientificName": "Echinocereus gentryi",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinocereus gentryi is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinocereus gentryi should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinocereus gentryi should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 44
+  },
+  {
+    "id": "cactoideae-echinocereusledingii",
+    "commonName": "Echinocereus ledingii",
+    "scientificName": "Echinocereus ledingii",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinocereus ledingii is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinocereus ledingii should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinocereus ledingii should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 45
+  },
+  {
+    "id": "cactoideae-echinocereusnicholii",
+    "commonName": "Echinocereus nicholii",
+    "scientificName": "Echinocereus nicholii",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinocereus nicholii is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinocereus nicholii should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinocereus nicholii should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 46
+  },
+  {
+    "id": "cactoideae-echinocereuspacificus",
+    "commonName": "Echinocereus pacificus",
+    "scientificName": "Echinocereus pacificus",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinocereus pacificus is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinocereus pacificus should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinocereus pacificus should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 47
+  },
+  {
+    "id": "cactoideae-echinocereusparkeri",
+    "commonName": "Echinocereus parkeri",
+    "scientificName": "Echinocereus parkeri",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinocereus parkeri is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinocereus parkeri should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinocereus parkeri should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 48
+  },
+  {
+    "id": "cactoideae-echinocereusstramineus",
+    "commonName": "Echinocereus stramineus",
+    "scientificName": "Echinocereus stramineus",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinocereus stramineus is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinocereus stramineus should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinocereus stramineus should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 49
+  },
+  {
+    "id": "cactoideae-echinocereusviereckii",
+    "commonName": "Echinocereus viereckii",
+    "scientificName": "Echinocereus viereckii",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinocereus viereckii is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinocereus viereckii should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinocereus viereckii should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 50
+  },
+  {
+    "id": "cactoideae-echinocereuswaldei",
+    "commonName": "Echinocereus waldei",
+    "scientificName": "Echinocereus waldei",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinocereus waldei is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinocereus waldei should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinocereus waldei should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 51
+  },
+  {
+    "id": "cactoideae-echinocereuswebsterianus",
+    "commonName": "Echinocereus websterianus",
+    "scientificName": "Echinocereus websterianus",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinocereus websterianus is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinocereus websterianus should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinocereus websterianus should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 52
+  },
+  {
+    "id": "cactoideae-echinocereusyavapaiensis",
+    "commonName": "Echinocereus yavapaiensis",
+    "scientificName": "Echinocereus yavapaiensis",
+    "subfamily": "Cactoideae",
+    "growthHabitAndSize": "Echinocereus yavapaiensis is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.",
+    "hardinessAndNativeRange": "Native range and cold tolerance for Echinocereus yavapaiensis should be verified using a reliable botanical reference before publication.",
+    "specialTraits": "Species-specific identifying features of Echinocereus yavapaiensis should be verified before publication.",
+    "care": {
+      "sunlight": "Provide light appropriate to the verified species and acclimate gradually to stronger sun.",
+      "watering": "Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.",
+      "soilAndPotting": "Use a fast-draining cactus mix and a pot with drainage holes.",
+      "temperature": "Protect from frost until the species-specific temperature tolerance is verified.",
+      "fertilizer": "During active growth, use a diluted cactus fertilizer according to its label."
+    },
+    "_draft": true,
+    "_reviewRequired": true,
+    "_targetNumber": 53
+  }
+]
