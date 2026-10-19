@@ -1970,6 +1970,24 @@ const cactusGenera = [
     description: 'A proposed hybrid cactus genus name awaiting taxonomic verification.',
     imageSearchTerm: 'Yungastocactus cactus',
   },
+  {
+    id: 'pereskia',
+    name: 'Pereskia',
+    scientificName: 'Pereskia',
+    subfamily: 'Pereskioideae',
+    description:
+      'Leafy cacti with broad green leaves, woody stems, and attractive flowers.',
+    imageSearchTerm: 'Pereskia leafy cactus',
+  },
+  {
+    id: 'leuenbergeria',
+    name: 'Leuenbergeria',
+    scientificName: 'Leuenbergeria',
+    subfamily: 'Leuenbergerioideae',
+    description:
+      'Leafy, woody cacti with broad leaves and spiny branches.',
+    imageSearchTerm: 'Leuenbergeria cactus leaves',
+  },
 ]
 
 const nonCactusGenera = new Set([
