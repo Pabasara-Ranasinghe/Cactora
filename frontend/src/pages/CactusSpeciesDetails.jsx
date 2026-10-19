@@ -173,16 +173,10 @@ function CactusSpeciesDetails() {
             <h2>Keep growing your cactus knowledge with Cactora.</h2>
 
             <div className="cactus-detail-cta-buttons">
-                <Link to="/explore" className="cactus-cta-button cactus-cta-secondary">
+                <Link to="/genera" className="cactus-cta-button cactus-cta-secondary">
                 Explore more cacti
                 </Link>
 
-                <Link
-                to="/cactoideae"
-                className="cactus-cta-button cactus-cta-primary"
-                >
-                Explore the 50 Cactoideae cacti
-                </Link>
             </div>
             </div>
       </div>
