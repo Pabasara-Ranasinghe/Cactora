@@ -13,6 +13,11 @@ import {
   Sprout,
   Sun,
 } from 'lucide-react'
+
+import cactusSpecies from '../../data/cactusSpecies'
+import useCactusImage from '../../hooks/useCactusImage'
+import ScientificNameVoice from '../../components/ScientificNameVoice'
+
 import './PereskioideaeGuide.css'
 
 const atAGlance = [
@@ -131,6 +136,121 @@ const careTips = [
       'Many commonly cultivated species are sensitive to frost and cold conditions. Protect them when temperatures drop, and check the tolerance of your particular species.',
   },
 ]
+
+
+function PereskioideaeSpeciesCollection() {
+  const speciesList = cactusSpecies.filter(
+    (species) => species.subfamily === 'Pereskioideae'
+  )
+
+  return (
+    <section
+      className="pereskioideae-species-section"
+      id="pereskioideae-species"
+    >
+      <div className="pereskioideae-species-heading">
+        <span className="pereskioideae-section-kicker">
+          <Leaf size={15} />
+          MEET THE SPECIES
+        </span>
+
+        <h2>Discover the Leafy Cacti</h2>
+
+        <p>
+          Explore the Pereskioideae collection and learn about
+          each species' distinctive features, natural habitat,
+          growth habits, and care requirements.
+        </p>
+
+        <span className="pereskioideae-species-count">
+          {speciesList.length} species in the collection
+        </span>
+      </div>
+
+      {speciesList.length > 0 ? (
+        <div className="pereskioideae-species-grid">
+          {speciesList.map((species) => (
+            <PereskioideaeSpeciesCard
+              key={species.id}
+              species={species}
+            />
+          ))}
+        </div>
+      ) : (
+        <p className="pereskioideae-species-empty">
+          No species have been added to this collection yet.
+        </p>
+      )}
+    </section>
+  )
+}
+
+function PereskioideaeSpeciesCard({ species }) {
+  const { imageUrl, loading } = useCactusImage(
+    species.scientificName,
+    species.imageUrl
+  )
+
+  return (
+    <article className="pereskioideae-species-card">
+      <a
+        href={`/cacti/${species.id}`}
+        className="pereskioideae-species-image-link"
+        aria-label={`Explore ${species.commonName}`}
+      >
+        {imageUrl ? (
+          <img
+            className="pereskioideae-species-image"
+            src={imageUrl}
+            alt={species.commonName}
+            loading="lazy"
+            onError={(event) => {
+              event.currentTarget.style.display = 'none'
+
+              const fallback = event.currentTarget.nextElementSibling
+
+              if (fallback) {
+                fallback.style.display = 'flex'
+              }
+            }}
+          />
+        ) : null}
+
+        <div
+          className="pereskioideae-species-image-fallback"
+          style={{ display: imageUrl ? 'none' : 'flex' }}
+        >
+          <Leaf size={36} />
+          <span>
+            {loading ? 'Finding a cactus photo...' : 'Photo unavailable'}
+          </span>
+        </div>
+      </a>
+
+      <div className="pereskioideae-species-card-content">
+        <h3>{species.commonName}</h3>
+
+        <div className="pereskioideae-species-scientific-row">
+          <span className="pereskioideae-species-scientific">
+            {species.scientificName}
+          </span>
+
+          <ScientificNameVoice name={species.scientificName} />
+        </div>
+
+        <p>{species.growthHabitAndSize}</p>
+
+        <a
+          href={`/cacti/${species.id}`}
+          className="pereskioideae-species-explore"
+        >
+          Explore species
+          <ArrowRight size={17} />
+        </a>
+      </div>
+    </article>
+  )
+}
 
 function PereskioideaeGuide() {
   return (
@@ -253,6 +373,8 @@ function PereskioideaeGuide() {
             </table>
           </div>
         </section>
+
+        <PereskioideaeSpeciesCollection />
 
         <section className="pereskioideae-section">
           <div className="pereskioideae-section-heading">
