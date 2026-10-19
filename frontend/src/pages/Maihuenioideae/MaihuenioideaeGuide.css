@@ -1348,3 +1348,176 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+
+
+/* Maihuenioideae species collection — Green theme */
+
+.maihu-species-section {
+  padding: 72px 6%;
+  background: #f3f8f0;
+}
+
+.maihu-species-heading {
+  max-width: 720px;
+  margin: 0 auto 36px;
+  text-align: center;
+}
+
+.maihu-species-heading h2 {
+  margin: 12px 0;
+  color: #254d35;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+.maihu-species-heading > p {
+  color: #536c59;
+  line-height: 1.8;
+}
+
+.maihu-species-count {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 7px 14px;
+  border-radius: 30px;
+  background: #dcebd5;
+  color: #254d35;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.maihu-species-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.maihu-species-card {
+  overflow: hidden;
+  border: 1px solid #dce8d6;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 8px 28px rgb(37 77 53 / 7%);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.maihu-species-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgb(37 77 53 / 13%);
+}
+
+.maihu-species-image-link {
+  display: block;
+  overflow: hidden;
+  height: 250px;
+  background: #e8f0e3;
+  text-decoration: none;
+}
+
+.maihu-species-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.maihu-species-card:hover .maihu-species-image {
+  transform: scale(1.04);
+}
+
+.maihu-species-image-fallback {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  color: #356747;
+}
+
+.maihu-species-card-content {
+  padding: 24px;
+}
+
+.maihu-species-card-content h3 {
+  margin: 0 0 12px;
+  color: #254d35;
+  font-size: 1.35rem;
+}
+
+.maihu-species-scientific-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.maihu-species-scientific {
+  min-width: 0;
+  color: #39784c;
+  font-size: 0.98rem;
+  font-style: italic;
+  overflow-wrap: anywhere;
+}
+
+.maihu-species-scientific-row .scientific-name-voice {
+  flex-shrink: 0;
+  border-color: #a8c9a2;
+  color: #254d35;
+}
+
+.maihu-species-scientific-row .scientific-name-voice:hover {
+  background: #39784c;
+  border-color: #39784c;
+  color: #fff;
+}
+
+.maihu-species-scientific-row .scientific-name-voice.speaking {
+  background: #254d35;
+  border-color: #254d35;
+  color: #fff;
+}
+
+.maihu-species-card-content > p {
+  color: #536c59;
+  line-height: 1.8;
+}
+
+.maihu-species-explore {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  color: #2f6841;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.maihu-species-explore:hover {
+  color: #173d27;
+}
+
+@media (max-width: 700px) {
+  .maihu-species-section {
+    padding: 48px 5%;
+  }
+
+  .maihu-species-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .maihu-species-image-link {
+    height: 220px;
+  }
+
+  .maihu-species-card-content {
+    padding: 20px;
+  }
+}
