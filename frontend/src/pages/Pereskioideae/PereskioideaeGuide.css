@@ -987,3 +987,214 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+
+
+/* =========================================
+   PERESKIOIDEAE SPECIES COLLECTION
+   ========================================= */
+
+.pereskioideae-species-section {
+  margin-top: 82px;
+  padding: clamp(25px, 4vw, 45px);
+  border: 1px solid #dfe9dc;
+  border-radius: 28px;
+  background: linear-gradient(145deg, #f1f8ee, #fbfcf9);
+  scroll-margin-top: 30px;
+}
+
+.pereskioideae-species-heading {
+  max-width: 760px;
+  margin: 0 auto 35px;
+  text-align: center;
+}
+
+.pereskioideae-species-heading h2 {
+  margin: 12px 0;
+  color: #234a34;
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  line-height: 1.25;
+}
+
+.pereskioideae-species-heading > p {
+  margin: 0 auto;
+  color: #748174;
+  font-size: 0.96rem;
+  line-height: 1.85;
+}
+
+.pereskioideae-species-count {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 8px 15px;
+  border: 1px solid #d5e5d1;
+  border-radius: 30px;
+  color: #356b4b;
+  background: #eaf4e7;
+  font-size: 0.84rem;
+  font-weight: 750;
+}
+
+.pereskioideae-species-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.pereskioideae-species-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #dfe9dc;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 8px 25px rgb(35 74 52 / 5%);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.pereskioideae-species-card:hover {
+  transform: translateY(-5px);
+  border-color: #c4d9bf;
+  box-shadow: 0 14px 32px rgb(35 74 52 / 10%);
+}
+
+.pereskioideae-species-image-link {
+  display: block;
+  height: 220px;
+  overflow: hidden;
+  background: #eaf4e7;
+}
+
+.pereskioideae-species-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.pereskioideae-species-card:hover .pereskioideae-species-image {
+  transform: scale(1.04);
+}
+
+.pereskioideae-species-image-fallback {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  color: #356b4b;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.pereskioideae-species-card-content {
+  padding: 22px;
+}
+
+.pereskioideae-species-card-content h3 {
+  margin: 0 0 12px;
+  color: #234a34;
+  font-size: 1.16rem;
+  font-weight: 800;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.pereskioideae-species-scientific-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.pereskioideae-species-scientific {
+  min-width: 0;
+  color: #39784c;
+  font-size: 0.92rem;
+  font-style: italic;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.pereskioideae-species-scientific-row .scientific-name-voice {
+  flex-shrink: 0;
+  border-color: #a8c9a2;
+  color: #254d35;
+}
+
+.pereskioideae-species-scientific-row .scientific-name-voice:hover {
+  border-color: #39784c;
+  color: #fff;
+  background: #39784c;
+}
+
+.pereskioideae-species-scientific-row
+  .scientific-name-voice.speaking {
+  border-color: #254d35;
+  color: #fff;
+  background: #254d35;
+}
+
+.pereskioideae-species-card-content > p {
+  margin: 0;
+  color: #748174;
+  font-size: 0.87rem;
+  line-height: 1.8;
+}
+
+.pereskioideae-species-explore {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  color: #356b4b;
+  font-size: 0.87rem;
+  font-weight: 750;
+  transition: color 0.2s ease;
+}
+
+.pereskioideae-species-explore:hover {
+  color: #234a34;
+}
+
+.pereskioideae-species-empty {
+  padding: 25px;
+  color: #748174;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .pereskioideae-species-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .pereskioideae-species-section {
+    margin-top: 58px;
+    padding: 22px 16px;
+    border-radius: 22px;
+  }
+
+  .pereskioideae-species-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pereskioideae-species-image-link {
+    height: 235px;
+  }
+
+  .pereskioideae-species-card-content {
+    padding: 20px;
+  }
+}
