@@ -14,6 +14,11 @@ import {
   TreeDeciduous,
 } from 'lucide-react'
 
+import cactusSpecies from '../../data/cactusSpecies'
+import useCactusImage from '../../hooks/useCactusImage'
+import ScientificNameVoice from '../../components/ScientificNameVoice'
+import { Link } from 'react-router-dom'
+
 import './LeuenbergerioideaeGuide.css'
 
 const atAGlance = [
@@ -197,6 +202,92 @@ function SectionHeading({ eyebrow, title, description }) {
   )
 }
 
+
+function LeuenbergerioideaeSpeciesCard({ species }) {
+  const { imageUrl, loading } = useCactusImage(
+    species.scientificName,
+    species.imageUrl
+  )
+
+  return (
+    <article className="leuenbergerioideae-species-card">
+      <Link
+        to={`/cacti/${species.id}`}
+        className="leuenbergerioideae-species-image-link"
+        aria-label={`View details about ${species.scientificName}`}
+      >
+        <div className="leuenbergerioideae-species-image">
+          {imageUrl ? (
+            <img
+              src={imageUrl}
+              alt={species.commonName}
+              loading="lazy"
+            />
+          ) : (
+            <div
+              className="leuenbergerioideae-species-image-placeholder"
+              role="status"
+            >
+              <span aria-hidden="true">
+                {loading ? '🌱' : '🌵'}
+              </span>
+              <span>{loading ? 'Finding cactus image...' : 'Image unavailable'}</span>
+            </div>
+          )}
+        </div>
+      </Link>
+
+      <div className="leuenbergerioideae-species-content">
+        <span className="leuenbergerioideae-species-common-name">
+          {species.commonName}
+        </span>
+
+        <div className="leuenbergerioideae-species-scientific-row">
+          <h3>{species.scientificName}</h3>
+          <ScientificNameVoice name={species.scientificName} />
+        </div>
+
+        <p>{species.growthHabitAndSize}</p>
+
+        <div className="leuenbergerioideae-species-range">
+          <Globe2 size={16} aria-hidden="true" />
+          <span>{species.hardinessAndNativeRange}</span>
+        </div>
+
+        <div className="leuenbergerioideae-species-trait">
+          <Leaf size={16} aria-hidden="true" />
+          <span>{species.specialTraits}</span>
+        </div>
+
+        <Link
+          to={`/cacti/${species.id}`}
+          className="leuenbergerioideae-species-details"
+        >
+          Explore species
+          <ArrowRight size={16} aria-hidden="true" />
+        </Link>
+      </div>
+    </article>
+  )
+}
+
+function LeuenbergerioideaeSpeciesCollection() {
+  const speciesList = cactusSpecies.filter(
+    (species) => species.subfamily === 'Leuenbergerioideae'
+  )
+
+  return (
+    <div className="leuenbergerioideae-species-grid">
+      {speciesList.map((species) => (
+        <LeuenbergerioideaeSpeciesCard
+          key={species.id}
+          species={species}
+        />
+      ))}
+    </div>
+  )
+}
+
 export default function LeuenbergerioideaeGuide() {
   return (
     <main className="leuenbergerioideae-page">
@@ -283,34 +374,17 @@ export default function LeuenbergerioideaeGuide() {
 
         <section
           className="leuenbergerioideae-section"
-          id="leuenbergerioideae-overview"
+          id="leuenbergerioideae-species"
         >
           <SectionHeading
-            eyebrow="BOTANICAL PROFILE"
-            title="Leuenbergerioideae at a Glance"
-            description="Discover the geographical range, botanical characteristics, and cultivation preferences of these unusual leafy cacti."
+            eyebrow="MEET THE PLANTS"
+            title="Explore Leuenbergeria Species"
+            description="Discover all eight species, learn about their characteristics and native habitats, and explore their individual care requirements."
           />
 
-          <div className="leuenbergerioideae-reference-table">
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">Detail</th>
-                  <th scope="col">Information</th>
-                </tr>
-              </thead>
-
-              <tbody>
-                {atAGlance.map((item) => (
-                  <tr key={item.label}>
-                    <th scope="row">{item.label}</th>
-                    <td>{item.value}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+          <LeuenbergerioideaeSpeciesCollection />
         </section>
+
 
         <section className="leuenbergerioideae-section">
           <SectionHeading
