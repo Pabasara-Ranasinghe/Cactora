@@ -229,7 +229,7 @@ function Home() {
           <div className="home-category-grid">
             {cactusSubfamilies.map((family, index) => (
               <Link
-                to={`/explore?family=${family.id}`}
+                to="/subfamilies"
                 className={`home-category-card reveal home-category-card-${index + 1}`}
                 key={family.id}
                 style={{
