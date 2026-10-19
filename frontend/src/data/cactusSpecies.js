@@ -2011,7 +2011,699 @@ const cactusSpecies = [
       temperature: 'Protect from temperatures below approximately 10°C.',
       fertilizer: 'Apply a balanced 10-10-10 fertilizer approximately every 6 weeks during active growth.'
     }
-  }
+  },
+
+
+
+  
+  {
+    id: 'trichocereus-grandiflorus',
+    commonName: 'Red Torch Cactus',
+    scientificName: 'Trichocereus grandiflorus',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A clumping columnar cactus with ribbed green stems, generally growing low and spreading as offsets develop.',
+    hardinessAndNativeRange: 'Native to Argentina. Protect from frost and prolonged cold, and verify local hardiness before outdoor planting.',
+    specialTraits: 'Known for large, vivid red to orange funnel-shaped flowers.',
+    care: {
+      sunlight: 'Provide bright light with several hours of gentle to direct sun after gradual acclimation.',
+      watering: 'Water thoroughly during active growth once the growing medium has dried; reduce watering in cool weather.',
+      soilAndPotting: 'Use a gritty, fast-draining cactus mix and a pot with drainage holes.',
+      temperature: 'Prefer warm growing conditions; protect from frost.',
+      fertilizer: 'Apply diluted cactus fertilizer during active growth according to the product label.'
+    }
+  },
+  {
+    id: 'trichocereus-huascha',
+    commonName: 'Golden Torch Cactus',
+    scientificName: 'Trichocereus huascha',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A branching, shrubby cactus with upright ribbed stems that may form dense clumps.',
+    hardinessAndNativeRange: 'Native to Argentina. Needs excellent drainage and protection from prolonged freezing conditions.',
+    specialTraits: 'Produces bright yellow, orange, or red flowers depending on the form.',
+    care: {
+      sunlight: 'Grow in full sun to bright light, acclimating gradually.',
+      watering: 'Water deeply when the soil has dried during active growth; water less in winter.',
+      soilAndPotting: 'Use a mineral-rich, well-draining cactus substrate.',
+      temperature: 'Prefers warm conditions; protect from hard frost.',
+      fertilizer: 'Feed lightly with diluted cactus fertilizer during the growing season.'
+    }
+  },
+  {
+    id: 'trichocereus-schickendantzii',
+    commonName: 'Schickendantz Cactus',
+    scientificName: 'Trichocereus schickendantzii',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A clustering cactus with stout, ribbed cylindrical stems.',
+    hardinessAndNativeRange: 'Native to northwestern Argentina. Avoid prolonged cold and waterlogged soil.',
+    specialTraits: 'Produces large, pale flowers that open around the flowering season.',
+    care: {
+      sunlight: 'Provide bright light and several hours of sun where conditions allow.',
+      watering: 'Allow the substrate to dry between waterings.',
+      soilAndPotting: 'Use a porous cactus mix with excellent drainage.',
+      temperature: 'Keep warm and protect from frost.',
+      fertilizer: 'Use a diluted cactus fertilizer during active growth.'
+    }
+  },
+  {
+    id: 'echinopsis-aurea',
+    commonName: 'Golden Echinopsis',
+    scientificName: 'Echinopsis aurea',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A small, globular to short-columnar cactus that may form offsets.',
+    hardinessAndNativeRange: 'Native to Argentina. Provide a dry winter rest and protect from excessive cold and moisture.',
+    specialTraits: 'Known for yellow flowers and a compact body with prominent spines.',
+    care: {
+      sunlight: 'Provide bright light and some direct sun after acclimation.',
+      watering: 'Water during active growth after the mix dries thoroughly.',
+      soilAndPotting: 'Use a gritty cactus mix in a pot with drainage.',
+      temperature: 'Prefer warm growing conditions; protect from frost.',
+      fertilizer: 'Feed sparingly with diluted cactus fertilizer during growth.'
+    }
+  },
+  {
+    id: 'echinopsis-calochlora',
+    commonName: 'Green-Flowered Echinopsis',
+    scientificName: 'Echinopsis calochlora',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A small globular cactus that can produce offsets and form a cluster.',
+    hardinessAndNativeRange: 'Native to Brazil. Protect from frost and prolonged wet conditions.',
+    specialTraits: 'Recognized for flowers that may have greenish tones.',
+    care: {
+      sunlight: 'Provide bright filtered light or gentle direct sun after acclimation.',
+      watering: 'Water thoroughly when the soil has dried during active growth.',
+      soilAndPotting: 'Use a porous, fast-draining cactus substrate.',
+      temperature: 'Keep warm and protect from frost.',
+      fertilizer: 'Apply diluted cactus fertilizer occasionally during active growth.'
+    }
+  },
+  {
+    id: 'echinopsis-subdenudata',
+    commonName: 'Domino Cactus',
+    scientificName: 'Echinopsis subdenudata',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A small, nearly spherical cactus with rounded ribs and sparse short spines.',
+    hardinessAndNativeRange: 'Native to South America, especially Bolivia and Paraguay. Protect from freezing conditions.',
+    specialTraits: 'Often has small white woolly areoles and large fragrant white flowers.',
+    care: {
+      sunlight: 'Provide bright light with gentle direct sun.',
+      watering: 'Water when the substrate dries during the growing season; reduce in winter.',
+      soilAndPotting: 'Use a well-draining cactus mix and a pot with drainage holes.',
+      temperature: 'Prefer warm conditions and avoid frost.',
+      fertilizer: 'Use diluted cactus fertilizer during active growth.'
+    }
+  },
+  {
+    id: 'echinopsis-bruchii',
+    commonName: 'Bruch Cactus',
+    scientificName: 'Echinopsis bruchii',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A globular to short-columnar cactus with strong ribs and dense spines.',
+    hardinessAndNativeRange: 'Native to Argentina. Needs drainage and protection from prolonged cold and dampness.',
+    specialTraits: 'Mature plants can produce striking red flowers.',
+    care: {
+      sunlight: 'Provide bright light and direct sun after acclimation.',
+      watering: 'Water during active growth after the mix dries.',
+      soilAndPotting: 'Use a gritty, mineral-rich cactus mix.',
+      temperature: 'Protect from hard frost, especially when the soil is wet.',
+      fertilizer: 'Feed lightly with diluted cactus fertilizer during growth.'
+    }
+  },
+  {
+    id: 'echinopsis-formosa',
+    commonName: 'Formosa Barrel Cactus',
+    scientificName: 'Echinopsis formosa',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A globular to barrel-shaped cactus that may become more columnar with age.',
+    hardinessAndNativeRange: 'Native to the Andes of Argentina and neighboring regions. Requires excellent drainage.',
+    specialTraits: 'Has prominent ribs and spines, with yellow flowers reported in cultivation.',
+    care: {
+      sunlight: 'Provide strong light and sun after gradual acclimation.',
+      watering: 'Water thoroughly only after the growing medium dries.',
+      soilAndPotting: 'Use a gritty mineral cactus mix.',
+      temperature: 'Keep in warm conditions and protect from frost.',
+      fertilizer: 'Fertilize sparingly during active growth.'
+    }
+  },
+  {
+    id: 'armatocereus-laetus',
+    commonName: 'Laetus Tree Cactus',
+    scientificName: 'Armatocereus laetus',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A branching columnar cactus that develops sturdy upright stems.',
+    hardinessAndNativeRange: 'Associated with Peru. Needs warm conditions and excellent drainage.',
+    specialTraits: 'Has ribbed stems with spiny areoles and nocturnal cactus flowers.',
+    care: {
+      sunlight: 'Provide full sun or very bright light.',
+      watering: 'Water during active growth and allow the soil to dry between waterings.',
+      soilAndPotting: 'Use a mineral, fast-draining cactus substrate.',
+      temperature: 'Keep warm and protect from frost.',
+      fertilizer: 'Use diluted cactus fertilizer during the growing season.'
+    }
+  },
+  {
+    id: 'armatocereus-matucanensis',
+    commonName: 'Matucana Tree Cactus',
+    scientificName: 'Armatocereus matucanensis',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A tall branching cactus with ribbed cylindrical stems.',
+    hardinessAndNativeRange: 'Native to Peru. Avoid frost and prolonged dampness.',
+    specialTraits: 'Its tree-like habit and stout spines distinguish it from many smaller cacti.',
+    care: {
+      sunlight: 'Provide full sun to bright light.',
+      watering: 'Allow the substrate to dry thoroughly between waterings.',
+      soilAndPotting: 'Use a well-draining mineral cactus mix.',
+      temperature: 'Prefer warm temperatures; protect from frost.',
+      fertilizer: 'Apply diluted cactus fertilizer during active growth.'
+    }
+  },
+  {
+    id: 'armatocereus-rauhii',
+    commonName: 'Rauhs Tree Cactus',
+    scientificName: 'Armatocereus rauhii',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A columnar, branching cactus with ribbed stems.',
+    hardinessAndNativeRange: 'Associated with Peru. Its exact hardiness should be checked against the local form.',
+    specialTraits: 'A less commonly cultivated member of the tree-cactus genus Armatocereus.',
+    care: {
+      sunlight: 'Provide bright light and ample sun.',
+      watering: 'Water when the substrate is dry, reducing watering in cool weather.',
+      soilAndPotting: 'Use a porous cactus mix with excellent drainage.',
+      temperature: 'Keep warm and protect from frost.',
+      fertilizer: 'Feed lightly during active growth.'
+    }
+  },
+  {
+    id: 'pilosocereus-leucocephalus',
+    commonName: 'White-Crowned Pilosocereus',
+    scientificName: 'Pilosocereus leucocephalus',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A branching columnar cactus that can develop tall, tree-like stems.',
+    hardinessAndNativeRange: 'Native to Mexico and parts of Central America. Sensitive to frost.',
+    specialTraits: 'Mature stems may develop woolly, bristly flowering zones near the tips.',
+    care: {
+      sunlight: 'Provide full sun to very bright light.',
+      watering: 'Water during warm active growth after the soil dries.',
+      soilAndPotting: 'Use a gritty, well-draining cactus substrate.',
+      temperature: 'Keep warm and protect from cold.',
+      fertilizer: 'Apply diluted cactus fertilizer during active growth.'
+    }
+  },
+  {
+    id: 'stenocereus-gummosus',
+    commonName: 'Sour Pitaya',
+    scientificName: 'Stenocereus gummosus',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A branching cactus with sprawling or upright ribbed stems.',
+    hardinessAndNativeRange: 'Native to the Baja California region of Mexico. Adapted to dry environments.',
+    specialTraits: 'Produces edible fruits that are traditionally known as sour pitaya.',
+    care: {
+      sunlight: 'Provide full sun and good airflow.',
+      watering: 'Water deeply during active growth after the substrate dries.',
+      soilAndPotting: 'Use a mineral-rich, fast-draining cactus mix.',
+      temperature: 'Protect from frost and prolonged cold.',
+      fertilizer: 'Feed lightly during the growing season.'
+    }
+  },
+  {
+    id: 'stenocereus-queretaroensis',
+    commonName: 'Queretaro Organ Pipe Cactus',
+    scientificName: 'Stenocereus queretaroensis',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A tall, branching columnar cactus with multiple upright stems.',
+    hardinessAndNativeRange: 'Native to Mexico. Best suited to warm, dry conditions.',
+    specialTraits: 'Produces edible fruits and is cultivated in parts of Mexico.',
+    care: {
+      sunlight: 'Provide full sun or strong direct light.',
+      watering: 'Water during warm growth periods and allow the soil to dry fully.',
+      soilAndPotting: 'Use a gritty cactus mix and excellent drainage.',
+      temperature: 'Keep warm and protect from frost.',
+      fertilizer: 'Use diluted cactus fertilizer during active growth.'
+    }
+  },
+  {
+    id: 'lemaireocereus-marginatus',
+    commonName: 'Mexican Fence Post Cactus',
+    scientificName: 'Lemaireocereus marginatus',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A tall, upright columnar cactus that branches with age.',
+    hardinessAndNativeRange: 'Native to Mexico. Requires warm conditions and well-drained soil.',
+    specialTraits: 'Green columnar stems often show a distinctive line of spines along each rib margin.',
+    care: {
+      sunlight: 'Provide full sun for strong, healthy growth.',
+      watering: 'Water thoroughly when the soil is dry; reduce in cool weather.',
+      soilAndPotting: 'Use a gritty, well-draining cactus mix.',
+      temperature: 'Protect from frost.',
+      fertilizer: 'Feed lightly with cactus fertilizer during active growth.'
+    }
+  },
+  {
+    id: 'echinocereus-viridiflorus',
+    commonName: 'Green-Flowered Hedgehog Cactus',
+    scientificName: 'Echinocereus viridiflorus',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A small, globular to short cylindrical cactus, often growing in clusters.',
+    hardinessAndNativeRange: 'Native to the central United States and northern Mexico. Cold tolerance varies by population and growing conditions.',
+    specialTraits: 'Known for greenish to yellow-green flowers.',
+    care: {
+      sunlight: 'Provide bright light and direct sun after acclimation.',
+      watering: 'Water during active growth and let the soil dry between waterings.',
+      soilAndPotting: 'Use a mineral-rich, sharply draining cactus mix.',
+      temperature: 'Check the hardiness of the specific population; keep container plants dry in cold weather.',
+      fertilizer: 'Feed lightly during active growth.'
+    }
+  },
+  {
+    id: 'echinocereus-reichenbachii',
+    commonName: 'Lace Hedgehog Cactus',
+    scientificName: 'Echinocereus reichenbachii',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A small cylindrical cactus with dense, often comb-like spines.',
+    hardinessAndNativeRange: 'Native to the south-central United States and northern Mexico.',
+    specialTraits: 'Produces large pink to purple flowers and attractive spine patterns.',
+    care: {
+      sunlight: 'Provide full sun or very bright light.',
+      watering: 'Water during the growing season after the soil dries.',
+      soilAndPotting: 'Use a gritty mineral cactus mix with excellent drainage.',
+      temperature: 'Some populations tolerate cold, but keep potted plants dry and protect them from severe frost.',
+      fertilizer: 'Use diluted cactus fertilizer during active growth.'
+    }
+  },
+  {
+    id: 'echinocereus-pectinatus',
+    commonName: 'Rainbow Hedgehog Cactus',
+    scientificName: 'Echinocereus pectinatus',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A small cylindrical cactus with closely arranged comb-like spines.',
+    hardinessAndNativeRange: 'Native to the southwestern United States and Mexico.',
+    specialTraits: 'Its colorful, banded spines and large flowers make it a popular ornamental cactus.',
+    care: {
+      sunlight: 'Provide strong light and direct sun after acclimation.',
+      watering: 'Allow the substrate to dry fully between waterings.',
+      soilAndPotting: 'Use a mineral cactus mix in a pot with drainage.',
+      temperature: 'Protect from frost and excessive winter moisture.',
+      fertilizer: 'Feed lightly during active growth.'
+    }
+  },
+  {
+    id: 'echinocereus-triglochidiatus',
+    commonName: 'Claret Cup Cactus',
+    scientificName: 'Echinocereus triglochidiatus',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A clustering cylindrical cactus that can form large colonies.',
+    hardinessAndNativeRange: 'Native to the southwestern United States and northern Mexico; hardiness varies among forms.',
+    specialTraits: 'Known for vivid scarlet to orange-red flowers.',
+    care: {
+      sunlight: 'Provide full sun to bright light.',
+      watering: 'Water during active growth and allow the soil to dry between waterings.',
+      soilAndPotting: 'Use a gritty, fast-draining cactus substrate.',
+      temperature: 'Check the hardiness of the local form; keep containers well drained in winter.',
+      fertilizer: 'Apply diluted cactus fertilizer during growth.'
+    }
+  },
+  {
+    id: 'echinocereus-coccineus',
+    commonName: 'Scarlet Hedgehog Cactus',
+    scientificName: 'Echinocereus coccineus',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A clustering cactus with upright cylindrical stems.',
+    hardinessAndNativeRange: 'Native to the southwestern United States and northern Mexico.',
+    specialTraits: 'Produces bright red flowers that attract pollinators, including hummingbirds.',
+    care: {
+      sunlight: 'Provide full sun or strong light.',
+      watering: 'Water when the growing medium has dried during active growth.',
+      soilAndPotting: 'Use a mineral-rich, well-draining mix.',
+      temperature: 'Cold tolerance varies; keep the root zone dry in cold conditions.',
+      fertilizer: 'Feed sparingly during active growth.'
+    }
+  },
+  {
+    id: 'echinocereus-subinermis',
+    commonName: 'Yellow-Flowered Hedgehog Cactus',
+    scientificName: 'Echinocereus subinermis',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A low-growing globular to short cylindrical cactus, sometimes forming offsets.',
+    hardinessAndNativeRange: 'Native to northwestern Mexico. Sensitive to frost and excess moisture.',
+    specialTraits: 'Has relatively few short spines and produces large yellow flowers.',
+    care: {
+      sunlight: 'Provide bright light and some direct sun after acclimation.',
+      watering: 'Water during active growth only after the substrate dries.',
+      soilAndPotting: 'Use a fast-draining cactus mix.',
+      temperature: 'Keep warm and protect from frost.',
+      fertilizer: 'Apply diluted cactus fertilizer during the growing season.'
+    }
+  },
+  {
+    id: 'echinocereus-brandegeei',
+    commonName: 'Brandegee Hedgehog Cactus',
+    scientificName: 'Echinocereus brandegeei',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A small cylindrical cactus with spiny stems.',
+    hardinessAndNativeRange: 'Associated with the Baja California region of Mexico; verify the accepted taxonomic treatment and range before publication.',
+    specialTraits: 'A less commonly encountered Echinocereus species in cultivation.',
+    care: {
+      sunlight: 'Provide bright light and gentle direct sun after acclimation.',
+      watering: 'Allow the substrate to dry between waterings.',
+      soilAndPotting: 'Use a mineral-rich, well-draining cactus mix.',
+      temperature: 'Protect from frost and prolonged dampness.',
+      fertilizer: 'Feed lightly during active growth.'
+    }
+  },
+  {
+    id: 'echinocereus-fendleri',
+    commonName: 'Fendler Hedgehog Cactus',
+    scientificName: 'Echinocereus fendleri',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A small cylindrical cactus that may grow singly or in clusters.',
+    hardinessAndNativeRange: 'Native to the southwestern United States and northern Mexico.',
+    specialTraits: 'Produces large pink to magenta flowers.',
+    care: {
+      sunlight: 'Provide full sun to bright light.',
+      watering: 'Water during active growth after the soil dries.',
+      soilAndPotting: 'Use a gritty cactus mix with excellent drainage.',
+      temperature: 'Hardiness depends on the population; protect container plants from severe frost and winter wet.',
+      fertilizer: 'Use diluted cactus fertilizer during active growth.'
+    }
+  },
+  {
+    id: 'echinocereus-laui',
+    commonName: 'Lau Hedgehog Cactus',
+    scientificName: 'Echinocereus laui',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A small clustering cactus with cylindrical stems and dense spines.',
+    hardinessAndNativeRange: 'Native to Mexico. Requires careful watering and protection from frost.',
+    specialTraits: 'Known for dense spination and colorful flowers.',
+    care: {
+      sunlight: 'Provide bright light, avoiding abrupt exposure to intense sun.',
+      watering: 'Water sparingly when the substrate has dried completely.',
+      soilAndPotting: 'Use a highly porous mineral cactus mix.',
+      temperature: 'Keep warm and protect from frost.',
+      fertilizer: 'Feed lightly during the growing season.'
+    }
+  },
+  {
+    id: 'echinocereus-schmollii',
+    commonName: 'Mexican Climbing Hedgehog Cactus',
+    scientificName: 'Echinocereus schmollii',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A slender-stemmed cactus that may sprawl or form a loose cluster.',
+    hardinessAndNativeRange: 'Native to Mexico. Protect from frost and prolonged wet conditions.',
+    specialTraits: 'Noted for its slender stems and distinctive pink flowers.',
+    care: {
+      sunlight: 'Provide bright filtered light and gentle sun after acclimation.',
+      watering: 'Water when the substrate dries during active growth.',
+      soilAndPotting: 'Use a well-draining cactus mix.',
+      temperature: 'Keep warm and protect from frost.',
+      fertilizer: 'Use diluted cactus fertilizer sparingly during growth.'
+    }
+  },
+  {
+    id: 'echinocereus-pentalophus',
+    commonName: 'Lady Finger Cactus',
+    scientificName: 'Echinocereus pentalophus',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A low-growing cactus with long, slender stems that spread along the ground.',
+    hardinessAndNativeRange: 'Native to southern Texas and northeastern Mexico.',
+    specialTraits: 'Produces large pink flowers relative to its stem size.',
+    care: {
+      sunlight: 'Provide bright light and some direct sun after acclimation.',
+      watering: 'Water during active growth after the substrate dries.',
+      soilAndPotting: 'Use a gritty, fast-draining cactus mix.',
+      temperature: 'Protect from frost and cold, wet soil.',
+      fertilizer: 'Feed lightly during active growth.'
+    }
+  },
+  {
+    id: 'echinocereus-stolonifer',
+    commonName: 'Stoloniferous Hedgehog Cactus',
+    scientificName: 'Echinocereus stolonifer',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A low-growing cactus that can spread through offsets or stolon-like stems.',
+    hardinessAndNativeRange: 'Native range and accepted taxonomic status should be verified before publication.',
+    specialTraits: 'Its spreading growth habit is reflected in the species name.',
+    care: {
+      sunlight: 'Provide bright light and moderate direct sun after acclimation.',
+      watering: 'Allow the substrate to dry between waterings.',
+      soilAndPotting: 'Use a porous cactus mix with drainage holes.',
+      temperature: 'Protect from frost until species-specific tolerance is verified.',
+      fertilizer: 'Apply diluted cactus fertilizer during active growth.'
+    }
+  },
+  {
+    id: 'wilcoxia-poselgeri',
+    commonName: 'Queen of the Night Cactus',
+    scientificName: 'Wilcoxia poselgeri',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A slender-stemmed cactus with a sprawling or climbing growth habit.',
+    hardinessAndNativeRange: 'Native to southern Texas and northeastern Mexico. Protect from frost.',
+    specialTraits: 'Produces large, showy flowers; this taxon is also known as Echinocereus poselgeri in some classifications.',
+    care: {
+      sunlight: 'Provide bright light and gentle direct sun after acclimation.',
+      watering: 'Water during active growth after the soil dries.',
+      soilAndPotting: 'Use a gritty, fast-draining substrate.',
+      temperature: 'Keep warm and protect from frost.',
+      fertilizer: 'Feed lightly during active growth.'
+    }
+  },
+  {
+    id: 'echinocereus-enneacanthus',
+    commonName: 'Strawberry Hedgehog Cactus',
+    scientificName: 'Echinocereus enneacanthus',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A clustering cylindrical cactus that can form broad groups of stems.',
+    hardinessAndNativeRange: 'Native to southern Texas and northeastern Mexico.',
+    specialTraits: 'Produces edible red fruits and colorful flowers.',
+    care: {
+      sunlight: 'Provide full sun to bright light.',
+      watering: 'Water during active growth after the substrate dries.',
+      soilAndPotting: 'Use a mineral-rich, well-draining cactus mix.',
+      temperature: 'Protect from severe frost and winter wet.',
+      fertilizer: 'Apply diluted cactus fertilizer during active growth.'
+    }
+  },
+  {
+    id: 'echinocereus-dasyphyllus',
+    commonName: 'Hairy Hedgehog Cactus',
+    scientificName: 'Echinocereus dasyphyllus',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A small cylindrical cactus with dense spines or hair-like coverings.',
+    hardinessAndNativeRange: 'Verify its accepted name and native range against a current botanical source before publication.',
+    specialTraits: 'The species name refers to a hairy or densely covered appearance.',
+    care: {
+      sunlight: 'Provide bright light and gradual sun exposure.',
+      watering: 'Allow the substrate to dry between waterings.',
+      soilAndPotting: 'Use a porous cactus mix.',
+      temperature: 'Protect from frost until specific hardiness is verified.',
+      fertilizer: 'Feed sparingly during active growth.'
+    }
+  },
+  {
+    id: 'echinocereus-chloranthus',
+    commonName: 'Green-Flowered Hedgehog Cactus',
+    scientificName: 'Echinocereus chloranthus',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A small cylindrical cactus that can grow in clusters.',
+    hardinessAndNativeRange: 'Native to the southwestern United States and northern Mexico.',
+    specialTraits: 'Produces greenish flowers, as indicated by the species name.',
+    care: {
+      sunlight: 'Provide full sun or strong light.',
+      watering: 'Water during active growth after the soil dries.',
+      soilAndPotting: 'Use a gritty, fast-draining cactus mix.',
+      temperature: 'Protect from prolonged cold and excess winter moisture.',
+      fertilizer: 'Use diluted cactus fertilizer during growth.'
+    }
+  },
+  {
+    id: 'echinocereus-knippelianus',
+    commonName: 'Knippel Hedgehog Cactus',
+    scientificName: 'Echinocereus knippelianus',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A small globular cactus that may produce offsets.',
+    hardinessAndNativeRange: 'Native to Mexico. Protect from frost and prolonged wet soil.',
+    specialTraits: 'Has a compact body and showy flowers.',
+    care: {
+      sunlight: 'Provide bright light and gentle sun after acclimation.',
+      watering: 'Water when the substrate dries during active growth.',
+      soilAndPotting: 'Use a mineral-rich cactus mix with excellent drainage.',
+      temperature: 'Keep warm and protect from frost.',
+      fertilizer: 'Feed lightly during the growing season.'
+    }
+  },
+  {
+    id: 'echinocereus-pulchellus',
+    commonName: 'Dwarf Hedgehog Cactus',
+    scientificName: 'Echinocereus pulchellus',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A small, low-growing cactus with a globular body.',
+    hardinessAndNativeRange: 'Native to Mexico. Exact hardiness varies by form and growing conditions.',
+    specialTraits: 'Known for its compact form and disproportionately large flowers.',
+    care: {
+      sunlight: 'Provide bright light with gentle direct sun.',
+      watering: 'Water carefully during active growth after the soil dries.',
+      soilAndPotting: 'Use a highly draining mineral cactus substrate.',
+      temperature: 'Protect from frost and winter moisture.',
+      fertilizer: 'Apply diluted cactus fertilizer sparingly during growth.'
+    }
+  },
+  {
+    id: 'echinocereus-gentryi',
+    commonName: 'Gentry Hedgehog Cactus',
+    scientificName: 'Echinocereus gentryi',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A cylindrical cactus with spiny stems.',
+    hardinessAndNativeRange: 'Verify its current accepted taxonomic name and native range before publication.',
+    specialTraits: 'A less commonly encountered name in the Echinocereus group.',
+    care: {
+      sunlight: 'Provide bright light and gradual sun exposure.',
+      watering: 'Let the growing medium dry between waterings.',
+      soilAndPotting: 'Use a fast-draining cactus mix.',
+      temperature: 'Protect from frost until its specific hardiness is verified.',
+      fertilizer: 'Feed lightly during active growth.'
+    }
+  },
+  {
+    id: 'echinocereus-ledingii',
+    commonName: 'Leding Hedgehog Cactus',
+    scientificName: 'Echinocereus ledingii',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A small cylindrical cactus with spiny stems.',
+    hardinessAndNativeRange: 'Verify its current taxonomic treatment and geographic range before publication.',
+    specialTraits: 'A rare or less commonly cultivated name within the hedgehog cactus group.',
+    care: {
+      sunlight: 'Provide bright light and gradual exposure to direct sun.',
+      watering: 'Allow the substrate to dry between waterings.',
+      soilAndPotting: 'Use a porous, well-draining cactus substrate.',
+      temperature: 'Protect from frost pending verification of its hardiness.',
+      fertilizer: 'Apply diluted cactus fertilizer during active growth.'
+    }
+  },
+  {
+    id: 'echinocereus-nicholii',
+    commonName: 'Nichol Hedgehog Cactus',
+    scientificName: 'Echinocereus nicholii',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A clustering cylindrical cactus with strongly spined stems.',
+    hardinessAndNativeRange: 'Native to the Sonoran Desert region of the United States and Mexico.',
+    specialTraits: 'Adapted to arid desert habitats and known for its robust spination.',
+    care: {
+      sunlight: 'Provide full sun and good airflow.',
+      watering: 'Water deeply during active growth, allowing the substrate to dry fully.',
+      soilAndPotting: 'Use a gritty mineral cactus mix.',
+      temperature: 'Protect potted plants from severe frost and winter wet.',
+      fertilizer: 'Feed sparingly during active growth.'
+    }
+  },
+  {
+    id: 'echinocereus-pacificus',
+    commonName: 'Pacific Hedgehog Cactus',
+    scientificName: 'Echinocereus pacificus',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A small cylindrical cactus; verify the accepted taxonomic treatment before publication.',
+    hardinessAndNativeRange: 'Native range and current species status require verification.',
+    specialTraits: 'Taxonomic usage of this name should be confirmed with a current botanical reference.',
+    care: {
+      sunlight: 'Provide bright light and gradual sun exposure.',
+      watering: 'Allow the substrate to dry between waterings.',
+      soilAndPotting: 'Use a fast-draining cactus mix.',
+      temperature: 'Protect from frost until species-specific hardiness is verified.',
+      fertilizer: 'Feed lightly during active growth.'
+    }
+  },
+  {
+    id: 'echinocereus-parkeri',
+    commonName: 'Parker Hedgehog Cactus',
+    scientificName: 'Echinocereus parkeri',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A small cylindrical cactus; confirm the currently accepted name before publication.',
+    hardinessAndNativeRange: 'Verify its accepted taxonomic status and native range before publication.',
+    specialTraits: 'Identification should be confirmed with a reliable botanical reference.',
+    care: {
+      sunlight: 'Provide bright light and acclimate gradually to direct sun.',
+      watering: 'Water when the substrate has dried during active growth.',
+      soilAndPotting: 'Use a porous cactus mix.',
+      temperature: 'Protect from frost until hardiness is confirmed.',
+      fertilizer: 'Apply diluted cactus fertilizer during active growth.'
+    }
+  },
+  {
+    id: 'echinocereus-stramineus',
+    commonName: 'Strawberry Hedgehog Cactus',
+    scientificName: 'Echinocereus stramineus',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A clustering cylindrical cactus that can form large colonies.',
+    hardinessAndNativeRange: 'Native to the southwestern United States and northern Mexico.',
+    specialTraits: 'Produces large flowers and edible red fruits.',
+    care: {
+      sunlight: 'Provide full sun to strong light.',
+      watering: 'Water during active growth after the soil dries.',
+      soilAndPotting: 'Use a mineral-rich, well-draining cactus mix.',
+      temperature: 'Protect from prolonged cold and winter wet.',
+      fertilizer: 'Feed lightly during active growth.'
+    }
+  },
+  {
+    id: 'echinocereus-viereckii',
+    commonName: 'Viereck Hedgehog Cactus',
+    scientificName: 'Echinocereus viereckii',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A cylindrical cactus that may form clumps.',
+    hardinessAndNativeRange: 'Native range and accepted taxonomic treatment should be verified before publication.',
+    specialTraits: 'Known within the Echinocereus group; confirm identification against a botanical reference.',
+    care: {
+      sunlight: 'Provide bright light and gradual sun exposure.',
+      watering: 'Allow the soil to dry between waterings.',
+      soilAndPotting: 'Use a fast-draining cactus mix.',
+      temperature: 'Protect from frost until species-specific tolerance is verified.',
+      fertilizer: 'Use diluted cactus fertilizer during active growth.'
+    }
+  },
+  {
+    id: 'echinocereus-waldei',
+    commonName: 'Walde Hedgehog Cactus',
+    scientificName: 'Echinocereus waldei',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A small cylindrical cactus; verify the current accepted name before publication.',
+    hardinessAndNativeRange: 'Native range and taxonomic status need confirmation from a current botanical source.',
+    specialTraits: 'Species-level identification should be verified before presenting detailed traits.',
+    care: {
+      sunlight: 'Provide bright light and gradual sun exposure.',
+      watering: 'Let the growing medium dry between waterings.',
+      soilAndPotting: 'Use a porous cactus substrate.',
+      temperature: 'Protect from frost pending verification.',
+      fertilizer: 'Feed lightly during active growth.'
+    }
+  },
+  {
+    id: 'echinocereus-websterianus',
+    commonName: 'Webster Hedgehog Cactus',
+    scientificName: 'Echinocereus websterianus',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A small cylindrical cactus; verify the currently accepted taxonomic name before publication.',
+    hardinessAndNativeRange: 'Native range and taxonomic status require confirmation.',
+    specialTraits: 'Use a reliable botanical source to verify this name and its distinguishing features.',
+    care: {
+      sunlight: 'Provide bright light and acclimate gradually to direct sun.',
+      watering: 'Water after the substrate has dried.',
+      soilAndPotting: 'Use a fast-draining mineral cactus mix.',
+      temperature: 'Protect from frost until hardiness is verified.',
+      fertilizer: 'Apply diluted cactus fertilizer during active growth.'
+    }
+  },
+  {
+    id: 'echinocereus-yavapaiensis',
+    commonName: 'Yavapai Hedgehog Cactus',
+    scientificName: 'Echinocereus yavapaiensis',
+    subfamily: 'Cactoideae',
+    growthHabitAndSize: 'A small cylindrical cactus; verify the accepted taxonomic status and mature dimensions.',
+    hardinessAndNativeRange: 'The name suggests an association with Yavapai County, Arizona, but the range should be confirmed before publication.',
+    specialTraits: 'Verify the species identity and diagnostic features using a current botanical reference.',
+    care: {
+      sunlight: 'Provide bright light and gradual sun exposure.',
+      watering: 'Allow the substrate to dry between waterings.',
+      soilAndPotting: 'Use a porous, fast-draining cactus mix.',
+      temperature: 'Protect from frost until the specific population tolerance is verified.',
+      fertilizer: 'Feed sparingly during active growth.'
+    }
+  },
 ];
 
 export default cactusSpecies;
