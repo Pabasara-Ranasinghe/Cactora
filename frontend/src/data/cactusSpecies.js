@@ -1618,6 +1618,399 @@ const cactusSpecies = [
       fertilizer:
         "Requires little fertilizer because it is adapted to nutrient-poor environments. Avoid frequent feeding or excessive nitrogen."
     }
+  },
+  
+  {
+    id: "pereskia-aculeata",
+    commonName: "Barbados Gooseberry",
+    scientificName: "Pereskia aculeata",
+    subfamily: "Pereskioideae",
+    growthHabitAndSize:
+      "A climbing or vining shrub with long, thorny stems that can reach several metres in length. Fast-growing and often benefits from support.",
+    hardinessAndNativeRange:
+      "Native to tropical America, including parts of Central America, the Caribbean, and South America. It has also become naturalised in several other regions.",
+    specialTraits:
+      "Has glossy oval leaves and paired spines at the nodes. Produces fragrant cream to pale-yellow flowers and orange fruits. Its leaves are traditionally eaten as a nutritious vegetable in Brazil.",
+    care: {
+      sunlight:
+        "Full sun to light shade. Provide several hours of sunlight daily, with protection from intense afternoon sun when necessary.",
+      watering:
+        "Water regularly during active growth. Allow the upper layer of soil to dry slightly between waterings, and reduce watering in cooler conditions.",
+      soilAndPotting:
+        "Use fertile, well-draining soil containing organic matter and mineral grit. Provide a sturdy support, trellis, or suitable climbing structure.",
+      temperature:
+        "Prefers warm conditions and does not tolerate prolonged frost. Protect from cold temperatures.",
+      fertilizer:
+        "Apply a balanced, diluted fertilizer during active growth according to its label."
+    }
+  },
+  {
+    id: "pereskia-grandifolia",
+    commonName: "Rose Cactus",
+    scientificName: "Pereskia grandifolia",
+    subfamily: "Pereskioideae",
+    growthHabitAndSize:
+      "An upright shrub or small tree with a rounded crown, commonly growing several metres tall under favourable conditions.",
+    hardinessAndNativeRange:
+      "Native to eastern Brazil, particularly areas associated with the Atlantic Forest. Best suited to warm climates.",
+    specialTraits:
+      "Features large, fleshy oval leaves and woody stems as it matures. Produces showy pink to rose-purple flowers and pear-shaped fruits.",
+    care: {
+      sunlight:
+        "Provide full sun to partial sun. Strong light encourages healthy growth and flowering.",
+      watering:
+        "Water regularly during active growth, allowing the soil surface to dry between waterings. Reduce watering during cooler periods.",
+      soilAndPotting:
+        "Use fertile, well-draining soil with organic matter and mineral grit. Choose a spacious pot with drainage holes.",
+      temperature:
+        "Prefers warm temperatures and should be protected from frost and prolonged cold.",
+      fertilizer:
+        "Use a diluted balanced fertilizer during active growth. Avoid excessive feeding."
+    }
+  },
+  {
+    id: "pereskia-bahiensis",
+    commonName: "Bahia Leaf Cactus",
+    scientificName: "Pereskia bahiensis",
+    subfamily: "Pereskioideae",
+    growthHabitAndSize:
+      "An upright shrub or small tree with branching, spiny stems. Growth and mature size depend on environmental conditions.",
+    hardinessAndNativeRange:
+      "Associated with eastern Brazil, especially Bahia and neighbouring regions. Adapted to warm environments and seasonally dry habitats.",
+    specialTraits:
+      "Has leafy, spiny branches and produces pale flowers. Its appearance reflects the leafy growth form characteristic of Pereskia.",
+    care: {
+      sunlight:
+        "Provide bright light and several hours of direct sunlight when the plant is acclimated.",
+      watering:
+        "Water moderately during active growth and allow the growing medium to drain well. Reduce watering in cooler conditions.",
+      soilAndPotting:
+        "Use a well-draining mixture of mineral grit and fertile soil. Avoid waterlogged roots.",
+      temperature:
+        "Prefers warm conditions and protection from frost.",
+      fertilizer:
+        "Apply a diluted balanced fertilizer sparingly during active growth."
+    }
+  },
+  {
+    id: "pereskia-sacharosa",
+    commonName: "Chaco Leaf Cactus",
+    scientificName: "Pereskia sacharosa",
+    subfamily: "Pereskioideae",
+    growthHabitAndSize:
+      "A spreading, woody shrub with armed branches. Its mature height and spread vary with growing conditions.",
+    hardinessAndNativeRange:
+      "Reported from parts of Bolivia, Paraguay, and northern Argentina, including seasonally dry regions.",
+    specialTraits:
+      "May develop grey-green foliage and strong paired spines. Its flowers are described as white to pale pink. Handle carefully because of the sharp spines.",
+    care: {
+      sunlight:
+        "Provide full sun or very bright light.",
+      watering:
+        "Water during active growth, then allow the soil to dry partially. Avoid prolonged moisture around the roots.",
+      soilAndPotting:
+        "Use a mineral-rich, sharply draining soil mixture in a pot with drainage holes.",
+      temperature:
+        "Prefers warm growing conditions. Cold tolerance depends on the plant's acclimation and growing environment.",
+      fertilizer:
+        "Use a diluted balanced fertilizer occasionally during active growth."
+    }
+  },
+  {
+    id: "pereskia-nemorosa",
+    commonName: "Forest Leaf Cactus",
+    scientificName: "Pereskia nemorosa",
+    subfamily: "Pereskioideae",
+    growthHabitAndSize:
+      "Described as a climbing or scrambling shrub with leafy stems. Its growth form and mature size depend on habitat and cultivation.",
+    hardinessAndNativeRange:
+      "Reported from parts of southern South America. Verify the current accepted taxonomic placement and distribution before publishing detailed range claims.",
+    specialTraits:
+      "A leafy cactus form associated with slender stems and relatively delicate foliage. Species-specific flowering and fruit characteristics should be confirmed from a reliable botanical source.",
+    care: {
+      sunlight:
+        "Provide bright light or partial sun, adjusting exposure to the plant's response.",
+      watering:
+        "Water regularly during active growth while maintaining good drainage. Avoid allowing the roots to remain waterlogged.",
+      soilAndPotting:
+        "Use a fertile, well-draining growing medium containing both organic matter and mineral grit.",
+      temperature:
+        "Prefers suitable frost-free conditions until its specific cold tolerance is confirmed.",
+      fertilizer:
+        "Apply diluted balanced fertilizer sparingly during active growth."
+    }
+  },
+  {
+    id: "pereskia-diaz-romeroana",
+    commonName: "Bolivian Tree Cactus",
+    scientificName: "Pereskia diaz-romeroana",
+    subfamily: "Pereskioideae",
+    growthHabitAndSize:
+      "Reported as a small tree with branching stems. Growth rate and mature size may vary, particularly in cultivation.",
+    hardinessAndNativeRange:
+      "Reported from Bolivia. Confirm the accepted name and distribution with a current botanical reference.",
+    specialTraits:
+      "A less commonly encountered leafy cactus name in cultivation. Verify its accepted classification and diagnostic features before presenting detailed species-specific claims.",
+    care: {
+      sunlight:
+        "Provide bright light, with direct sun introduced gradually.",
+      watering:
+        "Water moderately during active growth and allow excess water to drain freely.",
+      soilAndPotting:
+        "Use a well-draining mineral and organic soil mixture suitable for leafy cacti.",
+      temperature:
+        "Protect from frost and prolonged cold until species-specific tolerances are established.",
+      fertilizer:
+        "Use a diluted balanced fertilizer sparingly during active growth."
+    }
+  },
+  {
+    id: "pereskia-horrida",
+    commonName: "Peruvian Leaf Cactus",
+    scientificName: "Pereskia horrida",
+    subfamily: "Pereskioideae",
+    growthHabitAndSize:
+      "Described as a strongly armed, woody shrub or small tree. Its size varies with habitat and growing conditions.",
+    hardinessAndNativeRange:
+      "Associated with Peru and parts of northwestern South America. Confirm the current accepted taxonomy and distribution.",
+    specialTraits:
+      "Known in horticultural descriptions for prominent spines and leafy stems. Handle with care when pruning or repotting.",
+    care: {
+      sunlight:
+        "Provide bright light to full sun, acclimating the plant gradually.",
+      watering:
+        "Allow the growing medium to dry partially between waterings. Avoid overwatering, especially during cool weather.",
+      soilAndPotting:
+        "Use a gritty, well-draining mixture with mineral components and a suitable amount of organic matter.",
+      temperature:
+        "Protect from frost and prolonged cold.",
+      fertilizer:
+        "Use little fertilizer; apply a diluted balanced product only when needed during active growth."
+    }
+  },
+  {
+    id: "pereskia-weberiana",
+    commonName: "Weber's Leaf Cactus",
+    scientificName: "Pereskia weberiana",
+    subfamily: "Pereskioideae",
+    growthHabitAndSize:
+      "Reported as a compact, branching shrub. Mature size and growth habit should be confirmed against a current botanical reference.",
+    hardinessAndNativeRange:
+      "Reported from Bolivia, including dry Andean valleys. Verify its current accepted name and native distribution.",
+    specialTraits:
+      "Described as a leafy cactus with comparatively small leaves. Detailed flower characteristics and its accepted taxonomic status need verification.",
+    care: {
+      sunlight:
+        "Provide bright light to full sun, introducing stronger sunlight gradually.",
+      watering:
+        "Water during active growth and allow the substrate to dry partially between waterings.",
+      soilAndPotting:
+        "Use well-draining soil containing mineral grit and some organic matter.",
+      temperature:
+        "Prefer warm conditions and protect from frost until its specific tolerances are verified.",
+      fertilizer:
+        "Apply a diluted balanced fertilizer occasionally during active growth."
+    }
+  },
+  {
+    id: "pereskia-stenantha",
+    commonName: "Bahia Short-Flowered Cactus",
+    scientificName: "Pereskia stenantha",
+    subfamily: "Pereskioideae",
+    growthHabitAndSize:
+      "Reported as an upright, branching shrub. Mature dimensions depend on the species' verified identity and growing conditions.",
+    hardinessAndNativeRange:
+      "Reported from eastern Brazil. Confirm the currently accepted taxonomy and distribution before publishing a detailed range.",
+    specialTraits:
+      "A name associated with leafy cactus references. Verify its accepted status and distinctive flower characteristics using a botanical source.",
+    care: {
+      sunlight:
+        "Provide bright light and suitable direct sun after gradual acclimation.",
+      watering:
+        "Water moderately during active growth and ensure the substrate drains quickly.",
+      soilAndPotting:
+        "Use a well-draining mix containing mineral grit and fertile soil.",
+      temperature:
+        "Protect from frost and prolonged cold.",
+      fertilizer:
+        "Apply a diluted balanced fertilizer sparingly during active growth."
+    }
+  },
+  {
+    id: "pereskia-violacea",
+    commonName: "Violet-Flowered Leaf Cactus",
+    scientificName: "Pereskia violacea",
+    subfamily: "Pereskioideae",
+    growthHabitAndSize:
+      "Described as a branching shrub with leafy stems. Mature size and growth habit should be confirmed against a reliable botanical reference.",
+    hardinessAndNativeRange:
+      "Reported from eastern Brazil. Confirm the current accepted name and distribution before publishing more specific claims.",
+    specialTraits:
+      "Associated with descriptions of violet or lilac flowers. Confirm the accepted taxonomic status and flower colour from a reliable botanical reference.",
+    care: {
+      sunlight:
+        "Provide bright light to full sun, acclimating the plant gradually.",
+      watering:
+        "Water regularly during active growth, allowing excess water to drain freely. Reduce watering in cooler conditions.",
+      soilAndPotting:
+        "Use fertile, well-draining soil containing both organic matter and mineral grit.",
+      temperature:
+        "Prefers warm conditions and should be protected from frost.",
+      fertilizer:
+        "Use a diluted balanced fertilizer during active growth, avoiding excessive feeding."
+    }
+  },
+  {
+    id: 'leuenbergeria-bleo',
+    commonName: 'Wax Rose',
+    scientificName: 'Leuenbergeria bleo',
+    subfamily: 'Leuenbergerioideae',
+    growthHabitAndSize:
+      'An upright woody shrub or small tree growing approximately 2–4 metres tall, with glossy green leaves and orange-red, rose-like flowers that can appear throughout the year.',
+    hardinessAndNativeRange:
+      'Native to Panama, Colombia, and Venezuela, where it grows in tropical forests and dry regions. Suitable for warm climates corresponding to USDA zones 10–12.',
+    specialTraits:
+      'Has large glossy leaves with wavy margins, dense black spines, orange-red flowers, and yellow fleshy berries. The sharp spines require careful handling.',
+    care: {
+      sunlight: 'Full sun to bright indirect light, ideally receiving at least 4 hours of sunlight.',
+      watering: 'Keep the soil evenly moist during active growth, allowing the top 2–3 cm to dry. Reduce watering in winter without allowing the plant to shrivel.',
+      soilAndPotting: 'Use a fertile, well-draining mixture of approximately 40% grit and 60% loam or organic material. A terracotta pot with adequate drainage is suitable.',
+      temperature: 'Prefers approximately 22–30°C. Protect from temperatures below 10°C.',
+      fertilizer: 'Apply a balanced 10-10-10 fertilizer every 4–6 weeks during spring and summer.'
+    }
+  },
+  {
+    id: 'leuenbergeria-guamacho',
+    commonName: 'Guamacho',
+    scientificName: 'Leuenbergeria guamacho',
+    subfamily: 'Leuenbergerioideae',
+    growthHabitAndSize:
+      'A small tree with a rounded crown, typically growing approximately 3–6 metres tall.',
+    hardinessAndNativeRange:
+      'Native to Venezuela and Colombia, particularly dry forests and the Orinoco basin. Associated with warm climates corresponding to USDA zones 10–12.',
+    specialTraits:
+      'Features greyish bark, small thick leaves, bright yellow spring flowers, and yellow berries. It is adapted to drought conditions.',
+    care: {
+      sunlight: 'Full sun, ideally at least 5 hours daily.',
+      watering: 'Water moderately during active growth. Reduce watering during winter; the plant is drought-tolerant once established.',
+      soilAndPotting: 'Use a sharply draining mixture of approximately 50% grit and 50% loam.',
+      temperature: 'Keep temperatures at or above approximately 10°C.',
+      fertilizer: 'Apply a balanced 10-10-10 fertilizer approximately every 6 weeks during active growth.'
+    }
+  },
+  {
+    id: 'leuenbergeria-aureiflora',
+    commonName: 'Golden Rose Cactus',
+    scientificName: 'Leuenbergeria aureiflora',
+    subfamily: 'Leuenbergerioideae',
+    growthHabitAndSize:
+      'A woody shrub typically growing approximately 2–4 metres tall.',
+    hardinessAndNativeRange:
+      'Reported from eastern Brazil, including the Minas Gerais and Bahia regions. Grows in warm climates corresponding to USDA zones 10–12.',
+    specialTraits:
+      'Known for bright green foliage and golden-yellow flowers. It is uncommon in cultivation.',
+    care: {
+      sunlight: 'Full sun promotes healthy growth and flowering.',
+      watering: 'Water moderately during active growth and reduce watering in winter.',
+      soilAndPotting: 'Use a well-draining mixture of approximately 50% grit and 50% loam.',
+      temperature: 'Protect from temperatures below approximately 10°C.',
+      fertilizer: 'Use a suitable flowering-plant fertilizer, such as 7-9-5, approximately every 4 weeks during active growth.'
+    }
+  },
+  {
+    id: 'leuenbergeria-lychnidiflora',
+    commonName: 'Wax Rose',
+    scientificName: 'Leuenbergeria lychnidiflora',
+    subfamily: 'Leuenbergerioideae',
+    growthHabitAndSize:
+      'A large woody shrub or small tree growing approximately 3–5 metres tall.',
+    hardinessAndNativeRange:
+      'Native to Mexico and Central America, where it occurs in dry tropical forests. Associated with USDA zones 10–12.',
+    specialTraits:
+      'Has grey-green leaves, long formidable spines, and orange-pink funnel-shaped flowers. Handle carefully because of its sharp spines.',
+    care: {
+      sunlight: 'Full sun, ideally at least 5 hours daily.',
+      watering: 'Water moderately during active growth and reduce watering during winter.',
+      soilAndPotting: 'Use a fertile, well-draining mixture containing approximately 50% grit and 50% loam.',
+      temperature: 'Protect from temperatures below approximately 10°C.',
+      fertilizer: 'Apply a balanced 10-10-10 fertilizer every 4–6 weeks during active growth.'
+    }
+  },
+  {
+    id: 'leuenbergeria-marcanoi',
+    commonName: "Marcano's Cactus",
+    scientificName: 'Leuenbergeria marcanoi',
+    subfamily: 'Leuenbergerioideae',
+    growthHabitAndSize:
+      'A slow-growing, relatively rare shrub typically reaching approximately 1–3 metres tall.',
+    hardinessAndNativeRange:
+      'Endemic to Hispaniola, particularly the Dominican Republic. Associated with warm climates corresponding to USDA zones 10–12.',
+    specialTraits:
+      'Has relatively small leaves and dense spines, with pale pink or white flowers. Its rarity makes conservation important.',
+    care: {
+      sunlight: 'Full sun.',
+      watering: 'Water moderately during active growth and reduce watering in winter.',
+      soilAndPotting: 'Use a well-draining mixture containing approximately 50% grit and 50% loam. A limestone-rich mix may be suitable.',
+      temperature: 'Protect from temperatures below approximately 10°C.',
+      fertilizer: 'Use diluted balanced fertilizer sparingly during active growth.'
+    }
+  },
+  {
+    id: 'leuenbergeria-portulacifolia',
+    commonName: 'Portulaca-Leaf Cactus',
+    scientificName: 'Leuenbergeria portulacifolia',
+    subfamily: 'Leuenbergerioideae',
+    growthHabitAndSize:
+      'A relatively slow-growing woody shrub typically reaching approximately 2–4 metres tall.',
+    hardinessAndNativeRange:
+      'Reported from Haiti on Hispaniola. Associated with warm climates corresponding to USDA zones 10–12.',
+    specialTraits:
+      'Distinguished by fleshy, rounded leaves resembling purslane and pink or rose-coloured flowers. It is little known in cultivation.',
+    care: {
+      sunlight: 'Full sun.',
+      watering: 'Water moderately during active growth, allowing the soil to drain well. The plant tolerates periods of drought.',
+      soilAndPotting: 'Use a well-draining mixture of approximately 50% grit and 50% loam.',
+      temperature: 'Protect from temperatures below approximately 10°C.',
+      fertilizer: 'Apply a balanced 10-10-10 fertilizer approximately every 6 weeks during active growth.'
+    }
+  },
+  {
+    id: 'leuenbergeria-quisqueyana',
+    commonName: 'Bayahíbe Rose',
+    scientificName: 'Leuenbergeria quisqueyana',
+    subfamily: 'Leuenbergerioideae',
+    growthHabitAndSize:
+      'A very slow-growing shrub or small tree typically reaching approximately 2–5 metres tall.',
+    hardinessAndNativeRange:
+      'Endemic to the Dominican Republic, especially the Bayahíbe area. It is critically endangered and requires conservation.',
+    specialTraits:
+      'Known for large pale pink, rose-like flowers and thick glossy leaves. It is an important national symbol and a protected species.',
+    care: {
+      sunlight: 'Full sun, ideally at least 5 hours daily.',
+      watering: 'Water moderately during active growth and avoid allowing the root zone to become completely dry. Reduce watering slightly in winter.',
+      soilAndPotting: 'Use a well-draining mixture containing approximately 50% grit and 50% loam. Limestone-rich soil may be suitable.',
+      temperature: 'Protect from temperatures below approximately 10°C.',
+      fertilizer: 'Use diluted flowering-plant fertilizer sparingly during active growth.'
+    }
+  },
+  {
+    id: 'leuenbergeria-zinniiflora',
+    commonName: 'Zinnia-Flowered Cactus',
+    scientificName: 'Leuenbergeria zinniiflora',
+    subfamily: 'Leuenbergerioideae',
+    growthHabitAndSize:
+      'A woody shrub typically growing approximately 2–4 metres tall.',
+    hardinessAndNativeRange:
+      'Reported from Cuba, particularly dry coastal regions. Associated with warm climates corresponding to USDA zones 10–12.',
+    specialTraits:
+      'Features bright green foliage and showy pink or red flowers resembling zinnias.',
+    care: {
+      sunlight: 'Full sun.',
+      watering: 'Water moderately during active growth and reduce watering in winter.',
+      soilAndPotting: 'Use a well-draining mixture containing approximately 50% grit and 50% loam. Limestone-rich soil may be suitable.',
+      temperature: 'Protect from temperatures below approximately 10°C.',
+      fertilizer: 'Apply a balanced 10-10-10 fertilizer approximately every 6 weeks during active growth.'
+    }
   }
 ];
 
