@@ -26,9 +26,11 @@ function Navbar() {
 
         {/* Navigation */}
         <nav className="navbar-links">
+          <Link to="/">Home</Link>
           <Link to="/explore">Explore</Link>
           <Link to="/about">About</Link>
           <Link to="/ai">Cactora AI</Link>
+          <Link to="/contact">Contact</Link>
         </nav>
 
         {/* Actions */}
