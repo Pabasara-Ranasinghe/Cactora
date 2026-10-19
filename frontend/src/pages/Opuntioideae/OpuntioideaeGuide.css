@@ -985,3 +985,25 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+
+
+
+.cactus-species-scientific-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  width: 100%;
+}
+
+.cactus-species-scientific-row .cactus-species-scientific {
+  margin: 0;
+  flex: 0 1 auto;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.cactus-species-scientific-row .scientific-name-voice {
+  flex-shrink: 0;
+}
