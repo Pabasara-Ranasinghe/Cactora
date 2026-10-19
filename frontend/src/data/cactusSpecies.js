@@ -1,4 +1,3 @@
-
 const cactusSpecies = [
   {
     id: "saguaro",
@@ -1570,8 +1569,56 @@ const cactusSpecies = [
     },
     imageUrl: "https://images.unsplash.com/photo-1599958893295-927a26c7b380?w=800&q=80",
     imageAlt: "Blue-purple beaver tail cactus pads"
+  },
+  
+  {
+    id: "maihuenia-patagonica",
+    commonName: "Spiny Green Blanket",
+    scientificName: "Maihuenia patagonica",
+    subfamily: "Maihuenioideae",
+    growthHabitAndSize:
+      "A very slow-growing, dense cushion-forming cactus with tightly packed segments. Typically around 5–10 cm tall, with a spreading mat that can reach 50–100 cm or more in favourable conditions.",
+    hardinessAndNativeRange:
+      "Native to Patagonia in southern Argentina and Chile, where it grows in cold, open steppe environments. Exceptionally cold-tolerant when grown in sharply drained soil, but vulnerable to excess moisture.",
+    specialTraits:
+      "Has tiny, cylindrical green leaves that persist longer than those of most cacti, along with short, stout white or yellowish spines. Produces bright lemon-yellow, cup-shaped flowers in spring to early summer. Fruit is described as a small, greenish berry.",
+    care: {
+      sunlight:
+        "Full sun is preferred, ideally around 6 or more hours daily. Introduce strong sunlight gradually to prevent sunburn.",
+      watering:
+        "Water thoroughly during active growth, then allow the substrate to dry completely. Water sparingly and keep much drier during cold winter conditions. Overwatering can quickly cause root rot.",
+      soilAndPotting:
+        "Use an extremely fast-draining, predominantly mineral mix, such as pumice, grit and lava rock with a small amount of mineral soil. A shallow, wide terracotta pot with drainage holes suits its spreading growth.",
+      temperature:
+        "Prefers cool to moderate growing conditions, approximately 10–22°C. Very cold-hardy when dry and properly acclimated, but prolonged wetness and high humidity can be problematic.",
+      fertilizer:
+        "Requires little fertilizer. If necessary, apply a very dilute, low-nitrogen cactus fertilizer sparingly during active growth."
+    }
+  },
+  {
+    id: "maihuenia-poeppigii",
+    commonName: "Maihuen",
+    scientificName: "Maihuenia poeppigii",
+    subfamily: "Maihuenioideae",
+    growthHabitAndSize:
+      "A very slow-growing, compact cushion-forming cactus with a somewhat looser and more open structure than Maihuenia patagonica. Typically grows around 3–8 cm tall and spreads approximately 30–60 cm.",
+    hardinessAndNativeRange:
+      "Native to the mountainous and steppe regions of southern Argentina and Chile. Adapted to exposed, rocky environments and cold conditions, with excellent drainage essential for cultivation.",
+    specialTraits:
+      "Features small, fleshy, cylindrical green leaves and generally longer, softer-looking spines. Produces vivid golden-yellow flowers in spring. Its growth forms a low, spreading cushion.",
+    care: {
+      sunlight:
+        "Provide full sun, ideally around 5 or more hours daily. A bright south- or east-facing window may work indoors, depending on the local climate and light intensity.",
+      watering:
+        "Water thoroughly during active growth, then allow the soil to dry completely. Keep much drier during winter. Wrinkling may indicate thirst, while a soft or darkened base can indicate rot.",
+      soilAndPotting:
+        "Use a highly mineral, fast-draining mix containing grit, pumice or similar materials. A shallow terracotta pot with drainage holes helps prevent waterlogged roots.",
+      temperature:
+        "Prefers cool to moderate conditions, approximately 10–24°C during growth. It is cold-tolerant when dry and acclimated, but prolonged tropical humidity can make cultivation difficult.",
+      fertilizer:
+        "Requires little fertilizer because it is adapted to nutrient-poor environments. Avoid frequent feeding or excessive nitrogen."
+    }
   }
-
 ];
 
 export default cactusSpecies;
