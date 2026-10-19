@@ -2,6 +2,7 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, Leaf } from 'lucide-react'
 import cactusSpecies from '../../data/cactusSpecies'
+import ScientificNameVoice from '../../components/ScientificNameVoice'
 import './CactusSpeciesGrid.css'
 import useCactusImage from '../../hooks/useCactusImage'
 
@@ -83,9 +84,15 @@ function CactusSpeciesGrid() {
             <div className="cactus-species-card-content">
               <h3>{species.commonName}</h3>
 
-              <p className="cactus-species-scientific">
-                {species.scientificName}
-              </p>
+              <div className="cactus-species-scientific-row">
+                <span className="cactus-species-scientific">
+                  {species.scientificName}
+                </span>
+
+                <ScientificNameVoice
+                  name={species.scientificName}
+                />
+              </div>
 
               <p className="cactus-species-description">
                 {species.growthHabitAndSize}
