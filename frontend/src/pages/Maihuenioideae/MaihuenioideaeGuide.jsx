@@ -1,4 +1,3 @@
-
 import {
   ArrowLeft,
   ArrowRight,
@@ -15,6 +14,10 @@ import {
   Sun,
   Trees,
 } from 'lucide-react'
+
+import cactusSpecies from '../../data/cactusSpecies'
+import useCactusImage from '../../hooks/useCactusImage'
+import ScientificNameVoice from '../../components/ScientificNameVoice'
 
 import './MaihuenioideaeGuide.css'
 
@@ -121,6 +124,100 @@ const careItems = [
     text: 'These cacti can tolerate substantial cold when properly acclimated, but tolerance depends on the species, plant health, and growing conditions. Protect plants from prolonged cold and wet soil.',
   },
 ]
+
+
+function MaihuenioideaeSpeciesCollection() {
+  const speciesList = cactusSpecies.filter(
+    (species) => species.subfamily === 'Maihuenioideae'
+  )
+
+  return (
+    <section className="maihu-species-section" id="maihu-species">
+      <div className="maihu-species-heading">
+        <span className="maihu-eyebrow">MEET THE SPECIES</span>
+        <h2>Discover the Maihuenia Cacti</h2>
+        <p>
+          Explore the two species in our Maihuenioideae collection,
+          from their distinctive growth habits to their care needs.
+        </p>
+        <span className="maihu-species-count">
+          {speciesList.length} species in the collection
+        </span>
+      </div>
+
+      <div className="maihu-species-grid">
+        {speciesList.map((species) => (
+          <MaihuenioideaeSpeciesCard
+            key={species.id}
+            species={species}
+          />
+        ))}
+      </div>
+    </section>
+  )
+}
+
+function MaihuenioideaeSpeciesCard({ species }) {
+  const { imageUrl, loading } = useCactusImage(
+    species.scientificName,
+    species.imageUrl
+  )
+
+  return (
+    <article className="maihu-species-card">
+      <a
+        href={`/cacti/${species.id}`}
+        className="maihu-species-image-link"
+        aria-label={`Explore ${species.commonName}`}
+      >
+        {imageUrl ? (
+          <img
+            className="maihu-species-image"
+            src={imageUrl}
+            alt={species.commonName}
+            loading="lazy"
+            onError={(event) => {
+              event.currentTarget.style.display = 'none'
+              event.currentTarget.nextElementSibling.style.display = 'flex'
+            }}
+          />
+        ) : null}
+
+        <div
+          className="maihu-species-image-fallback"
+          style={{ display: imageUrl ? 'none' : 'flex' }}
+        >
+          <Leaf size={36} />
+          <span>
+            {loading ? 'Finding a cactus photo...' : 'Photo unavailable'}
+          </span>
+        </div>
+      </a>
+
+      <div className="maihu-species-card-content">
+        <h3>{species.commonName}</h3>
+
+        <div className="maihu-species-scientific-row">
+          <span className="maihu-species-scientific">
+            {species.scientificName}
+          </span>
+
+          <ScientificNameVoice name={species.scientificName} />
+        </div>
+
+        <p>{species.growthHabitAndSize}</p>
+
+        <a
+          href={`/cacti/${species.id}`}
+          className="maihu-species-explore"
+        >
+          Explore species
+          <ArrowRight size={17} />
+        </a>
+      </div>
+    </article>
+  )
+}
 
 function SectionHeading({ eyebrow, title, description, icon: Icon }) {
   return (
@@ -339,6 +436,8 @@ export default function MaihuenioideaeGuide() {
           botanical references.
         </p>
       </section>
+
+      <MaihuenioideaeSpeciesCollection />
 
       <section className="maihu-highlights-section">
         <SectionHeading
