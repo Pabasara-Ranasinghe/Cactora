@@ -18,6 +18,8 @@ import cactusSpecies from '../../data/cactusSpecies'
 import useCactusImage from '../../hooks/useCactusImage'
 import ScientificNameVoice from '../../components/ScientificNameVoice'
 
+import { getUniqueCactusSpecies } from '../../utils/uniqueCactusSpecies'
+
 import './PereskioideaeGuide.css'
 
 const atAGlance = [
@@ -139,8 +141,10 @@ const careTips = [
 
 
 function PereskioideaeSpeciesCollection() {
-  const speciesList = cactusSpecies.filter(
-    (species) => species.subfamily === 'Pereskioideae'
+  const speciesList = getUniqueCactusSpecies(
+    cactusSpecies.filter(
+      (species) => species.subfamily === 'Pereskioideae'
+    )
   )
 
   return (
