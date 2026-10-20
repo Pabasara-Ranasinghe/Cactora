@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom'
 import {
   ArrowLeft,
   ArrowRight,
@@ -13,13 +14,28 @@ import {
   Sprout,
   Sun,
 } from 'lucide-react'
+
+import cactusSpecies from '../../data/cactusSpecies'
+import ScientificNameVoice from '../../components/ScientificNameVoice'
+import { getUniqueCactusSpecies } from '../../utils/uniqueCactusSpecies'
+import useCactusImage from '../../hooks/useCactusImage'
+
 import './BlossfeldioideaeGuide.css'
 
 const facts = [
   { label: 'Scientific name', value: 'Blossfeldia liliputana' },
-  { label: 'Native range', value: 'Northwestern Argentina and southern Bolivia' },
-  { label: 'Typical habitat', value: 'Rock crevices and exposed mountain slopes' },
-  { label: 'Growth form', value: 'Tiny, flattened, spineless succulent' },
+  {
+    label: 'Native range',
+    value: 'Northwestern Argentina and southern Bolivia',
+  },
+  {
+    label: 'Typical habitat',
+    value: 'Rock crevices and exposed mountain slopes',
+  },
+  {
+    label: 'Growth form',
+    value: 'Tiny, flattened, spineless succulent',
+  },
   { label: 'Flowers', value: 'White to pale pink' },
   { label: 'Genus', value: 'Blossfeldia' },
 ]
@@ -98,6 +114,129 @@ function SectionHeading({ eyebrow, title, description }) {
   )
 }
 
+function BlossfeldiaSpeciesImage({ species }) {
+  const { imageUrl, loading } = useCactusImage(
+    species.scientificName,
+    species.imageUrl
+  )
+
+  return (
+    <div className="bloss-species-image-wrapper">
+      {imageUrl ? (
+        <img
+          className="bloss-species-image"
+          src={imageUrl}
+          alt={species.imageAlt || species.commonName}
+          loading="lazy"
+          onError={(event) => {
+            event.currentTarget.style.display = 'none'
+
+            const fallback = event.currentTarget.nextElementSibling
+
+            if (fallback) {
+              fallback.style.display = 'flex'
+            }
+          }}
+        />
+      ) : null}
+
+      <div
+        className="bloss-species-image-fallback"
+        style={{ display: imageUrl ? 'none' : 'flex' }}
+      >
+        <Leaf size={36} />
+        <span>
+          {loading ? 'Finding a cactus photo...' : 'Photo unavailable'}
+        </span>
+      </div>
+    </div>
+  )
+}
+
+function BlossfeldiaSpeciesCollection() {
+  const speciesList = getUniqueCactusSpecies(
+    cactusSpecies.filter(
+      (species) => species.subfamily === 'Blossfeldioideae'
+    )
+  )
+
+  return (
+    <section className="bloss-species-section" id="bloss-species">
+      <div className="bloss-species-heading">
+        <span className="bloss-eyebrow">
+          07 — Explore the collection
+        </span>
+
+        <h2>Blossfeldioideae Cacti</h2>
+
+        <p>
+          Discover the miniature cacti in this subfamily and explore
+          their individual botanical profiles.
+        </p>
+
+        <span className="bloss-species-count">
+          {speciesList.length}{' '}
+          {speciesList.length === 1 ? 'species' : 'species'} in the collection
+        </span>
+      </div>
+
+      {speciesList.length > 0 ? (
+        <div className="bloss-species-grid">
+          {speciesList.map((species) => (
+            <article
+              className="bloss-species-card"
+              key={species.id}
+            >
+              <Link
+                to={`/cacti/${species.id}`}
+                className="bloss-species-image-link"
+                aria-label={`Explore ${species.commonName}`}
+              >
+                <BlossfeldiaSpeciesImage species={species} />
+
+                <span className="bloss-species-badge">
+                  Blossfeldioideae
+                </span>
+              </Link>
+
+              <div className="bloss-species-card-content">
+                <h3>{species.commonName}</h3>
+
+                <div className="bloss-species-scientific-row">
+                  <span className="bloss-species-scientific">
+                    {species.scientificName}
+                  </span>
+
+                  <ScientificNameVoice
+                    name={species.scientificName}
+                  />
+                </div>
+
+                <p>
+                  {species.growthHabitAndSize ||
+                    'Discover the characteristics of this cactus species.'}
+                </p>
+
+                <Link
+                  to={`/cacti/${species.id}`}
+                  className="bloss-species-explore"
+                >
+                  Explore species
+                  <ArrowRight size={17} />
+                </Link>
+              </div>
+            </article>
+          ))}
+        </div>
+      ) : (
+        <p className="bloss-species-empty">
+          No Blossfeldioideae species have been added to the collection yet.
+        </p>
+      )}
+    </section>
+  )
+}
+
 export default function BlossfeldioideaeGuide() {
   return (
     <main className="bloss-guide">
@@ -105,10 +244,10 @@ export default function BlossfeldioideaeGuide() {
         <div className="bloss-hero-glow" />
 
         <div className="bloss-hero-content">
-          <a className="bloss-back-link" href="/explore">
+          <Link className="bloss-back-link" to="/explore">
             <ArrowLeft size={17} />
             Back to Explore
-          </a>
+          </Link>
 
           <span className="bloss-hero-label">
             <Sparkles size={15} />
@@ -138,14 +277,19 @@ export default function BlossfeldioideaeGuide() {
           </a>
         </div>
 
-        <div className="bloss-hero-art" aria-label="Decorative illustration of a tiny cactus">
+        <div
+          className="bloss-hero-art"
+          aria-label="Decorative illustration of a tiny cactus"
+        >
           <div className="bloss-sun-disc" />
           <div className="bloss-rock bloss-rock-back" />
           <div className="bloss-rock bloss-rock-front" />
+
           <div className="bloss-pebble">
             <div className="bloss-pebble-highlight" />
             <div className="bloss-pebble-areole" />
           </div>
+
           <div className="bloss-mini-flower">
             <span />
             <span />
@@ -154,7 +298,10 @@ export default function BlossfeldioideaeGuide() {
             <span />
             <i />
           </div>
-          <span className="bloss-art-caption">Small in size. Remarkable by nature.</span>
+
+          <span className="bloss-art-caption">
+            Small in size. Remarkable by nature.
+          </span>
         </div>
       </section>
 
@@ -188,9 +335,11 @@ export default function BlossfeldioideaeGuide() {
               <div className="bloss-highlight-icon">
                 <Icon size={23} />
               </div>
+
               <span className="bloss-card-number">
                 {String(index + 1).padStart(2, '0')}
               </span>
+
               <h3>{title}</h3>
               <p>{text}</p>
             </article>
@@ -200,8 +349,12 @@ export default function BlossfeldioideaeGuide() {
 
       <section className="bloss-adaptations">
         <div className="bloss-adaptations-intro">
-          <span className="bloss-eyebrow">03 — Survival strategies</span>
+          <span className="bloss-eyebrow">
+            03 — Survival strategies
+          </span>
+
           <h2>Life between the rocks</h2>
+
           <p>
             In a demanding mountain environment, a small body and a suitable
             growing site can make a remarkable difference.
@@ -212,6 +365,7 @@ export default function BlossfeldioideaeGuide() {
           {adaptations.map((item) => (
             <article className="bloss-adaptation-item" key={item.number}>
               <span>{item.number}</span>
+
               <div>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
@@ -237,32 +391,38 @@ export default function BlossfeldioideaeGuide() {
                 <th>Many other cacti</th>
               </tr>
             </thead>
+
             <tbody>
               <tr>
                 <td>Body size</td>
                 <td><CheckCircle2 size={16} /> Exceptionally small</td>
                 <td>Ranges from small to very large</td>
               </tr>
+
               <tr>
                 <td>Spines</td>
                 <td><CheckCircle2 size={16} /> Absent or inconspicuous</td>
                 <td>Often prominent, but not always present</td>
               </tr>
+
               <tr>
                 <td>Body shape</td>
                 <td>Rounded and flattened</td>
                 <td>Globular, columnar, flattened, or segmented</td>
               </tr>
+
               <tr>
                 <td>Ribs</td>
                 <td>No prominent ribs</td>
                 <td>Present in many species</td>
               </tr>
+
               <tr>
                 <td>Areoles</td>
                 <td>Present, but very small</td>
                 <td>Present — a defining cactus feature</td>
               </tr>
+
               <tr>
                 <td>Growth</td>
                 <td>Very slow</td>
@@ -288,7 +448,10 @@ export default function BlossfeldioideaeGuide() {
         <div className="bloss-care-grid">
           {careItems.map(({ title, text, icon: Icon }) => (
             <article className="bloss-care-card" key={title}>
-              <div className="bloss-care-icon"><Icon size={22} /></div>
+              <div className="bloss-care-icon">
+                <Icon size={22} />
+              </div>
+
               <h3>{title}</h3>
               <p>{text}</p>
             </article>
@@ -297,8 +460,10 @@ export default function BlossfeldioideaeGuide() {
 
         <div className="bloss-warning">
           <ShieldCheck size={23} />
+
           <div>
             <h3>Small plant, careful handling</h3>
+
             <p>
               Overwatering is a major risk for tiny, slow-growing cacti.
               Avoid collecting wild specimens; choose responsibly propagated
@@ -309,20 +474,28 @@ export default function BlossfeldioideaeGuide() {
       </section>
 
       <section className="bloss-summary">
-        <div className="bloss-summary-icon"><BookOpen size={26} /></div>
+        <div className="bloss-summary-icon">
+          <BookOpen size={26} />
+        </div>
+
         <span className="bloss-eyebrow">06 — In short</span>
+
         <h2>A tiny cactus with a big story</h2>
+
         <p>
           Blossfeldia liliputana reminds us that size does not determine
           botanical importance. Its miniature form, subtle features, and
           specialised mountain habitat make it one of the most fascinating
           cacti to learn about.
         </p>
+
         <a href="/explore" className="bloss-primary-link">
           Explore more cacti
           <ArrowRight size={17} />
         </a>
       </section>
+
+      <BlossfeldiaSpeciesCollection />
     </main>
   )
 }
