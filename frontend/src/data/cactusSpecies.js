@@ -4052,6 +4052,310 @@ const cactusSpecies = [
       fertilizer: "Apply diluted cactus fertilizer during active growth."
     }
   },
+    {
+    id: "lophophora-williamsii",
+    commonName: "Peyote",
+    scientificName: "Lophophora williamsii",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A very slow-growing, flattened, spineless grey-green cactus, usually 5–8 cm wide, with a rounded crown.",
+    hardinessAndNativeRange:
+      "Native to southern Texas and northern Mexico, particularly limestone and desert habitats.",
+    specialTraits:
+      "Soft, velvety-looking body with distinct ribs and grooves; produces pale pink or whitish flowers. Contains mescaline and has important cultural significance to some Indigenous peoples.",
+    care: {
+      sunlight: "Bright light or filtered sunlight; protect from harsh sudden exposure.",
+      watering: "Water sparingly during active growth and keep almost completely dry during winter dormancy.",
+      soilAndPotting: "Very fast-draining mineral substrate with limestone grit; use a suitable pot that accommodates its root system.",
+      temperature: "Warm conditions are preferable; protect from prolonged cold and excessive moisture.",
+      fertilizer: "Use a weak cactus fertilizer occasionally during active growth."
+    }
+  },
+  {
+    id: "pelecyphora-aselliformis",
+    commonName: "Hatchet Cactus",
+    scientificName: "Pelecyphora aselliformis",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A tiny, slow-growing globular cactus, generally around 3–5 cm wide, with distinctive rows of flattened tubercles.",
+    hardinessAndNativeRange:
+      "Native to San Luis Potosí, Mexico, where it grows in dry, rocky habitats.",
+    specialTraits:
+      "Hatchet-shaped tubercles create a remarkable geometric appearance; produces vivid magenta-pink flowers.",
+    care: {
+      sunlight: "Provide bright light and gradually introduce stronger sunlight.",
+      watering: "Water carefully during active growth; allow the soil to dry completely between waterings.",
+      soilAndPotting: "Use a mineral-rich, fast-draining limestone-grit mix in a small pot.",
+      temperature: "Prefer warm growing conditions and protect from cold, wet soil.",
+      fertilizer: "Apply diluted cactus fertilizer sparingly during active growth."
+    }
+  },
+  {
+    id: "escobaria-vivipara",
+    commonName: "Viviparous Cactus",
+    scientificName: "Escobaria vivipara",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A small globular cactus, approximately 3–6 cm wide, that can form clusters over time.",
+    hardinessAndNativeRange:
+      "Native across parts of Canada, the United States, and northern Mexico; occurs in grasslands, rocky slopes, and other open habitats.",
+    specialTraits:
+      "Dense pale spines cover the body, and bright pink or magenta flowers appear near the crown. Notable for its tolerance of cold in suitable dry conditions.",
+    care: {
+      sunlight: "Full sun or very bright light.",
+      watering: "Water during active growth and keep dry during winter dormancy.",
+      soilAndPotting: "Use a gritty, well-draining cactus mix.",
+      temperature: "Many populations tolerate substantial frost when kept dry; hardiness varies with origin.",
+      fertilizer: "Use a diluted cactus fertilizer sparingly during the growing season."
+    }
+  },
+  {
+    id: "coryphantha-elephantidens",
+    commonName: "Elephant's Tooth Cactus",
+    scientificName: "Coryphantha elephantidens",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A flattened to globular cactus with large, prominent tubercles; mature plants can reach around 10–15 cm wide.",
+    hardinessAndNativeRange:
+      "Native to parts of central Mexico, including areas of Oaxaca and Puebla.",
+    specialTraits:
+      "Large rounded tubercles and comparatively sparse spines distinguish this species; produces large pale pink or lilac flowers.",
+    care: {
+      sunlight: "Bright sunlight with gradual acclimation.",
+      watering: "Water thoroughly during active growth, then allow the substrate to dry.",
+      soilAndPotting: "Use a gritty, fast-draining cactus mix.",
+      temperature: "Prefers warm conditions; protect from prolonged cold and excess moisture.",
+      fertilizer: "Feed lightly with diluted cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "coryphantha-sulcata",
+    commonName: "Grooved Coryphantha",
+    scientificName: "Coryphantha sulcata",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A globular cactus that can form clusters, commonly around 5–10 cm wide.",
+    hardinessAndNativeRange:
+      "Native to Texas and parts of northern Mexico, including open grassland and rocky habitats.",
+    specialTraits:
+      "Distinct grooves on the tubercles and golden spines; produces bright yellow flowers.",
+    care: {
+      sunlight: "Full sun or very bright light.",
+      watering: "Water during active growth and allow the soil to dry between waterings.",
+      soilAndPotting: "Use a well-draining mineral cactus substrate.",
+      temperature: "Protect from prolonged cold combined with wet soil.",
+      fertilizer: "Use diluted cactus fertilizer occasionally during active growth."
+    }
+  },
+  {
+    id: "mammillaria-bocasana",
+    commonName: "Powder Puff Cactus",
+    scientificName: "Mammillaria bocasana",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A small globular cactus that offsets freely and can form attractive clusters, with individual heads around 5–7 cm wide.",
+    hardinessAndNativeRange:
+      "Native to San Luis Potosí and nearby regions of central Mexico.",
+    specialTraits:
+      "Fine white hair-like spines give the plant a fluffy appearance; some forms have hooked central spines. Flowers are usually creamy or pale pink, followed by red fruits.",
+    care: {
+      sunlight: "Bright light with some direct sun after gradual acclimation.",
+      watering: "Water thoroughly, then allow the soil to dry; reduce watering in winter.",
+      soilAndPotting: "Use a gritty cactus mix and a pot with excellent drainage.",
+      temperature: "Prefer warm conditions and protect from severe frost.",
+      fertilizer: "Apply diluted cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "mammillaria-zeilmanniana",
+    commonName: "Rose Pincushion",
+    scientificName: "Mammillaria zeilmanniana",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A small globular cactus that often offsets to form a cluster, typically around 4–6 cm wide per head.",
+    hardinessAndNativeRange:
+      "Native to Guanajuato, Mexico, where it occurs in rocky habitats.",
+    specialTraits:
+      "Dark green stems, pale radial spines, and reddish central spines; can produce abundant pink to purple flowers in a ring around the crown.",
+    care: {
+      sunlight: "Provide bright light and some direct morning sun.",
+      watering: "Water during active growth and let the soil dry between waterings.",
+      soilAndPotting: "Use a porous cactus mix in a pot with drainage holes.",
+      temperature: "Protect from prolonged frost and cold, wet conditions.",
+      fertilizer: "Feed sparingly with diluted cactus fertilizer during growth."
+    }
+  },
+  {
+    id: "mammillaria-hahniana",
+    commonName: "Old Lady Cactus",
+    scientificName: "Mammillaria hahniana",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A globular cactus that may form clusters, commonly reaching around 8–12 cm wide.",
+    hardinessAndNativeRange:
+      "Native to central Mexico, including parts of Guanajuato and Querétaro.",
+    specialTraits:
+      "Long white hairs create a shaggy appearance; mature plants can produce a crown of bright pink or purple flowers.",
+    care: {
+      sunlight: "Bright light with some direct sun after gradual acclimation.",
+      watering: "Water thoroughly during active growth and let the substrate dry; avoid keeping the hairs wet for long periods.",
+      soilAndPotting: "Use a gritty, fast-draining cactus mix.",
+      temperature: "Prefers warm conditions and protection from hard frost.",
+      fertilizer: "Apply diluted cactus fertilizer occasionally during active growth."
+    }
+  },
+  {
+    id: "mammillaria-elongata",
+    commonName: "Ladyfinger Cactus",
+    scientificName: "Mammillaria elongata",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A clustering cactus with slender finger-like stems, commonly around 6–10 cm tall.",
+    hardinessAndNativeRange:
+      "Native to central Mexico, particularly the states of Hidalgo and Guanajuato.",
+    specialTraits:
+      "Dense golden, cream, or pale brown spines cover its narrow stems; small creamy-yellow flowers may appear in spring.",
+    care: {
+      sunlight: "Bright light with some direct sunlight.",
+      watering: "Water during active growth and allow the soil to dry completely between waterings.",
+      soilAndPotting: "Use a well-draining mineral cactus mix; a wider pot accommodates offsets.",
+      temperature: "Protect from severe frost and prolonged cold, wet conditions.",
+      fertilizer: "Use a diluted cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "mammillaria-spinosissima",
+    commonName: "Spiny Pincushion",
+    scientificName: "Mammillaria spinosissima",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "An upright cylindrical cactus that may reach approximately 15–30 cm tall and produce offsets.",
+    hardinessAndNativeRange:
+      "Native to central Mexico, including parts of Guerrero and neighboring regions.",
+    specialTraits:
+      "Dense white and reddish-brown spines create a striking contrast; pink to purple flowers can form a ring near the crown.",
+    care: {
+      sunlight: "Provide bright light and gradually acclimate the plant to full sun.",
+      watering: "Water thoroughly during active growth and let the soil dry between waterings.",
+      soilAndPotting: "Use a porous, fast-draining cactus mix.",
+      temperature: "Prefer warm conditions; protect from severe frost and excess winter moisture.",
+      fertilizer: "Apply diluted cactus fertilizer sparingly during active growth."
+    }
+  },
+  {
+    id: "ancistrocactus-megarhizus",
+    commonName: "Giant-Rooted Fishhook Cactus",
+    scientificName: "Ancistrocactus megarhizus",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A small globular cactus with a disproportionately large underground storage root.",
+    hardinessAndNativeRange:
+      "Associated with dry habitats in southern Texas and nearby northeastern Mexico; verify the accepted name and precise range before publication.",
+    specialTraits:
+      "A substantial taproot and hooked spines are characteristic features. Handle carefully and avoid disturbing wild plants.",
+    care: {
+      sunlight: "Bright sunlight, introduced gradually.",
+      watering: "Water very sparingly during active growth and keep dry during dormancy.",
+      soilAndPotting: "Use a highly mineral, fast-draining substrate and a deep pot suitable for the root.",
+      temperature: "Provide warm, dry conditions and avoid cold, wet soil.",
+      fertilizer: "Use very dilute cactus fertilizer sparingly during active growth."
+    }
+  },
+  {
+    id: "sclerocactus-parviflorus",
+    commonName: "Small-Flowered Fishhook Cactus",
+    scientificName: "Sclerocactus parviflorus",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A small globular to short cylindrical cactus, commonly around 5–12 cm tall.",
+    hardinessAndNativeRange:
+      "Native to parts of the Colorado Plateau in the western United States, including Utah, Arizona, and Colorado.",
+    specialTraits:
+      "Strong hooked spines protect the body; flowers may be pink, lavender, or purplish. Identification can be difficult among related species.",
+    care: {
+      sunlight: "Full sun in a suitable outdoor climate.",
+      watering: "Water sparingly during active growth and keep dry in winter.",
+      soilAndPotting: "Use a mineral, gritty substrate with excellent drainage.",
+      temperature: "Some populations tolerate severe cold when dry; protect cultivated plants from cold, wet conditions.",
+      fertilizer: "Feed very lightly during active growth."
+    }
+  },
+  {
+    id: "sclerocactus-whipplei",
+    commonName: "Whipple's Fishhook Cactus",
+    scientificName: "Sclerocactus whipplei",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A small globular cactus, usually several centimetres wide, with prominent hooked spines.",
+    hardinessAndNativeRange:
+      "Reported from parts of the southwestern United States; check current taxonomy and distribution before publishing this record.",
+    specialTraits:
+      "Grey-green stems and strong hooked spines give it a rugged appearance; flowers are often pinkish or lilac.",
+    care: {
+      sunlight: "Provide strong sunlight.",
+      watering: "Water cautiously during active growth and keep dry in winter dormancy.",
+      soilAndPotting: "Use a highly mineral, fast-draining cactus substrate.",
+      temperature: "Needs excellent drainage in cold conditions; hardiness varies with species identification and origin.",
+      fertilizer: "Use a weak cactus fertilizer sparingly."
+    }
+  },
+  {
+    id: "turbinicarpus-pseudopectinatus",
+    commonName: "False Comb Cactus",
+    scientificName: "Turbinicarpus pseudopectinatus",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A miniature, flattened globular cactus, usually around 3–6 cm wide, with a taproot.",
+    hardinessAndNativeRange:
+      "Native to northeastern Mexico, where it grows in dry, often limestone-rich habitats.",
+    specialTraits:
+      "Fine white comb-like spines lie close to the body; flowers are generally white to pink. Exact distribution and conservation status should be checked before publication.",
+    care: {
+      sunlight: "Bright light with careful acclimation to direct sun.",
+      watering: "Water sparingly during active growth and keep dry during winter dormancy.",
+      soilAndPotting: "Use a very porous mineral and limestone-grit mix; choose a pot that accommodates the taproot.",
+      temperature: "Prefer warm, dry conditions; avoid cold, wet soil.",
+      fertilizer: "Apply diluted cactus fertilizer sparingly during active growth."
+    }
+  },
+  {
+    id: "turbinicarpus-schmiedickeanus",
+    commonName: "Schmiedicke's Turbinicarpus",
+    scientificName: "Turbinicarpus schmiedickeanus",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A miniature globular cactus, commonly around 2–5 cm wide, with a substantial taproot.",
+    hardinessAndNativeRange:
+      "Native to Mexico, where it grows in dry, rocky and limestone-rich habitats.",
+    specialTraits:
+      "Compact grey-green stems, pronounced tubercles, and variable spine patterns; flowers may be pale pink, white, or yellowish depending on the form.",
+    care: {
+      sunlight: "Bright sunlight with gradual acclimation.",
+      watering: "Water cautiously during active growth and keep dry during winter dormancy.",
+      soilAndPotting: "Use a highly mineral limestone-grit mix and a pot deep enough for the taproot.",
+      temperature: "Prefer warm, dry conditions and excellent drainage.",
+      fertilizer: "Feed sparingly with diluted cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "echinocactus-grusonii",
+    commonName: "Golden Barrel Cactus",
+    scientificName: "Echinocactus grusonii",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A slow-growing, round barrel-shaped cactus that can become very large with age.",
+    hardinessAndNativeRange:
+      "Native to central Mexico, although wild populations are restricted and the species is widely cultivated elsewhere.",
+    specialTraits:
+      "Prominent ribs and dense golden-yellow spines give it its familiar appearance; mature plants may produce yellow flowers.",
+    care: {
+      sunlight: "Full sun after gradual acclimation.",
+      watering: "Water deeply during active growth, then allow the soil to dry; reduce watering in winter.",
+      soilAndPotting: "Use a gritty, fast-draining cactus mix and a sturdy pot with drainage holes.",
+      temperature: "Prefers warm, sunny conditions; protect from severe frost and excess moisture.",
+      fertilizer: "Use diluted cactus fertilizer during active growth."
+    }
+  }
 ];
 
 export default cactusSpecies;
