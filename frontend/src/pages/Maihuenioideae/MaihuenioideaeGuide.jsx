@@ -19,6 +19,8 @@ import cactusSpecies from '../../data/cactusSpecies'
 import useCactusImage from '../../hooks/useCactusImage'
 import ScientificNameVoice from '../../components/ScientificNameVoice'
 
+import { getUniqueCactusSpecies } from '../../utils/uniqueCactusSpecies'
+
 import './MaihuenioideaeGuide.css'
 
 const facts = [
@@ -127,8 +129,10 @@ const careItems = [
 
 
 function MaihuenioideaeSpeciesCollection() {
-  const speciesList = cactusSpecies.filter(
-    (species) => species.subfamily === 'Maihuenioideae'
+  const speciesList = getUniqueCactusSpecies(
+    cactusSpecies.filter(
+      (species) => species.subfamily === 'Maihuenioideae'
+    )
   )
 
   return (
