@@ -19,6 +19,8 @@ import useCactusImage from '../../hooks/useCactusImage'
 import ScientificNameVoice from '../../components/ScientificNameVoice'
 import { Link } from 'react-router-dom'
 
+import { getUniqueCactusSpecies } from '../../utils/uniqueCactusSpecies'
+
 import './LeuenbergerioideaeGuide.css'
 
 const atAGlance = [
@@ -272,8 +274,10 @@ function LeuenbergerioideaeSpeciesCard({ species }) {
 }
 
 function LeuenbergerioideaeSpeciesCollection() {
-  const speciesList = cactusSpecies.filter(
-    (species) => species.subfamily === 'Leuenbergerioideae'
+  const speciesList = getUniqueCactusSpecies(
+    cactusSpecies.filter(
+      (species) => species.subfamily === 'Leuenbergerioideae'
+    )
   )
 
   return (
