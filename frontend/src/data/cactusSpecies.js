@@ -2704,6 +2704,1354 @@ const cactusSpecies = [
       fertilizer: 'Feed sparingly during active growth.'
     }
   },
+  
+    {
+    id: "melocactus-azureus",
+    commonName: "Turk's Cap Cactus",
+    scientificName: "Melocactus azureus",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A slow-growing, globular cactus with a distinctive blue-green body, usually around 15–25 cm wide. Mature plants develop a woolly, bristly cephalium at the crown.",
+    hardinessAndNativeRange:
+      "Native to Bahia in northeastern Brazil. It thrives in warm conditions and requires excellent drainage.",
+    specialTraits:
+      "Its striking turquoise body contrasts with the reddish cephalium. Small pink flowers emerge from the cephalium, followed by colourful fruits.",
+    care: {
+      sunlight: "Provide strong sunlight and acclimate gradually to intense direct sun.",
+      watering: "Water thoroughly during warm growth, then allow the soil to dry. Keep drier during cool weather.",
+      soilAndPotting: "Use a fast-draining mix containing about 70% mineral grit and 30% suitable soil. Choose a shallow pot with drainage.",
+      temperature: "Prefers warm conditions and should be protected from cold temperatures.",
+      fertilizer: "Apply dilute cactus fertilizer occasionally during active growth."
+    }
+  },
+  {
+    id: "melocactus-matanzanus",
+    commonName: "Dwarf Turk's Cap",
+    scientificName: "Melocactus matanzanus",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A small, slow-growing globular cactus, generally around 8–12 cm wide, with a compact body and a prominent reddish cephalium at maturity.",
+    hardinessAndNativeRange:
+      "Native to Cuba, including the Matanzas region. It requires warm growing conditions and is sensitive to cold and prolonged moisture.",
+    specialTraits:
+      "Its glossy green body and compact red cephalium make it popular among collectors. Pink flowers emerge from the cephalium.",
+    care: {
+      sunlight: "Provide bright light and some direct sun after gradual acclimation.",
+      watering: "Water when the substrate has dried, then reduce watering during cooler periods.",
+      soilAndPotting: "Use a highly draining mineral cactus mix, with approximately 75% grit and 25% suitable soil.",
+      temperature: "Keep warm, ideally above 10°C, and protect from cold drafts.",
+      fertilizer: "Feed sparingly with diluted cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "melocactus-concinnus",
+    commonName: "Elegant Turk's Cap",
+    scientificName: "Melocactus concinnus",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A slow-growing, globular cactus that commonly reaches around 10–15 cm wide. Mature specimens develop a woolly cephalium.",
+    hardinessAndNativeRange:
+      "Native to Brazil, particularly northeastern regions. It is adapted to warm environments and well-drained growing conditions.",
+    specialTraits:
+      "The symmetrical dark green body has prominent ribs and short spines. The cephalium produces small pink flowers and colourful fruits.",
+    care: {
+      sunlight: "Provide strong light with protection from sudden exposure to intense midday sun.",
+      watering: "Water during active growth and let the soil dry between waterings. Reduce watering in cool weather.",
+      soilAndPotting: "Use a gritty, fast-draining cactus substrate with approximately 75% mineral material.",
+      temperature: "Keep warm and protect from frost and cold, wet conditions.",
+      fertilizer: "Use dilute cactus fertilizer occasionally during active growth."
+    }
+  },
+  {
+    id: "aztekium-ritteri",
+    commonName: "Aztec Cactus",
+    scientificName: "Aztekium ritteri",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "An extremely slow-growing, small cactus with a flattened grey-green body, commonly only a few centimetres wide.",
+    hardinessAndNativeRange:
+      "Native to northeastern Mexico, where it grows in specialised rocky habitats, including limestone cliffs. It requires excellent drainage.",
+    specialTraits:
+      "Deep grooves and intricate ridges create a sculpted appearance. Small pale pink or whitish flowers may appear at the crown.",
+    care: {
+      sunlight: "Provide bright filtered light or gentle morning sun; avoid sudden exposure to intense sunlight.",
+      watering: "Water very sparingly and only when the growing medium is completely dry. Avoid water collecting around the crown.",
+      soilAndPotting: "Use a predominantly mineral limestone-based substrate and a shallow pot with drainage.",
+      temperature: "Prefer warm conditions and protect from cold, damp weather.",
+      fertilizer: "Use very dilute cactus fertilizer infrequently during active growth."
+    }
+  },
+  {
+    id: "aztekium-hintonii",
+    commonName: "Hinton's Aztec",
+    scientificName: "Aztekium hintonii",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "An extremely slow-growing, solitary globular cactus that can reach approximately 6–12 cm wide, with pronounced sculpted ribs.",
+    hardinessAndNativeRange:
+      "Native to northeastern Mexico, particularly Nuevo León and Tamaulipas. It grows in dry, rocky habitats and needs mineral-rich, sharply drained soil.",
+    specialTraits:
+      "Its grey-green body has broad, deeply sculpted ribs. Pink to magenta flowers provide contrast against the body.",
+    care: {
+      sunlight: "Provide bright filtered light or gentle morning sun and avoid harsh sudden exposure.",
+      watering: "Water cautiously after the substrate dries completely. Keep nearly dry during cool conditions.",
+      soilAndPotting: "Use a highly mineral substrate with limestone grit and a shallow pot with excellent drainage.",
+      temperature: "Prefers warm conditions and should be protected from frost and prolonged dampness.",
+      fertilizer: "Feed very sparingly with dilute cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "geohintonia-mexicana",
+    commonName: "Mexican Gem",
+    scientificName: "Geohintonia mexicana",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "An extremely slow-growing, solitary cactus with a flattened to rounded grey-green body, generally around 4–8 cm wide.",
+    hardinessAndNativeRange:
+      "Native to a restricted limestone habitat in Nuevo León, northeastern Mexico. It requires warm conditions and excellent drainage.",
+    specialTraits:
+      "Prominent vertical ribs and a silvery, stone-like surface give it a distinctive appearance. Pink flowers can emerge near the crown.",
+    care: {
+      sunlight: "Provide bright filtered light and gradually introduce gentle direct sunlight.",
+      watering: "Water sparingly only after the substrate dries thoroughly. Excess moisture can cause rot.",
+      soilAndPotting: "Use a very mineral limestone-based mix in a shallow pot with drainage holes.",
+      temperature: "Maintain warm conditions and protect from cold, wet weather.",
+      fertilizer: "Use very dilute fertilizer infrequently during active growth."
+    }
+  },
+  {
+    id: "gymnocalycium-mihanovichii",
+    commonName: "Moon Cactus",
+    scientificName: "Gymnocalycium mihanovichii",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A small, flattened globular cactus, commonly around 5–8 cm wide. Many brightly coloured horticultural forms are grafted onto another cactus.",
+    hardinessAndNativeRange:
+      "Native to parts of South America, including Paraguay and Argentina. It grows best in warm conditions with good drainage.",
+    specialTraits:
+      "The species has ribbed green to brownish bodies and pale flowers. Popular red, orange, pink and yellow grafted forms often lack sufficient chlorophyll to survive independently.",
+    care: {
+      sunlight: "Provide bright indirect light, particularly for brightly coloured grafted forms.",
+      watering: "Water thoroughly after the substrate dries, reducing watering during cooler weather.",
+      soilAndPotting: "Use a well-draining cactus mix containing mineral grit.",
+      temperature: "Keep warm and protect from frost.",
+      fertilizer: "Apply dilute cactus fertilizer occasionally during active growth."
+    }
+  },
+  {
+    id: "gymnocalycium-baldianum",
+    commonName: "Dwarf Chin Cactus",
+    scientificName: "Gymnocalycium baldianum",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A compact, flattened globular cactus that generally grows around 6–8 cm wide, with distinct ribs and short spines.",
+    hardinessAndNativeRange:
+      "Native to Catamarca and neighbouring areas of Argentina. It grows in rocky habitats and benefits from seasonal moisture followed by drier conditions.",
+    specialTraits:
+      "Its compact body and vivid scarlet to reddish flowers make it a popular flowering cactus. Flowers may appear near the crown during the growing season.",
+    care: {
+      sunlight: "Provide bright light with gentle direct sun; protect from excessive heat in containers.",
+      watering: "Water during active growth after the soil has partially dried. Reduce watering in winter.",
+      soilAndPotting: "Use a free-draining cactus mix with mineral grit.",
+      temperature: "Tolerates some cool conditions when dry, but protect container plants from severe frost.",
+      fertilizer: "Feed lightly with dilute cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "gymnocalycium-saglionis",
+    commonName: "Giant Chin Cactus",
+    scientificName: "Gymnocalycium saglionis",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A slow-growing, large globular cactus that may reach approximately 20–30 cm wide. It develops a broad ribbed body and stout curved spines.",
+    hardinessAndNativeRange:
+      "Native to northern Argentina and nearby South American regions. It grows in dry, open habitats with excellent soil drainage.",
+    specialTraits:
+      "The large grey-green globe and long curved spines make mature specimens distinctive. Flowers are generally whitish to pale pink.",
+    care: {
+      sunlight: "Provide full sun or strong light, with gradual acclimation.",
+      watering: "Water thoroughly during growth and allow the substrate to dry between waterings.",
+      soilAndPotting: "Use a gritty, well-draining cactus mix and a stable pot suited to its broad root system.",
+      temperature: "Tolerates some cool conditions when dry; protect from frost combined with moisture.",
+      fertilizer: "Apply dilute cactus fertilizer occasionally during active growth."
+    }
+  },
+  {
+    id: "turbinicarpus-pseudopectinatus",
+    commonName: "False Pectinate Cactus",
+    scientificName: "Turbinicarpus pseudopectinatus",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A miniature, flattened globular cactus that usually reaches around 3–5 cm wide. It develops a tapering root and grows very slowly.",
+    hardinessAndNativeRange:
+      "Native to arid regions of northeastern and central Mexico, where it grows in rocky, often limestone-rich habitats.",
+    specialTraits:
+      "Fine, comb-like spines give the small body a pale appearance. Pink to lavender flowers may appear near the crown.",
+    care: {
+      sunlight: "Provide strong light and gentle direct sun after gradual acclimation.",
+      watering: "Water very carefully after the substrate dries completely. Avoid persistent moisture around the root.",
+      soilAndPotting: "Use a highly mineral limestone-rich substrate and a relatively deep, narrow pot for the root.",
+      temperature: "Keep dry during cold periods and protect from prolonged cold and dampness.",
+      fertilizer: "Use dilute cactus fertilizer very sparingly during active growth."
+    }
+  },
+  {
+    id: "turbinicarpus-schmiedickeanus",
+    commonName: "Schmiedicke's Turbine",
+    scientificName: "Turbinicarpus schmiedickeanus",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A miniature, slow-growing globular cactus, commonly around 3–6 cm wide, with a tapering root and variable spination.",
+    hardinessAndNativeRange:
+      "Native to northern and central Mexico, where it occurs in dry, rocky habitats.",
+    specialTraits:
+      "Its small grey-green body and variable short spines distinguish the species and its horticultural forms. Flowers are often white to pinkish.",
+    care: {
+      sunlight: "Provide strong light and some gentle direct sun.",
+      watering: "Water sparingly once the substrate is dry; keep drier during winter.",
+      soilAndPotting: "Use a mineral-rich, fast-draining mix and a pot deep enough for its root.",
+      temperature: "Protect from cold, wet conditions, particularly in winter.",
+      fertilizer: "Feed infrequently with a dilute cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "turbinicarpus-valdezianus",
+    commonName: "Valdez's Turbine",
+    scientificName: "Turbinicarpus valdezianus",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A very small, flattened cactus, generally around 2–4 cm wide, with a compact body and tapering root.",
+    hardinessAndNativeRange:
+      "Native to northeastern Mexico, including parts of Coahuila and Nuevo León. It is adapted to dry, rocky environments.",
+    specialTraits:
+      "Dense, fine white spines can make the body resemble a tiny snowball. Flowers are commonly pink to lavender.",
+    care: {
+      sunlight: "Provide strong light to maintain compact growth and healthy spination.",
+      watering: "Water cautiously only after the substrate has dried completely.",
+      soilAndPotting: "Use a very gritty mineral mix and a deep, narrow pot for the root.",
+      temperature: "Keep dry during cold periods and avoid frost with wet soil.",
+      fertilizer: "Apply very dilute cactus fertilizer infrequently during active growth."
+    }
+  },
+  {
+    id: "eriosyce-ceratistes",
+    commonName: "Chilenito",
+    scientificName: "Eriosyce ceratistes",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A slow-growing globular to somewhat elongated cactus that can develop into a larger solitary specimen with age.",
+    hardinessAndNativeRange:
+      "Native to arid regions of Chile. It is adapted to dry habitats and requires strong light and excellent drainage in cultivation.",
+    specialTraits:
+      "The ribbed body is covered in prominent golden to yellowish spines. Flowers may be yellowish or reddish depending on the plant.",
+    care: {
+      sunlight: "Provide full sun after gradual acclimation.",
+      watering: "Water during active growth and allow the substrate to dry completely between waterings.",
+      soilAndPotting: "Use a mineral-rich cactus mix with excellent drainage.",
+      temperature: "Keep drier during cool weather and protect from prolonged cold, wet conditions.",
+      fertilizer: "Feed sparingly with diluted cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "eriosyce-subgibbosa",
+    commonName: "Cob Cactus",
+    scientificName: "Eriosyce subgibbosa",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A slow-growing globular cactus that may become elongated with age. It has a ribbed body and dense spines.",
+    hardinessAndNativeRange:
+      "Native to Chile, including coastal areas with seasonally dry conditions and fog influence.",
+    specialTraits:
+      "Its dark green body and greyish to reddish spines create a dramatic appearance. Flowers are commonly pink to reddish.",
+    care: {
+      sunlight: "Provide full sun or strong light, with protection from sudden intense exposure.",
+      watering: "Water during active growth and let the substrate dry between waterings. Reduce watering in winter.",
+      soilAndPotting: "Use a fast-draining mineral cactus substrate.",
+      temperature: "Protect from severe frost and prolonged cold, wet conditions.",
+      fertilizer: "Use dilute cactus fertilizer sparingly during active growth."
+    }
+  },
+  {
+    id: "eriosyce-sandillonii",
+    commonName: "Sandillon",
+    scientificName: "Eriosyce sandillonii",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A slow-growing globular cactus that can become a substantial solitary specimen, with a broad ribbed body and robust spines.",
+    hardinessAndNativeRange:
+      "Associated with arid regions of Chile. Confirm the currently accepted taxonomic treatment before publishing species-specific distribution details.",
+    specialTraits:
+      "The grey-green body and dense golden or silvery spines create a striking appearance. Flower colour and form should be verified against a reliable species reference.",
+    care: {
+      sunlight: "Provide strong light and gradually acclimate to full sun.",
+      watering: "Water cautiously during active growth and allow the soil to dry thoroughly.",
+      soilAndPotting: "Use a very well-draining mineral cactus mix.",
+      temperature: "Keep dry during cool periods and protect from prolonged cold and dampness.",
+      fertilizer: "Feed lightly with dilute cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "parodia-formosa",
+    commonName: "Beautiful Ball Cactus",
+    scientificName: "Parodia formosa",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A small globular cactus that develops a ribbed body and dense spines, generally remaining compact in cultivation.",
+    hardinessAndNativeRange:
+      "The accepted status and native distribution of this name should be verified against a current botanical taxonomic source before publication.",
+    specialTraits:
+      "Parodia species commonly produce colourful spines and showy flowers, often yellow. Confirm species-specific traits for this name before displaying them as established facts.",
+    care: {
+      sunlight: "Provide bright light and some direct sun after acclimation.",
+      watering: "Water during active growth and let the substrate dry between waterings.",
+      soilAndPotting: "Use a well-draining cactus mix with a generous mineral component.",
+      temperature: "Protect from frost and cold, waterlogged soil.",
+      fertilizer: "Apply dilute cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "parodia-mutabilis",
+    commonName: "Changeable Ball Cactus",
+    scientificName: "Parodia mutabilis",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A compact globular cactus with a ribbed body and spines that may change in appearance as they mature.",
+    hardinessAndNativeRange:
+      "Verify the accepted status and native range of this botanical name before publication, as taxonomic treatments within Parodia have changed.",
+    specialTraits:
+      "Parodia species often have colourful spines and bright flowers. Any claim that this species has a specific age-related spine colour change should be confirmed against a reliable reference.",
+    care: {
+      sunlight: "Provide bright light and gradually acclimate to direct sun.",
+      watering: "Water during active growth after the substrate has dried sufficiently.",
+      soilAndPotting: "Use a fast-draining cactus mix with mineral grit.",
+      temperature: "Protect from frost and prolonged cold, wet conditions.",
+      fertilizer: "Feed sparingly with dilute cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "browningia-hertlingiana",
+    commonName: "Blue Cereus",
+    scientificName: "Browningia hertlingiana",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A slow-growing, columnar cactus that can develop into a large, branching plant several metres tall in suitable outdoor conditions.",
+    hardinessAndNativeRange:
+      "Native to Peru, particularly Andean regions. It prefers strong sunlight, warm conditions and sharply drained soil.",
+    specialTraits:
+      "Its striking powdery blue stems contrast with pale spines. Mature plants may produce flowers near the stem tips.",
+    care: {
+      sunlight: "Provide full sun and good airflow to maintain healthy growth and blue stem colour.",
+      watering: "Water thoroughly during warm growth and allow the soil to dry between waterings.",
+      soilAndPotting: "Use a mineral-rich, fast-draining cactus mix. Large plants need a stable container and room to grow.",
+      temperature: "Prefers warm conditions and should be protected from frost.",
+      fertilizer: "Use dilute cactus fertilizer occasionally during active growth."
+    }
+  },
+  {
+    id: "browningia-candelaris",
+    commonName: "Candleholder Cactus",
+    scientificName: "Browningia candelaris",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A very slow-growing columnar cactus that develops a thick trunk and, with maturity, a distinctive crown of branching stems.",
+    hardinessAndNativeRange:
+      "Native to the arid regions of southern Peru and northern Chile, including areas near the Atacama Desert. It is adapted to dry conditions.",
+    specialTraits:
+      "Mature plants have an unusual candleholder-like silhouette, with a thick trunk and branches concentrated near the crown. Spines and flowering behaviour vary with age.",
+    care: {
+      sunlight: "Provide full sun and strong airflow.",
+      watering: "Water sparingly, allowing the substrate to dry completely. Avoid frequent watering in cool weather.",
+      soilAndPotting: "Use a highly mineral, fast-draining substrate and a deep, stable container for young plants.",
+      temperature: "Keep warm and protect from frost and prolonged dampness.",
+      fertilizer: "Feed lightly during active growth, avoiding excess nitrogen."
+    }
+  },
+  {
+    id: "matucana-aurantiaca",
+    commonName: "Orange Ball Cactus",
+    scientificName: "Matucana aurantiaca",
+    subfamily: "Cactoideae",
+    growthHabitAndSize:
+      "A compact globular to short-columnar cactus that may grow singly or form small clumps. It has a ribbed green body and prominent spines.",
+    hardinessAndNativeRange:
+      "Matucana species are native to Peru, often in Andean habitats. Verify the accepted status and precise distribution of this species name before publication.",
+    specialTraits:
+      "Matucana cacti are known for their colourful tubular flowers, which can be orange or reddish in some species. Confirm the flower colour and other traits for this particular name.",
+    care: {
+      sunlight: "Provide bright light to gentle direct sun, with protection from sudden extreme heat.",
+      watering: "Water during active growth, allowing the substrate to dry partially between waterings. Reduce watering in cool conditions.",
+      soilAndPotting: "Use a well-draining cactus mix with mineral grit.",
+      temperature: "Protect from frost and prolonged cold, wet conditions.",
+      fertilizer: "Apply diluted cactus fertilizer during active growth."
+    }
+  },
+
+    {
+    id: "melocactus-ernestii",
+    commonName: "Melocactus ernestii",
+    scientificName: "Melocactus ernestii",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A globular cactus with a ribbed green body that can develop a cephalium at maturity.",
+    hardinessAndNativeRange: "Native to Brazil. Confirm the precise distribution and cold tolerance before publication.",
+    specialTraits: "Mature plants may develop a woolly, bristly cephalium from which small flowers emerge.",
+    care: {
+      sunlight: "Provide bright light and gradually introduce direct sunlight.",
+      watering: "Water during active growth and allow excess water to drain.",
+      soilAndPotting: "Use a porous, well-draining cactus mix.",
+      temperature: "Protect from frost and prolonged cold, wet conditions.",
+      fertilizer: "Apply diluted cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "melocactus-glaucescens",
+    commonName: "Melocactus glaucescens",
+    scientificName: "Melocactus glaucescens",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A compact, globular cactus with a bluish-green body and prominent ribs.",
+    hardinessAndNativeRange: "Native to Brazil, where it occurs in specialized rocky habitats. Verify its current conservation status before publication.",
+    specialTraits: "Its glaucous body and mature cephalium distinguish it from many other globular cacti.",
+    care: {
+      sunlight: "Provide bright light and gentle direct sun with gradual acclimation.",
+      watering: "Water carefully during growth and avoid leaving the roots wet.",
+      soilAndPotting: "Use a mineral-rich, sharply draining substrate.",
+      temperature: "Keep warm and protect from frost.",
+      fertilizer: "Use a diluted cactus fertilizer sparingly during active growth."
+    }
+  },
+  {
+    id: "melocactus-zehntneri",
+    commonName: "Melocactus zehntneri",
+    scientificName: "Melocactus zehntneri",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A globular to slightly elongated cactus with distinct ribs and spines.",
+    hardinessAndNativeRange: "Associated with northeastern Brazil. Confirm its exact distribution and accepted taxonomic status.",
+    specialTraits: "Mature plants can produce a cephalium bearing small flowers and fruits.",
+    care: {
+      sunlight: "Provide bright light and some direct sun after acclimation.",
+      watering: "Water during warm growing periods and avoid waterlogged soil.",
+      soilAndPotting: "Use a well-draining cactus mix with mineral components.",
+      temperature: "Protect from frost and prolonged cold.",
+      fertilizer: "Apply diluted cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "discocactus-placentiformis",
+    commonName: "Discocactus placentiformis",
+    scientificName: "Discocactus placentiformis",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A flattened to globular cactus with a ribbed body and a woolly flowering region at maturity.",
+    hardinessAndNativeRange: "Native range and accepted taxonomic status should be verified using a current botanical reference.",
+    specialTraits: "Discocactus species are notable for their fragrant, often night-opening flowers and cephalium.",
+    care: {
+      sunlight: "Provide bright filtered light or gentle direct sun.",
+      watering: "Water carefully during growth and allow excess water to drain.",
+      soilAndPotting: "Use a porous substrate that drains quickly.",
+      temperature: "Keep warm and protect from cold, wet conditions.",
+      fertilizer: "Apply diluted cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "discocactus-hartmannii",
+    commonName: "Discocactus hartmannii",
+    scientificName: "Discocactus hartmannii",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A compact, rounded cactus with ribs and a woolly crown as it matures.",
+    hardinessAndNativeRange: "Verify the accepted name and native distribution before publication.",
+    specialTraits: "Discocactus species are known for their conspicuous cephalium and fragrant flowers.",
+    care: {
+      sunlight: "Provide bright light while protecting from sudden intense midday sun.",
+      watering: "Water when appropriate for the growing season and avoid standing water.",
+      soilAndPotting: "Use a mineral-rich, fast-draining cactus substrate.",
+      temperature: "Maintain warm conditions and protect from frost.",
+      fertilizer: "Use a diluted cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "uebelmannia-pectinifera",
+    commonName: "Uebelmannia pectinifera",
+    scientificName: "Uebelmannia pectinifera",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A solitary globular to short-columnar cactus with a ribbed body and closely arranged spines.",
+    hardinessAndNativeRange: "Native to Brazil, particularly rocky habitats in Minas Gerais.",
+    specialTraits: "Its dark green to purplish body and comb-like spine arrangement are distinctive.",
+    care: {
+      sunlight: "Provide bright light and introduce direct sun gradually.",
+      watering: "Water carefully during active growth and keep the roots well aerated.",
+      soilAndPotting: "Use a very porous mineral cactus mix.",
+      temperature: "Keep warm and avoid cold, damp conditions.",
+      fertilizer: "Apply a weak cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "uebelmannia-gummifera",
+    commonName: "Uebelmannia gummifera",
+    scientificName: "Uebelmannia gummifera",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A slow-growing, globular cactus with pronounced ribs and a distinctive spiny surface.",
+    hardinessAndNativeRange: "Associated with Brazil. Verify its precise native range and accepted status.",
+    specialTraits: "Uebelmannia species are appreciated for their unusual rib patterns and dark, often glossy bodies.",
+    care: {
+      sunlight: "Provide bright light and carefully acclimated direct sunlight.",
+      watering: "Water during growth but avoid prolonged moisture around the roots.",
+      soilAndPotting: "Use a mineral-rich, fast-draining substrate.",
+      temperature: "Protect from frost and cold, wet conditions.",
+      fertilizer: "Fertilize lightly during active growth."
+    }
+  },
+  {
+    id: "armatocereus-procerus",
+    commonName: "Armatocereus procerus",
+    scientificName: "Armatocereus procerus",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A columnar cactus that may develop a tall, branching growth habit.",
+    hardinessAndNativeRange: "Armatocereus species are native to western South America. Verify this species' exact range.",
+    specialTraits: "The genus is characterized by ribbed stems, prominent spines, and large flowers.",
+    care: {
+      sunlight: "Provide abundant light and ample space for growth.",
+      watering: "Water thoroughly during growth, allowing the soil to dry appropriately between waterings.",
+      soilAndPotting: "Use a well-draining cactus mix in a sturdy pot.",
+      temperature: "Protect from frost and prolonged cold.",
+      fertilizer: "Apply diluted cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "armatocereus-matucanensis",
+    commonName: "Armatocereus matucanensis",
+    scientificName: "Armatocereus matucanensis",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A columnar cactus with ribbed stems and strong spines.",
+    hardinessAndNativeRange: "Associated with Peru. Verify its current accepted name and precise distribution.",
+    specialTraits: "Its columnar growth and defensive spines are characteristic of Armatocereus.",
+    care: {
+      sunlight: "Provide bright light and gradually acclimate to full sun.",
+      watering: "Water during active growth and avoid saturated soil.",
+      soilAndPotting: "Use a fast-draining cactus substrate.",
+      temperature: "Protect from frost and excessive cold moisture.",
+      fertilizer: "Use diluted cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "parodia-haselbergii",
+    commonName: "Brasilicactus haselbergii",
+    scientificName: "Parodia haselbergii",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A small globular cactus with dense pale spines and a rounded body.",
+    hardinessAndNativeRange: "Native to southern Brazil. Formerly known as Brasilicactus haselbergii.",
+    specialTraits: "Its dense, light-coloured spines contrast with its green body, and it can produce colourful flowers.",
+    care: {
+      sunlight: "Provide bright light and gentle direct sun.",
+      watering: "Water during growth and allow the substrate to dry appropriately between waterings.",
+      soilAndPotting: "Use a porous cactus mix with excellent drainage.",
+      temperature: "Protect from frost and prolonged cold, wet conditions.",
+      fertilizer: "Apply diluted cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "parodia-magnifica",
+    commonName: "Parodia magnifica",
+    scientificName: "Parodia magnifica",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A globular to short-columnar cactus with pronounced ribs and pale spines.",
+    hardinessAndNativeRange: "Native to southern Brazil. Previously associated with the name Eriocactus magnificus.",
+    specialTraits: "Its blue-green body and yellow flowers make it a popular ornamental cactus.",
+    care: {
+      sunlight: "Provide bright light and some gentle direct sun.",
+      watering: "Water during active growth and avoid waterlogging.",
+      soilAndPotting: "Use a well-draining cactus mix.",
+      temperature: "Protect from frost and prolonged cold.",
+      fertilizer: "Apply diluted cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "parodia-leninghausii",
+    commonName: "Parodia leninghausii",
+    scientificName: "Parodia leninghausii",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A columnar cactus that can grow upright and form clumps as it matures.",
+    hardinessAndNativeRange: "Native to southern Brazil. Formerly widely known as Notocactus leninghausii.",
+    specialTraits: "Dense golden-yellow spines and yellow flowers are characteristic features.",
+    care: {
+      sunlight: "Provide bright light and gradually increase direct sun exposure.",
+      watering: "Water during growth and let excess water drain.",
+      soilAndPotting: "Use a well-draining cactus mix.",
+      temperature: "Protect from frost, especially when the soil is wet.",
+      fertilizer: "Apply diluted cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "parodia-scopa",
+    commonName: "Parodia scopa",
+    scientificName: "Parodia scopa",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A small globular to cylindrical cactus with numerous fine spines.",
+    hardinessAndNativeRange: "Native to southern South America. Formerly known as Notocactus scopa.",
+    specialTraits: "Its dense, hair-like spines can give the body a pale or silvery appearance.",
+    care: {
+      sunlight: "Provide bright light and some gentle direct sun.",
+      watering: "Water during active growth and avoid standing water.",
+      soilAndPotting: "Use a porous, fast-draining cactus mix.",
+      temperature: "Protect from frost and prolonged cold.",
+      fertilizer: "Fertilize lightly during active growth."
+    }
+  },
+  {
+    id: "parodia-concinna",
+    commonName: "Parodia concinna",
+    scientificName: "Parodia concinna",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A small globular cactus with ribs, areoles, and spines.",
+    hardinessAndNativeRange: "Verify its current accepted taxonomic name and native distribution; Malacocarpus concinnus is a historical name.",
+    specialTraits: "Parodia species vary in spine arrangement and flower colour; verify identifying details for this taxon.",
+    care: {
+      sunlight: "Provide bright light and gentle direct sun.",
+      watering: "Water during growth and allow excess water to drain.",
+      soilAndPotting: "Use a well-draining cactus substrate.",
+      temperature: "Protect from frost and prolonged cold moisture.",
+      fertilizer: "Use diluted cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "parodia-erinacea",
+    commonName: "Parodia erinacea",
+    scientificName: "Parodia erinacea",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A small cactus with a rounded body, ribs, and prominent spines.",
+    hardinessAndNativeRange: "Verify the accepted name and precise native range; Wigginsia erinacea is a historical name.",
+    specialTraits: "The historical genus Wigginsia has been associated with Parodia in cactus taxonomy.",
+    care: {
+      sunlight: "Provide bright light and gradual acclimation to direct sun.",
+      watering: "Water carefully during active growth and avoid waterlogged soil.",
+      soilAndPotting: "Use a porous cactus mix.",
+      temperature: "Protect from frost and cold, wet conditions.",
+      fertilizer: "Apply diluted cactus fertilizer during active growth."
+    }
+  },
+
+  // Set 12 — Species 246–260
+  {
+    id: "copiapoa-cinerea",
+    commonName: "Copiapoa cinerea",
+    scientificName: "Copiapoa cinerea",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A slow-growing globular cactus that may form clumps with age.",
+    hardinessAndNativeRange: "Native to the arid coastal region of northern Chile.",
+    specialTraits: "Its grey to chalky-white appearance is a notable adaptation to its extremely dry habitat.",
+    care: {
+      sunlight: "Provide very bright light and gradually acclimate to direct sun.",
+      watering: "Water sparingly during suitable growing conditions and keep the roots dry in cold weather.",
+      soilAndPotting: "Use a highly mineral, fast-draining substrate.",
+      temperature: "Protect from frost and prolonged dampness.",
+      fertilizer: "Fertilize sparingly during active growth."
+    }
+  },
+  {
+    id: "copiapoa-coquimbana",
+    commonName: "Copiapoa coquimbana",
+    scientificName: "Copiapoa coquimbana",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A globular cactus that may produce multiple heads and clumps.",
+    hardinessAndNativeRange: "Native to Chile's arid coastal areas. Verify its precise distribution.",
+    specialTraits: "It belongs to a genus adapted to extremely dry conditions and often has strongly ribbed stems.",
+    care: {
+      sunlight: "Provide abundant light with gradual acclimation.",
+      watering: "Water cautiously and avoid keeping the roots continuously moist.",
+      soilAndPotting: "Use a very porous, mineral-rich cactus mix.",
+      temperature: "Protect from frost and prolonged cold, wet conditions.",
+      fertilizer: "Apply a weak fertilizer sparingly during active growth."
+    }
+  },
+  {
+    id: "copiapoa-hypogaea",
+    commonName: "Copiapoa hypogaea",
+    scientificName: "Copiapoa hypogaea",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A small, often partly buried globular cactus with a subdued profile.",
+    hardinessAndNativeRange: "Native to northern Chile. Verify the precise range and accepted taxonomic treatment.",
+    specialTraits: "Its tendency to sit partly below the soil surface is reflected in its species name.",
+    care: {
+      sunlight: "Provide bright light while avoiding abrupt exposure to intense sun.",
+      watering: "Water very cautiously and ensure the root zone dries appropriately.",
+      soilAndPotting: "Use a highly mineral substrate with excellent drainage.",
+      temperature: "Keep warm and dry in cool weather.",
+      fertilizer: "Fertilize very sparingly during active growth."
+    }
+  },
+  {
+    id: "copiapoa-humilis",
+    commonName: "Copiapoa humilis",
+    scientificName: "Copiapoa humilis",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A small globular cactus that may form clusters of low-growing heads.",
+    hardinessAndNativeRange: "Native to arid regions of northern Chile.",
+    specialTraits: "Its compact growth and variability make it a recognizable member of the Copiapoa genus.",
+    care: {
+      sunlight: "Provide bright light and gradual acclimation to direct sun.",
+      watering: "Water sparingly during growth and avoid persistent moisture.",
+      soilAndPotting: "Use a mineral-rich cactus substrate.",
+      temperature: "Protect from frost and cold, damp conditions.",
+      fertilizer: "Apply diluted fertilizer sparingly during active growth."
+    }
+  },
+  {
+    id: "frailea-pumila",
+    commonName: "Frailea pumila",
+    scientificName: "Frailea pumila",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A small, low-growing globular cactus with ribs and relatively short spines.",
+    hardinessAndNativeRange: "Frailea species occur in parts of South America. Verify this species' precise distribution.",
+    specialTraits: "Frailea cacti are known for their small size and cleistogamous flowers in some species.",
+    care: {
+      sunlight: "Provide bright light and some gentle direct sun.",
+      watering: "Water lightly during growth and avoid prolonged saturation.",
+      soilAndPotting: "Use a well-draining, fine mineral cactus mix.",
+      temperature: "Protect from frost and cold, wet soil.",
+      fertilizer: "Use diluted cactus fertilizer sparingly."
+    }
+  },
+  {
+    id: "frailea-castanea",
+    commonName: "Frailea castanea",
+    scientificName: "Frailea castanea",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A small, flattened to globular cactus with a brownish-green body.",
+    hardinessAndNativeRange: "Native range and current taxonomic status should be verified with a botanical reference.",
+    specialTraits: "Its compact size and muted body colour distinguish it from many larger ornamental cacti.",
+    care: {
+      sunlight: "Provide bright light without sudden exposure to intense heat.",
+      watering: "Water carefully during growth and avoid waterlogged soil.",
+      soilAndPotting: "Use a porous, fast-draining cactus substrate.",
+      temperature: "Protect from frost and prolonged dampness.",
+      fertilizer: "Fertilize lightly during active growth."
+    }
+  },
+  {
+    id: "gymnocalycium-friedrichii",
+    commonName: "Gymnocalycium friedrichii",
+    scientificName: "Gymnocalycium friedrichii",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A small, flattened globular cactus with broad ribs and relatively short spines.",
+    hardinessAndNativeRange: "Associated with Paraguay and nearby regions; verify the accepted name and exact distribution.",
+    specialTraits: "Some forms have attractive dark or reddish-green bodies and large flowers.",
+    care: {
+      sunlight: "Provide bright filtered light or gentle morning sun.",
+      watering: "Water during active growth and let excess water drain.",
+      soilAndPotting: "Use a well-draining cactus mix.",
+      temperature: "Protect from frost and prolonged cold.",
+      fertilizer: "Apply diluted cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "gymnocalycium-horstii",
+    commonName: "Gymnocalycium horstii",
+    scientificName: "Gymnocalycium horstii",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A globular cactus with broad ribs and a relatively smooth green body.",
+    hardinessAndNativeRange: "Native range and accepted taxonomic details should be verified before publication.",
+    specialTraits: "It can produce large, showy flowers relative to its compact body.",
+    care: {
+      sunlight: "Provide bright filtered light and gentle morning sun.",
+      watering: "Water during growth and avoid waterlogged soil.",
+      soilAndPotting: "Use a porous cactus mix with good drainage.",
+      temperature: "Protect from frost and cold, wet conditions.",
+      fertilizer: "Use diluted fertilizer during active growth."
+    }
+  },
+  {
+    id: "parodia-aureispina",
+    commonName: "Parodia aureispina",
+    scientificName: "Parodia aureispina",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A compact globular cactus with ribs and yellowish spines.",
+    hardinessAndNativeRange: "Verify the current accepted name and native range.",
+    specialTraits: "The species name refers to golden spines, but the exact identification should be checked.",
+    care: {
+      sunlight: "Provide bright light and gradual acclimation to direct sun.",
+      watering: "Water during growth and allow the soil to drain well.",
+      soilAndPotting: "Use a porous cactus substrate.",
+      temperature: "Protect from frost and prolonged cold moisture.",
+      fertilizer: "Apply diluted cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "parodia-rutilans",
+    commonName: "Parodia rutilans",
+    scientificName: "Parodia rutilans",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A small cactus with a rounded body, ribs, and spines.",
+    hardinessAndNativeRange: "Verify the current accepted taxonomic status and precise distribution.",
+    specialTraits: "Confirm the identifying spine and flower characteristics for this name before publication.",
+    care: {
+      sunlight: "Provide bright light and some gentle direct sun.",
+      watering: "Water during active growth and avoid waterlogging.",
+      soilAndPotting: "Use a well-draining cactus mix.",
+      temperature: "Protect from frost and prolonged dampness.",
+      fertilizer: "Fertilize lightly during active growth."
+    }
+  },
+  {
+    id: "eriosyce-napina",
+    commonName: "Eriosyce napina",
+    scientificName: "Eriosyce napina",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A small, flattened globular cactus that can sit partly buried in the soil.",
+    hardinessAndNativeRange: "Native to Chile. Verify the precise distribution and conservation status.",
+    specialTraits: "Its compact, often subterranean growth is characteristic of this specialized group.",
+    care: {
+      sunlight: "Provide bright light with protection from abrupt extreme heat.",
+      watering: "Water cautiously during suitable growing conditions and keep dry in cold weather.",
+      soilAndPotting: "Use a highly mineral substrate with excellent drainage.",
+      temperature: "Protect from frost and cold, wet conditions.",
+      fertilizer: "Fertilize sparingly during active growth."
+    }
+  },
+  {
+    id: "eriosyce-islayensis",
+    commonName: "Eriosyce islayensis",
+    scientificName: "Eriosyce islayensis",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A globular cactus adapted to arid landscapes, with ribs and spines.",
+    hardinessAndNativeRange: "Associated with the arid coastal region of Peru. Verify the accepted name and exact range.",
+    specialTraits: "Its natural habitat is extremely dry, so cultivation requires careful moisture management.",
+    care: {
+      sunlight: "Provide bright light and gradually acclimate to direct sun.",
+      watering: "Water cautiously and allow the substrate to dry appropriately.",
+      soilAndPotting: "Use a mineral-rich, sharply draining cactus mix.",
+      temperature: "Protect from frost and cold, wet conditions.",
+      fertilizer: "Apply very dilute fertilizer sparingly."
+    }
+  },
+  {
+    id: "acanthocalycium-spiniflorum",
+    commonName: "Acanthocalycium spiniflorum",
+    scientificName: "Acanthocalycium spiniflorum",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A globular cactus with ribs and strong spines.",
+    hardinessAndNativeRange: "Native to Argentina. Confirm the precise distribution and cold tolerance.",
+    specialTraits: "It is known for its spiny body and conspicuous flowers.",
+    care: {
+      sunlight: "Provide bright light and some direct sun after acclimation.",
+      watering: "Water during active growth and avoid prolonged saturation.",
+      soilAndPotting: "Use a well-draining cactus substrate.",
+      temperature: "Protect from severe frost and cold, wet soil.",
+      fertilizer: "Apply diluted cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "acanthocalycium-thionanthum",
+    commonName: "Acanthocalycium thionanthum",
+    scientificName: "Acanthocalycium thionanthum",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A globular to short-columnar cactus with ribs and prominent spines.",
+    hardinessAndNativeRange: "Native to Argentina. Verify the exact range and current taxonomic treatment.",
+    specialTraits: "Its flowers can be yellowish, although colour and appearance vary across forms.",
+    care: {
+      sunlight: "Provide bright light and gradually introduce direct sun.",
+      watering: "Water during growth and allow excess water to drain.",
+      soilAndPotting: "Use a porous cactus mix.",
+      temperature: "Protect from frost and prolonged cold moisture.",
+      fertilizer: "Fertilize lightly during active growth."
+    }
+  },
+  {
+    id: "lobivia-bruchii",
+    commonName: "Lobivia bruchii",
+    scientificName: "Lobivia bruchii",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A small globular cactus that may form clumps with age.",
+    hardinessAndNativeRange: "Associated with South American, particularly Andean, habitats. Verify the accepted name and precise distribution.",
+    specialTraits: "Lobivia-type cacti are known for colourful flowers that can be large relative to the plant.",
+    care: {
+      sunlight: "Provide bright light and some direct sun after acclimation.",
+      watering: "Water during active growth and avoid standing water.",
+      soilAndPotting: "Use a well-draining cactus mix.",
+      temperature: "Protect from frost and prolonged dampness.",
+      fertilizer: "Apply diluted cactus fertilizer during active growth."
+    }
+  },
+
+  // Set 13 — Species 261–275
+  {
+    id: "hylocereus-undatus",
+    commonName: "Dragon Fruit Cactus",
+    scientificName: "Selenicereus undatus",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A climbing or sprawling cactus with long, three-angled stems that may develop aerial roots.",
+    hardinessAndNativeRange: "Originates from tropical America and is widely cultivated in tropical and subtropical regions.",
+    specialTraits: "Produces large night-blooming flowers and edible dragon fruit under suitable conditions.",
+    care: {
+      sunlight: "Provide bright light and partial sun, with protection from extreme heat.",
+      watering: "Water during active growth while allowing excess water to drain.",
+      soilAndPotting: "Use a well-draining, organic-mineral mix and provide a sturdy support.",
+      temperature: "Keep warm and protect from frost.",
+      fertilizer: "Feed during active growth using a balanced fertilizer suitable for fruiting cacti."
+    }
+  },
+  {
+    id: "hylocereus-costaricensis",
+    commonName: "Costa Rican Dragon Fruit Cactus",
+    scientificName: "Selenicereus costaricensis",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A climbing cactus with long, trailing or climbing stems.",
+    hardinessAndNativeRange: "Associated with Central America and cultivated in tropical regions. Verify the accepted name and native distribution.",
+    specialTraits: "Known in cultivation for its colourful fruit, often with red flesh.",
+    care: {
+      sunlight: "Provide bright light with some protection from intense midday heat.",
+      watering: "Water during growth while maintaining good drainage.",
+      soilAndPotting: "Use a well-draining mix and sturdy climbing support.",
+      temperature: "Maintain warm conditions and protect from frost.",
+      fertilizer: "Apply balanced fertilizer during active growth."
+    }
+  },
+  {
+    id: "selenicereus-grandiflorus",
+    commonName: "Queen of the Night Cactus",
+    scientificName: "Selenicereus grandiflorus",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A climbing cactus with long, slender, trailing stems.",
+    hardinessAndNativeRange: "Native range includes parts of the Caribbean and tropical America; verify the precise distribution.",
+    specialTraits: "Famous for its very large, fragrant flowers that open at night and are short-lived.",
+    care: {
+      sunlight: "Provide bright filtered light or gentle morning sun.",
+      watering: "Water during active growth and avoid leaving roots saturated.",
+      soilAndPotting: "Use a well-draining mix with support for climbing stems.",
+      temperature: "Keep warm and protect from frost.",
+      fertilizer: "Use diluted fertilizer during active growth."
+    }
+  },
+  {
+    id: "selenicereus-pteranthus",
+    commonName: "Selenicereus pteranthus",
+    scientificName: "Selenicereus pteranthus",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A climbing or trailing cactus with elongated stems.",
+    hardinessAndNativeRange: "Verify the accepted name and precise native range before publication.",
+    specialTraits: "Selenicereus species are climbing cacti known for their large, often night-opening flowers.",
+    care: {
+      sunlight: "Provide bright filtered light and avoid abrupt exposure to harsh sun.",
+      watering: "Water during growth and allow excess water to drain.",
+      soilAndPotting: "Use a well-draining mix and provide support if grown vertically.",
+      temperature: "Protect from frost and cold, wet conditions.",
+      fertilizer: "Apply diluted fertilizer during active growth."
+    }
+  },
+  {
+    id: "epiphyllum-oxypetalum",
+    commonName: "Queen of the Night",
+    scientificName: "Epiphyllum oxypetalum",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "An epiphytic cactus with long, flattened, leaf-like stems.",
+    hardinessAndNativeRange: "Native to tropical regions of the Americas; verify the precise natural distribution.",
+    specialTraits: "Produces very large, fragrant white flowers that generally open at night.",
+    care: {
+      sunlight: "Provide bright indirect light or gentle morning sun.",
+      watering: "Water when the upper growing medium begins to dry, without allowing prolonged saturation.",
+      soilAndPotting: "Use an airy, well-draining epiphytic cactus mix.",
+      temperature: "Keep warm and protect from frost.",
+      fertilizer: "Apply diluted balanced fertilizer during active growth."
+    }
+  },
+  {
+    id: "epiphyllum-ackermannii",
+    commonName: "Epiphyllum ackermannii",
+    scientificName: "Epiphyllum ackermannii",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "An epiphytic cactus with flattened or elongated stems.",
+    hardinessAndNativeRange: "Check the current accepted name and native distribution; this name has a complicated history in cultivation.",
+    specialTraits: "Plants sold under this name are associated with colourful, showy flowers; confirm the identification.",
+    care: {
+      sunlight: "Provide bright filtered light.",
+      watering: "Keep the mix lightly moist during active growth but never waterlogged.",
+      soilAndPotting: "Use an airy epiphytic cactus substrate.",
+      temperature: "Protect from frost and cold drafts.",
+      fertilizer: "Feed lightly during active growth."
+    }
+  },
+  {
+    id: "epiphyllum-anguliger",
+    commonName: "Fishbone Cactus",
+    scientificName: "Disocactus anguliger",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "An epiphytic cactus with flattened stems and deeply notched edges.",
+    hardinessAndNativeRange: "Native to Mexico. Formerly widely known as Epiphyllum anguliger.",
+    specialTraits: "Its zigzag, fishbone-like stems make it popular as an indoor ornamental plant.",
+    care: {
+      sunlight: "Provide bright indirect light.",
+      watering: "Water when the upper mix begins to dry and avoid standing water.",
+      soilAndPotting: "Use an airy, well-draining epiphytic cactus mix.",
+      temperature: "Keep warm and protect from frost.",
+      fertilizer: "Apply diluted balanced fertilizer during active growth."
+    }
+  },
+  {
+    id: "disocactus-flagelliformis",
+    commonName: "Rat Tail Cactus",
+    scientificName: "Disocactus flagelliformis",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A trailing cactus with long, slender stems covered in small spines.",
+    hardinessAndNativeRange: "Native to Mexico.",
+    specialTraits: "Its cascading stems and bright pink to reddish flowers make it a popular hanging-basket plant.",
+    care: {
+      sunlight: "Provide bright light and some gentle direct sun.",
+      watering: "Water during active growth and allow excess water to drain.",
+      soilAndPotting: "Use a well-draining cactus mix suitable for trailing growth.",
+      temperature: "Protect from frost and prolonged cold.",
+      fertilizer: "Apply diluted cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "disocactus-phyllanthoides",
+    commonName: "Disocactus phyllanthoides",
+    scientificName: "Disocactus phyllanthoides",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "An epiphytic cactus with flattened stems and a branching growth habit.",
+    hardinessAndNativeRange: "Associated with Mexico and cultivated widely; verify the precise native range.",
+    specialTraits: "It is known for showy flowers and is associated with horticultural orchid-cactus hybrids.",
+    care: {
+      sunlight: "Provide bright filtered light.",
+      watering: "Water during growth while allowing the mix to drain freely.",
+      soilAndPotting: "Use an airy epiphytic cactus substrate.",
+      temperature: "Protect from frost and cold, wet conditions.",
+      fertilizer: "Use diluted fertilizer during active growth."
+    }
+  },
+  {
+    id: "schlumbergera-truncata",
+    commonName: "Thanksgiving Cactus",
+    scientificName: "Schlumbergera truncata",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "An epiphytic cactus with arching stems made up of flattened, toothed segments.",
+    hardinessAndNativeRange: "Native to southeastern Brazil, where it grows in humid forest habitats.",
+    specialTraits: "Often flowers around late autumn and winter; its pointed segment edges distinguish it from some relatives.",
+    care: {
+      sunlight: "Provide bright indirect light.",
+      watering: "Water when the surface of the mix begins to dry, avoiding waterlogging.",
+      soilAndPotting: "Use a light, airy, well-draining epiphytic mix.",
+      temperature: "Protect from frost and extreme heat.",
+      fertilizer: "Feed lightly during active growth."
+    }
+  },
+  {
+    id: "schlumbergera-bridgesii",
+    commonName: "Christmas Cactus",
+    scientificName: "Schlumbergera russelliana",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "An epiphytic cactus with arching stems composed of flattened segments.",
+    hardinessAndNativeRange: "Native to southeastern Brazil. Schlumbergera bridgesii is a historical name often used in horticulture.",
+    specialTraits: "It is associated with the Christmas cactus group and can produce colourful seasonal flowers.",
+    care: {
+      sunlight: "Provide bright indirect light.",
+      watering: "Water when the upper mix begins to dry and avoid standing water.",
+      soilAndPotting: "Use an airy epiphytic cactus mix.",
+      temperature: "Protect from frost and sudden temperature extremes.",
+      fertilizer: "Apply diluted fertilizer during active growth."
+    }
+  },
+  {
+    id: "schlumbergera-gaertneri",
+    commonName: "Easter Cactus",
+    scientificName: "Schlumbergera gaertneri",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "An epiphytic cactus with flattened, jointed stems and a branching habit.",
+    hardinessAndNativeRange: "Native to southeastern Brazil.",
+    specialTraits: "Typically flowers in spring and has star-shaped flowers with pointed petals.",
+    care: {
+      sunlight: "Provide bright indirect light.",
+      watering: "Water when the upper growing medium begins to dry.",
+      soilAndPotting: "Use an airy, well-draining epiphytic mix.",
+      temperature: "Protect from frost and prolonged cold.",
+      fertilizer: "Feed lightly during active growth."
+    }
+  },
+  {
+    id: "rhipsalis-baccifera",
+    commonName: "Mistletoe Cactus",
+    scientificName: "Rhipsalis baccifera",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "An epiphytic cactus with long, thin, branching stems that hang from trees or containers.",
+    hardinessAndNativeRange: "Occurs in tropical regions of the Americas and also in parts of Africa and nearby islands.",
+    specialTraits: "Produces small pale flowers followed by rounded, berry-like fruits.",
+    care: {
+      sunlight: "Provide bright indirect light or light shade.",
+      watering: "Water when the mix begins to dry slightly; avoid prolonged drought and waterlogging.",
+      soilAndPotting: "Use an airy, moisture-retentive but well-draining epiphytic mix.",
+      temperature: "Keep warm and protect from frost.",
+      fertilizer: "Apply diluted balanced fertilizer during active growth."
+    }
+  },
+  {
+    id: "rhipsalis-cereuscula",
+    commonName: "Rice Cactus",
+    scientificName: "Rhipsalis cereuscula",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "An epiphytic cactus with many short, cylindrical, branching stems.",
+    hardinessAndNativeRange: "Native to South America. Verify the precise distribution before publication.",
+    specialTraits: "Its clusters of short stems can resemble grains of rice, especially in young growth.",
+    care: {
+      sunlight: "Provide bright indirect light.",
+      watering: "Water when the upper mix begins to dry without leaving roots waterlogged.",
+      soilAndPotting: "Use an airy, well-draining epiphytic mix.",
+      temperature: "Protect from frost and cold drafts.",
+      fertilizer: "Apply diluted fertilizer during active growth."
+    }
+  },
+  {
+    id: "lepismium-cruciforme",
+    commonName: "Lepismium cruciforme",
+    scientificName: "Lepismium cruciforme",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "An epiphytic cactus with branching, flattened or angled stems that can trail.",
+    hardinessAndNativeRange: "Native to South America; verify its precise distribution.",
+    specialTraits: "Its segmented stems and epiphytic habit distinguish it from desert-dwelling cacti.",
+    care: {
+      sunlight: "Provide bright filtered light or light shade.",
+      watering: "Water when the upper mix begins to dry, maintaining airflow around the roots.",
+      soilAndPotting: "Use a light, airy epiphytic cactus mix.",
+      temperature: "Keep warm and protect from frost.",
+      fertilizer: "Fertilize lightly during active growth."
+    }
+  },
+
+  // Set 14 — Species 276–290
+  {
+    id: "ariocarpus-fissuratus",
+    commonName: "Living Rock Cactus",
+    scientificName: "Ariocarpus fissuratus",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A slow-growing, flattened cactus with broad, triangular tubercles.",
+    hardinessAndNativeRange: "Native to parts of the southwestern United States and northern Mexico.",
+    specialTraits: "Its rough, rock-like appearance helps it blend into its natural habitat.",
+    care: {
+      sunlight: "Provide bright light and gradually acclimate to direct sun.",
+      watering: "Water cautiously during warm growth periods and keep nearly dry in cool conditions.",
+      soilAndPotting: "Use a highly mineral substrate with excellent drainage.",
+      temperature: "Protect from frost when the soil is wet.",
+      fertilizer: "Fertilize very sparingly during active growth."
+    }
+  },
+  {
+    id: "ariocarpus-retusus",
+    commonName: "Ariocarpus retusus",
+    scientificName: "Ariocarpus retusus",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A slow-growing, flattened to rounded cactus with broad, triangular tubercles.",
+    hardinessAndNativeRange: "Native to northeastern Mexico.",
+    specialTraits: "Its sculptural body and seasonal flowers make it a sought-after collector's cactus.",
+    care: {
+      sunlight: "Provide bright light with careful acclimation to direct sun.",
+      watering: "Water sparingly during active growth and avoid winter moisture.",
+      soilAndPotting: "Use a very mineral, fast-draining substrate.",
+      temperature: "Protect from frost and cold, wet conditions.",
+      fertilizer: "Apply a weak fertilizer sparingly during growth."
+    }
+  },
+  {
+    id: "ariocarpus-trigonus",
+    commonName: "Ariocarpus trigonus",
+    scientificName: "Ariocarpus trigonus",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A slow-growing cactus with a flattened body and elongated triangular tubercles.",
+    hardinessAndNativeRange: "Native to Mexico. Verify the precise range and conservation status.",
+    specialTraits: "Its raised triangular tubercles give the plant a distinctive geometric appearance.",
+    care: {
+      sunlight: "Provide bright light and gradual acclimation to direct sun.",
+      watering: "Water cautiously during growth and keep dry in cold conditions.",
+      soilAndPotting: "Use a mineral-rich, sharply draining substrate.",
+      temperature: "Protect from frost and prolonged dampness.",
+      fertilizer: "Fertilize sparingly during active growth."
+    }
+  },
+  {
+    id: "astrophytum-asterias",
+    commonName: "Sand Dollar Cactus",
+    scientificName: "Astrophytum asterias",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A small, flattened, spineless cactus with a round body divided into distinct ribs.",
+    hardinessAndNativeRange: "Native to southern Texas and northeastern Mexico; populations are conservation-sensitive.",
+    specialTraits: "Its star-shaped outline and white flecks make it readily recognizable.",
+    care: {
+      sunlight: "Provide bright light and avoid sudden exposure to intense sun.",
+      watering: "Water carefully during warm growth periods and avoid waterlogged soil.",
+      soilAndPotting: "Use a very porous, mineral-rich cactus mix.",
+      temperature: "Protect from frost and cold, wet conditions.",
+      fertilizer: "Apply diluted cactus fertilizer sparingly."
+    }
+  },
+  {
+    id: "astrophytum-myriostigma",
+    commonName: "Bishop's Cap Cactus",
+    scientificName: "Astrophytum myriostigma",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A usually spineless globular cactus with prominent ribs and a gradually columnar form in some plants.",
+    hardinessAndNativeRange: "Native to northeastern and central Mexico.",
+    specialTraits: "Its ribbed body and white speckling create a bishop's-cap-like shape.",
+    care: {
+      sunlight: "Provide bright light and gradually introduce direct sun.",
+      watering: "Water during active growth and allow the substrate to dry appropriately.",
+      soilAndPotting: "Use a well-draining mineral cactus mix.",
+      temperature: "Protect from frost and prolonged dampness.",
+      fertilizer: "Fertilize lightly during active growth."
+    }
+  },
+  {
+    id: "astrophytum-ornatum",
+    commonName: "Monk's Hood Cactus",
+    scientificName: "Astrophytum ornatum",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A ribbed cactus that can develop a tall, columnar shape with age.",
+    hardinessAndNativeRange: "Native to Mexico.",
+    specialTraits: "Its white flecks, prominent ribs, and long spines are characteristic features.",
+    care: {
+      sunlight: "Provide strong light and gradually acclimate to direct sun.",
+      watering: "Water during growth and avoid standing water.",
+      soilAndPotting: "Use a well-draining mineral substrate.",
+      temperature: "Protect from frost and prolonged cold moisture.",
+      fertilizer: "Apply diluted cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "astrophytum-capricorne",
+    commonName: "Goat's Horn Cactus",
+    scientificName: "Astrophytum capricorne",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A globular to short-columnar cactus with long, curved spines.",
+    hardinessAndNativeRange: "Native to northern Mexico.",
+    specialTraits: "Its twisted, horn-like spines and yellow flowers with reddish centres are distinctive.",
+    care: {
+      sunlight: "Provide bright light and gradual acclimation to direct sun.",
+      watering: "Water during active growth and allow excess water to drain.",
+      soilAndPotting: "Use a porous cactus mix.",
+      temperature: "Protect from frost and cold, wet conditions.",
+      fertilizer: "Use diluted cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "thelocactus-bicolor",
+    commonName: "Thelocactus bicolor",
+    scientificName: "Thelocactus bicolor",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A globular to short-columnar cactus with pronounced ribs and strong spines.",
+    hardinessAndNativeRange: "Native to northern Mexico and parts of Texas.",
+    specialTraits: "Its spines can show contrasting colours, and it produces conspicuous flowers.",
+    care: {
+      sunlight: "Provide bright light and some direct sun after acclimation.",
+      watering: "Water during growth and allow the substrate to drain thoroughly.",
+      soilAndPotting: "Use a well-draining cactus mix.",
+      temperature: "Protect from frost and prolonged cold moisture.",
+      fertilizer: "Apply diluted cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "thelocactus-hexaedrophorus",
+    commonName: "Thelocactus hexaedrophorus",
+    scientificName: "Thelocactus hexaedrophorus",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A compact globular cactus with tubercle-like ribs and prominent spines.",
+    hardinessAndNativeRange: "Native to Mexico. Verify its precise distribution.",
+    specialTraits: "Its geometric tubercles and conspicuous flowers are characteristic of the genus.",
+    care: {
+      sunlight: "Provide bright light and gradual acclimation to direct sun.",
+      watering: "Water during active growth and avoid waterlogged soil.",
+      soilAndPotting: "Use a porous mineral cactus substrate.",
+      temperature: "Protect from frost and cold, wet conditions.",
+      fertilizer: "Fertilize lightly during active growth."
+    }
+  },
+  {
+    id: "thelocactus-rinconensis",
+    commonName: "Thelocactus rinconensis",
+    scientificName: "Thelocactus rinconensis",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A globular cactus with pronounced ribs, tubercles, and prominent spines.",
+    hardinessAndNativeRange: "Associated with northern Mexico; verify the accepted name and exact distribution.",
+    specialTraits: "Its rib structure and spines provide useful identification features.",
+    care: {
+      sunlight: "Provide bright light and gradually acclimate to direct sun.",
+      watering: "Water during growth and allow the soil to drain well.",
+      soilAndPotting: "Use a well-draining cactus mix.",
+      temperature: "Protect from frost and cold, wet conditions.",
+      fertilizer: "Apply diluted cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "ferocactus-glaucescens",
+    commonName: "Blue Barrel Cactus",
+    scientificName: "Ferocactus glaucescens",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A globular to barrel-shaped cactus with a blue-green body and strong spines.",
+    hardinessAndNativeRange: "Native to Mexico.",
+    specialTraits: "Its bluish epidermis, prominent ribs, and yellow flowers are distinctive.",
+    care: {
+      sunlight: "Provide abundant light and gradually acclimate to direct sun.",
+      watering: "Water thoroughly during active growth and allow the substrate to dry.",
+      soilAndPotting: "Use a mineral-rich cactus mix with excellent drainage.",
+      temperature: "Protect from frost and prolonged dampness.",
+      fertilizer: "Apply diluted cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "ferocactus-latispinus",
+    commonName: "Devil's Tongue Barrel Cactus",
+    scientificName: "Ferocactus latispinus",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A barrel-shaped cactus with broad, flattened central spines.",
+    hardinessAndNativeRange: "Native to Mexico.",
+    specialTraits: "Its wide, hooked central spines and colourful flowers are characteristic.",
+    care: {
+      sunlight: "Provide abundant light and acclimate gradually to full sun.",
+      watering: "Water during growth and avoid prolonged soil moisture.",
+      soilAndPotting: "Use a well-draining mineral cactus mix.",
+      temperature: "Protect from frost and cold, wet conditions.",
+      fertilizer: "Use diluted cactus fertilizer during active growth."
+    }
+  },
+  {
+    id: "ferocactus-cylindraceus",
+    commonName: "California Barrel Cactus",
+    scientificName: "Ferocactus cylindraceus",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A barrel cactus that can become cylindrical and grow substantially taller with age.",
+    hardinessAndNativeRange: "Native to the southwestern United States and northwestern Mexico.",
+    specialTraits: "It has strong, often hooked spines and is adapted to desert conditions.",
+    care: {
+      sunlight: "Provide full sun after gradual acclimation.",
+      watering: "Water during warm growth periods and let the substrate dry thoroughly.",
+      soilAndPotting: "Use a fast-draining mineral substrate.",
+      temperature: "Protect from frost when grown in containers, especially in wet soil.",
+      fertilizer: "Fertilize sparingly during active growth."
+    }
+  },
+  {
+    id: "ferocactus-wislizeni",
+    commonName: "Fishhook Barrel Cactus",
+    scientificName: "Ferocactus wislizeni",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A large barrel-shaped cactus with pronounced ribs and curved central spines.",
+    hardinessAndNativeRange: "Native to the southwestern United States and northern Mexico.",
+    specialTraits: "Its hooked spines and tendency to lean toward the sun make it distinctive.",
+    care: {
+      sunlight: "Provide full sun after gradual acclimation.",
+      watering: "Water during active growth and allow the substrate to dry thoroughly.",
+      soilAndPotting: "Use a mineral-rich, well-draining cactus mix.",
+      temperature: "Protect container-grown plants from severe frost and cold, wet soil.",
+      fertilizer: "Apply diluted cactus fertilizer sparingly during active growth."
+    }
+  },
+  {
+    id: "echinocactus-grusonii",
+    commonName: "Golden Barrel Cactus",
+    scientificName: "Echinocactus grusonii",
+    subfamily: "Cactoideae",
+    growthHabitAndSize: "A rounded barrel cactus that can become large and develop numerous ribs.",
+    hardinessAndNativeRange: "Native to Mexico; its natural populations are conservation-sensitive.",
+    specialTraits: "Dense golden-yellow spines give it its familiar name and distinctive appearance.",
+    care: {
+      sunlight: "Provide abundant light and gradually acclimate to direct sun.",
+      watering: "Water thoroughly during active growth and allow the soil to dry between waterings.",
+      soilAndPotting: "Use a fast-draining mineral cactus mix and a pot with drainage holes.",
+      temperature: "Protect from frost and prolonged cold, wet conditions.",
+      fertilizer: "Apply diluted cactus fertilizer during active growth."
+    }
+  },
 ];
 
 export default cactusSpecies;
