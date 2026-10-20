@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, Leaf } from 'lucide-react'
 import cactusSpecies from '../../data/cactusSpecies'
 import ScientificNameVoice from '../../components/ScientificNameVoice'
+import { getUniqueCactusSpecies } from '../../utils/uniqueCactusSpecies'
 import './CactusSpeciesGrid.css'
 import useCactusImage from '../../hooks/useCactusImage'
 
@@ -42,8 +43,10 @@ function CactusSpeciesImage({ species }) {
 }
 
 function CactusSpeciesGrid() {
-  const speciesList = cactusSpecies.filter(
-    (species) => species.subfamily === 'Cactoideae'
+  const speciesList = getUniqueCactusSpecies(
+    cactusSpecies.filter(
+      (species) => species.subfamily === 'Cactoideae'
+    )
   )
 
   return (
