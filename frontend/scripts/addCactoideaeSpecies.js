@@ -6,14 +6,9 @@ import cactusSpecies from '../src/data/cactusSpecies.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const sourceFile = path.resolve(
-  __dirname,
-  '../src/data/cactusSpecies.js'
-);
-
 const outputFile = path.resolve(
   __dirname,
-  'generated-cactoideae-species.json'
+  'generated-set-06-species.json'
 );
 
 const normalize = (value) =>
@@ -22,133 +17,256 @@ const normalize = (value) =>
     .replace(/[×x]/g, 'x')
     .replace(/[^a-z0-9]/g, '');
 
+// Each group contains alternative scientific names for one species.
+// The first name is used for the generated draft record.
 const targets = [
-  // Set 01 — Cereeae & Trichocereeae (11–30)
-  ['Trichocereus grandiflorus', 'Echinopsis grandiflora'],
-  ['Trichocereus huascha', 'Echinopsis huascha'],
-  ['Trichocereus schickendantzii'],
-  ['Echinopsis aurea'],
-  ['Echinopsis calochlora'],
-  ['Echinopsis subdenudata'],
-  ['Echinopsis bruchii', 'Soehrensia bruchii'],
-  ['Echinopsis formosa'],
-  ['Armatocereus laetus'],
-  ['Armatocereus matucanensis'],
-  ['Armatocereus rauhii'],
-  ['Pilosocereus azureus'],
-  ['Pilosocereus pachycladus'],
-  ['Pilosocereus leucocephalus'],
-  ['Cephalocereus senilis'],
-  ['Stenocereus thurberi'],
-  ['Stenocereus gummosus'],
-  ['Stenocereus queretaroensis'],
-  ['Lemaireocereus marginatus'],
-  ['Carnegiea gigantea'],
+  // Set 06 — Opuntieae: Prickly pears
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Opuntia ficus-indica'],
+  },
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Opuntia microdasys'],
+  },
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Opuntia humifusa'],
+  },
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Opuntia basilaris'],
+  },
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Opuntia engelmannii'],
+  },
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Opuntia macrocentra'],
+  },
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Opuntia santa-rita', 'Opuntia violacea var. santa-rita'],
+  },
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Opuntia polyacantha'],
+  },
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Opuntia fragilis'],
+  },
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Opuntia stricta'],
+  },
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Opuntia monacantha'],
+  },
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Opuntia leucotricha'],
+  },
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Opuntia robusta'],
+  },
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Opuntia cochenillifera', 'Nopalea cochenillifera'],
+  },
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Opuntia aciculata'],
+  },
 
-  // Set 02 — Echinocereeae (31–60)
-  ['Echinocereus engelmannii'],
-  ['Echinocereus viridiflorus'],
-  ['Echinocereus reichenbachii'],
-  ['Echinocereus rigidissimus'],
-  ['Echinocereus pectinatus'],
-  ['Echinocereus triglochidiatus'],
-  ['Echinocereus coccineus'],
-  ['Echinocereus subinermis'],
-  ['Echinocereus brandegeei'],
-  ['Echinocereus fendleri'],
-  ['Echinocereus laui'],
-  ['Echinocereus schmollii'],
-  ['Echinocereus pentalophus'],
-  ['Echinocereus stolonifer'],
-  ['Wilcoxia poselgeri', 'Echinocereus poselgeri'],
-  ['Echinocereus enneacanthus'],
-  ['Echinocereus dasyphyllus'],
-  ['Echinocereus chloranthus'],
-  ['Echinocereus knippelianus'],
-  ['Echinocereus pulchellus'],
-  ['Echinocereus gentryi'],
-  ['Echinocereus ledingii'],
-  ['Echinocereus nicholii'],
-  ['Echinocereus pacificus'],
-  ['Echinocereus parkeri'],
-  ['Echinocereus stramineus'],
-  ['Echinocereus viereckii'],
-  ['Echinocereus waldei'],
-  ['Echinocereus websterianus'],
-  ['Echinocereus yavapaiensis'],
+  // Set 06 — Chollas and related jointed-stem cacti
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Cylindropuntia imbricata', 'Opuntia imbricata'],
+  },
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Cylindropuntia bigelovii', 'Opuntia bigelovii'],
+  },
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Cylindropuntia fulgida', 'Opuntia fulgida'],
+  },
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Cylindropuntia leptocaulis', 'Opuntia leptocaulis'],
+  },
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Cylindropuntia spinosior', 'Opuntia spinosior'],
+  },
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Cylindropuntia tunicata', 'Opuntia tunicata'],
+  },
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Austrocylindropuntia subulata', 'Opuntia subulata'],
+  },
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Austrocylindropuntia cylindrica', 'Opuntia cylindrica'],
+  },
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Tephrocactus articulatus', 'Opuntia articulata'],
+  },
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Consolea rubescens'],
+  },
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Consolea falcata'],
+  },
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Maihueniopsis darwinii'],
+  },
+  {
+    subfamily: 'Opuntioideae',
+    names: ['Puna clavarioides', 'Maihueniopsis clavarioides'],
+  },
+
+  // Set 06 — Maihuenieae: Patagonian cushion cacti
+  {
+    subfamily: 'Maihuenioideae',
+    names: ['Maihuenia poeppigii'],
+  },
+  {
+    subfamily: 'Maihuenioideae',
+    names: ['Maihuenia patagonica'],
+  },
 ];
 
 const existingNames = new Set(
   cactusSpecies.map((species) => normalize(species.scientificName))
 );
 
-const missingTargets = targets.filter((names) =>
-  !names.some((name) => existingNames.has(normalize(name)))
-);
-
-// These are draft descriptions. Review botanical details before publishing.
-function createDraftRecord(scientificName, index) {
-  const genus = scientificName.split(' ')[0];
-
-  return {
-    id: `cactoideae-${normalize(scientificName)}`,
-    commonName: scientificName,
-    scientificName,
-    subfamily: 'Cactoideae',
-    growthHabitAndSize:
-      `${scientificName} is a cactus whose growth form and mature size vary by species. Verify its dimensions using a reliable botanical reference.`,
-    hardinessAndNativeRange:
-      `Native range and cold tolerance for ${scientificName} should be verified using a reliable botanical reference before publication.`,
-    specialTraits:
-      `Species-specific identifying features of ${scientificName} should be verified before publication.`,
-    care: {
-      sunlight:
-        'Provide light appropriate to the verified species and acclimate gradually to stronger sun.',
-      watering:
-        'Water thoroughly when the growing medium has dried appropriately; adjust to season, temperature, and growth.',
-      soilAndPotting:
-        'Use a fast-draining cactus mix and a pot with drainage holes.',
-      temperature:
-        'Protect from frost until the species-specific temperature tolerance is verified.',
-      fertilizer:
-        'During active growth, use a diluted cactus fertilizer according to its label.'
-    },
-    _draft: true,
-    _reviewRequired: true,
-    _targetNumber: index + 11
-  };
-}
-
-const generated = missingTargets.map((names, index) =>
-  createDraftRecord(names[0], index)
-);
-
 const existingIds = new Set(
   cactusSpecies.map((species) => species.id)
 );
 
-const duplicateIds = generated.filter((species) =>
-  existingIds.has(species.id)
-);
+// Reserve every alias so duplicate target groups cannot generate
+// multiple records for the same known name within this batch.
+const reservedNames = new Set(existingNames);
 
-const missingFields = generated.filter((species) =>
-  !species.id ||
-  !species.commonName ||
-  !species.scientificName ||
-  !species.subfamily ||
-  !species.growthHabitAndSize ||
-  !species.hardinessAndNativeRange ||
-  !species.specialTraits ||
-  !species.care?.sunlight ||
-  !species.care?.watering ||
-  !species.care?.soilAndPotting ||
-  !species.care?.temperature ||
-  !species.care?.fertilizer
-);
+const missingTargets = [];
 
-if (duplicateIds.length || missingFields.length) {
+for (const target of targets) {
+  const aliases = target.names.map(normalize);
+
+  // Skip this species if any listed name already exists.
+  if (aliases.some((name) => reservedNames.has(name))) {
+    continue;
+  }
+
+  missingTargets.push(target);
+
+  // Reserve all aliases before processing the next target.
+  aliases.forEach((name) => reservedNames.add(name));
+}
+
+function createDraftRecord(target, index) {
+  const scientificName = target.names[0];
+
+  return {
+    id: `set06-${normalize(scientificName)}`,
+    commonName: scientificName,
+    scientificName,
+    subfamily: target.subfamily,
+    growthHabitAndSize:
+      `Growth habit, mature dimensions, and growth rate for ${scientificName} require verification using a reliable botanical reference.`,
+    hardinessAndNativeRange:
+      `Native range, habitat, and cold tolerance for ${scientificName} require botanical verification before publication.`,
+    specialTraits:
+      `Distinctive features, flowering characteristics, fruit, and toxicity information for ${scientificName} require verification before publication.`,
+    care: {
+      sunlight:
+        'Verify the species-specific light requirements and acclimate gradually to stronger sunlight.',
+      watering:
+        'Use a watering schedule appropriate to the verified species, season, and growing conditions.',
+      soilAndPotting:
+        'Use a suitable, well-draining growing medium and a container with drainage holes; verify species-specific requirements.',
+      temperature:
+        'Verify the species-specific temperature range and protect the plant from unsuitable conditions.',
+      fertilizer:
+        'During active growth, use a suitable diluted cactus fertilizer according to its label and the verified care requirements.',
+    },
+    _draft: true,
+    _reviewRequired: true,
+    _set: 6,
+    _targetNumber: 201 + index,
+  };
+}
+
+const generated = missingTargets.map(createDraftRecord);
+
+const generatedIds = new Set();
+const generatedNames = new Set();
+const duplicateIds = [];
+const duplicateNames = [];
+
+for (const species of generated) {
+  const normalizedName = normalize(species.scientificName);
+
+  if (existingIds.has(species.id) || generatedIds.has(species.id)) {
+    duplicateIds.push(species.id);
+  }
+
+  if (
+    existingNames.has(normalizedName) ||
+    generatedNames.has(normalizedName)
+  ) {
+    duplicateNames.push(species.scientificName);
+  }
+
+  generatedIds.add(species.id);
+  generatedNames.add(normalizedName);
+}
+
+const requiredFields = [
+  'id',
+  'commonName',
+  'scientificName',
+  'subfamily',
+  'growthHabitAndSize',
+  'hardinessAndNativeRange',
+  'specialTraits',
+];
+
+const missingFields = generated.filter((species) => {
+  const missingTopLevel = requiredFields.some(
+    (field) => !species[field]
+  );
+
+  const missingCare = [
+    'sunlight',
+    'watering',
+    'soilAndPotting',
+    'temperature',
+    'fertilizer',
+  ].some((field) => !species.care?.[field]);
+
+  return missingTopLevel || missingCare;
+});
+
+if (
+  duplicateIds.length ||
+  duplicateNames.length ||
+  missingFields.length
+) {
   console.error('Validation failed. No preview was written.');
-  console.error('Duplicate IDs:', duplicateIds.length);
+  console.error('Duplicate IDs:', duplicateIds);
+  console.error('Duplicate scientific names:', duplicateNames);
   console.error('Records with missing fields:', missingFields.length);
   process.exit(1);
 }
@@ -159,14 +277,21 @@ fs.writeFileSync(
   'utf8'
 );
 
-console.log('🌵 Cactora species generator');
+console.log('🌵 Cactora — Set 06 species generator');
 console.log('Existing records:', cactusSpecies.length);
-console.log('Target species checked:', targets.length);
-console.log('Records generated for review:', generated.length);
+console.log('Target species groups:', targets.length);
+console.log('Records skipped as existing/duplicate:', targets.length - generated.length);
+console.log('New draft records generated:', generated.length);
+console.log(
+  'Opuntioideae drafts:',
+  generated.filter((s) => s.subfamily === 'Opuntioideae').length
+);
+console.log(
+  'Maihuenioideae drafts:',
+  generated.filter((s) => s.subfamily === 'Maihuenioideae').length
+);
 console.log('Duplicate IDs:', duplicateIds.length);
-console.log('Records with missing fields:', missingFields.length);
+console.log('Duplicate scientific names:', duplicateNames.length);
 console.log('Original species file changed: No');
 console.log('Preview:', outputFile);
-console.log(
-  'IMPORTANT: Generated records contain draft botanical descriptions.'
-);
+console.log('IMPORTANT: Draft botanical information must be verified.');
