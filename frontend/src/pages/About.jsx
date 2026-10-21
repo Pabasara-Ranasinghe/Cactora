@@ -60,6 +60,12 @@ function About() {
             fascinating world of cacti.
           </p>
 
+          <p className="about-hero-description">
+            Cactora is a modern cactus knowledge platform created
+            to help everyone discover, understand, and care for the
+            fascinating world of cacti.
+          </p>
+
           <div className="about-hero-actions">
             <Link to="/explore" className="about-primary-button">
               Explore Cacti
