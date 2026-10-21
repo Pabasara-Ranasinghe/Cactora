@@ -448,6 +448,12 @@ function Home() {
               <Link to="/ai" className="home-ai-button">
                 Meet Cactora AI <ArrowRight size={18} />
               </Link>
+
+
+              <Link to="/ai" className="home-ai-button">
+                Meet Cactora AI <ArrowRight size={18} />
+              </Link>
+              
             </div>
 
             <div className="home-ai-visual" aria-hidden="true">
