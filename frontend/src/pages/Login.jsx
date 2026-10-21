@@ -74,9 +74,6 @@ return ( <main className="auth-page"> <section className="auth-card"> <div class
 
       <h1>Welcome back!</h1>
 
-
-      <h1>Welcome back!</h1>
-
       <p>
         Log in to explore cacti, save your favorites,
         and join the Cactora community.
