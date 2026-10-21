@@ -22,6 +22,11 @@ function Explore() {
               THE CACTUS COLLECTION
             </p>
 
+            <p className="page-label">
+              <Sprout size={16} />
+              THE CACTUS COLLECTION
+            </p>
+
             <h1 className="explore-title">
               Discover the world of <span>cacti.</span>
             </h1>
