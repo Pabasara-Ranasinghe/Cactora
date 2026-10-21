@@ -12,6 +12,11 @@ function AI() {
           Ask questions about cactus care, species,
           growing conditions, and more with Cactora AI.
         </p>
+
+        <p className="page-description">
+          Ask questions about cactus care, species,
+          growing conditions, and more with Cactora AI.
+        </p>
       </div>
     </section>
   )
