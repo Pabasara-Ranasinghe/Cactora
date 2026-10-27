@@ -1,18 +1,9 @@
-
-import { Moon, Sun, LogOut, UserRound } from 'lucide-react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Moon, Sun } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import { useTheme } from '../context/ThemeContext.jsx'
-import { useAuth } from '../context/AuthContext.jsx'
 
 function Navbar() {
   const { theme, toggleTheme } = useTheme()
-  const { user, isAuthenticated, logout } = useAuth()
-  const navigate = useNavigate()
-
-  const handleLogout = () => {
-    logout()
-    navigate('/', { replace: true })
-  }
 
   return (
     <header className="navbar">
@@ -53,38 +44,6 @@ function Navbar() {
               <Sun size={19} strokeWidth={2} />
             )}
           </button>
-
-          {isAuthenticated ? (
-            <>
-              {/* Logged-in User */}
-              <span className="navbar-user">
-                <UserRound size={18} />
-                <span>{user.fullName}</span>
-              </span>
-
-              {/* Logout */}
-              <button
-                type="button"
-                className="navbar-logout"
-                onClick={handleLogout}
-              >
-                <LogOut size={17} />
-                <span>Logout</span>
-              </button>
-            </>
-          ) : (
-            <>
-              {/* Login */}
-              <Link to="/login" className="navbar-login">
-                Login
-              </Link>
-
-              {/* Register */}
-              <Link to="/register" className="navbar-register">
-                Register
-              </Link>
-            </>
-          )}
 
         </div>
       </div>
