@@ -489,9 +489,6 @@ function Home() {
             make plant knowledge accessible to everyone.
           </p>
           <div className="home-community-actions">
-            <Link to="/register" className="home-primary-button">
-              Join the Community <ArrowRight size={17} />
-            </Link>
             <Link to="/about" className="home-text-link">
               Learn about Cactora
             </Link>
