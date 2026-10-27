@@ -17,15 +17,20 @@ echo Starting Cactora backend...
 echo ==============================
 echo.
 
-set /p DB_PASSWORD=Enter MySQL root password:
 set "DB_USERNAME=root"
 
-echo.
-echo Checking JWT secret...
+if not defined DB_PASSWORD (
+    set /p DB_PASSWORD=Enter MySQL root password:
+)
 
-if not defined JWT_SECRET (
-    echo ERROR: JWT_SECRET is not configured.
-    echo Please configure a secure JWT secret before starting.
+if not defined GEMINI_API_KEY (
+    echo Loading Gemini API key...
+    for /f "delims=" %%a in ('powershell -NoProfile -Command "[Environment]::GetEnvironmentVariable('GEMINI_API_KEY','User')"') do set "GEMINI_API_KEY=%%a"
+)
+
+if not defined GEMINI_API_KEY (
+    echo ERROR: GEMINI_API_KEY is missing.
+    echo Configure it in your Windows User environment variables.
     pause
     exit /b 1
 )
