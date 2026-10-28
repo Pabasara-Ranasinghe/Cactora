@@ -14,6 +14,7 @@ import {
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import cactusSubfamilies from '../data/cactusSubfamilies.js'
+import './Home.css'
 
 const facts = [
   {
@@ -205,82 +206,86 @@ function Home() {
         </div>
       </section>
 
-      {/* Explore Cacti */}
-      <section className="home-explore-section" id="explore-cacti">
+      
+      {/* EXPLORE CACTI */}
+      <section className="home-explore-section reveal" id="explore-cacti">
         <div className="home-section-container">
-          <div className="home-section-heading reveal">
+          <div className="home-section-heading">
             <div>
-              <span className="home-eyebrow">
+              <span className="section-eyebrow">
                 FIND YOUR NEXT FASCINATION
               </span>
-              <h2>
-                Explore the world
-                <br />
-                <span>of cacti.</span>
-              </h2>
+              <h2>Explore the world of cacti.</h2>
             </div>
 
             <p>
-              Six subfamilies. Countless distinctive forms.
-              Start your journey through cactus diversity.
+              Discover the fascinating diversity of cacti by exploring
+              their subfamilies and genera.
             </p>
           </div>
 
-          <div className="home-category-grid">
-            {cactusSubfamilies.map((family, index) => (
-              <Link
-                to="/subfamilies"
-                className={`home-category-card reveal home-category-card-${index + 1}`}
-                key={family.id}
-                style={{
-                  '--reveal-delay': `${(index % 3) * 100}ms`,
-                }}
-              >
-                
-          <div
-            className="home-category-image-wrap home-category-emoji-wrap"
-            style={{ '--family-accent': family.accent }}
-          >
-            <span className="home-category-emoji" aria-hidden="true">
-              {family.icon}
-            </span>
+          <div className="home-category-grid home-explore-choice-grid">
+            <Link
+              to="/subfamilies"
+              className="home-category-card home-explore-choice-card"
+            >
+              <div className="home-explore-choice-visual home-subfamily-visual">
+                <span className="home-explore-choice-icon" aria-hidden="true">
+                  🌵
+                </span>
+                <span className="home-category-number">01</span>
+                <span className="home-explore-choice-label">
+                  SIX SUBFAMILIES
+                </span>
+              </div>
 
-            <span className="home-category-number">
-              {family.number}
-            </span>
+              <div className="home-category-content">
+                <span className="home-category-kicker">EXPLORE BY</span>
+                <h3>Subfamily</h3>
+                <p>
+                  Discover the six cactus subfamilies and learn about
+                  their distinctive characteristics and diversity.
+                </p>
+                <span className="home-category-link">
+                  Explore by Subfamily <ArrowRight size={17} />
+                </span>
+              </div>
+            </Link>
 
-            <span className="home-category-arrow">
-              <ArrowRight size={19} />
-            </span>
-          </div>
+            <Link
+              to="/genera"
+              className="home-category-card home-explore-choice-card"
+            >
+              <div className="home-explore-choice-visual home-genus-visual">
+                <span className="home-explore-choice-icon" aria-hidden="true">
+                  🌵
+                </span>
+                <span className="home-category-number">02</span>
+                <span className="home-explore-choice-label">
+                  CACTUS GENERA
+                </span>
+              </div>
 
-
-                <div className="home-category-content">
-                  <span className="home-category-kicker">
-                    SUBFAMILY
-                  </span>
-                  <h3>{family.name}</h3>
-                  <p>{family.description}</p>
-                  <span className="home-category-link">
-                    Discover category <ArrowRight size={15} />
-                  </span>
-                </div>
-              </Link>
-            ))}
-          </div>
-
-          <div className="home-section-action reveal">
-            <Link to="/explore" className="home-outline-button">
-              Explore All Cacti <ArrowRight size={17} />
+              <div className="home-category-content">
+                <span className="home-category-kicker">EXPLORE BY</span>
+                <h3>Genus</h3>
+                <p>
+                  Browse cactus genera, discover their scientific names,
+                  and learn about the unique plants within each group.
+                </p>
+                <span className="home-category-link">
+                  Explore by Genus <ArrowRight size={17} />
+                </span>
+              </div>
             </Link>
           </div>
 
           <p className="home-taxonomy-note">
-            Cactora's categories are designed to be adaptable as botanical
-            classifications and references are updated.
+            Every cactus has a story to tell. Start exploring yours.
           </p>
         </div>
       </section>
+
 
       {/* Cactus History */}
       <section className="home-story-section">
