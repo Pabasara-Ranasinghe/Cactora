@@ -1,10 +1,10 @@
-
 :root {
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
 
   color-scheme: light;
 
+  /* Brand colors */
   --color-deep-forest: #0b3d2e;
   --color-forest: #145c46;
   --color-cactus: #2e9d74;
@@ -14,45 +14,21 @@
   --color-emerald: #1e7a5d;
   --color-white: #ffffff;
 
-  --background: #eaf6f0;
+  /* Light theme */
+  --background: #f5f8f4;
   --surface: #ffffff;
-  --surface-secondary: #f2f8f3;
-  --text-primary: #0b3d2e;
-  --text-secondary: #65766a;
-  --border: #dcece0;
+  --surface-secondary: #edf4ed;
+  --text-primary: #183d2c;
+  --text-secondary: #617166;
+  --border: #dce6dc;
   --primary: #21865a;
   --primary-hover: #176b46;
-
-  --shadow: 0 8px 28px rgba(24, 61, 46, 0.08);
+  --shadow: 0 8px 28px rgba(24, 61, 46, 0.07);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-:root.dark {
-  color-scheme: dark;
-
-  --color-deep-forest: #071b15;
-  --color-forest: #102b21;
-  --color-cactus: #55b879;
-  --color-fresh-green: #78d49b;
-  --color-sage: #a8d9b6;
-  --color-pale-mint: #193b2d;
-  --color-emerald: #78d49b;
-  --color-white: #f4f8f3;
-
-  --background: #101b16;
-  --surface: #192720;
-  --surface-secondary: #22372b;
-  --text-primary: #f0f5ef;
-  --text-secondary: #bdcdbf;
-  --border: #344c3b;
-  --primary: #78d49b;
-  --primary-hover: #a8e7ba;
-
-  --shadow: 0 8px 28px rgba(0, 0, 0, 0.2);
 }
 
 
