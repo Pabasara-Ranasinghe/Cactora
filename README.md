@@ -1,124 +1,183 @@
-# 🌵 Cactora
-### Every cactus tells a story.
+<div align="center">
 
-<p align="center">
-  <strong>Discover the fascinating world of cacti.</strong><br/>
-  Explore cactus genera, learn about their unique characteristics, and get answers to your cactus-related questions with Cactora AI.
-</p>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:386641,50:6A994E,100:A7C957&height=220&section=header&text=CACTORA%20%F0%9F%8C%B5&fontSize=65&fontColor=FFFFFF&fontAlignY=38&animation=fadeIn&desc=Every%20cactus%20tells%20a%20story.&descSize=19&descAlignY=60" width="100%" alt="Cactora — Every cactus tells a story"/>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
+  <h3>🌿 Discover • Explore • Learn • Grow 🌿</h3>
+
+  **A little garden of cactus knowledge, built for curious minds.** 🌵
+
+  Explore fascinating cactus genera, discover botanical information, and get answers to your cactus-related questions with Cactora AI. 💚
+
+  <br/>
+
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=20232A" alt="React"/>
   <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite"/>
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"/>
   <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot"/>
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"/>
-</p>
+
+  <br/><br/>
+
+  <a href="https://github.com/Pabasara-Ranasinghe/Cactora">🌵 Explore the Repository</a> ·
+  <a href="https://github.com/Pabasara-Ranasinghe">👩‍💻 Developer Profile</a>
+
+</div>
 
 ---
 
-## 🌿 About the Project
+## 🌱 Welcome to Cactora!
 
-**Cactora** is a cactus knowledge platform designed to make discovering and learning about cacti simple, engaging, and accessible.
+Every cactus tells a story — a story of resilience, diversity, and nature's creativity. 🌵✨
 
-From exploring different cactus genera to discovering fascinating plant characteristics, Cactora brings cactus information together in one place. It also features **Cactora AI**, an AI-powered assistant that helps users find answers to cactus-related questions without requiring an account.
+**Cactora** is a cactus knowledge platform designed to make discovering and learning about these remarkable plants simple, engaging, and accessible.
 
-Built with a modern frontend and a Java Spring Boot backend, Cactora combines an interactive browsing experience with backend services and AI integration.
+From exploring different cactus genera to discovering botanical information, Cactora brings plant knowledge into one place. With **Cactora AI**, users can also ask cactus-related questions and explore answers through an AI-powered conversational experience.
 
-> 🌵 *Every cactus tells a story. Let's discover yours.*
+Whether you're a cactus enthusiast, a plant lover, or simply curious about the natural world, there's always something new to discover. 🌿
 
-## ✨ Features
+> 💚 *Every cactus tells a story. Let's discover yours.*
 
-- 🌵 **Explore Cacti** — Discover a collection of cactus genera and learn more about different types of cacti.
-- 🔎 **Genus Discovery** — Browse and search cactus genera to find plants of interest.
-- 📚 **Cactus Knowledge** — Explore genus information, descriptions, and available cactus images.
-- 🤖 **Cactora AI** — Ask cactus-related questions and receive AI-generated responses.
-- 🌱 **Subfamily Guide** — Explore the cactus subfamilies and learn about their diversity.
-- 📱 **Responsive Experience** — Designed to provide a user-friendly experience across different screen sizes.
-- 📬 **Contact Page** — Find a way to contact the project owner with questions or feedback.
-- 🔓 **Open Access** — Explore the platform and use Cactora AI without creating an account.
+## ✨ What Can You Discover?
 
-## 🖥️ Tech Stack
+🌵 **Explore Cactus Genera**
 
-### Frontend
+Discover a collection of cactus genera and explore the fascinating diversity of cacti.
 
-| Technology | Purpose |
-|---|---|
-| React | Building reusable user interface components |
-| Vite | Development server and production build tooling |
-| JavaScript | Application logic and interactions |
-| CSS | Styling and responsive layouts |
+🔎 **Search & Discover**
 
-### Backend
+Find cactus genera and navigate the available botanical information with ease.
 
-| Technology | Purpose |
-|---|---|
-| Java 21 | Backend programming language |
-| Spring Boot | Backend application and REST API development |
-| Spring Data JPA | Database persistence |
-| Hibernate | Object-relational mapping |
-| Maven | Dependency management and build automation |
+📚 **Botanical Guides**
 
-### Database & Integrations
+Explore cactus subfamilies and learn more about the diversity of these remarkable plants.
 
-| Technology | Purpose |
-|---|---|
-| MySQL | Relational database |
-| Google Gemini API | AI integration for Cactora AI |
-| Wikimedia Commons API | Retrieving cactus images where available |
-| Git & GitHub | Version control and source code management |
-| Vercel | Frontend deployment target |
+🖼️ **Discover Cactus Images**
 
+View available cactus imagery, including images retrieved through the Wikimedia Commons API.
 
-*Note: The structure above is a simplified overview. Some folder names may differ in the current implementation.*
+🤖 **Meet Cactora AI**
 
-## ⚙️ Getting Started
+Ask cactus-related questions and explore AI-generated responses through an integrated AI assistant.
 
-Follow these steps to run Cactora locally.
+🔓 **Open to Everyone**
 
-### Prerequisites
+Explore Cactora and access its AI assistant without creating an account.
 
-Make sure you have the following installed:
+📱 **A Modern Browsing Experience**
 
-- [Node.js](https://nodejs.org/) — for the frontend
-- [Java JDK 21](https://adoptium.net/) — for the backend
-- [Apache Maven](https://maven.apache.org/) — for building the backend
-- [MySQL](https://dev.mysql.com/downloads/) — for database services
-- [Git](https://git-scm.com/) — for cloning the repository
+Enjoy a user-friendly interface designed to make cactus discovery simple and engaging across different screen sizes.
 
-### 1. Clone the Repository
+📬 **Get in Touch**
+
+Use the contact form to prepare a message to the project owner through your email application.
+
+## 🤖 Meet Cactora AI 🌿
+
+<div align="center">
+
+  ### Your cactus knowledge companion 🌵
+
+  *Curiosity grows here. 🌱*
+
+</div>
+
+Have a question about cacti? Let Cactora AI help you explore the world of these fascinating plants! 💬
+
+✨ Ask cactus-related questions.
+
+🌱 Discover information about different cacti.
+
+🔎 Explore new topics through conversation.
+
+🔓 Access the assistant without signing in.
+
+Cactora AI integrates with Google's Gemini API through the Spring Boot backend to generate responses.
+
+> 📝 AI-generated information may occasionally be inaccurate. Always verify important botanical details using reliable sources.
+
+## 🛠️ The Technology Behind the Garden
+
+Cactora combines modern frontend development with a Java backend and AI integration. 🌿
+
+**🌱 Frontend**
+
+- ⚛️ **React** — Building interactive and reusable user interfaces.
+- ⚡ **Vite** — Fast development and production builds.
+- 🟨 **JavaScript** — Application logic and interactions.
+- 🎨 **CSS** — Styling and responsive layouts.
+
+**☕ Backend**
+
+- ☕ **Java 21** — Backend programming language.
+- 🍃 **Spring Boot** — Backend application and REST API development.
+- 🗃️ **Spring Data JPA** — Database access and persistence.
+- 🔄 **Hibernate** — Object-relational mapping.
+- 📦 **Maven** — Dependency management and builds.
+
+**🌍 Database & Integrations**
+
+- 🐬 **MySQL** — Relational database.
+- 🤖 **Google Gemini API** — AI-powered responses.
+- 🖼️ **Wikimedia Commons API** — Retrieving available cactus images.
+- 🌿 **Git & GitHub** — Version control and source code hosting.
+- 🚀 **Vercel** — Intended frontend hosting platform.
+
+## 🚀 Getting Started
+
+Want to grow your own copy of Cactora? Let's get it running locally! 🌵
+
+### 📋 Prerequisites
+
+Before getting started, make sure you have:
+
+- 🟢 [Node.js](https://nodejs.org/) — for the frontend.
+- ☕ [Java JDK 21](https://adoptium.net/) — for the backend.
+- 📦 [Apache Maven](https://maven.apache.org/) — for building the backend.
+- 🐬 [MySQL](https://dev.mysql.com/downloads/) — for the database.
+- 🌿 [Git](https://git-scm.com/) — for cloning the repository.
+
+### 1️⃣ Clone the Repository 🌿
+
+Open your terminal and run:
 
 ```bash
 git clone https://github.com/Pabasara-Ranasinghe/Cactora.git
 ```
 
+Move into the project directory:
+
 ```bash
 cd Cactora
 ```
 
-### 2. Configure the Database
+### 2️⃣ Set Up the Database 🐬
 
-Create a MySQL database:
+Start MySQL and create the Cactora database:
 
 ```sql
 CREATE DATABASE cactora_db;
 ```
 
-Configure the backend database connection using your local MySQL credentials.
+Configure the backend database connection according to your application's settings.
 
-For example, your environment configuration may contain:
+For example, if your backend expects these environment variables:
 
-```properties
+```dotenv
 DB_USERNAME=your_mysql_username
 DB_PASSWORD=your_mysql_password
 ```
 
-Ensure that the backend's database configuration references the correct environment variables.
+Replace the example values with your own local MySQL credentials.
 
-### 3. Configure the AI Integration
+🔐 **Keep your credentials private.** Never commit database passwords or secret configuration files to GitHub.
 
-Cactora AI requires a valid Google Gemini API key.
+### 3️⃣ Configure Cactora AI 🤖
 
-Set the `GEMINI_API_KEY` environment variable before starting the backend.
+Cactora AI requires a Google Gemini API key.
+
+1. Visit [Google AI Studio](https://aistudio.google.com/).
+2. Obtain an API key.
+3. Configure the `GEMINI_API_KEY` environment variable expected by the backend.
 
 **Windows Command Prompt:**
 
@@ -126,45 +185,47 @@ Set the `GEMINI_API_KEY` environment variable before starting the backend.
 set GEMINI_API_KEY=your_gemini_api_key
 ```
 
-**PowerShell:**
+**Windows PowerShell:**
 
 ```powershell
 $env:GEMINI_API_KEY="your_gemini_api_key"
 ```
 
-Get an API key from [Google AI Studio](https://aistudio.google.com/).
+These commands apply to the current terminal session. Configure the variable again when using a new terminal, or use a suitable secure environment-variable setup.
 
-Keep your API key private. Never commit API keys, database passwords, or other secrets to GitHub.
+⚠️ **Never expose your Gemini API key in frontend code or upload it to GitHub.**
 
-### 4. Run the Backend
+### 4️⃣ Run the Backend ☕
 
-Open a terminal in the backend directory:
+Open a terminal in the project directory:
 
 ```bash
 cd backend
 ```
 
-Run the application using Maven:
+Start the Spring Boot application:
 
 ```bash
 mvn spring-boot:run
 ```
 
-Alternatively, on Windows, use the project's backend startup script if its required environment variables are configured:
+Alternatively, on Windows, you can use the project's startup script if the required configuration is ready:
 
 ```cmd
 run-backend.bat
 ```
 
-The backend is configured to run locally on:
+The backend is configured to run locally on port `8081`:
 
 ```text
 http://localhost:8081
 ```
 
-### 5. Run the Frontend
+Wait until the application starts successfully before proceeding.
 
-Open a separate terminal:
+### 5️⃣ Run the Frontend ⚡
+
+Open a **separate terminal** from the project root:
 
 ```bash
 cd frontend
@@ -176,114 +237,160 @@ Install the dependencies:
 npm install
 ```
 
-Start the Vite development server:
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-Open the local URL displayed in your terminal, usually:
+Vite will display the local development URL in the terminal, usually:
 
 ```text
 http://localhost:5173
 ```
 
-If the frontend cannot connect to the backend, verify the API base URL, backend status, CORS configuration, and required environment variables.
+Open the displayed URL in your browser and start exploring Cactora! 🌵💚
 
-## 🤖 Cactora AI
+### 6️⃣ Troubleshooting 🔧
 
-**Meet Cactora AI — your cactus knowledge companion.**
+If the frontend or AI assistant doesn't work as expected, check the following:
 
-Cactora AI is designed to make cactus-related information easier to explore through a conversational interface.
+- 🌐 Is the frontend configured with the correct backend API URL?
+- ☕ Is the Spring Boot backend running successfully?
+- 🐬 Is MySQL running with the correct database credentials?
+- 🔑 Is `GEMINI_API_KEY` configured in the backend environment?
+- 🔒 Does CORS allow requests from the frontend's origin?
+- 🤖 Does the frontend use the correct AI endpoint and request format?
 
-Users can ask questions about cacti and receive AI-generated responses through the backend's AI integration.
+Remember: successfully starting the frontend does not guarantee that the backend or AI integration is working.
 
-- No account required.
-- Accessible directly through the website.
-- Powered by a backend service connected to Google's Gemini API.
+## 🧪 Build for Production
 
-AI-generated responses may occasionally be inaccurate. For important botanical or plant-care decisions, verify information with reliable references.
+### ⚡ Build the Frontend
 
-## 🛠️ Development
-
-### Build the Frontend
+From the `frontend` directory:
 
 ```bash
-cd frontend
 npm run build
 ```
 
-### Preview the Production Build
+The production build will be generated in the `dist/` directory.
+
+To preview it locally:
 
 ```bash
 npm run preview
 ```
 
-### Run the Backend
+### ☕ Build the Backend
+
+From the `backend` directory:
 
 ```bash
-cd backend
-mvn spring-boot:run
+mvn clean package
 ```
 
-### Version Control
+If the build succeeds, Maven generates the packaged application in the `target/` directory.
 
-Cactora uses Git for source control and GitHub for repository hosting.
+## 🌍 Deployment 🌱
 
-```bash
-git status
-git add .
-git commit -m "describe your changes"
-git push
-```
+Cactora has a separate frontend and backend, so each part needs its own deployment configuration.
 
-## 🚀 Deployment
+🚀 **Frontend:** Vercel or another suitable frontend hosting provider.
 
-Cactora is organized into separate frontend and backend applications.
+☕ **Backend:** A hosting platform that supports Java and Spring Boot.
 
-- **Frontend:** Vercel can host the React + Vite application.
-- **Backend:** A Java-compatible hosting platform is required for Spring Boot.
-- **Database:** A MySQL-compatible database service is required for production.
+🐬 **Database:** A managed MySQL service or another production-ready MySQL server.
 
-For deployment, configure the production API base URL, database credentials, AI API key, and allowed frontend origin. Store sensitive configuration in the hosting provider's environment-variable settings.
+🤖 **AI integration:** Configure the Gemini API key securely in the backend environment.
 
-Do not expose backend secrets through frontend environment variables.
+Before deploying, make sure to:
 
-## 🔐 Security Notes
+- 🔗 Set the correct production API base URL.
+- 🔑 Configure database credentials and the Gemini API key.
+- 🌐 Allow requests from the deployed frontend origin.
+- 🔒 Enable HTTPS and suitable database permissions.
+- 🧪 Test the complete frontend-to-backend flow.
 
-- Never commit `.env` files containing secrets.
-- Do not expose the Gemini API key in frontend code.
-- Use environment variables for database credentials and API keys.
-- Configure production CORS rules for trusted origins.
-- Use HTTPS and production-appropriate database permissions when deployed.
+*Deployment links will be added once the application is successfully deployed and the URLs are confirmed.* 🌿
 
-## 🎯 Project Goals
+## 🔐 Growing Securely
 
-Cactora aims to:
+A healthy project needs a secure foundation. 🛡️
 
-- Make cactus knowledge accessible to more people.
-- Help users discover the diversity of cactus genera.
-- Provide a convenient AI-powered learning experience.
-- Combine modern web development with an engaging botanical topic.
-- Deliver a simple, accessible, and user-friendly platform.
+- 🔑 Keep API keys and passwords out of source control.
+- 🔒 Store sensitive configuration in environment variables or a secrets manager.
+- 🌐 Restrict production CORS to trusted origins.
+- 🔐 Use HTTPS in production.
+- 🖼️ Respect image licensing and attribution requirements.
+- 🤖 Verify important information provided by AI.
 
-## 👩‍💻 Author
+## 🌎 The Vision Behind Cactora
 
-**Pabasara Ranasinghe**
+Cactora is built around a simple idea: **make learning about cacti accessible, engaging, and enjoyable.** 💚
 
-Software Engineering Student & Developer
+🌵 **Discover** the diversity of cactus genera.
 
-- GitHub: [@Pabasara-Ranasinghe](https://github.com/Pabasara-Ranasinghe)
-- Project Repository: [Cactora](https://github.com/Pabasara-Ranasinghe/Cactora)
+📚 **Learn** through botanical information and guides.
+
+🤖 **Ask** questions with an AI-powered companion.
+
+🌱 **Explore** the natural world with curiosity.
+
+💚 **Grow** your knowledge, one cactus at a time.
+
+## 👩‍💻 About the Developer
+
+<div align="center">
+
+  ### 🌿 Pabasara Ranasinghe 🌿
+
+  **Software Engineering Student & Developer**
+
+  Interested in software engineering, modern web development, and AI-powered applications.
+
+  <a href="https://github.com/Pabasara-Ranasinghe">
+    <img src="https://img.shields.io/badge/GitHub-Follow_My_Journey-386641?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile"/>
+  </a>
+
+</div>
+
+## 📊 My GitHub Garden 🌱
+
+<div align="center">
+
+  <img src="https://github-readme-stats.vercel.app/api?username=Pabasara-Ranasinghe&show_icons=true&hide_border=true&title_color=386641&icon_color=6A994E&text_color=40513B&bg_color=F3F5E9" height="165" alt="GitHub statistics"/>
+
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Pabasara-Ranasinghe&layout=compact&hide_border=true&title_color=386641&text_color=40513B&bg_color=F3F5E9" height="165" alt="Most used programming languages"/>
+
+  <br/><br/>
+
+  <img src="https://streak-stats.demolab.com?user=Pabasara-Ranasinghe&hide_border=true&background=F3F5E9&ring=6A994E&fire=A7C957&currStreakLabel=386641&sideLabels=386641&dates=657565" alt="GitHub contribution streak"/>
+
+</div>
+
+*🌱 GitHub statistics are provided by third-party services and may occasionally be unavailable.*
+
 
 ## 📄 License
 
-No license has been specified yet. If you intend to make Cactora open source, consider adding a `LICENSE` file that defines how others may use, modify, and distribute the project.
+Cactora is licensed under the [MIT License](LICENSE).
+
+Copyright © 2026 Pabasara Ranasinghe.
+
+Feel free to explore the project and review the license terms before using, modifying, or distributing the code. 🌿
 
 ---
 
-<p align="center">
-  Made with 💚 and a love for cacti 🌵
-  <br/><br/>
-  <strong>CACTORA — Every cactus tells a story.</strong>
-</p>
+<div align="center">
+
+ ### 🌵 CACTORA 🌵
+
+  **Every cactus tells a story.** 💚
+
+  🌿 Keep exploring. Keep learning. Keep growing. 🌿
+
+  <sub>Made with 💚 for cacti.</sub>
+
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:386641,50:6A994E,100:A7C957&height=130&section=footer" width="100%" alt="Cactora botanical footer"/>
+</div>
