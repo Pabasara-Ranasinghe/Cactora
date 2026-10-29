@@ -1,224 +1,379 @@
-
 import { Link } from 'react-router-dom'
 import {
   ArrowRight,
   BookOpen,
   Flower2,
   Leaf,
-  ShieldCheck,
   Sparkles,
-  Users,
+  Sprout,
+  Sun,
 } from 'lucide-react'
 import './About.css'
 
 const features = [
   {
     icon: Leaf,
+    number: '01',
     title: 'Discover Cacti',
     description:
-      'Explore different cactus species, learn about their unique characteristics, and discover where they grow naturally.',
+      'Explore cactus genera and subfamilies, discover their unique characteristics, and learn where these remarkable plants grow.',
   },
   {
     icon: BookOpen,
-    title: 'Learn with Confidence',
+    number: '02',
+    title: 'Explore Their Stories',
     description:
-      'Find helpful information about cactus appearance, habitats, growing conditions, and everyday care.',
+      'Learn about cactus diversity, scientific names, natural habitats, and the fascinating adaptations that help them thrive.',
+  },
+  {
+    icon: Sprout,
+    number: '03',
+    title: 'Learn to Care',
+    description:
+      'Build your plant knowledge with practical guidance on light, watering, growing conditions, and healthy cactus care.',
   },
   {
     icon: Sparkles,
-    title: 'Ask Cactora AI',
+    number: '04',
+    title: 'Meet Cactora AI',
     description:
-      'Get assistance with cactus-related questions and explore new topics with the help of our AI assistant.',
+      'Have cactus-related questions? Explore ideas, learn new things, and get help from your AI cactus companion.',
+  },
+]
+
+const values = [
+  {
+    icon: BookOpen,
+    title: 'Knowledge for Everyone',
+    description:
+      'Cactus information presented in a welcoming, clear, and approachable way.',
   },
   {
-    icon: Users,
-    title: 'Grow Together',
+    icon: Leaf,
+    title: 'Curiosity About Nature',
     description:
-      'Join a community of cactus enthusiasts by sharing knowledge and contributing information about cacti.',
+      'Discover the diversity, adaptations, and natural environments of cacti.',
+  },
+  {
+    icon: Sparkles,
+    title: 'Learning Through Technology',
+    description:
+      'Explore plant knowledge through an engaging experience, supported by Cactora AI.',
   },
 ]
 
 function About() {
   return (
     <main className="about-page">
+      {/* Hero */}
       <section className="about-hero">
-        <div className="about-hero-content">
-          <span className="about-eyebrow">
-            <Leaf size={16} />
-            ABOUT CACTORA
-          </span>
+        <div className="about-hero-glow about-hero-glow-one" />
+        <div className="about-hero-glow about-hero-glow-two" />
 
-          <h1>
-            A little more knowledge.
-            <br />
-            <span>A deeper love for cacti.</span>
-          </h1>
+        <div className="about-hero-container">
+          <div className="about-hero-content">
+            <span className="about-eyebrow">
+              <Leaf size={16} />
+              THE STORY OF CACTORA
+            </span>
 
-          <p className="about-hero-description">
-            Cactora is a modern cactus knowledge platform created
-            to help everyone discover, understand, and care for the
-            fascinating world of cacti.
-          </p>
+            <h1>
+              Every cactus
+              <br />
+              <span>tells a story.</span>
+            </h1>
 
-          <div className="about-hero-actions">
-            <Link to="/explore" className="about-primary-button">
-              Explore Cacti
-              <ArrowRight size={18} />
-            </Link>
+            <p className="about-hero-description">
+              Discover the extraordinary world of cacti with Cactora,
+              a welcoming place to explore fascinating plants, learn
+              about their natural wonders, and grow your knowledge
+              one discovery at a time.
+            </p>
 
-            <Link to="/contact" className="about-secondary-button">
-              Get in Touch
-            </Link>
+            <div className="about-hero-actions">
+              <Link to="/explore" className="about-primary-button">
+                Explore Cacti
+                <ArrowRight size={18} />
+              </Link>
+
+              <Link to="/ai" className="about-secondary-button">
+                Meet Cactora AI
+                <Sparkles size={17} />
+              </Link>
+            </div>
+
+            <div className="about-hero-note">
+              <span className="about-hero-note-icon">
+                <Sprout size={17} />
+              </span>
+              <span>
+                A little world of wonder for curious plant lovers.
+              </span>
+            </div>
+          </div>
+
+          <div className="about-hero-visual" aria-hidden="true">
+            <div className="about-hero-orbit about-hero-orbit-one" />
+            <div className="about-hero-orbit about-hero-orbit-two" />
+
+            <div className="about-plant-card">
+              <div className="about-plant-card-top">
+                <span className="about-plant-icon">
+                  <Flower2 size={25} />
+                </span>
+                <span className="about-plant-card-label">
+                  A WORLD OF WONDER
+                </span>
+              </div>
+
+              <div className="about-cactus-art">
+                <span className="about-cactus-pot" />
+                <span className="about-cactus-stem" />
+                <span className="about-cactus-arm about-cactus-arm-left" />
+                <span className="about-cactus-arm about-cactus-arm-right" />
+                <span className="about-cactus-flower">
+                  <Flower2 size={27} />
+                </span>
+              </div>
+
+              <div className="about-plant-card-copy">
+                <span>Small plants.</span>
+                <strong>Extraordinary stories.</strong>
+              </div>
+
+              <div className="about-plant-card-footer">
+                <Leaf size={15} />
+                <span>Discover something wonderful</span>
+              </div>
+            </div>
+
+            <span className="about-floating-icon about-floating-icon-one">
+              <Sun size={21} />
+            </span>
+
+            <span className="about-floating-icon about-floating-icon-two">
+              <Leaf size={22} />
+            </span>
           </div>
         </div>
 
-        <div className="about-hero-art" aria-hidden="true">
-          <div className="about-art-circle about-art-circle-one" />
-          <div className="about-art-circle about-art-circle-two" />
+        <a href="#about-story" className="about-scroll-link">
+          <span>GET TO KNOW US</span>
+          <ArrowRight size={15} />
+        </a>
+      </section>
 
-          <div className="about-plant-card">
-            <div className="about-plant-icon">
-              <Flower2 size={34} />
-            </div>
+      {/* Our Story */}
+      <section className="about-story-section" id="about-story">
+        <div className="about-section-container about-story-grid">
+          <div className="about-story-heading">
+            <span className="about-eyebrow">OUR STORY</span>
 
-            <div className="about-cactus-illustration">
-              <span className="about-cactus-arm about-cactus-arm-left" />
-              <span className="about-cactus-arm about-cactus-arm-right" />
-              <span className="about-cactus-body" />
-            </div>
-
-            <p>Nature is full of wonders.</p>
-            <span>Discover them with Cactora</span>
+            <h2>
+              A small step into
+              <br />
+              <span>a fascinating world.</span>
+            </h2>
           </div>
 
-          <span className="about-floating-leaf about-floating-leaf-one">
-            ✳
-          </span>
-          <span className="about-floating-leaf about-floating-leaf-two">
-            ✦
-          </span>
+          <div className="about-story-copy">
+            <p>
+              Cacti are much more than plants with spines. From
+              their unusual shapes and beautiful flowers to their
+              remarkable ways of conserving water, they have plenty
+              of stories to tell.
+            </p>
+
+            <p>
+              Cactora was created to make discovering these plants
+              easier and more enjoyable. It brings cactus knowledge,
+              exploration, and learning together in one place, whether
+              you are just beginning your plant journey or already
+              fascinated by the world of cacti.
+            </p>
+
+            <p>
+              Our goal is simple: help curiosity grow through
+              accessible information, thoughtful design, and
+              technology that makes learning more engaging.
+            </p>
+
+            <Link to="/explore" className="about-text-link">
+              Begin your discovery
+              <ArrowRight size={17} />
+            </Link>
+          </div>
         </div>
       </section>
 
-      <section className="about-story-section">
-        <div className="about-section-heading">
-          <span className="about-section-label">OUR STORY</span>
-          <h2>Making cactus knowledge accessible to everyone.</h2>
-        </div>
-
-        <div className="about-story-content">
-          <p>
-            Cacti are more than plants with spines. They have
-            remarkable adaptations, diverse shapes, beautiful
-            flowers, and fascinating natural habitats.
-          </p>
-
-          <p>
-            Cactora brings cactus information together in one place,
-            making it easier to explore different species, understand
-            their characteristics, and learn how to care for them.
-            Whether you are just starting your plant journey or
-            already love collecting cacti, there is always something
-            new to discover.
-          </p>
-
-          <p>
-            Our goal is to make learning about cacti engaging,
-            approachable, and enjoyable for everyone.
-          </p>
-        </div>
-      </section>
-
+      {/* What You Can Explore */}
       <section className="about-features-section">
-        <div className="about-section-heading about-centered-heading">
-          <span className="about-section-label">WHAT YOU CAN DO</span>
-          <h2>Explore. Learn. Grow.</h2>
-          <p>
-            Everything you need to begin or continue your cactus
-            discovery journey.
-          </p>
-        </div>
+        <div className="about-section-container">
+          <div className="about-section-heading">
+            <div>
+              <span className="about-eyebrow">
+                YOUR CACTUS JOURNEY
+              </span>
+              <h2>
+                Explore more.
+                <br />
+                <span>Discover something new.</span>
+              </h2>
+            </div>
 
-        <div className="about-features-grid">
-          {features.map((feature) => {
-            const Icon = feature.icon
+            <p>
+              From learning about cactus groups to getting care
+              guidance, there is always something new to discover.
+            </p>
+          </div>
 
-            return (
-              <article className="about-feature-card" key={feature.title}>
-                <div className="about-feature-icon">
-                  <Icon size={25} />
-                </div>
+          <div className="about-features-grid">
+            {features.map((feature) => {
+              const Icon = feature.icon
 
-                <h3>{feature.title}</h3>
-                <p>{feature.description}</p>
-              </article>
-            )
-          })}
+              return (
+                <article className="about-feature-card" key={feature.title}>
+                  <div className="about-feature-card-top">
+                    <span className="about-feature-icon">
+                      <Icon size={24} />
+                    </span>
+                    <span className="about-feature-number">
+                      {feature.number}
+                    </span>
+                  </div>
+
+                  <h3>{feature.title}</h3>
+                  <p>{feature.description}</p>
+
+                  <span className="about-feature-decoration">
+                    <Leaf size={18} />
+                  </span>
+                </article>
+              )
+            })}
+          </div>
         </div>
       </section>
 
+      {/* Our Values */}
       <section className="about-values-section">
-        <div className="about-values-content">
-          <span className="about-section-label">WHAT MATTERS TO US</span>
-          <h2>Knowledge that grows with the community.</h2>
-          <p>
-            We believe useful plant knowledge should be easy to
-            discover and share. Cactora is designed to bring together
-            learning, technology, and a shared appreciation for nature.
-          </p>
+        <div className="about-section-container about-values-grid">
+          <div className="about-values-content">
+            <span className="about-eyebrow">WHAT GUIDES US</span>
+
+            <h2>
+              Making plant knowledge
+              <br />
+              <span>easier to discover.</span>
+            </h2>
+
+            <p>
+              We believe learning about nature should feel inspiring,
+              not overwhelming. Cactora combines accessible knowledge,
+              a welcoming experience, and useful technology to make
+              exploring the cactus world enjoyable for everyone.
+            </p>
+
+            <Link to="/about" className="about-text-link">
+              That's the Cactora way
+              <Leaf size={17} />
+            </Link>
+          </div>
+
+          <div className="about-values-list">
+            {values.map((value, index) => {
+              const Icon = value.icon
+
+              return (
+                <article className="about-value-item" key={value.title}>
+                  <span className="about-value-icon">
+                    <Icon size={22} />
+                  </span>
+
+                  <div className="about-value-copy">
+                    <span className="about-value-number">
+                      0{index + 1}
+                    </span>
+                    <h3>{value.title}</h3>
+                    <p>{value.description}</p>
+                  </div>
+                </article>
+              )
+            })}
+          </div>
         </div>
+      </section>
 
-        <div className="about-value-list">
-          <div className="about-value-item">
-            <span className="about-value-icon">
-              <BookOpen size={21} />
-            </span>
-            <div>
-              <h3>Accessible Learning</h3>
-              <p>Presenting cactus information in a clear, approachable way.</p>
-            </div>
-          </div>
+      {/* Cactora AI */}
+      <section className="about-ai-section">
+        <div className="about-section-container">
+          <div className="about-ai-panel">
+            <div className="about-ai-decoration about-ai-decoration-one" />
+            <div className="about-ai-decoration about-ai-decoration-two" />
 
-          <div className="about-value-item">
-            <span className="about-value-icon">
-              <ShieldCheck size={21} />
-            </span>
-            <div>
-              <h3>Responsible Contributions</h3>
+            <div className="about-ai-content">
+              <span className="about-ai-label">
+                <Sparkles size={16} />
+                YOUR CACTUS COMPANION
+              </span>
+
+              <h2>
+                Have a question?
+                <br />
+                <span>Let's grow your knowledge.</span>
+              </h2>
+
               <p>
-                Reviewing community-submitted information before
-                including it in the platform.
+                Explore cactus-related questions with Cactora AI.
+                From plant characteristics to everyday care, your
+                next discovery is just a question away.
               </p>
-            </div>
-          </div>
 
-          <div className="about-value-item">
-            <span className="about-value-icon">
-              <Sparkles size={21} />
-            </span>
-            <div>
-              <h3>Continuous Discovery</h3>
-              <p>
-                Encouraging curiosity about cactus species and their
-                natural environments.
-              </p>
+              <Link to="/ai" className="about-primary-button">
+                Ask Cactora AI
+                <ArrowRight size={18} />
+              </Link>
+            </div>
+
+            <div className="about-ai-visual" aria-hidden="true">
+              <div className="about-ai-orbit">
+                <div className="about-ai-orbit-dot" />
+                <div className="about-ai-symbol">
+                  <Sparkles size={46} />
+                </div>
+              </div>
+
+              <span className="about-ai-leaf about-ai-leaf-one">
+                <Leaf size={29} />
+              </span>
+
+              <span className="about-ai-leaf about-ai-leaf-two">
+                <Flower2 size={26} />
+              </span>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Closing CTA */}
       <section className="about-cta-section">
         <div className="about-cta-icon">
           <Leaf size={27} />
         </div>
 
-        <span className="about-section-label">YOUR JOURNEY STARTS HERE</span>
+        <span className="about-eyebrow">
+          EVERY CACTUS TELLS A STORY
+        </span>
 
-        <h2>Ready to explore the world of cacti?</h2>
+        <h2>
+          Yours begins with
+          <br />
+          a little curiosity.
+        </h2>
 
         <p>
-          Discover fascinating species, learn something new, and
-          let your curiosity grow with Cactora.
+          Discover fascinating cactus groups, learn about remarkable
+          plants, and find something new to love about nature.
         </p>
 
         <Link to="/explore" className="about-primary-button">
