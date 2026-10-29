@@ -66,8 +66,11 @@ function Contact() {
     setEmailPrepared(false)
   }
 
+  
   const handleSubmit = (event) => {
     event.preventDefault()
+
+    const recipient = 'rpabasara216@gmail.com'
 
     const subject = encodeURIComponent(
       `Cactora contact: ${formData.subject}`,
@@ -77,12 +80,12 @@ function Contact() {
       `Name: ${formData.name}\nEmail: ${formData.email}\nSubject: ${formData.subject}\n\nMessage:\n${formData.message}`,
     )
 
-    // Add Cactora's official email address before enabling email delivery.
-    // Example: mailto:hello@yourdomain.com
-    window.location.href = `mailto:?subject=${subject}&body=${body}`
+    window.location.href =
+      `mailto:${recipient}?subject=${subject}&body=${body}`
 
     setEmailPrepared(true)
   }
+
 
   return (
     <MotionConfig reducedMotion="user">
